@@ -1,0 +1,38 @@
+{e
+  "@context": {
+    "@vocab": "http://example.com/ethereum-ontology/",
+    "web3": "http://caladandao.org/web3semantics/",
+    "dex": "http://caladandao.org/dex/",
+    "erc20": "http://caladandao.org/erc20/"
+  },
+  "@type": "Event",
+  "name": "Transfer",
+  "anonymous": false,
+  "inputs": [
+    {
+      "@type": "web3:sender",
+      "indexed": true,
+      "internalType": "address",
+      "name": "from",
+      "type": "address",
+      "SPELL": "dex.transfer"
+    },
+    {
+      "@type": "web3:recipient",
+      "indexed": true,
+      "internalType": "address",
+      "name": "to",
+      "type": "address",
+      "SPELL": "dex.transfer"
+    },
+    {
+      "@type": "erc20:amount",
+      "indexed": false,
+      "internalType": "uint256",
+      "name": "value",
+      "type": "uint256",
+      "web3Semantics": "web3.eth.transfer.erc20",
+      "SPELL": "dex.transfer"
+    }
+  ]
+}

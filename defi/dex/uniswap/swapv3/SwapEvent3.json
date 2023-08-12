@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "@vocab": "http://example.com/ethereum-ontology/",
+    "eth": "http://caladandao.org/ethereum/",
+    "uniswapv3": "http://caladandao.org/uniswapv3/",
+    "schema": "https://schema.org/"
+  },
+  "@type": "uniswapv3:SwapEvent",
+  "uniswapv3:amount0In": {
+    "@type": "schema:MonetaryAmount",
+    "schema:currency": {
+      "@type": "uniswapv3:Token",
+      "uniswapv3:address": "0xabcdef1234567890",
+      "uniswapv3:symbol": "TOKEN0",
+      "uniswapv3:name": "Token 0",
+      "uniswapv3:decimals": 18
+    },
+    "schema:amount": 1.5,
+    "eth:usdValue": {
+      "@type": "schema:MonetaryAmount",
+      "schema:currency": "USD",
+      "schema:amount": 4500
+    }
+  },
+  "uniswapv3:amount1In": {
+    "@type": "schema:MonetaryAmount",
+    "schema:currency": {
+      "@type": "uniswapv3:Token",
+      "uniswapv3:address": "0x9876543210fedcba",
+      "uniswapv3:symbol": "TOKEN1",
+      "uniswapv3:name": "Token 1",
+      "uniswapv3:decimals": 18
+    },
+    "schema:amount": 2000,
+    "eth:usdValue": {
+      "@type": "schema:MonetaryAmount",
+      "schema:currency": "USD",
+      "schema:amount": 600
+    }
+  },
+  "uniswapv3:amount0Out": {
+    "@type": "schema:MonetaryAmount",
+    "schema:currency": {
+      "@type": "uniswapv3:Token",
+      "uniswapv3:address": "0xabcdef1234567890",
+      "uniswapv3:symbol": "TOKEN0",
+      "uniswapv3:name": "Token 0",
+      "uniswapv3:decimals": 18
+    },
+    "schema:amount": 2000,
+    "eth:usdValue": {
+      "@type": "schema:MonetaryAmount",
+      "schema:currency": "USD",
+      "schema:amount": 6000
+    }
+  },
+  "uniswapv3:amount1Out": {
+    "@type": "schema:MonetaryAmount",
+    "schema:currency": {
+      "@type": "uniswapv3:Token",
+      "uniswapv3:address": "0x9876543210fedcba",
+      "uniswapv3:symbol": "TOKEN1",
+      "uniswapv3:name": "Token 1",
+      "uniswapv3:decimals": 18
+    },
+    "schema:amount": 1.5,
+    "eth:usdValue": {
+      "@type": "schema:MonetaryAmount",
+      "schema:currency": "USD",
+      "schema:amount": 450
+    }
+  },
+  "uniswapv3:sender": "0x1234567890abcdef",
+  "uniswapv3:token0": {
+    "@type": "uniswapv3:Token",
+    "uniswapv3:address": "0xabcdef1234567890",
+    "uniswapv3:symbol": "TOKEN0",
+    "uniswapv3:name": "Token 0",
+    "uniswapv3:decimals": 18
+  },
+  "uniswapv3:token1": {
+    "@type": "uniswapv3:Token",
+    "uniswapv3:address": "0x9876543210fedcba",
+    "uniswapv3:symbol": "TOKEN1",
+    "uniswapv3:name": "Token 1",
+    "uniswapv3:decimals": 18
+  },
+      "uniswapv3:sender": {
+    "@id": "eth:sender",
+    "schema:label": ["Sender Address", "Swap Initiator"]
+  },
+}
+

@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "@vocab": "http://example.com/ethereum-ontology/",
+    "eth": "http://caladandao.org/ethereum/",
+    "uniswapv3": "http://caladandao.org/uniswapv3/",
+    "schema": "https://schema.org/"
+  },
+  "@type": "uniswapv3:Swap",
+  "eth:from": "0x1234567890abcdef",
+  "eth:to": "0x9876543210fedcba",
+  "eth:value": {
+    "@type": "eth:EtherValue",
+    "eth:amount": 2.5,
+    "eth:unit": "ETH"
+  },
+  "eth:usdValue": {
+    "@type": "schema:MonetaryAmount",
+    "schema:currency": "USD",
+    "schema:amount": 7000
+  },
+  "uniswapv3:poolAddress": "0xabcdef1234567890",
+  "uniswapv3:tokenId": "0x1234567890abcdef",
+  "uniswapv3:tickLower": -10000,
+  "uniswapv3:tickUpper": 10000,
+  "uniswapv3:feeTier": 3000,
+  "uniswapv3:logEvents": [
+    {
+      "@type": "uniswapv3:SwapEvent",
+      "uniswapv3:amount0In": 1.5,
+      "uniswapv3:amount1In": 2000,
+      "uniswapv3:amount0Out": 2000,
+      "uniswapv3:amount1Out": 1.5,
+      "uniswapv3:sender": "0x1234567890abcdef"
+    }
+  ]
+}

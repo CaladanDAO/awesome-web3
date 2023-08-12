@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "@vocab": "http://caladandao.org/dex/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/"
+  },
+  "@graph": [
+    {
+      "@id": "schema:Trade",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Trade",
+      "rdfs:comment": "Represents a trade on a decentralized exchange."
+    },
+    {
+      "@id": "schema:Token",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Token",
+      "rdfs:comment": "Represents a token on a decentralized exchange."
+    },
+    {
+      "@id": "schema:fromAddress",
+      "@type": "rdf:Property",
+      "rdfs:label": "From Address",
+      "rdfs:comment": "The sender's address in a trade.",
+      "rdfs:range": "xsd:string"
+    },
+    {
+      "@id": "schema:toAddress",
+      "@type": "rdf:Property",
+      "rdfs:label": "To Address",
+      "rdfs:comment": "The recipient's address in a trade.",
+      "rdfs:range": "xsd:string"
+    },
+    {
+      "@id": "schema:tradeValue",
+      "@type": "rdf:Property",
+      "rdfs:label": "Trade Value",
+      "rdfs:comment": "The value of a trade.",
+      "rdfs:range": "xsd:integer"
+    }
+    // More classes and properties specific to DEX concepts can be added here
+  ]
+}

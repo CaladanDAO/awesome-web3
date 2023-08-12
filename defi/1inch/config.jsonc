@@ -1,0 +1,240 @@
+{
+    "name": "defi_1inch",
+    "names": {
+        "0x0000000000004946c0e9f43f4dee607b0ef1fa1c": "1inch: CHI Token",
+        "0x111111111117dc0aa78b770fa6a738034120c302": "1INCH Token  (1INCH)",
+        "0x11111112542d85b3ef69ae05771c2dccff4faa26": "1inch: V3",
+        "0x111111125434b319222cdbf8c261674adb56f3ae": "1inch v2: Aggregation Router",
+        "0x1111111254eeb25477b68fb85ed929f73a960582": "1inch v5: Aggregation Router",
+        "0x1111111254fb6c44bac0bed2854e76f90643097d": "1inch v4: Aggregation Router",
+        "0x11111254369792b2ca5d084ab5eea397ca8fa48b": "1inch: Exchange 2",
+        "0x7951c7ef839e26f63da87a42c9a87986507f1c07": "GnosisSafe",
+        "0x84d99aa569d93a9ca187d83734c8c4a519c4e9b1": "1inch: Labs Resolver",
+        "0xe069cb01d06ba617bcdf789bf2ff0d5e5ca20c71": "1inch: Router 2"
+    },
+    "contracts": {
+        "1inch: CHI Token": {
+            "addresses": {
+                "1": "0x0000000000004946c0e9f43f4dee607b0ef1fa1c"
+            }
+        },
+        "1INCH Token  (1INCH)": {
+            "addresses": {
+                "1": "0x111111111117dc0aa78b770fa6a738034120c302"
+            }
+        },
+        "1inch: V3": {
+            "addresses": {
+                "1": "0x11111112542d85b3ef69ae05771c2dccff4faa26"
+            }
+        },
+        "1inch v2: Aggregation Router": {
+            "addresses": {
+                "1": "0x111111125434b319222cdbf8c261674adb56f3ae"
+            }
+        },
+        "1inch v5: Aggregation Router": {
+            "addresses": {
+                "1": "0x1111111254eeb25477b68fb85ed929f73a960582"
+            }
+        },
+        "1inch v4: Aggregation Router": {
+            "addresses": {
+                "1": "0x1111111254fb6c44bac0bed2854e76f90643097d"
+            }
+        },
+        "1inch: Exchange 2": {
+            "addresses": {
+                "1": "0x11111254369792b2ca5d084ab5eea397ca8fa48b"
+            }
+        },
+        "GnosisSafe": {
+            "addresses": {
+                "1": "0x7951c7ef839e26f63da87a42c9a87986507f1c07"
+            }
+        },
+        "1inch: Labs Resolver": {
+            "addresses": {
+                "1": "0x84d99aa569d93a9ca187d83734c8c4a519c4e9b1"
+            }
+        },
+        "1inch: Router 2": {
+            "addresses": {
+                "1": "0xe069cb01d06ba617bcdf789bf2ff0d5e5ca20c71"
+            }
+        }
+    },
+    "projectlogs": [
+        [
+            "OrderFilled(address,bytes32,uint256)",
+            917490
+        ],
+        [
+            "OrderCanceled(address,bytes32,uint256)",
+            144970
+        ],
+        [
+            "OrderFilledRFQ(bytes32,uint256)",
+            140770
+        ],
+        [
+            "Swapped(address,address,address,address,uint256,uint256)",
+            2510
+        ],
+        [
+            "ExecutionFromModuleSuccess(address)",
+            30
+        ],
+        [
+            "Swapped(address,address,address,uint256,uint256,uint256,uint256)",
+            20
+        ],
+        [
+            "History(address,address,address,uint256,uint256)",
+            20
+        ],
+        [
+            "SafeReceived(address,uint256)",
+            10
+        ]
+    ],
+    "projectcalls": [
+        [
+            "unoswap(address,uint256,uint256,uint256[])",
+            2527530
+        ],
+        [
+            "swap(address,(address,address,address,address,uint256,uint256,uint256),bytes,bytes)",
+            1773670
+        ],
+        [
+            "uniswapV3Swap(uint256,uint256,uint256[])",
+            642450
+        ],
+        [
+            "swap(address,(address,address,address,address,uint256,uint256,uint256,bytes),bytes)",
+            375490
+        ],
+        [
+            "unoswap(address,uint256,uint256,bytes32[])",
+            185590
+        ],
+        [
+            "cancelOrder((uint256,address,address,address,address,address,uint256,uint256,uint256,bytes))",
+            148270
+        ],
+        [
+            "uniswapV3SwapTo(address,uint256,uint256,uint256[])",
+            76610
+        ],
+        [
+            "unoswapTo(address,address,uint256,uint256,uint256[])",
+            59840
+        ],
+        [
+            "fillOrderRFQ((uint256,address,address,address,address,uint256,uint256),bytes,uint256)",
+            50370
+        ],
+        [
+            "unoswapToWithPermit(address,address,uint256,uint256,uint256[],bytes)",
+            18280
+        ],
+        [
+            "clipperSwap(address,address,address,uint256,uint256,uint256,bytes32,bytes32)",
+            17990
+        ],
+        [
+            "fillOrder((uint256,address,address,address,address,address,uint256,uint256,uint256,bytes),bytes,bytes,uint256,uint256,uint256)",
+            15030
+        ],
+        [
+            "fillOrderRFQToWithPermit((uint256,address,address,address,address,uint256,uint256),bytes,uint256,address,bytes)",
+            11240
+        ],
+        [
+            "uniswapV3SwapToWithPermit(address,address,uint256,uint256,uint256[],bytes)",
+            11170
+        ],
+        [
+            "fillOrderRFQCompact((uint256,address,address,address,address,uint256,uint256),bytes32,bytes32,uint256)",
+            7890
+        ],
+        [
+            "clipperSwapToWithPermit(address,address,address,address,uint256,uint256,uint256,bytes32,bytes32,bytes)",
+            3260
+        ],
+        [
+            "fillOrderRFQTo((uint256,address,address,address,address,uint256,uint256),bytes,uint256,address)",
+            2200
+        ],
+        [
+            "fillOrderTo((uint256,address,address,address,address,address,uint256,uint256,uint256,bytes),bytes,bytes,uint256,uint256,uint256,address)",
+            1370
+        ],
+        [
+            "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+            1020
+        ],
+        [
+            "clipperSwapTo(address,address,address,address,uint256,uint256,uint256,bytes32,bytes32)",
+            820
+        ],
+        [
+            "unoswapWithPermit(address,uint256,uint256,bytes32[],bytes)",
+            200
+        ],
+        [
+            "swap(address,address,uint256,uint256,uint256,address,address[],bytes,uint256[],uint256[])",
+            20
+        ],
+        [
+            "increaseAllowance(address,uint256)",
+            20
+        ],
+        [
+            "swapExactETHForTokens(uint256,address[],address,uint256)",
+            20
+        ],
+        [
+            "rescueFunds(address,uint256)",
+            10
+        ],
+        [
+            "transferOwnership(address)",
+            10
+        ],
+        [
+            "fillOrderToWithPermit((uint256,address,address,address,address,address,uint256,uint256,uint256,bytes),bytes,bytes,uint256,uint256,uint256,address,bytes)",
+            10
+        ],
+        [
+            "mint(uint256)",
+            10
+        ]
+    ],
+    "calls": [
+            "unoswap(address,uint256,uint256,uint256[])",
+            "swap(address,(address,address,address,address,uint256,uint256,uint256),bytes,bytes)",
+            "uniswapV3Swap(uint256,uint256,uint256[])",
+            "swap(address,(address,address,address,address,uint256,uint256,uint256,bytes),bytes)",
+            "unoswap(address,uint256,uint256,bytes32[])",
+            "cancelOrder((uint256,address,address,address,address,address,uint256,uint256,uint256,bytes))",
+            "uniswapV3SwapTo(address,uint256,uint256,uint256[])",
+            "unoswapTo(address,address,uint256,uint256,uint256[])",
+            "fillOrderRFQ((uint256,address,address,address,address,uint256,uint256),bytes,uint256)",
+            "unoswapToWithPermit(address,address,uint256,uint256,uint256[],bytes)",
+            "clipperSwap(address,address,address,uint256,uint256,uint256,bytes32,bytes32)",
+            "fillOrder((uint256,address,address,address,address,address,uint256,uint256,uint256,bytes),bytes,bytes,uint256,uint256,uint256)",
+            "fillOrderRFQToWithPermit((uint256,address,address,address,address,uint256,uint256),bytes,uint256,address,bytes)",
+            "uniswapV3SwapToWithPermit(address,address,uint256,uint256,uint256[],bytes)",
+            "fillOrderRFQCompact((uint256,address,address,address,address,uint256,uint256),bytes32,bytes32,uint256)",
+            "clipperSwapToWithPermit(address,address,address,address,uint256,uint256,uint256,bytes32,bytes32,bytes)",
+            "fillOrderRFQTo((uint256,address,address,address,address,uint256,uint256),bytes,uint256,address)",
+            "fillOrderTo((uint256,address,address,address,address,address,uint256,uint256,uint256,bytes),bytes,bytes,uint256,uint256,uint256,address)"
+    ],
+    "events": [
+            "OrderFilled(address,bytes32,uint256)",
+            "OrderCanceled(address,bytes32,uint256)",
+            "OrderFilledRFQ(bytes32,uint256)"
+    ]
+}

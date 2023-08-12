@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "@vocab": "http://example.com/ethereum-ontology/",
+    "eth": "http://caladandao.org/ethereum/",
+    "erc20": "http://caladandao.org/erc20/",
+    "cctp": "http://caladandao.org/cctp/",
+    "schema": "https://schema.org/"
+  },
+  "@type": "eth:Function",
+  "eth:inputs": [
+    {
+      "@type": "schema:MonetaryAmount",
+      "schema:currency": "ETH",
+      "schema:amount": 1.5,
+      "eth:name": "amount",
+      "eth:type": "uint256",
+      "schema:label": "Amount"
+    },
+    {
+      "@type": "cctp:Destination",
+      "eth:internalType": "uint32",
+      "eth:name": "destinationDomain",
+      "eth:type": "uint32",
+      "schema:label": "Destination Domain"
+    },
+    {
+      "@type": "cctp:MintRecipient",
+      "eth:internalType": "bytes32",
+      "eth:name": "mintRecipient",
+      "eth:type": "bytes32",
+      "schema:label": "Mint Recipient"
+    },
+    {
+      "@type": "erc20:Token",
+      "eth:internalType": "address",
+      "eth:name": "burnToken",
+      "eth:type": "address",
+      "schema:label": "Burn Token"
+    }
+  ],
+  "eth:name": "depositForBurn",
+  "eth:outputs": [
+    {
+      "@type": "eth:Nonce",
+      "eth:internalType": "uint64",
+      "eth:name": "_nonce",
+      "eth:type": "uint64",
+      "schema:label": "Nonce"
+    }
+  ],
+  "eth:stateMutability": "nonpayable",
+  "eth:type": "function"
+}
+
+
+
+
+
+{
+  "@context": {
+    "@vocab": "http://example.com/ontology/",
+    "allo": "http://caladandao.org/allocation/",
+    "cctp": "http://caladandao.org/cctp/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "allo:projectID",
+      "@type": "rdf:Property",
+      "rdfs:label": "Project ID",
+      "rdfs:comment": "Represents the ID of a project in the allocation system."
+    },
+    {
+      "@id": "allo:projectOwner",
+      "@type": "rdf:Property",
+      "rdfs:label": "Project Owner",
+      "rdfs:comment": "Represents the owner of a project in the allocation system."
+    },
+    {
+      "@id": "cctp:MintRecipient",
+      "@type": "rdf:Class",
+      "rdfs:label": "Mint Recipient",
+      "rdfs:comment": "Represents a recipient for minting in the Cctp namespace."
+    },
+    {
+      "@id": "cctp:Destination",
+      "@type": "rdf:Class",
+      "rdfs:label": "Destination",
+      "rdfs:comment": "Represents a destination in the Cctp namespace."
+    }
+  ]
+}

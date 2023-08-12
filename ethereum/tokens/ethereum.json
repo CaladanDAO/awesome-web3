@@ -1,0 +1,150 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "eth": "http://example.com/ethereum/"
+    "@vocab": "http://caladandao.org/ethereum/",
+    "schema": "https://schema.org/"
+  },
+  "@graph": [
+    {
+      "@id": "eth:Transaction",
+      "@type": "Class",
+      "rdfs:label": "Ethereum Transaction",
+      "rdfs:comment": "Represents an Ethereum transaction on the blockchain."
+    },
+    {
+      "@id": "eth:sender",
+      "@type": "Property",
+      "rdfs:label": "Sender",
+      "rdfs:comment": "Represents the sender of an Ethereum transaction."
+    },
+    {
+      "@id": "eth:contract_address",
+      "@type": "Property",
+      "rdfs:label": "Contract Address",
+      "rdfs:comment": "Represents the contract address involved in an Ethereum transaction."
+    },
+    {
+  "@id": "eth:usdValue",
+  "@type": "schema:Property",
+  "schema:label": "USD Value",
+  "schema:rangeIncludes": {
+    "@id": "schema:MonetaryAmount"
+  }
+    }
+      ]
+}
+
+
+
+{
+  "@context": {
+    "@vocab": "http://example.com/ethereum-ontology/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "schema:EthereumTransaction",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Ethereum Transaction",
+      "rdfs:comment": "Represents an Ethereum transaction."
+    },
+    {
+      "@id": "schema:fromAddress",
+      "@type": "rdf:Property",
+      "rdfs:label": "From Address",
+      "rdfs:comment": "The sender's Ethereum address."
+    },
+    {
+      "@id": "schema:toAddress",
+      "@type": "rdf:Property",
+      "rdfs:label": "To Address",
+      "rdfs:comment": "The recipient's Ethereum address."
+    },
+    {
+      "@id": "schema:blockNumber",
+      "@type": "rdf:Property",
+      "rdfs:label": "Block Number",
+      "rdfs:comment": "The block number in which the transaction was included.",
+      "rdfs:range": "xsd:integer"
+    },
+    {
+      "@id": "schema:timestamp",
+      "@type": "rdf:Property",
+      "rdfs:label": "Timestamp",
+      "rdfs:comment": "The timestamp when the transaction occurred.",
+      "rdfs:range": "xsd:dateTime"
+    },
+    {
+      "@id": "schema:input",
+      "@type": "rdf:Property",
+      "rdfs:label": "Input Data",
+      "rdfs:comment": "The input data of the transaction."
+    },
+    {
+      "@id": "schema:value",
+      "@type": "rdf:Property",
+      "rdfs:label": "Value",
+      "rdfs:comment": "The value (in Wei) sent with the transaction.",
+      "rdfs:range": "xsd:integer"
+    }
+  ]
+}
+
+
+
+{
+    "@context": {
+	"@vocab": "http://example.com/ethereum-ontology/",
+	"xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+	{
+	    "@id": "schema:EthereumTransaction",
+	    "@type": "rdfs:Class",
+	    "rdfs:label": "Ethereum Transaction",
+	    "rdfs:comment": "Represents an Ethereum transaction."
+	},
+	{
+	    "@id": "schema:fromAddress",
+	    "@type": "rdf:Property",
+	    "rdfs:label": "From Address",
+	    "rdfs:comment": "The sender's Ethereum address."
+	},
+	{
+	    "@id": "schema:toAddress",
+	    "@type": "rdf:Property",
+	    "rdfs:label": "To Address",
+	    "rdfs:comment": "The recipient's Ethereum address."
+	},
+	{
+	    "@id": "schema:blockNumber",
+	    "@type": "rdf:Property",
+	    "rdfs:label": "Block Number",
+	    "rdfs:comment": "The block number in which the transaction was included.",
+	    "rdfs:range": "xsd:integer"
+	},
+	{
+	    "@id": "schema:timestamp",
+	    "@type": "rdf:Property",
+	    "rdfs:label": "Timestamp",
+	    "rdfs:comment": "The timestamp when the transaction occurred.",
+	    "rdfs:range": "xsd:dateTime"
+	},
+	{
+	    "@id": "schema:input",
+	    "@type": "rdf:Property",
+	    "rdfs:label": "Input Data",
+	    "rdfs:comment": "The input data of the transaction.",
+	    "rdfs:range": "xsd:hexBinary"
+	},
+	{
+	    "@id": "schema:value",
+	    "@type": "rdf:Property",
+	    "rdfs:label": "Value",
+	    "rdfs:comment": "The value (in Wei) sent with the transaction.",
+	    "rdfs:range": "xsd:integer"
+	}
+    ]
+}
+~

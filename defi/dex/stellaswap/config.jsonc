@@ -1,0 +1,22 @@
+{
+  "name": "defi_stellaswap",
+  "url": "https://moonscan.io/tokens/label/stellaswap",
+  "initialAddresses": [],
+  "names": {
+    "0x68a384d826d3678f78bb9fb1533c7e9577dacc0e": "StellaSwapV2Factory",
+    "0xc318d4d727137b0c801524e7b42314f975125a92": "StellaSwapV2Pair"
+    //"0xd0a01ec574d1fc6652edf79cb2f880fd47d34ab1": "StellaSwapV2Router02"
+  },
+  "StellaSwapV2Factory": {
+      "address": "0x68a384d826d3678f78bb9fb1533c7e9577dacc0e"
+  },
+  "StellaSwapV2Pair": {
+      // select Lower(pool) from awesome-web3.evm_dev.StellaSwapV2Factory_event_PairCreated
+      "factory": "StellaSwapV2Factory",
+      "created": "pair",
+      "creationEvent": "PairCreated"
+  }
+}
+
+
+

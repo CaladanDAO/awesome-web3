@@ -1,0 +1,139 @@
+{
+    "name": "ethereum_starknet",
+    "names": {
+        "0x0437465dfb5b79726e35f08559b0cbea55bb585c": "DAI Bridge",
+        "0x283751a21eafbfcd52297820d27c1f1963d9b5b4": "StarknetERC20Bridge",
+        "0x2c169dfe5fbba12957bdd0ba47d9cedbfe260ca7": "StarkNet: Operator",
+        "0x659a00c33263d9254fed382de81349426c795bb6": "StarkNet: StarkGate DAI Bridge",
+        "0x96375087b2f6efc59e5e0dd5111b4d090ebfdd8b": "StarkNet: Memory Page Fact Registry",
+        "0xae0ee0a63a2ce6baeeffe56e7714fb4efe48d419": "StarknetEthBridge",
+        "0xbb3400f107804dfb482565ff1ec8d8ae66747605": "StarknetERC20Bridge2",
+        "0xc662c410c0ecf747543f5ba90660f6abebd9c8c4": "Starknet",
+        "0xf6080d9fbeebcd44d89affbfd42f098cbff92816": "StarknetERC20Bridge3"
+    },
+    "contracts": {
+        "DAI Bridge": {
+            "addresses": {
+                "1": "0x0437465dfb5b79726e35f08559b0cbea55bb585c"
+            }
+        },
+        "StarknetERC20Bridge": {
+            "addresses": {
+                "1": "0x283751a21eafbfcd52297820d27c1f1963d9b5b4"
+            }
+        },
+        "StarkNet: Operator": {
+            "addresses": {
+                "1": "0x2c169dfe5fbba12957bdd0ba47d9cedbfe260ca7"
+            }
+        },
+        "StarkNet: StarkGate DAI Bridge": {
+            "addresses": {
+                "1": "0x659a00c33263d9254fed382de81349426c795bb6"
+            }
+        },
+        "StarkNet: Memory Page Fact Registry": {
+            "addresses": {
+                "1": "0x96375087b2f6efc59e5e0dd5111b4d090ebfdd8b"
+            }
+        },
+        "StarknetEthBridge": {
+            "addresses": {
+                "1": "0xae0ee0a63a2ce6baeeffe56e7714fb4efe48d419"
+            }
+        },
+        "StarknetERC20Bridge2": {
+            "addresses": {
+                "1": "0xbb3400f107804dfb482565ff1ec8d8ae66747605"
+            }
+        },
+        "Starknet": {
+            "addresses": {
+                "1": "0xc662c410c0ecf747543f5ba90660f6abebd9c8c4"
+            }
+        },
+        "StarknetERC20Bridge3": {
+            "addresses": {
+                "1": "0xf6080d9fbeebcd44d89affbfd42f098cbff92816"
+            }
+        }
+    },
+    "projectlogs": [
+        [
+            "LogMessageToL2(address,uint256,uint256,uint256[],uint256,uint256)",
+            2110167
+        ],
+        [
+            "LogDeposit(address,uint256,uint256,uint256,uint256)",
+            2098926
+        ],
+        [
+            "ConsumedMessageToL2(address,uint256,uint256,uint256[],uint256)",
+            2095488
+        ],
+        [
+            "LogStateTransitionFact(bytes32)",
+            620163
+        ],
+        [
+            "LogStateUpdate(uint256,int256,uint256)",
+            620163
+        ],
+        [
+            "LogMessageToL1(uint256,address,uint256[])",
+            415890
+        ],
+        [
+            "ConsumedMessageToL1(uint256,address,uint256[])",
+            339354
+        ],
+        [
+            "LogWithdrawal(address,uint256)",
+            328797
+        ],
+        [
+            "MessageToL2CancellationStarted(address,uint256,uint256,uint256[],uint256)",
+            9
+        ],
+        [
+            "MessageToL2Canceled(address,uint256,uint256,uint256[],uint256)",
+            9
+        ],
+        [
+            "ProgramHashChanged(address,uint256,uint256)",
+            9
+        ]
+    ],
+    "projectcalls": [
+        [
+            "deposit(uint256,uint256)",
+            2100096
+        ],
+        [
+            "updateState(uint256[],uint256,uint256)",
+            620163
+        ],
+        [
+            "withdraw(uint256,address)",
+            212724
+        ],
+        [
+            "deposit(uint256)",
+            2160
+        ],
+        [
+            "withdraw(uint256)",
+            126
+        ],
+        [
+            "sendMessageToL2(uint256,uint256,uint256[])",
+            9
+        ],
+        [
+            "requestL2Transaction(address,uint256,bytes,uint256,uint256,bytes[],address)",
+            9
+        ]
+    ],
+    "calls": [],
+    "events": []
+}

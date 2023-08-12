@@ -1,0 +1,318 @@
+{
+  "name": "defi_uniswap",
+  "names": {
+    "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f": "UniswapV2Factory",
+    "0x1f98431c8ad98523631ae4a59f267346ea31f984": "UniswapV3Factory",
+     // "0xc36442b4a4522e871399cd717abdd847ab11fe88": "NonfungiblePositionManager",
+    "0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852": "UniswapV2Pair",
+    "0xcbcdf9626bc03e24f779434178a73a0b4bad62ed": "UniswapV3Pool",
+    "0xf164fc0ec4e93095b804a4795bbe1e041497b92a": "UniswapV2Router01",
+    "0x7a250d5630b4cf539739df2c5dacb4c659f2488d": "UniswapV2Router02",
+    "0xef1c6e67703c7bd7107eed8303fbe6ec2554bf6b": "UniversalRouter",
+    "0x3fc91a3afd70395cd496c647d5a6cc9d4b2b7fad": "UniversalRouterV1_2"
+  },
+  "UniswapV2Factory": {
+      "addresses": {
+         "1": "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f"
+       }
+  },
+  "UniswapV2Router01": {
+      "addresses": {
+         "1": "0xf164fc0ec4e93095b804a4795bbe1e041497b92a"
+       }
+  },
+  "UniswapV2Router02": {
+      "addresses": {
+         "1": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d"
+       }
+  },
+  "UniswapV3Factory": {
+      "addresses": {
+         "1": "0x1f98431c8ad98523631ae4a59f267346ea31f984"
+       }
+  },
+  "UniversalRouter": {
+      "addresses": {
+         "1": "0xef1c6e67703c7bd7107eed8303fbe6ec2554bf6b"
+       }
+  },
+  "UniversalRouterV1_2": {
+      "addresses": {
+         "1": "0x3fc91a3afd70395cd496c647d5a6cc9d4b2b7fad"
+       }
+  },
+  "UniswapV2Pair": {
+      "factory": true,
+      "event_factory": ["UniswapV2Factory"],
+      "call_factory": ["UniswapV2Router01", "UniswapV2Router02"]
+  },
+  "UniswapV3Pool": {
+      "factory": "true",
+      "event_factory": ["UniswapV3Factory"],
+      "call_factory": ["UniversalRouter", "UniversalRouterV1_2"]
+  },
+  "projectlogs": [
+      [
+          "Sync(uint112,uint112)",
+          1831080
+      ],
+      [
+          "Swap(address,uint256,uint256,uint256,uint256,address)",
+          1829040
+      ],
+      [
+          "PairCreated(address,address,address,uint256)",
+          535020
+      ],
+      [
+          "Swap(address,address,int256,int256,uint160,uint128,int24)",
+          144240
+      ],
+      [
+          "DelegateChanged(address,address,address)",
+          33630
+      ],
+      [
+          "DelegateVotesChanged(address,uint256,uint256)",
+          29820
+      ],
+      [
+          "PoolCreated(address,address,uint24,int24,address)",
+          28215
+      ],
+      [
+          "Burn(address,int24,int24,uint128,uint256,uint256)",
+          14430
+      ],
+      [
+          "Collect(address,address,int24,int24,uint128,uint128)",
+          13650
+      ],
+      [
+          "Mint(address,address,int24,int24,uint128,uint256,uint256)",
+          9435
+      ],
+      [
+          "Claimed(uint256,address,uint256)",
+          6780
+      ],
+      [
+          "Mint(address,uint256,uint256)",
+          3645
+      ],
+      [
+          "Burn(address,uint256,uint256,address)",
+          825
+      ],
+      [
+          "ExecutionSuccess(bytes32,uint256)",
+          240
+      ],
+      [
+          "CancelTransaction(bytes32,address,uint256,string,bytes,uint256)",
+          120
+      ],
+      [
+          "ExecuteTransaction(bytes32,address,uint256,string,bytes,uint256)",
+          15
+      ],
+      [
+          "QueueTransaction(bytes32,address,uint256,string,bytes,uint256)",
+          15
+      ]
+  ],
+  "projectcalls": [
+      [
+          "swapExactETHForTokensSupportingFeeOnTransferTokens(uint256,address[],address,uint256)",
+          20773050
+      ],
+      [
+          "swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+          19022895
+      ],
+      [
+          "swapETHForExactTokens(uint256,address[],address,uint256)",
+          4846800
+      ],
+      [
+          "swapExactETHForTokens(uint256,address[],address,uint256)",
+          4730865
+      ],
+      [
+          "swapExactTokensForETH(uint256,uint256,address[],address,uint256)",
+          1420035
+      ],
+      [
+          "swapExactTokensForTokens(uint256,uint256,address[],address,uint256)",
+          1061100
+      ],
+      [
+          "swapExactTokensForTokensSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+          803595
+      ],
+      [
+          "addLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+          513525
+      ],
+      [
+          "swapTokensForExactTokens(uint256,uint256,address[],address,uint256)",
+          498405
+      ],
+      [
+          "removeLiquidityETHWithPermit(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+          297075
+      ],
+      [
+          "removeLiquidityWithPermit(address,address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+          159810
+      ],
+      [
+          "removeLiquidityETHWithPermitSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+          142875
+      ],
+      [
+          "swapTokensForExactETH(uint256,uint256,address[],address,uint256)",
+          89490
+      ],
+      [
+          "addLiquidity(address,address,uint256,uint256,uint256,uint256,address,uint256)",
+          49455
+      ],
+      [
+          "removeLiquidity(address,address,uint256,uint256,uint256,address,uint256)",
+          40305
+      ],
+      [
+          "delegate(address)",
+          16680
+      ],
+      [
+          "removeLiquidityETHSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256)",
+          15525
+      ],
+      [
+          "removeLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+          12630
+      ],
+      [
+          "createPair(address,address)",
+          3660
+      ],
+      [
+          "claim(uint256,address,uint256,bytes32[])",
+          1695
+      ],
+      [
+          "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+          1230
+      ],
+      [
+          "execute(bytes,bytes[],uint256)",
+          420
+      ],
+      [
+          "mint(uint256,bytes)",
+          285
+      ],
+      [
+          "execTransaction(address,uint256,bytes,uint8,uint256,uint256,uint256,address,address,bytes)",
+          240
+      ],
+      [
+          "delegateBySig(address,uint256,uint256,uint8,bytes32,bytes32)",
+          105
+      ],
+      [
+          "execute(address)",
+          90
+      ],
+      [
+          "swapExactEthForTokens(uint256,address[],address,uint256)",
+          75
+      ],
+      [
+          "createPool(address,address,uint24)",
+          75
+      ],
+      [
+          "multicall(uint256,bytes[])",
+          60
+      ],
+      [
+          "sellToUniswap(address[],uint256,uint256,bool)",
+          60
+      ],
+      [
+          "swap(uint256,uint256,address,bytes)",
+          30
+      ],
+      [
+          "exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160))",
+          30
+      ],
+      [
+          "getAmountOut(uint256,uint256,uint256)",
+          30
+      ],
+      [
+          "swap((address,uint256,bytes))",
+          30
+      ],
+      [
+          "claim()",
+          15
+      ],
+      [
+          "exactInputSingle((address,address,uint24,address,uint256,uint256,uint160))",
+          15
+      ],
+      [
+          "exactInput((bytes,address,uint256,uint256,uint256))",
+          15
+      ]
+  ],
+  "calls": [
+          "swapExactETHForTokensSupportingFeeOnTransferTokens(uint256,address[],address,uint256)",
+          "swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+          "swapETHForExactTokens(uint256,address[],address,uint256)",
+          "swapExactETHForTokens(uint256,address[],address,uint256)",
+          "swapExactTokensForETH(uint256,uint256,address[],address,uint256)",
+          "swapExactTokensForTokens(uint256,uint256,address[],address,uint256)",
+          "swapExactTokensForTokensSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+          "addLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+          "swapTokensForExactTokens(uint256,uint256,address[],address,uint256)",
+          "removeLiquidityETHWithPermit(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+          "removeLiquidityWithPermit(address,address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+          "removeLiquidityETHWithPermitSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+          "swapTokensForExactETH(uint256,uint256,address[],address,uint256)",
+          "addLiquidity(address,address,uint256,uint256,uint256,uint256,address,uint256)",
+          "removeLiquidity(address,address,uint256,uint256,uint256,address,uint256)",
+          "delegate(address)",
+          "removeLiquidityETHSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256)",
+          "removeLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+          "createPair(address,address)",
+          "claim(uint256,address,uint256,bytes32[])",
+          "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+          "execute(bytes,bytes[],uint256)",
+        // Uniswapx
+        "reactorCallback(((address,address,uint256,uint256,address,bytes),(address,uint256,uint256),(address,uint256,address)[],bytes,bytes32)[],bytes)",
+        "reactorCallback(((address,address,uint256,uint256,address,bytes),(address,uint256,uint256),(address,uint256,address)[],bytes,bytes32)[],address,bytes)"
+  ],
+  "events": [
+          "Sync(uint112,uint112)",
+          "Swap(address,uint256,uint256,uint256,uint256,address)",
+          "PairCreated(address,address,address,uint256)",
+          "Swap(address,address,int256,int256,uint160,uint128,int24)",
+          "DelegateChanged(address,address,address)",
+          "DelegateVotesChanged(address,uint256,uint256)",
+          "PoolCreated(address,address,uint24,int24,address)",
+          "Burn(address,int24,int24,uint128,uint256,uint256)",
+          "Collect(address,address,int24,int24,uint128,uint128)",
+          "Mint(address,address,int24,int24,uint128,uint256,uint256)",
+          "Claimed(uint256,address,uint256)",
+          "Mint(address,uint256,uint256)",
+          "Burn(address,uint256,uint256,address)",
+          // Uniswapx
+          "Fill(bytes32,address,address,uint256)"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "eth": "http://caladandao.org/ethereum/",
+    "swapv2": "http://caladandao.org/dex/swapv2/"
+  },
+  "@type": "SwapEvent",
+  "name": "Swap",
+  "inputs": [
+    {
+      "@type": "eth:sender",
+      "indexed": true,
+      "internalType": "address",
+      "name": "sender",
+      "type": "address",
+      "SPELL": "dex.trades.taker"
+    },
+    {
+      "@type": "swapv2:token0",
+      "indexed": false,
+      "internalType": "uint256",
+      "name": "amount0In",
+      "type": "uint256",
+      "SPELL": "dex.trades.token0AmountSoldRaw"
+    },
+    {
+      "@type": "swapv2:token1",
+      "indexed": false,
+      "internalType": "uint256",
+      "name": "amount1In",
+      "type": "uint256",
+      "SPELL": "dex.trades.token1AmountSoldRaw"
+    },
+    {
+      "@type": "swapv2:token0",
+      "indexed": false,
+      "internalType": "uint256",
+      "name": "amount0Out",
+      "type": "uint256",
+      "SPELL": "dex.trades.token0AmountBoughtRaw"
+    },
+    {
+      "@type": "swapv2:token1",
+      "indexed": false,
+      "internalType": "uint256",
+      "name": "amount1Out",
+      "type": "uint256",
+      "SPELL": "dex.trades.token1AmountBoughtRaw"
+    },
+    {
+      "@type": "eth:contract_address",
+      "indexed": true,
+      "internalType": "address",
+      "name": "to",
+      "type": "address",
+      "SPELL": "dex.trades.maker"
+    }
+  ],
+  "type": "Event",
+  "web3semantics": {
+    "web3.eth.dex.swap.price_ratio": {
+      "amount0": ["amount0In", "amount0Out"],
+      "amount1": ["amount1In", "amount1Out"]
+    }
+  }
+}

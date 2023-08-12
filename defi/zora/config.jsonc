@@ -1,0 +1,107 @@
+{
+    "name": "defi_zora",
+    "names": {
+        "0xabefbc9fd2f806065b4f3c237d4b59d9a97bcac7": "Zora: Media",
+        "0xe468ce99444174bd3bbbed09209577d25d1ad673": "Zora: Auction House",
+        "0xe5bfab544eca83849c53464f85b7164375bdaac1": "Zora: Market"
+    },
+    "contracts": {
+        "Zora: Media": {
+            "addresses": {
+                "1": "0xabefbc9fd2f806065b4f3c237d4b59d9a97bcac7"
+            }
+        },
+        "Zora: Auction House": {
+            "addresses": {
+                "1": "0xe468ce99444174bd3bbbed09209577d25d1ad673"
+            }
+        },
+        "Zora: Market": {
+            "addresses": {
+                "1": "0xe5bfab544eca83849c53464f85b7164375bdaac1"
+            }
+        }
+    },
+    "projectlogs": [
+        [
+            "AuctionCanceled(uint256,uint256,address,address)",
+            573
+        ],
+        [
+            "AuctionApprovalUpdated(uint256,uint256,address,bool)",
+            477
+        ],
+        [
+            "AuctionCreated(uint256,uint256,address,uint256,uint256,address,address,uint8,address)",
+            477
+        ],
+        [
+            "AskRemoved(uint256,(uint256,address))",
+            384
+        ],
+        [
+            "ApprovalForAll(address,address,bool)",
+            198
+        ],
+        [
+            "AuctionReservePriceUpdated(uint256,uint256,address,uint256)",
+            36
+        ],
+        [
+            "AuctionEnded(uint256,uint256,address,address,address,address,uint256,uint256,address)",
+            27
+        ],
+        [
+            "AuctionBid(uint256,uint256,address,address,uint256,bool,bool)",
+            24
+        ],
+        [
+            "BidFinalized(uint256,(uint256,address,address,address,(uint256)))",
+            9
+        ],
+        [
+            "BidShareUpdated(uint256,((uint256),(uint256),(uint256)))",
+            9
+        ],
+        [
+            "BidCreated(uint256,(uint256,address,address,address,(uint256)))",
+            9
+        ]
+    ],
+    "projectcalls": [
+        [
+            "setApprovalForAll(address,bool)",
+            198
+        ],
+        [
+            "cancelAuction(uint256)",
+            93
+        ],
+        [
+            "safeTransferFrom(address,address,uint256,bytes)",
+            66
+        ],
+        [
+            "setAuctionReservePrice(uint256,uint256)",
+            36
+        ],
+        [
+            "endAuction(uint256)",
+            24
+        ],
+        [
+            "createBid(uint256,uint256)",
+            21
+        ],
+        [
+            "safeTransferFrom(address,address,uint256)",
+            9
+        ],
+        [
+            "createAuction(uint256,address,uint256,uint256,address,uint8,address)",
+            3
+        ]
+    ],
+    "calls": [],
+    "events": []
+}

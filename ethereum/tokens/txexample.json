@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "@vocab": "http://example.com/ethereum-ontology/",
+    "eth": "http://caladandao.org/ethereum/",
+    "schema": "https://schema.org/"
+  },
+  "@type": "eth:Transaction",
+  "eth:from": "0x1234567890abcdef",
+  "eth:to": "0x9876543210fedcba",
+  "eth:value": {
+    "@type": "eth:EtherValue",
+    "eth:amount": 2.5,
+    "eth:unit": "ETH"
+  },
+  "eth:usdValue": {
+    "@type": "schema:MonetaryAmount",
+    "schema:currency": "USD",
+    "schema:amount": 7000
+  },
+  "eth:isCall": true,
+  "eth:logEvents": [
+    {
+      "@type": "eth:LogEvent",
+      "eth:eventName": "Transfer",
+      "eth:parameters": [
+        {
+          "@type": "eth:Parameter",
+          "eth:name": "from",
+          "eth:value": "0x1234567890abcdef"
+        },
+        {
+          "@type": "eth:Parameter",
+          "eth:name": "to",
+          "eth:value": "0x9876543210fedcba"
+        },
+        {
+          "@type": "eth:Parameter",
+          "eth:name": "value",
+          "eth:value": 2.5,
+          "eth:unit": "ETH"
+        }
+      ]
+    }
+  ]
+}

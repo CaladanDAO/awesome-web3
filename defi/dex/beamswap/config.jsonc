@@ -1,0 +1,21 @@
+{
+  "name": "defi_beamswap",
+  "initialAddresses": [
+  ],
+  "names": {
+    "0x985bca32293a7a496300a48081947321177a86fd": "BeamSwapFactory",
+    "0xab7724f8b8b4a90e1cc6fa8d78494f7bdb49b0dd": "BeamSwapPair"
+  },
+  "BeamSwapFactory": {
+    "address": "0x985bca32293a7a496300a48081947321177a86fd"
+  },
+  "BeamSwapPair": {
+      // select Lower(pair) from awesome-web3.evm_dev.BeamSwapFactory_event_PairCreated
+      "factory": "BeamSwapFactory",
+      "created": "pair",
+      "creationEvent": "PairCreated"
+  }
+}
+
+
+
