@@ -1,0 +1,3045 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/tbtc",
+    "@type": "caladan:Project",
+    "caladan:name": "tbtc",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection",
+                    "evm:chainID": 1,
+                    "evm:address": "0x41a1b40c1280883ea14c6a71e23bb66b83b3fb59"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token",
+                    "evm:chainID": 1,
+                    "evm:address": "0x8daebade922df735c38c80c7ebd708af50815faa"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: Vending Machine",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: Vending Machine",
+                    "evm:chainID": 1,
+                    "evm:address": "0xca563c455b7dda86d55310c71fbd6ed132c5c28c"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "payable": false,
+            "@id": "0x517d5955ce3c06eaf11438c03b573c37bc6bb235d0463c05b34c209023925f19",
+            "caladan:signature": "0(address,address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_priceFeed",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_relay",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3a854be74be62dd3ba5f0fdb7aa5b535683f999e90cda09ba75a2d99b2722523",
+            "caladan:signature": "AllowNewDepositsUpdated(bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "AllowNewDepositsUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "_allowNewDeposits",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc9e225c2db3e9f70966e6c0403de785bcda0172ec4e41111a6e8f4b85b1f30fb",
+            "caladan:signature": "CollateralizationThresholdsUpdateStarted(uint16,uint16,uint16,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "CollateralizationThresholdsUpdateStarted",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "_initialCollateralizedPercent",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "_undercollateralizedThresholdPercent",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "_severelyUndercollateralizedThresholdPercent",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x07ac9ce7dc4b2edb6435fb2255e9e867f357ef2052b982ce468442aa9d6c1d50",
+            "caladan:signature": "CollateralizationThresholdsUpdated(uint16,uint16,uint16)",
+            "@type": "caladan:Event",
+            "caladan:name": "CollateralizationThresholdsUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "_initialCollateralizedPercent",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "_undercollateralizedThresholdPercent",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "_severelyUndercollateralizedThresholdPercent",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6e7b45210b79c12cd1332babd8d86c0bbb9ca898a89ce0404f17064dbfba18c0",
+            "caladan:signature": "CourtesyCalled(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "CourtesyCalled",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_depositContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x822b3073be62c5c7f143c2dcd71ee266434ee935d90a1eec3be34710ac8ec1a2",
+            "caladan:signature": "Created(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Created",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_depositContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_keepAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5e4bd1f6e413d39e172d96a88ee6b1b2ba9e1a6207e2ca34fa8c3ccd152ff21a",
+            "caladan:signature": "EthBtcPriceFeedAdded(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "EthBtcPriceFeedAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_priceFeed",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5a3d3d9197f5c60c16de28887dccf83284a4fd034b930272637c83307b4fffe7",
+            "caladan:signature": "EthBtcPriceFeedAdditionStarted(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "EthBtcPriceFeedAdditionStarted",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_priceFeed",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x07f0eaafadb9abb1d28da85d4b4c74f1939fd61b535c7f5ab501f618f07e76ee",
+            "caladan:signature": "ExitedCourtesyCall(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ExitedCourtesyCall",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_depositContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x1e61af503f1d7de21d5300094c18bf8700f82b2951a4d54dd2adda13f6b3da30",
+            "caladan:signature": "FraudDuringSetup(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "FraudDuringSetup",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_depositContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5af8184bef8e4b45eb9f6ed7734d04da38ced226495548f46e0c8ff8d7d9a524",
+            "caladan:signature": "Funded(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Funded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_depositContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xa6e9673b5d53b3fe3c62b6459720f9c2a1b129d4f69acb771404ba8681b6a930",
+            "caladan:signature": "FunderAbortRequested(address,bytes)",
+            "@type": "caladan:Event",
+            "caladan:name": "FunderAbortRequested",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_depositContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "_abortOutputScript",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x7f7d7327762d01d2c4a552ea0be2bc5a76264574a80aa78083e691a840e509f2",
+            "caladan:signature": "GotRedemptionSignature(address,bytes32,bytes32,bytes32,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "GotRedemptionSignature",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_depositContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "_digest",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "_r",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "_s",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xdc461af7d95f963ea23749952c5e95648f5f7c79116442e5a1a7010259e88548",
+            "caladan:signature": "KeepFactorySingleShotUpdateStarted(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "KeepFactorySingleShotUpdateStarted",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_factorySelector",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_ethBackedFactory",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x39b37f415e2f67e47284ea76be07eb83aea456a7f5457474f09e078d69a7c027",
+            "caladan:signature": "KeepFactorySingleShotUpdated(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "KeepFactorySingleShotUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_factorySelector",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_ethBackedFactory",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xa5ee7a2b0254fce91deed604506790ed7fa072d0b14cba4859c3bc8955b9caac",
+            "caladan:signature": "Liquidated(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Liquidated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_depositContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xffb1e2bce3c7a63d0cac5492540bd370e1156621adde36cd481262c2846a2b7b",
+            "caladan:signature": "LotSizesUpdateStarted(uint64[],uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "LotSizesUpdateStarted",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint64[]",
+                    "name": "_lotSizes",
+                    "type": "uint64[]",
+                    "@type": "uint64[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xa801e49d33e856d89d06e647753d9d9dda3d0b0520c4346290ada455a00cafcc",
+            "caladan:signature": "LotSizesUpdated(uint64[])",
+            "@type": "caladan:Event",
+            "caladan:name": "LotSizesUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint64[]",
+                    "name": "_lotSizes",
+                    "type": "uint64[]",
+                    "@type": "uint64[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "caladan:signature": "OwnershipTransferred(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnershipTransferred",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x44b7f176bcc739b54bd0800fe491cbdea19df7d4d6b19c281462e6b4fc504344",
+            "caladan:signature": "Redeemed(address,bytes32,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Redeemed",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_depositContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "_txid",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x7959c380174061a21a3ba80243a032ba9cd10dc8bd1736d7e835c94e97a35a98",
+            "caladan:signature": "RedemptionRequested(address,address,bytes32,uint256,bytes,uint256,bytes)",
+            "@type": "caladan:Event",
+            "caladan:name": "RedemptionRequested",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_depositContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_requester",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "_digest",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_utxoSize",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "_redeemerOutputScript",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_requestedFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "_outpoint",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8ee737ab16909c4e9d1b750814a4393c9f84ab5d3a29c08c313b783fc846ae33",
+            "caladan:signature": "RegisteredPubkey(address,bytes32,bytes32,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "RegisteredPubkey",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_depositContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "_signingGroupPubkeyX",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "_signingGroupPubkeyY",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8fd2cfb62a35fccc1ecef829f83a6c2f840b73dad49d3eaaa402909752086d4b",
+            "caladan:signature": "SetupFailed(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "SetupFailed",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_depositContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x38cb7049f0daf658ca989e9ef6b850ef11e3740ff07a0c16706042c39adf48fc",
+            "caladan:signature": "SignerFeeDivisorUpdateStarted(uint16,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "SignerFeeDivisorUpdateStarted",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "_signerFeeDivisor",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x236dec26d53c6a51390e98ed703106e132fd062b0e38b8a9cf8b4d13f47952c8",
+            "caladan:signature": "SignerFeeDivisorUpdated(uint16)",
+            "@type": "caladan:Event",
+            "caladan:name": "SignerFeeDivisorUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "_signerFeeDivisor",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xbef11c059eefba82a15aea8a3a89c86fd08d7711c88fa7daea2632a55488510c",
+            "caladan:signature": "StartedLiquidation(address,bool,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "StartedLiquidation",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_depositContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "_wasFraud",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x9ffb3862",
+            "caladan:signature": "approvedToLog(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "approvedToLog",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_caller",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xdde3fdd2",
+            "caladan:signature": "beginCollateralizationThresholdsUpdate(uint16,uint16,uint16)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "beginCollateralizationThresholdsUpdate",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint16",
+                    "name": "_initialCollateralizedPercent",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "_undercollateralizedThresholdPercent",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "_severelyUndercollateralizedThresholdPercent",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x07a3d659",
+            "caladan:signature": "beginEthBtcPriceFeedAddition(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "beginEthBtcPriceFeedAddition",
+            "caladan:inputs": [
+                {
+                    "internalType": "contract IMedianizer",
+                    "name": "_ethBtcPriceFeed",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xcb277dfe",
+            "caladan:signature": "beginKeepFactorySingleShotUpdate(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "beginKeepFactorySingleShotUpdate",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_factorySelector",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_ethBackedFactory",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x2b155e37",
+            "caladan:signature": "beginLotSizesUpdate(uint64[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "beginLotSizesUpdate",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint64[]",
+                    "name": "_lotSizes",
+                    "type": "uint64[]",
+                    "@type": "uint64[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x49b64730",
+            "caladan:signature": "beginSignerFeeDivisorUpdate(uint16)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "beginSignerFeeDivisorUpdate",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint16",
+                    "name": "_signerFeeDivisor",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x80f04b8c",
+            "caladan:signature": "emergencyPauseNewDeposits()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "emergencyPauseNewDeposits",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa6c1691c",
+            "caladan:signature": "fetchBitcoinPrice()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "fetchBitcoinPrice",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xdab70cb1",
+            "caladan:signature": "fetchRelayCurrentDifficulty()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "fetchRelayCurrentDifficulty",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x402b783d",
+            "caladan:signature": "fetchRelayPreviousDifficulty()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "fetchRelayPreviousDifficulty",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xde1e57d0",
+            "caladan:signature": "finalizeCollateralizationThresholdsUpdate()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "finalizeCollateralizationThresholdsUpdate",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xadc3ef70",
+            "caladan:signature": "finalizeEthBtcPriceFeedAddition()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "finalizeEthBtcPriceFeedAddition",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe9cfd4a3",
+            "caladan:signature": "finalizeKeepFactorySingleShotUpdate()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "finalizeKeepFactorySingleShotUpdate",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xcd3a9490",
+            "caladan:signature": "finalizeLotSizesUpdate()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "finalizeLotSizesUpdate",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x0ce0e700",
+            "caladan:signature": "finalizeSignerFeeDivisorUpdate()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "finalizeSignerFeeDivisorUpdate",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x0d7eb1c4",
+            "caladan:signature": "getAllowNewDeposits()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getAllowNewDeposits",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x086c9edd",
+            "caladan:signature": "getAllowedLotSizes()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getAllowedLotSizes",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint64[]",
+                    "name": "",
+                    "type": "uint64[]",
+                    "@type": "uint64[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xf2e72347",
+            "caladan:signature": "getGovernanceTimeDelay()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "getGovernanceTimeDelay",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x987ecea7",
+            "caladan:signature": "getInitialCollateralizedPercent()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getInitialCollateralizedPercent",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint16",
+                    "name": "",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x2d00f1ee",
+            "caladan:signature": "getNewDepositFeeEstimate()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getNewDepositFeeEstimate",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xae7f4a5f",
+            "caladan:signature": "getPriceFeedGovernanceTimeDelay()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getPriceFeedGovernanceTimeDelay",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xc074d550",
+            "caladan:signature": "getRemainingCollateralizationThresholdsUpdateTime()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getRemainingCollateralizationThresholdsUpdateTime",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x0af488f9",
+            "caladan:signature": "getRemainingEthBtcPriceFeedAdditionTime()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getRemainingEthBtcPriceFeedAdditionTime",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x191d2032",
+            "caladan:signature": "getRemainingKeepFactorySingleShotUpdateTime()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getRemainingKeepFactorySingleShotUpdateTime",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x3ee850bc",
+            "caladan:signature": "getRemainingLotSizesUpdateTime()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getRemainingLotSizesUpdateTime",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x013b0f30",
+            "caladan:signature": "getRemainingPauseTerm()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getRemainingPauseTerm",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb792a38e",
+            "caladan:signature": "getRemainingSignerFeeDivisorUpdateTime()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getRemainingSignerFeeDivisorUpdateTime",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x6f4fef62",
+            "caladan:signature": "getSeverelyUndercollateralizedThresholdPercent()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getSeverelyUndercollateralizedThresholdPercent",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint16",
+                    "name": "",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x60e98d59",
+            "caladan:signature": "getSignerFeeDivisor()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getSignerFeeDivisor",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint16",
+                    "name": "",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa2cd75da",
+            "caladan:signature": "getUndercollateralizedThresholdPercent()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getUndercollateralizedThresholdPercent",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint16",
+                    "name": "",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x1c52d90c",
+            "caladan:signature": "initialize(address,address,address,address,address,address,address,uint16,uint16)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "initialize",
+            "caladan:inputs": [
+                {
+                    "internalType": "contract IBondedECDSAKeepFactory",
+                    "name": "_defaultKeepFactory",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "contract DepositFactory",
+                    "name": "_depositFactory",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "_masterDepositAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "contract TBTCToken",
+                    "name": "_tbtcToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "contract TBTCDepositToken",
+                    "name": "_tbtcDepositToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "contract FeeRebateToken",
+                    "name": "_feeRebateToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "contract VendingMachine",
+                    "name": "_vendingMachine",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "_keepThreshold",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "_keepSize",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa28b79f1",
+            "caladan:signature": "isAllowedLotSize(uint64)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isAllowedLotSize",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint64",
+                    "name": "_lotSizeSatoshis",
+                    "type": "uint64",
+                    "@type": "uint64"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x8f32d59b",
+            "caladan:signature": "isOwner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isOwner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x22a147e6",
+            "caladan:signature": "logCourtesyCalled()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "logCourtesyCalled",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x282bfd38",
+            "caladan:signature": "logCreated(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "logCreated",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_keepAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x22e5724c",
+            "caladan:signature": "logExitedCourtesyCall()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "logExitedCourtesyCall",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe2c50ad8",
+            "caladan:signature": "logFraudDuringSetup()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "logFraudDuringSetup",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x8c736503",
+            "caladan:signature": "logFunded()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "logFunded",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xce2c07ce",
+            "caladan:signature": "logFunderRequestedAbort(bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "logFunderRequestedAbort",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "_abortOutputScript",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xf760621e",
+            "caladan:signature": "logGotRedemptionSignature(bytes32,bytes32,bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "logGotRedemptionSignature",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "_digest",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "_r",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "_s",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xc8fba243",
+            "caladan:signature": "logLiquidated()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "logLiquidated",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x6e1ba283",
+            "caladan:signature": "logRedeemed(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "logRedeemed",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "_txid",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x18e647dd",
+            "caladan:signature": "logRedemptionRequested(address,bytes32,uint256,bytes,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "logRedemptionRequested",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_requester",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "_digest",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_utxoSize",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_redeemerOutputScript",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_requestedFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_outpoint",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x869f9469",
+            "caladan:signature": "logRegisteredPubkey(bytes32,bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "logRegisteredPubkey",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "_signingGroupPubkeyX",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "_signingGroupPubkeyY",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xa831c816",
+            "caladan:signature": "logSetupFailed()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "logSetupFailed",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x3aac3467",
+            "caladan:signature": "logStartedLiquidation(bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "logStartedLiquidation",
+            "caladan:inputs": [
+                {
+                    "internalType": "bool",
+                    "name": "_wasFraud",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x8da5cb5b",
+            "caladan:signature": "owner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "owner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x741bef1a",
+            "caladan:signature": "priceFeed()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "priceFeed",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract ISatWeiPriceFeed",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb59589d1",
+            "caladan:signature": "relay()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "relay",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract IRelay",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x715018a6",
+            "caladan:signature": "renounceOwnership()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "renounceOwnership",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": true,
+            "@id": "0x54ff529e",
+            "caladan:signature": "requestNewKeep(uint256,uint256,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "requestNewKeep",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_m",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_n",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_bond",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_maxSecuredLifetime",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x7c33fc05",
+            "caladan:signature": "resumeNewDeposits()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "resumeNewDeposits",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xf2fde38b",
+            "caladan:signature": "transferOwnership(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferOwnership",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/KeepFactorySelection"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "caladan:signature": "0(address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_VendingMachine",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: Vending Machine"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "caladan:signature": "Approval(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Approval",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "caladan:signature": "Transfer(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Transfer",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xdd62ed3e",
+            "caladan:signature": "allowance(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "allowance",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x095ea7b3",
+            "caladan:signature": "approve(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approve",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xcae9ca51",
+            "caladan:signature": "approveAndCall(address,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approveAndCall",
+            "caladan:inputs": [
+                {
+                    "internalType": "contract ITokenRecipient",
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_extraData",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x70a08231",
+            "caladan:signature": "balanceOf(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "balanceOf",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x42966c68",
+            "caladan:signature": "burn(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "burn",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x79cc6790",
+            "caladan:signature": "burnFrom(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "burnFrom",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x313ce567",
+            "caladan:signature": "decimals()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "decimals",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xa457c2d7",
+            "caladan:signature": "decreaseAllowance(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "decreaseAllowance",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "subtractedValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x39509351",
+            "caladan:signature": "increaseAllowance(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "increaseAllowance",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "addedValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x40c10f19",
+            "caladan:signature": "mint(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "mint",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x06fdde03",
+            "caladan:signature": "name()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "name",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x95d89b41",
+            "caladan:signature": "symbol()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "symbol",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x18160ddd",
+            "caladan:signature": "totalSupply()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "totalSupply",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xa9059cbb",
+            "caladan:signature": "transfer(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transfer",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x23b872dd",
+            "caladan:signature": "transferFrom(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferFrom",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: TBTC Token"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa421d668",
+            "caladan:signature": "isQualified(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isQualified",
+            "caladan:inputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "_depositAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: Vending Machine"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x35205794",
+            "caladan:signature": "setExternalAddresses(address,address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setExternalAddresses",
+            "caladan:inputs": [
+                {
+                    "internalType": "contract TBTCToken",
+                    "name": "_tbtcToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "contract TBTCDepositToken",
+                    "name": "_tbtcDepositToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "contract FeeRebateToken",
+                    "name": "_feeRebateToken",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: Vending Machine"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x029d335c",
+            "caladan:signature": "tbtcToBtc(address,bytes8,bytes,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "tbtcToBtc",
+            "caladan:inputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "_depositAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes8",
+                    "name": "_outputValueBytes",
+                    "type": "bytes8",
+                    "@type": "bytes8"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_redeemerOutputScript",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "_finalRecipient",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: Vending Machine"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xac37d7ce",
+            "caladan:signature": "tbtcToTdt(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "tbtcToTdt",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_tdtId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: Vending Machine"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xba2238d0",
+            "caladan:signature": "tdtToTbtc(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "tdtToTbtc",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_tdtId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: Vending Machine"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xefa4b199",
+            "caladan:signature": "unqualifiedDepositToTbtc(address,bytes4,bytes,bytes,bytes4,uint8,bytes,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "unqualifiedDepositToTbtc",
+            "caladan:inputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "_depositAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes4",
+                    "name": "_txVersion",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_txInputVector",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_txOutputVector",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bytes4",
+                    "name": "_txLocktime",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "_fundingOutputIndex",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_merkleProof",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_txIndexInBlock",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_bitcoinHeaders",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/tbtc/tBTC: Vending Machine"
+                }
+            ]
+        }
+    ]
+}

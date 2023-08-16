@@ -1,0 +1,285 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/sorbet",
+    "@type": "caladan:Project",
+    "caladan:name": "sorbet",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract",
+                    "evm:chainID": 1,
+                    "evm:address": "0x57a7a432a159174d6c6e2004800a9ef5c13940b7"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract 2",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract 2",
+                    "evm:chainID": 1,
+                    "evm:address": "0x6f7a14bd931554683ed15dc92e25d046ed68ea68"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "@id": "0xf4cdf172cc7506b91d98e0359a5c279763d5b96961955aeb2ee09387c4f1d047",
+            "caladan:signature": "0(address,address,bytes)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "payable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "implementationAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "ownerAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract 2"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "caladan:signature": "OwnershipTransferred(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnershipTransferred",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract 2"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5570d70a002632a7b0b3c9304cc89efb62d8da9eca0dbd7752c83b7379068296",
+            "caladan:signature": "ProxyImplementationUpdated(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ProxyImplementationUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract 2"
+                }
+            ]
+        },
+        {
+            "@id": "0x8da5cb5b",
+            "caladan:signature": "owner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "owner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract 2"
+                }
+            ]
+        },
+        {
+            "@id": "0x01ffc9a7",
+            "caladan:signature": "supportsInterface(bytes4)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "supportsInterface",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "id",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract 2"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2fde38b",
+            "caladan:signature": "transferOwnership(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferOwnership",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract 2"
+                }
+            ]
+        },
+        {
+            "@id": "0x3659cfe6",
+            "caladan:signature": "upgradeTo(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "upgradeTo",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract 2"
+                }
+            ]
+        },
+        {
+            "@id": "0x4f1ef286",
+            "caladan:signature": "upgradeToAndCall(address,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "upgradeToAndCall",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorbet/Gelato Whitehat Contract 2"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,2986 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/mycelium",
+    "@type": "caladan:Project",
+    "caladan:name": "mycelium",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe",
+                    "evm:chainID": 1,
+                    "evm:address": "0x1c315ae20c758d8dc9b56415566c82f9085478a8"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe",
+                    "evm:chainID": 1,
+                    "evm:address": "0x95e8c5a56acc8064311d79946c7be87a1e90d17f"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO",
+                    "evm:chainID": 1,
+                    "evm:address": "0xa84918f3280d488eb3369cb713ec53ce386b6cba"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/mycelium/null",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/null",
+                    "evm:chainID": 42161,
+                    "evm:address": "0xc74fe4c715510ec2f8c61d70d397b32043f55abe"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "@id": "0x8d5004028f09180abc4210f60fbf14955ac50d24898f80bef2b1efe077e75bd6",
+            "caladan:signature": "0()",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x9465fa0c962cc76958e6373a993326400c1c94f8be2fe3a952adfa7f60b2ea26",
+            "caladan:signature": "AddedOwner(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AddedOwner",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf2a0eb156472d1440255b0d7c1e19cc07115d1051fe605b0dce69acfec884d9c",
+            "caladan:signature": "ApproveHash(bytes32,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ApproveHash",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "approvedHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5ac6c46c93c8d0e53714ba3b53db3e7c046da994313d7ed0d192028bc7c228b0",
+            "caladan:signature": "ChangedFallbackHandler(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ChangedFallbackHandler",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "handler",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x1151116914515bc0891ff9047a6cb32cf902546f83066499bcf8ba33d2353fa2",
+            "caladan:signature": "ChangedGuard(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ChangedGuard",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "guard",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x610f7ff2b304ae8903c3de74c60c6ab1f7d6226b3f52c5161905bb5ad4039c93",
+            "caladan:signature": "ChangedThreshold(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ChangedThreshold",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xaab4fa2b463f581b2b32cb3b7e3b704b9ce37cc209b5fb4d77e593ace4054276",
+            "caladan:signature": "DisabledModule(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "DisabledModule",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xecdf3a3effea5783a3c4c2140e677577666428d44ed9d474a0b3a4c9943f8440",
+            "caladan:signature": "EnabledModule(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "EnabledModule",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x23428b18acfb3ea64b08dc0c1d296ea9c09702c09083ca5272e64d115b687d23",
+            "caladan:signature": "ExecutionFailure(bytes32,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ExecutionFailure",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "txHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "payment",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xacd2c8702804128fdb0db2bb49f6d127dd0181c13fd45dbfe16de0930e2bd375",
+            "caladan:signature": "ExecutionFromModuleFailure(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ExecutionFromModuleFailure",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6895c13664aa4f67288b25d7a21d7aaa34916e355fb9b6fae0a139a9085becb8",
+            "caladan:signature": "ExecutionFromModuleSuccess(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ExecutionFromModuleSuccess",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x442e715f626346e8c54381002da614f62bee8d27386535b2521ec8540898556e",
+            "caladan:signature": "ExecutionSuccess(bytes32,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ExecutionSuccess",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "txHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "payment",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf8d49fc529812e9a7c5c50e69c20f0dccc0db8fa95c98bc58cc9a4f1c1299eaf",
+            "caladan:signature": "RemovedOwner(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "RemovedOwner",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3d0ce9bfc3ed7d6862dbb28b2dea94561fe714a1b4d019aa8af39730d1ad7c3d",
+            "caladan:signature": "SafeReceived(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "SafeReceived",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x141df868a6331af528e38c83b7aa03edc19be66e37ae67f9285bf4f8e3c6a1a8",
+            "caladan:signature": "SafeSetup(address,address[],uint256,address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SafeSetup",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "initiator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address[]",
+                    "name": "owners",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "initializer",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "fallbackHandler",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe7f4675038f4f6034dfcbbb24c4dc08e4ebf10eb9d257d3d02c0f38d122ac6e4",
+            "caladan:signature": "SignMsg(bytes32)",
+            "@type": "caladan:Event",
+            "caladan:name": "SignMsg",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "msgHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xffa1ad74",
+            "caladan:signature": "VERSION()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "VERSION",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x0d582f13",
+            "caladan:signature": "addOwnerWithThreshold(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addOwnerWithThreshold",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xd4d9bdcd",
+            "caladan:signature": "approveHash(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approveHash",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "hashToApprove",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x7d832974",
+            "caladan:signature": "approvedHashes(address,bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "approvedHashes",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x694e80c3",
+            "caladan:signature": "changeThreshold(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "changeThreshold",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x12fb68e0",
+            "caladan:signature": "checkNSignatures(bytes32,bytes,bytes,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "checkNSignatures",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "dataHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "signatures",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "requiredSignatures",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x934f3a11",
+            "caladan:signature": "checkSignatures(bytes32,bytes,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "checkSignatures",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "dataHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "signatures",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xe009cfde",
+            "caladan:signature": "disableModule(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "disableModule",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "prevModule",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xf698da25",
+            "caladan:signature": "domainSeparator()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "domainSeparator",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x610b5925",
+            "caladan:signature": "enableModule(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "enableModule",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xe86637db",
+            "caladan:signature": "encodeTransactionData(address,uint256,bytes,uint8,uint256,uint256,uint256,address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "encodeTransactionData",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "safeTxGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "baseGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "gasPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "gasToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "refundReceiver",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x6a761202",
+            "caladan:signature": "execTransaction(address,uint256,bytes,uint8,uint256,uint256,uint256,address,address,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "execTransaction",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "safeTxGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "baseGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "gasPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "gasToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "refundReceiver",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "signatures",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x468721a7",
+            "caladan:signature": "execTransactionFromModule(address,uint256,bytes,uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "execTransactionFromModule",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x5229073f",
+            "caladan:signature": "execTransactionFromModuleReturnData(address,uint256,bytes,uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "execTransactionFromModuleReturnData",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "returnData",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x3408e470",
+            "caladan:signature": "getChainId()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getChainId",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xcc2f8452",
+            "caladan:signature": "getModulesPaginated(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getModulesPaginated",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "start",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "pageSize",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "array",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "next",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xa0e67e2b",
+            "caladan:signature": "getOwners()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getOwners",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "",
+                    "type": "address[]",
+                    "@type": "address[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x5624b25b",
+            "caladan:signature": "getStorageAt(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getStorageAt",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "offset",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "length",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xe75235b8",
+            "caladan:signature": "getThreshold()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getThreshold",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xd8d11f78",
+            "caladan:signature": "getTransactionHash(address,uint256,bytes,uint8,uint256,uint256,uint256,address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getTransactionHash",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "safeTxGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "baseGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "gasPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "gasToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "refundReceiver",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x2d9ad53d",
+            "caladan:signature": "isModuleEnabled(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isModuleEnabled",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x2f54bf6e",
+            "caladan:signature": "isOwner(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isOwner",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xaffed0e0",
+            "caladan:signature": "nonce()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "nonce",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xf8dc5dd9",
+            "caladan:signature": "removeOwner(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeOwner",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "prevOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xc4ca3a9c",
+            "caladan:signature": "requiredTxGas(address,uint256,bytes,uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "requiredTxGas",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xf08a0323",
+            "caladan:signature": "setFallbackHandler(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setFallbackHandler",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "handler",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xe19a9dd9",
+            "caladan:signature": "setGuard(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setGuard",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "guard",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xb63e800d",
+            "caladan:signature": "setup(address[],uint256,address,bytes,address,address,uint256,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setup",
+            "caladan:inputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "_owners",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "address",
+                    "name": "fallbackHandler",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "paymentToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "payment",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "paymentReceiver",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x5ae6bd37",
+            "caladan:signature": "signedMessages(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "signedMessages",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xb4faba09",
+            "caladan:signature": "simulateAndRevert(address,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "simulateAndRevert",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "targetContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "calldataPayload",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xe318b52b",
+            "caladan:signature": "swapOwner(address,address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "swapOwner",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "prevOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "oldOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x25aefe339744b02677be7d24991ab04749261c6b558dab9b58805eed39dc114f",
+            "caladan:signature": "MultisigVote(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "MultisigVote",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc2c021f5d73c63c481d336fbbafec58f694fc45095f00b02d2deb8cca59afe07",
+            "caladan:signature": "ProposalCreated(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ProposalCreated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x712ae1383f79ac853f8d882153778e0260ef8f03b504e2866e0593e04d2b291f",
+            "caladan:signature": "ProposalExecuted(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ProposalExecuted",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe36f8b7448daff4a52e2945db0d1d7a436279cc1d527a45c27835dcbd27f336d",
+            "caladan:signature": "ProposalPassed(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ProposalPassed",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd92fba445edb3153b571e6df782d7a66fd0ce668519273670820ee3a86da0ef4",
+            "caladan:signature": "ProposalRejected(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ProposalRejected",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8921d9ed49fbcd5da840617d62bf35c34f4871caaf7bbfef6da589dd8c2c1f38",
+            "caladan:signature": "SetMultisig(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SetMultisig",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "multisig",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3470886733b6f191f41e7928daecec100b107dc41a0f85d4918075a8afdc6408",
+            "caladan:signature": "TargetExecuted(uint256,address,bytes)",
+            "@type": "caladan:Event",
+            "caladan:name": "TargetExecuted",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "returnData",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x61e53f356cd8ce9e4e59fd84b2bb543ffd495887d4017a5fe4f835c9b269ed02",
+            "caladan:signature": "UserStake(address,uint96)",
+            "@type": "caladan:Event",
+            "caladan:name": "UserStake",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint96",
+                    "name": "amount",
+                    "type": "uint96",
+                    "@type": "uint96"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xfa6aaa60927f4e3b6baae0fafba13254a6feaee5a6f6731f6ea314dc7267794d",
+            "caladan:signature": "UserVote(address,bool,uint256,uint96)",
+            "@type": "caladan:Event",
+            "caladan:name": "UserVote",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "voter",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "side",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint96",
+                    "name": "amount",
+                    "type": "uint96",
+                    "@type": "uint96"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x365fb1c64489007fb28325f54a1decf6c676c016af7d4b46371e1fe2f073a757",
+            "caladan:signature": "UserWithdraw(address,uint96)",
+            "@type": "caladan:Event",
+            "caladan:name": "UserWithdraw",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint96",
+                    "name": "amount",
+                    "type": "uint96",
+                    "@type": "uint96"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0xb25487ee",
+            "caladan:signature": "coolingOff()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "coolingOff",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint32",
+                    "name": "",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0xfe0d94c1",
+            "caladan:signature": "execute(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "execute",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0xe465fd96",
+            "caladan:signature": "getProposalURI(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getProposalURI",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x399080ec",
+            "caladan:signature": "getStaked(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getStaked",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint96",
+                    "name": "",
+                    "type": "uint96",
+                    "@type": "uint96"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x05268cff",
+            "caladan:signature": "govToken()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "govToken",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract IERC20",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0xa910ea26",
+            "caladan:signature": "initialize(address,uint32,uint32,uint32,uint32,uint32,uint96,uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "initialize",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_govToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint32",
+                    "name": "_maxProposalTargets",
+                    "type": "uint32",
+                    "@type": "uint32"
+                },
+                {
+                    "internalType": "uint32",
+                    "name": "_warmUp",
+                    "type": "uint32",
+                    "@type": "uint32"
+                },
+                {
+                    "internalType": "uint32",
+                    "name": "_coolingOff",
+                    "type": "uint32",
+                    "@type": "uint32"
+                },
+                {
+                    "internalType": "uint32",
+                    "name": "_proposalDuration",
+                    "type": "uint32",
+                    "@type": "uint32"
+                },
+                {
+                    "internalType": "uint32",
+                    "name": "_lockDuration",
+                    "type": "uint32",
+                    "@type": "uint32"
+                },
+                {
+                    "internalType": "uint96",
+                    "name": "_proposalThreshold",
+                    "type": "uint96",
+                    "@type": "uint96"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "_quorumDivisor",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x66630bac",
+            "caladan:signature": "initializeMultisig(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "initializeMultisig",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_multisig",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x04554443",
+            "caladan:signature": "lockDuration()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "lockDuration",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint32",
+                    "name": "",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0xcf5cffd5",
+            "caladan:signature": "maxProposalTargets()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "maxProposalTargets",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint32",
+                    "name": "",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x4783c35b",
+            "caladan:signature": "multisig()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "multisig",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x10585a52",
+            "caladan:signature": "multisigInitialized()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "multisigInitialized",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x44f3915e",
+            "caladan:signature": "multisigVoteAgainst(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "multisigVoteAgainst",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x9465bb33",
+            "caladan:signature": "multisigVoteFor(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "multisigVoteFor",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x06fdde03",
+            "caladan:signature": "name()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "name",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x30109962",
+            "caladan:signature": "proposalDuration()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "proposalDuration",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint32",
+                    "name": "",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0xb58131b0",
+            "caladan:signature": "proposalThreshold()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "proposalThreshold",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint96",
+                    "name": "",
+                    "type": "uint96",
+                    "@type": "uint96"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x013cf08b",
+            "caladan:signature": "proposals(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "proposals",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "proposer",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint96",
+                    "name": "yes",
+                    "type": "uint96",
+                    "@type": "uint96"
+                },
+                {
+                    "internalType": "uint96",
+                    "name": "no",
+                    "type": "uint96",
+                    "@type": "uint96"
+                },
+                {
+                    "internalType": "enum TracerMultisigDAO.ProposalState",
+                    "name": "state",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "startTime",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "expiryTime",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "passTime",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "allowMultisig",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "internalType": "string",
+                    "name": "proposalURI",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x2077945f",
+            "caladan:signature": "propose(address[],bytes[],bool,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "propose",
+            "caladan:inputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "targets",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "bytes[]",
+                    "name": "proposalData",
+                    "type": "bytes[]",
+                    "@type": "bytes[]"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "_allowMultisig",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_proposalURI",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x5e2f066f",
+            "caladan:signature": "quorumDivisor()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "quorumDivisor",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0xcc28fe48",
+            "caladan:signature": "setCoolingOff(uint32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setCoolingOff",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint32",
+                    "name": "newCoolingOff",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0xb09233c8",
+            "caladan:signature": "setLockDuration(uint32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setLockDuration",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint32",
+                    "name": "newLockDuration",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0xcc90dfbc",
+            "caladan:signature": "setMaxProposalTargets(uint32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setMaxProposalTargets",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint32",
+                    "name": "newMaxProposalTargets",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0xf3283fba",
+            "caladan:signature": "setMultisig(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setMultisig",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newMultisig",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x0c88b090",
+            "caladan:signature": "setProposalDuration(uint32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setProposalDuration",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint32",
+                    "name": "newProposalDuration",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x80ca42a1",
+            "caladan:signature": "setProposalThreshold(uint96)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setProposalThreshold",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint96",
+                    "name": "newThreshold",
+                    "type": "uint96",
+                    "@type": "uint96"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0xe57f9106",
+            "caladan:signature": "setQuorumDivisor(uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setQuorumDivisor",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "newQuorumDivisor",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x195f8588",
+            "caladan:signature": "setWarmUp(uint32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setWarmUp",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint32",
+                    "name": "newWarmup",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x61f129ad",
+            "caladan:signature": "stake(uint96)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "stake",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint96",
+                    "name": "amount",
+                    "type": "uint96",
+                    "@type": "uint96"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x9168ae72",
+            "caladan:signature": "stakers(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "stakers",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint96",
+                    "name": "stakedAmount",
+                    "type": "uint96",
+                    "@type": "uint96"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "lockedUntil",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x817b1cd2",
+            "caladan:signature": "totalStaked()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "totalStaked",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x69d80b1f",
+            "caladan:signature": "vote(uint256,bool,uint96)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "vote",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "userVote",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "internalType": "uint96",
+                    "name": "amount",
+                    "type": "uint96",
+                    "@type": "uint96"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0xce40e8eb",
+            "caladan:signature": "warmUp()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "warmUp",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint32",
+                    "name": "",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0xdee4dea0",
+            "caladan:signature": "withdraw(uint96)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdraw",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint96",
+                    "name": "amount",
+                    "type": "uint96",
+                    "@type": "uint96"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x44004cc1",
+            "caladan:signature": "withdrawERC20(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawERC20",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        },
+        {
+            "@id": "0x4782f779",
+            "caladan:signature": "withdrawETH(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawETH",
+            "caladan:inputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO"
+                }
+            ]
+        }
+    ]
+}

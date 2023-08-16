@@ -1,0 +1,26 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/radiant",
+    "@type": "caladan:Project",
+    "caladan:name": "radiant",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/radiant/Radiant: Old RDNT Token",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/radiant/Radiant: Old RDNT Token",
+                    "evm:chainID": 42161,
+                    "evm:address": "0x0c4681e6c0235179ec3d4f4fc4df3d14fdd96017"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": []
+}

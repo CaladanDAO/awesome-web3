@@ -1,29 +1,51 @@
 {
-  "name": "bridges_pgn",
-  "calls": ["depositETH(uint32,bytes)"],
-  "events": ["ETHBridgeInitiated(address,address,uint256,bytes)",
-  "ETHDepositInitiated(address,address,uint256,bytes)",
-  "OutputProposed(bytes32,uint256,uint256,uint256)",
-  "proposeL2Output(bytes32,uint256,bytes32,uint256)"],
-  // https://docs.publicgoods.network/network-and-contract-details
-  "names": {
-    "0x09d5dba52f0ee2c4a5e94fd5c802bd74ca9cad3e":"AddressManager",
-     //"0x0000000000000000000000000000000000000000":"BondManager",
-     //"0x0000000000000000000000000000000000000000":"CanonicalTransactionChain",
-     "0x97baf688e5d0465e149d1d5b497ca99392a6760e":"L1CrossDomainMessenger",
-     "0xd0204b9527c1ba7bd765fa5ccd9355d38338272b":"L1StandardBridge",
-     "0xa38d0c4e6319f9045f20318ba5f04cde94208608":"L2OutputOracle",
-     "0xb26fd985c5959bbb382bafdd0b879e149e48116c":"OptimismPortal"
-     //"0x0000000000000000000000000000000000000000":"StateCommitmentChain",
-  },
-  "L1StandardBridge": {
-     "addresses": {
-        "1": "L1StandardBridge"
-      }
-  },
-  "L2OutputOracle": {
-     "addresses": {
-        "1": "L2OutputOracle"
-      }
-  }
+    "name": "ethereum_publicgoods",
+    //https://docs.publicgoods.network/network-and-contract-details
+    "names": {
+        "0x09d5dba52f0ee2c4a5e94fd5c802bd74ca9cad3e": "AddressManager",
+        "0x97baf688e5d0465e149d1d5b497ca99392a6760e": "L1CrossDomainMessenger",
+        "0xa38d0c4e6319f9045f20318ba5f04cde94208608": "L2OutputOracle",
+        "0xb26fd985c5959bbb382bafdd0b879e149e48116c": "OptimismPortal",
+        "0xd0204b9527c1ba7bd765fa5ccd9355d38338272b": "L1StandardBridge"
+    },
+    "contracts": {
+        "AddressManager": {
+            "addresses": {
+                "1": "0x09d5dba52f0ee2c4a5e94fd5c802bd74ca9cad3e"
+            }
+        },
+        "L1CrossDomainMessenger": {
+            "addresses": {
+                "1": "0x97baf688e5d0465e149d1d5b497ca99392a6760e"
+            }
+        },
+        "L2OutputOracle": {
+            "addresses": {
+                "1": "0xa38d0c4e6319f9045f20318ba5f04cde94208608"
+            }
+        },
+        "OptimismPortal": {
+            "addresses": {
+                "1": "0xb26fd985c5959bbb382bafdd0b879e149e48116c"
+            }
+        },
+        "L1StandardBridge": {
+            "addresses": {
+                "1": "0xd0204b9527c1ba7bd765fa5ccd9355d38338272b"
+            }
+        }
+    },
+    "calls": [
+            "depositETH(uint32,bytes)",
+            "proposeL2Output(bytes32,uint256,bytes32,uint256)",
+            "depositERC20(address,address,uint256,uint32,bytes)"
+    ],
+    "events": [
+            "SentMessage(address,address,bytes,uint256,uint256)",
+            "SentMessageExtension1(address,uint256)",
+            "TransactionDeposited(address,address,uint256,bytes)",
+            "ETHDepositInitiated(address,address,uint256,bytes)",
+            "ETHBridgeInitiated(address,address,uint256,bytes)",
+            "OutputProposed(bytes32,uint256,uint256,uint256)"
+    ]
 }

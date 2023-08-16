@@ -1,0 +1,1669 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/aavegotchi",
+    "@type": "caladan:Project",
+    "caladan:name": "aavegotchi",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Aavegotchi GHST Token (PoS) (GHST)",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Aavegotchi GHST Token (PoS) (GHST)",
+                    "evm:chainID": 137,
+                    "evm:address": "0x385eeac5cb85a38a9a07a70c73e0a3271cfb54a7"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Aavegotchi: DAO",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Aavegotchi: DAO",
+                    "evm:chainID": 137,
+                    "evm:address": "0xb208f8bb431f580cc4b216826affb128cd1431ab"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent",
+                    "evm:chainID": 1,
+                    "evm:address": "0xfb76e9be55758d0042e003c1e46e186360f0627e"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault",
+                    "evm:chainID": 1,
+                    "evm:address": "0xffe6280ae4e864d9af836b562359fd828ece8020"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x007bb003",
+            "caladan:signature": "ADD_PROTECTED_TOKEN_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ADD_PROTECTED_TOKEN_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x01ffc9a7",
+            "caladan:signature": "supportsInterface(bytes4)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "supportsInterface",
+            "caladan:inputs": [
+                {
+                    "name": "_interfaceId",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x0803fac0",
+            "caladan:signature": "hasInitialized()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "hasInitialized",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x11a5e409",
+            "caladan:signature": "ERC1271_INTERFACE_ID()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ERC1271_INTERFACE_ID",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x150b7a02",
+            "caladan:signature": "onERC721Received(address,address,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "onERC721Received",
+            "caladan:inputs": [
+                {
+                    "name": "_operator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x1626ba7e",
+            "caladan:signature": "isValidSignature(bytes32,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isValidSignature",
+            "caladan:inputs": [
+                {
+                    "name": "_hash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "_signature",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x1ce30181",
+            "caladan:signature": "ERC1271_RETURN_INVALID_SIGNATURE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ERC1271_RETURN_INVALID_SIGNATURE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x206b60f9",
+            "caladan:signature": "TRANSFER_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "TRANSFER_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x20c13b0b",
+            "caladan:signature": "isValidSignature(bytes,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isValidSignature",
+            "caladan:inputs": [
+                {
+                    "name": "_data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "name": "_signature",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x26f06d24",
+            "caladan:signature": "getProtectedTokensLength()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getProtectedTokensLength",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x2914b9bd",
+            "caladan:signature": "getEVMScriptExecutor(bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getEVMScriptExecutor",
+            "caladan:inputs": [
+                {
+                    "name": "_script",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x32f0a3b5",
+            "caladan:signature": "getRecoveryVault()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getRecoveryVault",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x368c3c34",
+            "caladan:signature": "RUN_SCRIPT_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "RUN_SCRIPT_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x3e4eb756",
+            "caladan:signature": "SAFE_EXECUTE_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "SAFE_EXECUTE_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x42b2d066",
+            "caladan:signature": "REMOVE_PROTECTED_TOKEN_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "REMOVE_PROTECTED_TOKEN_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": true,
+            "@id": "0x47e7ef24",
+            "caladan:signature": "deposit(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "deposit",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x48a0c8dd",
+            "caladan:signature": "isDepositable()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isDepositable",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x4c7ec0b0",
+            "caladan:signature": "presignHash(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "presignHash",
+            "caladan:inputs": [
+                {
+                    "name": "_hash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x54842f14",
+            "caladan:signature": "DESIGNATE_SIGNER_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "DESIGNATE_SIGNER_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x578eb50b",
+            "caladan:signature": "removeProtectedToken(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeProtectedToken",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x5fa5e4e6",
+            "caladan:signature": "EXECUTE_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "EXECUTE_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x6298e902",
+            "caladan:signature": "addProtectedToken(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addProtectedToken",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x7e7db6e1",
+            "caladan:signature": "allowRecoverability(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "allowRecoverability",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x80afdea8",
+            "caladan:signature": "appId()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "appId",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x8129fc1c",
+            "caladan:signature": "initialize()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "initialize",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x851a3790",
+            "caladan:signature": "protectedTokens(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "protectedTokens",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x8b3dd749",
+            "caladan:signature": "getInitializationBlock()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getInitializationBlock",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x9890cdca",
+            "caladan:signature": "ERC1271_RETURN_VALID_SIGNATURE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ERC1271_RETURN_VALID_SIGNATURE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x9d4941d8",
+            "caladan:signature": "transferToVault(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferToVault",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa1658fad",
+            "caladan:signature": "canPerform(address,bytes32,uint256[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "canPerform",
+            "caladan:inputs": [
+                {
+                    "name": "_sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "_params",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa479e508",
+            "caladan:signature": "getEVMScriptRegistry()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getEVMScriptRegistry",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xa83e52b4",
+            "caladan:signature": "setDesignatedSigner(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setDesignatedSigner",
+            "caladan:inputs": [
+                {
+                    "name": "_designatedSigner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xaae25051",
+            "caladan:signature": "designatedSigner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "designatedSigner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xab23c345",
+            "caladan:signature": "safeExecute(address,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "safeExecute",
+            "caladan:inputs": [
+                {
+                    "name": "_target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb03bdb04",
+            "caladan:signature": "PROTECTED_TOKENS_CAP()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "PROTECTED_TOKENS_CAP",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb06c4244",
+            "caladan:signature": "ADD_PRESIGNED_HASH_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ADD_PRESIGNED_HASH_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb4fa653c",
+            "caladan:signature": "isPresigned(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isPresigned",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xb61d27f6",
+            "caladan:signature": "execute(address,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "execute",
+            "caladan:inputs": [
+                {
+                    "name": "_target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_ethValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xbeabacc8",
+            "caladan:signature": "transfer(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transfer",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xc0774df3",
+            "caladan:signature": "canForward(address,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "canForward",
+            "caladan:inputs": [
+                {
+                    "name": "_sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_evmScript",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd4aae0c4",
+            "caladan:signature": "kernel()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "kernel",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xd948d468",
+            "caladan:signature": "forward(bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "forward",
+            "caladan:inputs": [
+                {
+                    "name": "_evmScript",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xde4796ed",
+            "caladan:signature": "isPetrified()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isPetrified",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xe3d670d7",
+            "caladan:signature": "balance(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "balance",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xfd64eccb",
+            "caladan:signature": "isForwarder()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "isForwarder",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x47f4287d5285559a03d8affeadc53ef3fca238a63c256c08a22bfd30fd5d33ce",
+            "caladan:signature": "SafeExecute(address,address,bytes)",
+            "@type": "caladan:Event",
+            "caladan:name": "SafeExecute",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc25cfed0b22da6a56f0e5ff784979a0b8623eddf2aee4acd33c2adefb09cbab6",
+            "caladan:signature": "Execute(address,address,uint256,bytes)",
+            "@type": "caladan:Event",
+            "caladan:name": "Execute",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "ethValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf70a5123a7f334e5dac1d9aa3a6aafbc316712bf2519ffe0d3aa4f7cba52767e",
+            "caladan:signature": "AddProtectedToken(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AddProtectedToken",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3da25279c93c5b22b359bebff8b5ddbfd9b0506be8344b93c9a7dc999459fe04",
+            "caladan:signature": "RemoveProtectedToken(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "RemoveProtectedToken",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb150212e573caa2a0216cf8f273ef996af143fd7b2d35abd92c8105536cac160",
+            "caladan:signature": "PresignHash(address,bytes32)",
+            "@type": "caladan:Event",
+            "caladan:name": "PresignHash",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "hash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3ecf54ed9acd859c5ee7f080794267b8f08b65d2446d816cef1efccd6d00d735",
+            "caladan:signature": "SetDesignatedSigner(address,address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SetDesignatedSigner",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "oldSigner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "newSigner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe0d2ab3bf6896c073bb33b920a9b60f3c8207b3cc3b7561c3101cb081a8f0883",
+            "caladan:signature": "ReceiveERC721(address,address,address,uint256,bytes)",
+            "@type": "caladan:Event",
+            "caladan:name": "ReceiveERC721",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "operator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x239e7f6cdac8fb35a788a46b431b54da87de90b82448a2c294be5e92a6e579af",
+            "caladan:signature": "VaultTransfer(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "VaultTransfer",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2790b90165fd3973ad7edde4eca71b4f8808dd4857a2a3a3e8ae5642a5cb196e",
+            "caladan:signature": "VaultDeposit(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "VaultDeposit",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5229a5dba83a54ae8cb5b51bdd6de9474cacbe9dd332f5185f3a4f4f2e3f4ad9",
+            "caladan:signature": "ScriptResult(address,bytes,bytes,bytes)",
+            "@type": "caladan:Event",
+            "caladan:name": "ScriptResult",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "executor",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "script",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "name": "input",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "name": "returnData",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x596caf56044b55fb8c4ca640089bbc2b63cae3e978b851f5745cbb7c5b288e02",
+            "caladan:signature": "RecoverToVault(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "RecoverToVault",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "vault",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault"
+                }
+            ]
+        }
+    ]
+}

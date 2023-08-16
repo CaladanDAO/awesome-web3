@@ -1,0 +1,4398 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/threshold",
+    "@type": "caladan:Project",
+    "caladan:name": "threshold",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe",
+                    "evm:chainID": 1,
+                    "evm:address": "0x2ff7ab212cd6feae21bac5300465e149fb6b85a9"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe",
+                    "evm:chainID": 1,
+                    "evm:address": "0x71e47a4429d35827e0312aa13162197c23287546"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe",
+                    "evm:chainID": 1,
+                    "evm:address": "0x9f6e831c8f8939dc0c830c6e492e7cef4f9c2f5f"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe",
+                    "evm:chainID": 1,
+                    "evm:address": "0xd55c4261145ea1752662faa0485afbc8c431b0ca"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/threshold/null",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null",
+                    "evm:chainID": 1,
+                    "evm:address": "0x87f005317692d05baa4193ab0c961c69e175f45f"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null",
+                    "evm:chainID": 1,
+                    "evm:address": "0xcdf7028ceab81fa0c6971208e83fa7872994bee5"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "@id": "0x8d5004028f09180abc4210f60fbf14955ac50d24898f80bef2b1efe077e75bd6",
+            "caladan:signature": "0()",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x9465fa0c962cc76958e6373a993326400c1c94f8be2fe3a952adfa7f60b2ea26",
+            "caladan:signature": "AddedOwner(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AddedOwner",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf2a0eb156472d1440255b0d7c1e19cc07115d1051fe605b0dce69acfec884d9c",
+            "caladan:signature": "ApproveHash(bytes32,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ApproveHash",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "approvedHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5ac6c46c93c8d0e53714ba3b53db3e7c046da994313d7ed0d192028bc7c228b0",
+            "caladan:signature": "ChangedFallbackHandler(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ChangedFallbackHandler",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "handler",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x1151116914515bc0891ff9047a6cb32cf902546f83066499bcf8ba33d2353fa2",
+            "caladan:signature": "ChangedGuard(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ChangedGuard",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "guard",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x610f7ff2b304ae8903c3de74c60c6ab1f7d6226b3f52c5161905bb5ad4039c93",
+            "caladan:signature": "ChangedThreshold(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ChangedThreshold",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xaab4fa2b463f581b2b32cb3b7e3b704b9ce37cc209b5fb4d77e593ace4054276",
+            "caladan:signature": "DisabledModule(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "DisabledModule",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xecdf3a3effea5783a3c4c2140e677577666428d44ed9d474a0b3a4c9943f8440",
+            "caladan:signature": "EnabledModule(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "EnabledModule",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x23428b18acfb3ea64b08dc0c1d296ea9c09702c09083ca5272e64d115b687d23",
+            "caladan:signature": "ExecutionFailure(bytes32,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ExecutionFailure",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "txHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "payment",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xacd2c8702804128fdb0db2bb49f6d127dd0181c13fd45dbfe16de0930e2bd375",
+            "caladan:signature": "ExecutionFromModuleFailure(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ExecutionFromModuleFailure",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6895c13664aa4f67288b25d7a21d7aaa34916e355fb9b6fae0a139a9085becb8",
+            "caladan:signature": "ExecutionFromModuleSuccess(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ExecutionFromModuleSuccess",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x442e715f626346e8c54381002da614f62bee8d27386535b2521ec8540898556e",
+            "caladan:signature": "ExecutionSuccess(bytes32,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ExecutionSuccess",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "txHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "payment",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf8d49fc529812e9a7c5c50e69c20f0dccc0db8fa95c98bc58cc9a4f1c1299eaf",
+            "caladan:signature": "RemovedOwner(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "RemovedOwner",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3d0ce9bfc3ed7d6862dbb28b2dea94561fe714a1b4d019aa8af39730d1ad7c3d",
+            "caladan:signature": "SafeReceived(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "SafeReceived",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x141df868a6331af528e38c83b7aa03edc19be66e37ae67f9285bf4f8e3c6a1a8",
+            "caladan:signature": "SafeSetup(address,address[],uint256,address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SafeSetup",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "initiator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address[]",
+                    "name": "owners",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "initializer",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "fallbackHandler",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe7f4675038f4f6034dfcbbb24c4dc08e4ebf10eb9d257d3d02c0f38d122ac6e4",
+            "caladan:signature": "SignMsg(bytes32)",
+            "@type": "caladan:Event",
+            "caladan:name": "SignMsg",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "msgHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xffa1ad74",
+            "caladan:signature": "VERSION()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "VERSION",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x0d582f13",
+            "caladan:signature": "addOwnerWithThreshold(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addOwnerWithThreshold",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xd4d9bdcd",
+            "caladan:signature": "approveHash(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approveHash",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "hashToApprove",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x7d832974",
+            "caladan:signature": "approvedHashes(address,bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "approvedHashes",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x694e80c3",
+            "caladan:signature": "changeThreshold(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "changeThreshold",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x12fb68e0",
+            "caladan:signature": "checkNSignatures(bytes32,bytes,bytes,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "checkNSignatures",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "dataHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "signatures",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "requiredSignatures",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x934f3a11",
+            "caladan:signature": "checkSignatures(bytes32,bytes,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "checkSignatures",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "dataHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "signatures",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xe009cfde",
+            "caladan:signature": "disableModule(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "disableModule",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "prevModule",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xf698da25",
+            "caladan:signature": "domainSeparator()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "domainSeparator",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x610b5925",
+            "caladan:signature": "enableModule(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "enableModule",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xe86637db",
+            "caladan:signature": "encodeTransactionData(address,uint256,bytes,uint8,uint256,uint256,uint256,address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "encodeTransactionData",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "safeTxGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "baseGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "gasPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "gasToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "refundReceiver",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x6a761202",
+            "caladan:signature": "execTransaction(address,uint256,bytes,uint8,uint256,uint256,uint256,address,address,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "execTransaction",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "safeTxGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "baseGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "gasPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "gasToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "refundReceiver",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "signatures",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x468721a7",
+            "caladan:signature": "execTransactionFromModule(address,uint256,bytes,uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "execTransactionFromModule",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x5229073f",
+            "caladan:signature": "execTransactionFromModuleReturnData(address,uint256,bytes,uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "execTransactionFromModuleReturnData",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "returnData",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x3408e470",
+            "caladan:signature": "getChainId()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getChainId",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xcc2f8452",
+            "caladan:signature": "getModulesPaginated(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getModulesPaginated",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "start",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "pageSize",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "array",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "next",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xa0e67e2b",
+            "caladan:signature": "getOwners()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getOwners",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "",
+                    "type": "address[]",
+                    "@type": "address[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x5624b25b",
+            "caladan:signature": "getStorageAt(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getStorageAt",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "offset",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "length",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xe75235b8",
+            "caladan:signature": "getThreshold()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getThreshold",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xd8d11f78",
+            "caladan:signature": "getTransactionHash(address,uint256,bytes,uint8,uint256,uint256,uint256,address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getTransactionHash",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "safeTxGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "baseGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "gasPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "gasToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "refundReceiver",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x2d9ad53d",
+            "caladan:signature": "isModuleEnabled(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isModuleEnabled",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x2f54bf6e",
+            "caladan:signature": "isOwner(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isOwner",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xaffed0e0",
+            "caladan:signature": "nonce()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "nonce",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xf8dc5dd9",
+            "caladan:signature": "removeOwner(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeOwner",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "prevOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xc4ca3a9c",
+            "caladan:signature": "requiredTxGas(address,uint256,bytes,uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "requiredTxGas",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xf08a0323",
+            "caladan:signature": "setFallbackHandler(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setFallbackHandler",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "handler",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xe19a9dd9",
+            "caladan:signature": "setGuard(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setGuard",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "guard",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xb63e800d",
+            "caladan:signature": "setup(address[],uint256,address,bytes,address,address,uint256,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setup",
+            "caladan:inputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "_owners",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "address",
+                    "name": "fallbackHandler",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "paymentToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "payment",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "paymentReceiver",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x5ae6bd37",
+            "caladan:signature": "signedMessages(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "signedMessages",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xb4faba09",
+            "caladan:signature": "simulateAndRevert(address,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "simulateAndRevert",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "targetContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "calldataPayload",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xe318b52b",
+            "caladan:signature": "swapOwner(address,address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "swapOwner",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "prevOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "oldOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xe03a4695b621b9c237c2308b765114363c941400f2c2682ca70da72d0ffe347d",
+            "caladan:signature": "0(uint256,address[],address[])",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "minDelay",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address[]",
+                    "name": "proposers",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "address[]",
+                    "name": "executors",
+                    "type": "address[]",
+                    "@type": "address[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc2617efa69bab66782fa219543714338489c4e9e178271560a91b82c3f612b58",
+            "caladan:signature": "CallExecuted(bytes32,uint256,address,uint256,bytes)",
+            "@type": "caladan:Event",
+            "caladan:name": "CallExecuted",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "id",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x4cf4410cc57040e44862ef0f45f3dd5a5e02db8eb8add648d4b0e236f1d07dca",
+            "caladan:signature": "CallScheduled(bytes32,uint256,address,uint256,bytes,bytes32,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "CallScheduled",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "id",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "predecessor",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "delay",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xbaa1eb22f2a492ba1a5fea61b8df4d27c6c8b5f3971e63bb58fa14ff72eedb70",
+            "caladan:signature": "Cancelled(bytes32)",
+            "@type": "caladan:Event",
+            "caladan:name": "Cancelled",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "id",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x11c24f4ead16507c69ac467fbd5e4eed5fb5c699626d2cc6d66421df253886d5",
+            "caladan:signature": "MinDelayChange(uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "MinDelayChange",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oldDuration",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newDuration",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff",
+            "caladan:signature": "RoleAdminChanged(bytes32,bytes32,bytes32)",
+            "@type": "caladan:Event",
+            "caladan:name": "RoleAdminChanged",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "previousAdminRole",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "newAdminRole",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+            "caladan:signature": "RoleGranted(bytes32,address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "RoleGranted",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b",
+            "caladan:signature": "RoleRevoked(bytes32,address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "RoleRevoked",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xa217fddf",
+            "caladan:signature": "DEFAULT_ADMIN_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "DEFAULT_ADMIN_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x07bd0265",
+            "caladan:signature": "EXECUTOR_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "EXECUTOR_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x8f61f4f5",
+            "caladan:signature": "PROPOSER_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "PROPOSER_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x0d3cf6fc",
+            "caladan:signature": "TIMELOCK_ADMIN_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "TIMELOCK_ADMIN_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xc4d252f5",
+            "caladan:signature": "cancel(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "cancel",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "id",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x134008d3",
+            "caladan:signature": "execute(address,uint256,bytes,bytes32,bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "execute",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "predecessor",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "salt",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xe38335e5",
+            "caladan:signature": "executeBatch(address[],uint256[],bytes[],bytes32,bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "executeBatch",
+            "caladan:inputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "targets",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "values",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "bytes[]",
+                    "name": "datas",
+                    "type": "bytes[]",
+                    "@type": "bytes[]"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "predecessor",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "salt",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xf27a0c92",
+            "caladan:signature": "getMinDelay()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getMinDelay",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "duration",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x248a9ca3",
+            "caladan:signature": "getRoleAdmin(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getRoleAdmin",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xd45c4435",
+            "caladan:signature": "getTimestamp(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getTimestamp",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "id",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x2f2ff15d",
+            "caladan:signature": "grantRole(bytes32,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "grantRole",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x91d14854",
+            "caladan:signature": "hasRole(bytes32,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "hasRole",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x8065657f",
+            "caladan:signature": "hashOperation(address,uint256,bytes,bytes32,bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "hashOperation",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "predecessor",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "salt",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "hash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xb1c5f427",
+            "caladan:signature": "hashOperationBatch(address[],uint256[],bytes[],bytes32,bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "hashOperationBatch",
+            "caladan:inputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "targets",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "values",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "bytes[]",
+                    "name": "datas",
+                    "type": "bytes[]",
+                    "@type": "bytes[]"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "predecessor",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "salt",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "hash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x31d50750",
+            "caladan:signature": "isOperation(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isOperation",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "id",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "pending",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x2ab0f529",
+            "caladan:signature": "isOperationDone(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isOperationDone",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "id",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "done",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x584b153e",
+            "caladan:signature": "isOperationPending(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isOperationPending",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "id",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "pending",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x13bc9f20",
+            "caladan:signature": "isOperationReady(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isOperationReady",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "id",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "ready",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x36568abe",
+            "caladan:signature": "renounceRole(bytes32,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "renounceRole",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xd547741f",
+            "caladan:signature": "revokeRole(bytes32,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "revokeRole",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x01d5062a",
+            "caladan:signature": "schedule(address,uint256,bytes,bytes32,bytes32,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "schedule",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "predecessor",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "salt",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "delay",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x8f2a0bb0",
+            "caladan:signature": "scheduleBatch(address[],uint256[],bytes[],bytes32,bytes32,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "scheduleBatch",
+            "caladan:inputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "targets",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "values",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "bytes[]",
+                    "name": "datas",
+                    "type": "bytes[]",
+                    "@type": "bytes[]"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "predecessor",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "salt",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "delay",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x01ffc9a7",
+            "caladan:signature": "supportsInterface(bytes4)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "supportsInterface",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "interfaceId",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x64d62353",
+            "caladan:signature": "updateDelay(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateDelay",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "newDelay",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "caladan:signature": "Approval(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Approval",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3134e8a2e6d97e929a7e54011ea5485d7d196dd5f0ba4d4ef95803e8e3fc257f",
+            "caladan:signature": "DelegateChanged(address,address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "DelegateChanged",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "delegator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "fromDelegate",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "toDelegate",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xdec2bacdd2f05b59de34da9b523dff8be42e5e38e818c82fdb0bae774387a724",
+            "caladan:signature": "DelegateVotesChanged(address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "DelegateVotesChanged",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "delegate",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "previousBalance",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newBalance",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "caladan:signature": "OwnershipTransferred(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnershipTransferred",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "caladan:signature": "Transfer(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Transfer",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xe7a324dc",
+            "caladan:signature": "DELEGATION_TYPEHASH()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "DELEGATION_TYPEHASH",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x3644e515",
+            "caladan:signature": "DOMAIN_SEPARATOR()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "DOMAIN_SEPARATOR",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x30adf81f",
+            "caladan:signature": "PERMIT_TYPEHASH()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "PERMIT_TYPEHASH",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xdd62ed3e",
+            "caladan:signature": "allowance(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "allowance",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x095ea7b3",
+            "caladan:signature": "approve(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approve",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xcae9ca51",
+            "caladan:signature": "approveAndCall(address,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approveAndCall",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "extraData",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x70a08231",
+            "caladan:signature": "balanceOf(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "balanceOf",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x42966c68",
+            "caladan:signature": "burn(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "burn",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x79cc6790",
+            "caladan:signature": "burnFrom(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "burnFrom",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x771da5c5",
+            "caladan:signature": "cachedChainId()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "cachedChainId",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xb4f94b2e",
+            "caladan:signature": "cachedDomainSeparator()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "cachedDomainSeparator",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xf1127ed8",
+            "caladan:signature": "checkpoints(address,uint32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "checkpoints",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint32",
+                    "name": "pos",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint32",
+                            "name": "fromBlock",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint96",
+                            "name": "votes",
+                            "type": "uint96"
+                        }
+                    ],
+                    "internalType": "struct Checkpoints.Checkpoint",
+                    "name": "checkpoint",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x313ce567",
+            "caladan:signature": "decimals()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "decimals",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x5c19a95c",
+            "caladan:signature": "delegate(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "delegate",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "delegatee",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xb20d7fa9",
+            "caladan:signature": "delegateBySig(address,address,uint256,uint8,bytes32,bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "delegateBySig",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "signatory",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "delegatee",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "v",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "r",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "s",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x587cde1e",
+            "caladan:signature": "delegates(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "delegates",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x8e539e8c",
+            "caladan:signature": "getPastTotalSupply(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getPastTotalSupply",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "blockNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint96",
+                    "name": "",
+                    "type": "uint96",
+                    "@type": "uint96"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x3a46b1a8",
+            "caladan:signature": "getPastVotes(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getPastVotes",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "blockNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint96",
+                    "name": "",
+                    "type": "uint96",
+                    "@type": "uint96"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x9ab24eb0",
+            "caladan:signature": "getVotes(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getVotes",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint96",
+                    "name": "",
+                    "type": "uint96",
+                    "@type": "uint96"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x40c10f19",
+            "caladan:signature": "mint(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "mint",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x06fdde03",
+            "caladan:signature": "name()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "name",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x70ae92d2",
+            "caladan:signature": "nonce(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "nonce",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x6fcfff45",
+            "caladan:signature": "numCheckpoints(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "numCheckpoints",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint32",
+                    "name": "",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x8da5cb5b",
+            "caladan:signature": "owner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "owner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xd505accf",
+            "caladan:signature": "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "permit",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "v",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "r",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "s",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x1171bda9",
+            "caladan:signature": "recoverERC20(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "recoverERC20",
+            "caladan:inputs": [
+                {
+                    "internalType": "contract IERC20",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xfc4e51f6",
+            "caladan:signature": "recoverERC721(address,address,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "recoverERC721",
+            "caladan:inputs": [
+                {
+                    "internalType": "contract IERC721",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x715018a6",
+            "caladan:signature": "renounceOwnership()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "renounceOwnership",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x95d89b41",
+            "caladan:signature": "symbol()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "symbol",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x18160ddd",
+            "caladan:signature": "totalSupply()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "totalSupply",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xa9059cbb",
+            "caladan:signature": "transfer(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transfer",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x23b872dd",
+            "caladan:signature": "transferFrom(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferFrom",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2fde38b",
+            "caladan:signature": "transferOwnership(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferOwnership",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/threshold/null"
+                }
+            ]
+        }
+    ]
+}

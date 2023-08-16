@@ -1,0 +1,3311 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/zora",
+    "@type": "caladan:Project",
+    "caladan:name": "zora",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media",
+                    "evm:chainID": 1,
+                    "evm:address": "0xabefbc9fd2f806065b4f3c237d4b59d9a97bcac7"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House",
+                    "evm:chainID": 1,
+                    "evm:address": "0xe468ce99444174bd3bbbed09209577d25d1ad673"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market",
+                    "evm:chainID": 1,
+                    "evm:address": "0xe5bfab544eca83849c53464f85b7164375bdaac1"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "caladan:signature": "0(address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "marketContractAddr",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "caladan:signature": "Approval(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Approval",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "approved",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31",
+            "caladan:signature": "ApprovalForAll(address,address,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "ApprovalForAll",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "approved",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe3df41127db820c79e5b8d541a63e40e3e97b9af96f7a50bded13091b70df9ae",
+            "caladan:signature": "TokenMetadataURIUpdated(uint256,address,string)",
+            "@type": "caladan:Event",
+            "caladan:name": "TokenMetadataURIUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "_uri",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x702fe2dc2dc0f68023540aa4a1e11811c0f29112f6ebf01e61b90538e4f29810",
+            "caladan:signature": "TokenURIUpdated(uint256,address,string)",
+            "@type": "caladan:Event",
+            "caladan:name": "TokenURIUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "_uri",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "caladan:signature": "Transfer(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Transfer",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0xde5236fb",
+            "caladan:signature": "MINT_WITH_SIG_TYPEHASH()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "MINT_WITH_SIG_TYPEHASH",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x30adf81f",
+            "caladan:signature": "PERMIT_TYPEHASH()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "PERMIT_TYPEHASH",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0xba339399",
+            "caladan:signature": "acceptBid(uint256,(uint256,address,address,address,(uint256)))",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "acceptBid",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "currency",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "bidder",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "recipient",
+                            "type": "address"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "sellOnShare",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct IMarket.Bid",
+                    "name": "bid",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "@id": "0x095ea7b3",
+            "caladan:signature": "approve(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approve",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0xf6b630f0",
+            "caladan:signature": "auctionTransfer(uint256,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "auctionTransfer",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x70a08231",
+            "caladan:signature": "balanceOf(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "balanceOf",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x6c0360eb",
+            "caladan:signature": "baseURI()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "baseURI",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x42966c68",
+            "caladan:signature": "burn(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "burn",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x081812fc",
+            "caladan:signature": "getApproved(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getApproved",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0xe985e9c5",
+            "caladan:signature": "isApprovedForAll(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isApprovedForAll",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0xa1794bcd",
+            "caladan:signature": "marketContract()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "marketContract",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x2cca3237",
+            "caladan:signature": "mint((string,string,bytes32,bytes32),((uint256),(uint256),(uint256)))",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "mint",
+            "caladan:inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "string",
+                            "name": "tokenURI",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "metadataURI",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "contentHash",
+                            "type": "bytes32"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "metadataHash",
+                            "type": "bytes32"
+                        }
+                    ],
+                    "internalType": "struct IMedia.MediaData",
+                    "name": "data",
+                    "type": "tuple",
+                    "@type": "tuple"
+                },
+                {
+                    "components": [
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "prevOwner",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "creator",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "owner",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct IMarket.BidShares",
+                    "name": "bidShares",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x7a7a1202",
+            "caladan:signature": "mintWithSig(address,(string,string,bytes32,bytes32),((uint256),(uint256),(uint256)),(uint256,uint8,bytes32,bytes32))",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "mintWithSig",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "creator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "string",
+                            "name": "tokenURI",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "metadataURI",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "contentHash",
+                            "type": "bytes32"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "metadataHash",
+                            "type": "bytes32"
+                        }
+                    ],
+                    "internalType": "struct IMedia.MediaData",
+                    "name": "data",
+                    "type": "tuple",
+                    "@type": "tuple"
+                },
+                {
+                    "components": [
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "prevOwner",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "creator",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "owner",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct IMarket.BidShares",
+                    "name": "bidShares",
+                    "type": "tuple",
+                    "@type": "tuple"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "deadline",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint8",
+                            "name": "v",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "r",
+                            "type": "bytes32"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "s",
+                            "type": "bytes32"
+                        }
+                    ],
+                    "internalType": "struct IMedia.EIP712Signature",
+                    "name": "sig",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x0bcd899b",
+            "caladan:signature": "mintWithSigNonces(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "mintWithSigNonces",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x06fdde03",
+            "caladan:signature": "name()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "name",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x6352211e",
+            "caladan:signature": "ownerOf(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ownerOf",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x0e2a1778",
+            "caladan:signature": "permit(address,uint256,(uint256,uint8,bytes32,bytes32))",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "permit",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "deadline",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint8",
+                            "name": "v",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "r",
+                            "type": "bytes32"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "s",
+                            "type": "bytes32"
+                        }
+                    ],
+                    "internalType": "struct IMedia.EIP712Signature",
+                    "name": "sig",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0xf8ccd5de",
+            "caladan:signature": "permitNonces(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "permitNonces",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x9d8e7260",
+            "caladan:signature": "previousTokenOwners(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "previousTokenOwners",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x28220f35",
+            "caladan:signature": "removeAsk(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeAsk",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "@id": "0xb320f459",
+            "caladan:signature": "removeBid(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeBid",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0xb1e130fc",
+            "caladan:signature": "revokeApproval(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "revokeApproval",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x42842e0e",
+            "caladan:signature": "safeTransferFrom(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "safeTransferFrom",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0xb88d4fde",
+            "caladan:signature": "safeTransferFrom(address,address,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "safeTransferFrom",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0xa22cb465",
+            "caladan:signature": "setApprovalForAll(address,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setApprovalForAll",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "approved",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x62f24b70",
+            "caladan:signature": "setAsk(uint256,(uint256,address))",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setAsk",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "currency",
+                            "type": "address"
+                        }
+                    ],
+                    "internalType": "struct IMarket.Ask",
+                    "name": "ask",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "@id": "0x5bf62422",
+            "caladan:signature": "setBid(uint256,(uint256,address,address,address,(uint256)))",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setBid",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "currency",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "bidder",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "recipient",
+                            "type": "address"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "sellOnShare",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct IMarket.Bid",
+                    "name": "bid",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x01ffc9a7",
+            "caladan:signature": "supportsInterface(bytes4)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "supportsInterface",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "interfaceId",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x95d89b41",
+            "caladan:signature": "symbol()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "symbol",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x4f6ccce7",
+            "caladan:signature": "tokenByIndex(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "tokenByIndex",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0xfad32197",
+            "caladan:signature": "tokenContentHashes(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "tokenContentHashes",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0xe0fd045f",
+            "caladan:signature": "tokenCreators(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "tokenCreators",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x01ddc3b5",
+            "caladan:signature": "tokenMetadataHashes(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "tokenMetadataHashes",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x157c3df9",
+            "caladan:signature": "tokenMetadataURI(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "tokenMetadataURI",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x2f745c59",
+            "caladan:signature": "tokenOfOwnerByIndex(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "tokenOfOwnerByIndex",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0xc87b56dd",
+            "caladan:signature": "tokenURI(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "tokenURI",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x18160ddd",
+            "caladan:signature": "totalSupply()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "totalSupply",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x23b872dd",
+            "caladan:signature": "transferFrom(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferFrom",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x75682e79",
+            "caladan:signature": "updateTokenMetadataURI(uint256,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateTokenMetadataURI",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "string",
+                    "name": "metadataURI",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x18e97fd1",
+            "caladan:signature": "updateTokenURI(uint256,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateTokenURI",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "string",
+                    "name": "tokenURI",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Media"
+                }
+            ]
+        },
+        {
+            "@id": "0x517d5955ce3c06eaf11438c03b573c37bc6bb235d0463c05b34c209023925f19",
+            "caladan:signature": "0(address,address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_zora",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_weth",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xec35d321ab4972475f131e184c0c0fe52c5a58a29d74f7db2969af2f6dd93a1f",
+            "caladan:signature": "AuctionApprovalUpdated(uint256,uint256,address,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "AuctionApprovalUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "auctionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "tokenContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "approved",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xda6b779568630ce5e5658b317174df474d5b335541ed9471bd8424a017f3be6d",
+            "caladan:signature": "AuctionBid(uint256,uint256,address,address,uint256,bool,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "AuctionBid",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "auctionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "tokenContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "firstBid",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "extended",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6091afcbe8514686c43b167ca4f1b03e24446d29d8490d496e438f8a2c763439",
+            "caladan:signature": "AuctionCanceled(uint256,uint256,address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AuctionCanceled",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "auctionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "tokenContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "tokenOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x38c0b9047bd28fac9f420b967f6caf4a6260ba09d18940a9a502578a480c0900",
+            "caladan:signature": "AuctionCreated(uint256,uint256,address,uint256,uint256,address,address,uint8,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AuctionCreated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "auctionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "tokenContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "duration",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "reservePrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "tokenOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "curator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "curatorFeePercentage",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "auctionCurrency",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x55cf2b31608fbe49fa31cd0285b6b6cce46f56d26c8c59980a2af5a0ffbdd5db",
+            "caladan:signature": "AuctionDurationExtended(uint256,uint256,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "AuctionDurationExtended",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "auctionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "tokenContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "duration",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x4f35fb3ea0081b3ccbe8df613cab0f9e1694d50a025e0aa09b88a86a3d07c2de",
+            "caladan:signature": "AuctionEnded(uint256,uint256,address,address,address,address,uint256,uint256,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AuctionEnded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "auctionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "tokenContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "tokenOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "curator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "winner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "curatorFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "auctionCurrency",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x01e6a465ec1edd582d333147c7b7edf5998164f2cf2269dcb9c93d46c67bd317",
+            "caladan:signature": "AuctionReservePriceUpdated(uint256,uint256,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "AuctionReservePriceUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "auctionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "tokenContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "reservePrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "@id": "0x571a26a0",
+            "caladan:signature": "auctions(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "auctions",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "tokenContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "approved",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "duration",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "firstBidTime",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "reservePrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "curatorFeePercentage",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "address",
+                    "name": "tokenOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "bidder",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "curator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "auctionCurrency",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "@id": "0x96b5a755",
+            "caladan:signature": "cancelAuction(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "cancelAuction",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "auctionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "@id": "0x75e9249f",
+            "caladan:signature": "createAuction(uint256,address,uint256,uint256,address,uint8,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "createAuction",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "tokenContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "duration",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "reservePrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "curator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "curatorFeePercentage",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "address",
+                    "name": "auctionCurrency",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "@id": "0xb7751c71",
+            "caladan:signature": "createBid(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "createBid",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "auctionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "@id": "0xb9a2de3a",
+            "caladan:signature": "endAuction(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "endAuction",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "auctionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "@id": "0xb296024d",
+            "caladan:signature": "minBidIncrementPercentage()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "minBidIncrementPercentage",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "@id": "0x973ddb4a",
+            "caladan:signature": "setAuctionApproval(uint256,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setAuctionApproval",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "auctionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "approved",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "@id": "0x6f8a41e1",
+            "caladan:signature": "setAuctionReservePrice(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setAuctionReservePrice",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "auctionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "reservePrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "@id": "0xec91f2a4",
+            "caladan:signature": "timeBuffer()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "timeBuffer",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "@id": "0x4f0e0ef3",
+            "caladan:signature": "wethAddress()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "wethAddress",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "@id": "0x166f46a7",
+            "caladan:signature": "zora()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "zora",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Auction House"
+                }
+            ]
+        },
+        {
+            "@id": "0x8d5004028f09180abc4210f60fbf14955ac50d24898f80bef2b1efe077e75bd6",
+            "caladan:signature": "0()",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf7347cb9e91d8cbe995b51920ba5f92cbf84a9e09cbed3cd7a739fef4d1d07cf",
+            "caladan:signature": "AskCreated(uint256,(uint256,address))",
+            "@type": "caladan:Event",
+            "caladan:name": "AskCreated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "currency",
+                            "type": "address"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct IMarket.Ask",
+                    "name": "ask",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xbf58f6d6c7d7c6efc69e7444efa93ed26d7cdc0e82e12a37df96f36a367561df",
+            "caladan:signature": "AskRemoved(uint256,(uint256,address))",
+            "@type": "caladan:Event",
+            "caladan:name": "AskRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "currency",
+                            "type": "address"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct IMarket.Ask",
+                    "name": "ask",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x327bc9021bfbee403a11b13dd6c819999006aff090cc129f07e9f2840af38dd5",
+            "caladan:signature": "BidCreated(uint256,(uint256,address,address,address,(uint256)))",
+            "@type": "caladan:Event",
+            "caladan:name": "BidCreated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "currency",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "bidder",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "recipient",
+                            "type": "address"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "sellOnShare",
+                            "type": "tuple"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct IMarket.Bid",
+                    "name": "bid",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb6ef177c7a6f32b283a49b5e0463a39240cdaa278028dfb219480d050e8ee54c",
+            "caladan:signature": "BidFinalized(uint256,(uint256,address,address,address,(uint256)))",
+            "@type": "caladan:Event",
+            "caladan:name": "BidFinalized",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "currency",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "bidder",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "recipient",
+                            "type": "address"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "sellOnShare",
+                            "type": "tuple"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct IMarket.Bid",
+                    "name": "bid",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xcbebd567b8a5c57f63ec61dc46746aab28daff6bdd1f4a6a0a305c17fa5465c9",
+            "caladan:signature": "BidRemoved(uint256,(uint256,address,address,address,(uint256)))",
+            "@type": "caladan:Event",
+            "caladan:name": "BidRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "currency",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "bidder",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "recipient",
+                            "type": "address"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "sellOnShare",
+                            "type": "tuple"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct IMarket.Bid",
+                    "name": "bid",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xdb88d4e96cb8697aaee5e575ee5f460817709a1dfcfbf7ba15192e90b5c86f9f",
+            "caladan:signature": "BidShareUpdated(uint256,((uint256),(uint256),(uint256)))",
+            "@type": "caladan:Event",
+            "caladan:name": "BidShareUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "prevOwner",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "creator",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "owner",
+                            "type": "tuple"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct IMarket.BidShares",
+                    "name": "bidShares",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "@id": "0xad827dc4",
+            "caladan:signature": "bidForTokenBidder(uint256,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "bidForTokenBidder",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "bidder",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "currency",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "bidder",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "recipient",
+                            "type": "address"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "sellOnShare",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct IMarket.Bid",
+                    "name": "",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "@id": "0xf9ce0582",
+            "caladan:signature": "bidSharesForToken(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "bidSharesForToken",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "components": [
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "prevOwner",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "creator",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "owner",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct IMarket.BidShares",
+                    "name": "",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "@id": "0x75cb2672",
+            "caladan:signature": "configure(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "configure",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "mediaContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "@id": "0x578064f6",
+            "caladan:signature": "currentAskForToken(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "currentAskForToken",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "currency",
+                            "type": "address"
+                        }
+                    ],
+                    "internalType": "struct IMarket.Ask",
+                    "name": "",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "@id": "0x02e8fe13",
+            "caladan:signature": "isValidBid(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isValidBid",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "bidAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "@id": "0x360636eb",
+            "caladan:signature": "isValidBidShares(((uint256),(uint256),(uint256)))",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "isValidBidShares",
+            "caladan:inputs": [
+                {
+                    "components": [
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "prevOwner",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "creator",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "owner",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct IMarket.BidShares",
+                    "name": "bidShares",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "@id": "0x4e21f9c0",
+            "caladan:signature": "mediaContract()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "mediaContract",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "@id": "0x776a0835",
+            "caladan:signature": "removeBid(uint256,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeBid",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "bidder",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "@id": "0xbdb58698",
+            "caladan:signature": "setBid(uint256,(uint256,address,address,address,(uint256)),address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setBid",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "currency",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "bidder",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "recipient",
+                            "type": "address"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "sellOnShare",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct IMarket.Bid",
+                    "name": "bid",
+                    "type": "tuple",
+                    "@type": "tuple"
+                },
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "@id": "0xeb55683a",
+            "caladan:signature": "setBidShares(uint256,((uint256),(uint256),(uint256)))",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setBidShares",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "prevOwner",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "creator",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "value",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Decimal.D256",
+                            "name": "owner",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct IMarket.BidShares",
+                    "name": "bidShares",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        },
+        {
+            "@id": "0xb920c123",
+            "caladan:signature": "splitShare((uint256),uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "splitShare",
+            "caladan:inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "value",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct Decimal.D256",
+                    "name": "sharePercentage",
+                    "type": "tuple",
+                    "@type": "tuple"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/zora/Zora: Market"
+                }
+            ]
+        }
+    ]
+}

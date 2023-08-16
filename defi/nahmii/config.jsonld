@@ -1,0 +1,4451 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/nahmii",
+    "@type": "caladan:Project",
+    "caladan:name": "nahmii",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker",
+                    "evm:chainID": 1,
+                    "evm:address": "0xbc1bcc29edf605095bf4fe7a953b7c115ecc8cad"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund",
+                    "evm:chainID": 1,
+                    "evm:address": "0xcc8d82f6ba952966e63001c7b320eef2ae729099"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x091a194b",
+            "caladan:signature": "fungibleRecordsCount(address,bytes32,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "fungibleRecordsCount",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x12b9486a",
+            "caladan:signature": "fungibleRecordByIndex(address,bytes32,address,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "fungibleRecordByIndex",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "amount",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "blockNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x1743d99f",
+            "caladan:signature": "lastNonFungibleRecord(address,bytes32,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "lastNonFungibleRecord",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "ids",
+                    "type": "int256[]",
+                    "@type": "int256[]"
+                },
+                {
+                    "name": "blockNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x17ba3f90",
+            "caladan:signature": "isRegisteredActiveService(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isRegisteredActiveService",
+            "caladan:inputs": [
+                {
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x2738a112",
+            "caladan:signature": "triggerSelfDestruction()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "triggerSelfDestruction",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x2b5672e3",
+            "caladan:signature": "enableServiceAction(address,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "enableServiceAction",
+            "caladan:inputs": [
+                {
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "action",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x2b91e0a9",
+            "caladan:signature": "isRegisteredService(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isRegisteredService",
+            "caladan:inputs": [
+                {
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x2f013a00",
+            "caladan:signature": "selfDestructionDisabled()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "selfDestructionDisabled",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x383aac89",
+            "caladan:signature": "trackedWalletsByIndices(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "trackedWalletsByIndices",
+            "caladan:inputs": [
+                {
+                    "name": "low",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "up",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address[]",
+                    "@type": "address[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x3b58c501",
+            "caladan:signature": "disableServiceAction(address,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "disableServiceAction",
+            "caladan:inputs": [
+                {
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "action",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x3b7bea6c",
+            "caladan:signature": "serviceActivationTimeout()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "serviceActivationTimeout",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x4476d23b",
+            "caladan:signature": "destructor()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "destructor",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x4652ec74",
+            "caladan:signature": "settledBalanceType()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "settledBalanceType",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x50b08c02",
+            "caladan:signature": "deregisterService(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "deregisterService",
+            "caladan:inputs": [
+                {
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x5106c203",
+            "caladan:signature": "DEPOSITED_BALANCE_TYPE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "DEPOSITED_BALANCE_TYPE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x528162c2",
+            "caladan:signature": "STAGED_BALANCE_TYPE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "STAGED_BALANCE_TYPE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x570ca735",
+            "caladan:signature": "operator()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "operator",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x57ebc4e1",
+            "caladan:signature": "trackedBalanceTypesCount()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "trackedBalanceTypesCount",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x59624806",
+            "caladan:signature": "hasId(address,bytes32,int256,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "hasId",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "id",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x5df1b0a3",
+            "caladan:signature": "isEnabledServiceAction(address,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isEnabledServiceAction",
+            "caladan:inputs": [
+                {
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "action",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x62d099a2",
+            "caladan:signature": "hasEverUsedCurrency(address,bytes32,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "hasEverUsedCurrency",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x6f4a1815",
+            "caladan:signature": "lastFungibleRecord(address,bytes32,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "lastFungibleRecord",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "amount",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "blockNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x6fdf5b79",
+            "caladan:signature": "_activeBalanceTypes(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "_activeBalanceTypes",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x70327ea1",
+            "caladan:signature": "disableSelfDestruction()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "disableSelfDestruction",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x71f4ec51",
+            "caladan:signature": "get(address,bytes32,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "get",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "int256",
+                    "@type": "int256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x73ac3024",
+            "caladan:signature": "hasInUseCurrency(address,bytes32,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "hasInUseCurrency",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x78106914",
+            "caladan:signature": "setIds(address,bytes32,int256[],address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setIds",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "ids",
+                    "type": "int256[]",
+                    "@type": "int256[]"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x79d6373c",
+            "caladan:signature": "stagedBalanceType()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "stagedBalanceType",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x7d7a23aa",
+            "caladan:signature": "sub(address,bytes32,int256,address,uint256,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "sub",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "fungible",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x7e15dd5c",
+            "caladan:signature": "setServiceActivationTimeout(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setServiceActivationTimeout",
+            "caladan:inputs": [
+                {
+                    "name": "timeoutInSeconds",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x8b4dd808",
+            "caladan:signature": "trackedWalletIndexByWallet(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "trackedWalletIndexByWallet",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x8e8cef12",
+            "caladan:signature": "registerServiceDeferred(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "registerServiceDeferred",
+            "caladan:inputs": [
+                {
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x95b52697",
+            "caladan:signature": "nonFungibleRecordsCount(address,bytes32,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "nonFungibleRecordsCount",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x96214735",
+            "caladan:signature": "setDeployer(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setDeployer",
+            "caladan:inputs": [
+                {
+                    "name": "newDeployer",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x99acf794",
+            "caladan:signature": "trackedBalanceTypes(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "trackedBalanceTypes",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa246138c",
+            "caladan:signature": "fungibleRecordByBlockNumber(address,bytes32,address,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "fungibleRecordByBlockNumber",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_blockNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "amount",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "blockNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa9e93a9f",
+            "caladan:signature": "getByIndices(address,bytes32,address,uint256,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getByIndices",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "indexLow",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "indexUp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "int256[]",
+                    "@type": "int256[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xabccebce",
+            "caladan:signature": "nonFungibleRecordByBlockNumber(address,bytes32,address,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "nonFungibleRecordByBlockNumber",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_blockNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "ids",
+                    "type": "int256[]",
+                    "@type": "int256[]"
+                },
+                {
+                    "name": "blockNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xad10e48c",
+            "caladan:signature": "trackedWallets(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "trackedWallets",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xb3ab15fb",
+            "caladan:signature": "setOperator(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setOperator",
+            "caladan:inputs": [
+                {
+                    "name": "newOperator",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb8a92a55",
+            "caladan:signature": "_allBalanceTypes(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "_allBalanceTypes",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xb95ae1cd",
+            "caladan:signature": "add(address,bytes32,int256,address,uint256,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "add",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "fungible",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xbd59b4b6",
+            "caladan:signature": "idsCount(address,bytes32,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "idsCount",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xc60c5b6c",
+            "caladan:signature": "SETTLED_BALANCE_TYPE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "SETTLED_BALANCE_TYPE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xd062ec1d",
+            "caladan:signature": "set(address,bytes32,int256,address,uint256,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "set",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "fungible",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd0df4d9d",
+            "caladan:signature": "trackedBalanceTypeMap(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "trackedBalanceTypeMap",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd2f50b4b",
+            "caladan:signature": "getAll(address,bytes32,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getAll",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "int256[]",
+                    "@type": "int256[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd5f39488",
+            "caladan:signature": "deployer()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "deployer",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xded11310",
+            "caladan:signature": "depositedBalanceType()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "depositedBalanceType",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xe47da352",
+            "caladan:signature": "activeBalanceTypes()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "activeBalanceTypes",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32[]",
+                    "@type": "bytes32[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xec3aa67e",
+            "caladan:signature": "allBalanceTypes()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "allBalanceTypes",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32[]",
+                    "@type": "bytes32[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xf0a22404",
+            "caladan:signature": "nonFungibleRecordByIndex(address,bytes32,address,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "nonFungibleRecordByIndex",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_type",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "ids",
+                    "type": "int256[]",
+                    "@type": "int256[]"
+                },
+                {
+                    "name": "blockNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xfd9b97f5",
+            "caladan:signature": "trackedWalletsCount()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "trackedWalletsCount",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xfdd9ec7d",
+            "caladan:signature": "registerService(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "registerService",
+            "caladan:inputs": [
+                {
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "caladan:signature": "0(address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "name": "deployer",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x4f1d324a1cbffc352fb64f1d73d95e4b200d92f99ef39bf2d7f5b41f946909d6",
+            "caladan:signature": "ServiceActivationTimeoutEvent(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ServiceActivationTimeoutEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "timeoutInSeconds",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb619d545cb511bd5f02907a1eac4f4cb8dace7b1846852fb0bf5e553937481c1",
+            "caladan:signature": "RegisterServiceEvent(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "RegisterServiceEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x7f3a8349917003ed377f6e9ae1608b92edd893903f8983bd274b1f8373dd3b11",
+            "caladan:signature": "RegisterServiceDeferredEvent(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "RegisterServiceDeferredEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "timeout",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x777645c5437dfbf962f57a281ead25f3d513f2f8e938685bbfc1738e81c9880e",
+            "caladan:signature": "DeregisterServiceEvent(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "DeregisterServiceEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xec1b982d69bfc1a6fd8becf191d9a633486c822d3bdedd52303ca81fa6357501",
+            "caladan:signature": "EnableServiceActionEvent(address,string)",
+            "@type": "caladan:Event",
+            "caladan:name": "EnableServiceActionEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "action",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x92f4af6130f47c92f3899e06611c8c6ef191fb81207ad2675d134af619d2fe7d",
+            "caladan:signature": "DisableServiceActionEvent(address,string)",
+            "@type": "caladan:Event",
+            "caladan:name": "DisableServiceActionEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "action",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x977e5fa58e458501775e0008d275006294c5249e3c08d1d0e3a9f3acad14f6e4",
+            "caladan:signature": "SetDeployerEvent(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SetDeployerEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "oldDeployer",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "newDeployer",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x9f611b789425d0d5b90b920f1b2852907dd865c80074a30b1629aaa041d1812c",
+            "caladan:signature": "SetOperatorEvent(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SetOperatorEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "oldOperator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "newOperator",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd5a2a04a775c741c2ca0dc46ea7ce4835190e1aaf1ca018def0e82568ec33616",
+            "caladan:signature": "SelfDestructionDisabledEvent(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SelfDestructionDisabledEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x787a5d936e74f4b564b9153575886059829c78cd9927b1be5e0d976b317ef736",
+            "caladan:signature": "TriggerSelfDestructionEvent(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "TriggerSelfDestructionEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Balance Tracker"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x01f3241f",
+            "caladan:signature": "authorizeRegisteredService(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "authorizeRegisteredService",
+            "caladan:inputs": [
+                {
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x04fd3130",
+            "caladan:signature": "isRegisteredBeneficiary(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isRegisteredBeneficiary",
+            "caladan:inputs": [
+                {
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x0c5d24fa",
+            "caladan:signature": "isAuthorizedRegisteredServiceAction(address,string,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isAuthorizedRegisteredServiceAction",
+            "caladan:inputs": [
+                {
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "action",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x0f200f9b",
+            "caladan:signature": "withdraw(int256,address,uint256,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdraw",
+            "caladan:inputs": [
+                {
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "standard",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x158a0342",
+            "caladan:signature": "transferToBeneficiary(address,address,int256,address,uint256,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferToBeneficiary",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "standard",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x19139092",
+            "caladan:signature": "balanceTracker()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "balanceTracker",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x19507d8a",
+            "caladan:signature": "initialServiceAuthorizedMap(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "initialServiceAuthorizedMap",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x19e56365",
+            "caladan:signature": "unstage(int256,address,uint256,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "unstage",
+            "caladan:inputs": [
+                {
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "standard",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x1caf1d6d",
+            "caladan:signature": "deregisterBeneficiary(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "deregisterBeneficiary",
+            "caladan:inputs": [
+                {
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x1da826be",
+            "caladan:signature": "setTokenHolderRevenueFund(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setTokenHolderRevenueFund",
+            "caladan:inputs": [
+                {
+                    "name": "newTokenHolderRevenueFund",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x2145cd20",
+            "caladan:signature": "seizedWalletsCount()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "seizedWalletsCount",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x240625d8",
+            "caladan:signature": "walletLockerFrozen()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "walletLockerFrozen",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x3b159b37",
+            "caladan:signature": "claimRevenue(address,string,address,uint256,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimRevenue",
+            "caladan:inputs": [
+                {
+                    "name": "claimer",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "balanceType",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "standard",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x3e59b706",
+            "caladan:signature": "balanceTrackerFrozen()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "balanceTrackerFrozen",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x449fb346",
+            "caladan:signature": "seizeBalances(address,address,uint256,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "seizeBalances",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "standard",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x4ddf63f6",
+            "caladan:signature": "authorizeInitialService(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "authorizeInitialService",
+            "caladan:inputs": [
+                {
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x57925b53",
+            "caladan:signature": "isAuthorizedRegisteredService(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isAuthorizedRegisteredService",
+            "caladan:inputs": [
+                {
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x598b75ad",
+            "caladan:signature": "setBalanceTracker(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setBalanceTracker",
+            "caladan:inputs": [
+                {
+                    "name": "newBalanceTracker",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x5dc60def",
+            "caladan:signature": "freezeWalletLocker()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "freezeWalletLocker",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x5f289651",
+            "caladan:signature": "receiveTokensTo(address,string,int256,address,uint256,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "receiveTokensTo",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "balanceType",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "standard",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x62ac7621",
+            "caladan:signature": "authorizeRegisteredServiceAction(address,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "authorizeRegisteredServiceAction",
+            "caladan:inputs": [
+                {
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "action",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x62f1e6b3",
+            "caladan:signature": "initialServiceWalletUnauthorizedMap(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "initialServiceWalletUnauthorizedMap",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x64ba4752",
+            "caladan:signature": "updateSettledBalance(address,int256,address,uint256,string,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateSettledBalance",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "standard",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "blockNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x67299f36",
+            "caladan:signature": "registeredBeneficiariesCount()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "registeredBeneficiariesCount",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x677ec9d6",
+            "caladan:signature": "serviceActionWalletTouchedMap(address,bytes32,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "serviceActionWalletTouchedMap",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x7953d64d",
+            "caladan:signature": "serviceWalletAuthorizedMap(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "serviceWalletAuthorizedMap",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x7dac26c7",
+            "caladan:signature": "tokenHolderRevenueFund()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "tokenHolderRevenueFund",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x7f584f51",
+            "caladan:signature": "initialServiceAuthorizationDisabled()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "initialServiceAuthorizationDisabled",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x84cfb409",
+            "caladan:signature": "serviceActionWalletAuthorizedMap(address,bytes32,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "serviceActionWalletAuthorizedMap",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x892860b2",
+            "caladan:signature": "setWalletLocker(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setWalletLocker",
+            "caladan:inputs": [
+                {
+                    "name": "newWalletLocker",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x8995d42f",
+            "caladan:signature": "freezeTransactionTracker()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "freezeTransactionTracker",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x89f90a80",
+            "caladan:signature": "transactionTrackerFrozen()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "transactionTrackerFrozen",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x8a2f30cc",
+            "caladan:signature": "unauthorizeRegisteredServiceAction(address,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "unauthorizeRegisteredServiceAction",
+            "caladan:inputs": [
+                {
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "action",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xa3e5175d",
+            "caladan:signature": "unauthorizeRegisteredService(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "unauthorizeRegisteredService",
+            "caladan:inputs": [
+                {
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa4cf2f1c",
+            "caladan:signature": "transactionTracker()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "transactionTracker",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": true,
+            "@id": "0xa7654a1f",
+            "caladan:signature": "receiveEthersTo(address,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "receiveEthersTo",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "balanceType",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xad468df9",
+            "caladan:signature": "stage(address,int256,address,uint256,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "stage",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "standard",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xaf30b312",
+            "caladan:signature": "transferControllerManager()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "transferControllerManager",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xb52d470a",
+            "caladan:signature": "freezeBalanceTracker()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "freezeBalanceTracker",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb9bb9cd9",
+            "caladan:signature": "seizedWallets(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "seizedWallets",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xc45a9a7f",
+            "caladan:signature": "receiveTokens(string,int256,address,uint256,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "receiveTokens",
+            "caladan:inputs": [
+                {
+                    "name": "balanceType",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "standard",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xcc0dad4a",
+            "caladan:signature": "isSeizedWallet(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isSeizedWallet",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xcdd8b2b2",
+            "caladan:signature": "registerBeneficiary(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "registerBeneficiary",
+            "caladan:inputs": [
+                {
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xd25a18e5",
+            "caladan:signature": "setTransactionTracker(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setTransactionTracker",
+            "caladan:inputs": [
+                {
+                    "name": "newTransactionTracker",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xd3b41bd2",
+            "caladan:signature": "setTransferControllerManager(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setTransferControllerManager",
+            "caladan:inputs": [
+                {
+                    "name": "newTransferControllerManager",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xdf9774d8",
+            "caladan:signature": "seizedByWallet(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "seizedByWallet",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe167d4f6",
+            "caladan:signature": "disableInitialServiceAuthorization()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "disableInitialServiceAuthorization",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xe3d3e9fc",
+            "caladan:signature": "serviceWalletActionList(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "serviceWalletActionList",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xe8ae41e3",
+            "caladan:signature": "walletLocker()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "walletLocker",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xf8297dbe",
+            "caladan:signature": "stageToBeneficiary(address,address,int256,address,uint256,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "stageToBeneficiary",
+            "caladan:inputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "standard",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x059245e3752d2ad85a00b28db68f4b944c8269ef3c6bd378055bea9cd1fd0740",
+            "caladan:signature": "SetTokenHolderRevenueFundEvent(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SetTokenHolderRevenueFundEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "oldTokenHolderRevenueFund",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "newTokenHolderRevenueFund",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb1054d4e81cc81e966ba33c7ce386432dcf8d4d78798e7a1f7f0b4aaef360330",
+            "caladan:signature": "ReceiveEvent(address,string,int256,address,uint256,string)",
+            "@type": "caladan:Event",
+            "caladan:name": "ReceiveEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "balanceType",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "standard",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8e0adde15ffb742f47e7888277a26cea416253fcb63186dc4949fe493e92b77c",
+            "caladan:signature": "WithdrawEvent(address,int256,address,uint256,string)",
+            "@type": "caladan:Event",
+            "caladan:name": "WithdrawEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "standard",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x573abd56f40c687bfaaabb8d68c68c84cc343b51fe661ff2080e2a6977b3c2b4",
+            "caladan:signature": "StageEvent(address,int256,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "StageEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x013970fdfcc3b9ba3657604311c39270a2b090a94528cfdfd09abaddc6e8fb52",
+            "caladan:signature": "UnstageEvent(address,int256,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "UnstageEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6ded3dfe9bc210e5b60b695bac6bd623844003b866c14264d44e91b8352a4fad",
+            "caladan:signature": "UpdateSettledBalanceEvent(address,int256,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "UpdateSettledBalanceEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x4c50864967876f6fcf5151a5e907d94d9c7b3d7780ca1c7f576680a2126ba39b",
+            "caladan:signature": "StageToBeneficiaryEvent(address,address,int256,address,uint256,string)",
+            "@type": "caladan:Event",
+            "caladan:name": "StageToBeneficiaryEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "sourceWallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "standard",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x70a0e35287634a0b4f96e261e0b71d0ae930837dabd35de9dfdad491a4eb6d37",
+            "caladan:signature": "TransferToBeneficiaryEvent(address,address,int256,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "TransferToBeneficiaryEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x7c750f44230ed3db46106f40b3f7c4707c7814035e69e09d43699ccbe46b1061",
+            "caladan:signature": "SeizeBalancesEvent(address,address,int256,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "SeizeBalancesEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "seizedWallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "seizerWallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe413728068242467b29b57e8f9c4da8b4a4eb0ea41abe0cadddba823c043e088",
+            "caladan:signature": "ClaimRevenueEvent(address,string,address,uint256,string)",
+            "@type": "caladan:Event",
+            "caladan:name": "ClaimRevenueEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "claimer",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "balanceType",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyCt",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "currencyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "standard",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xa44d361e26327b72a7ccbeae801b3c5cd7677ea4fa74168b289e273c46bfecfc",
+            "caladan:signature": "SetWalletLockerEvent(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SetWalletLockerEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "oldWalletLocker",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "newWalletLocker",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x56ec8900b9c4bf84f4b715a53068ca06961dd49084c07b481931e2c2045346e6",
+            "caladan:signature": "FreezeWalletLockerEvent()",
+            "@type": "caladan:Event",
+            "caladan:name": "FreezeWalletLockerEvent",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xa935cd13e8b6831b708081e1b4745e4a9574dc3aae730671c18d113a5497c90b",
+            "caladan:signature": "SetTransactionTrackerEvent(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SetTransactionTrackerEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "oldTransactionTracker",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "newTransactionTracker",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd7d1b6dcaeec9afa87c8c53d9da393505dee41c9ace60ab22f3b23db19ac282c",
+            "caladan:signature": "FreezeTransactionTrackerEvent()",
+            "@type": "caladan:Event",
+            "caladan:name": "FreezeTransactionTrackerEvent",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb2a91d3a71b0c5bc7c083153b3474378e489506ba98bd4ddb1b9056fdc594bb5",
+            "caladan:signature": "SetBalanceTrackerEvent(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SetBalanceTrackerEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "oldBalanceTracker",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "newBalanceTracker",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x9c567b65fe8caab5ec7bc979a498a1322c1d4baf01a30727cbca137187560ea2",
+            "caladan:signature": "FreezeBalanceTrackerEvent()",
+            "@type": "caladan:Event",
+            "caladan:name": "FreezeBalanceTrackerEvent",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xee9ef6d53e152e48b1ebc1c23943fb2b96e847465ed779a0e2121a388ea83d2f",
+            "caladan:signature": "SetTransferControllerManagerEvent(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SetTransferControllerManagerEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "oldTransferControllerManager",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "newTransferControllerManager",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x81c5f2034d05958dd641755044582c0aba29a94070f0a2641bb554325328bf1e",
+            "caladan:signature": "AuthorizeInitialServiceEvent(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AuthorizeInitialServiceEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x7406a64e4e8c04b2a11d4cb484eb07cd5762012eafc449900b8d92de008ff27f",
+            "caladan:signature": "AuthorizeRegisteredServiceEvent(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AuthorizeRegisteredServiceEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc007803323f3ca89cb3f8af1a12f354dc108e9dd4988c312b3f7a878914987ce",
+            "caladan:signature": "AuthorizeRegisteredServiceActionEvent(address,address,string)",
+            "@type": "caladan:Event",
+            "caladan:name": "AuthorizeRegisteredServiceActionEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "action",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe25d4094f2181ddef4410dcc1539a7488abd881a90c56078314b9f70affc5f7e",
+            "caladan:signature": "UnauthorizeRegisteredServiceEvent(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "UnauthorizeRegisteredServiceEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6fa0cdb0b5c22004ccfcaee11eed450e0184dda8edd417ae2410f0a883fdb740",
+            "caladan:signature": "UnauthorizeRegisteredServiceActionEvent(address,address,string)",
+            "@type": "caladan:Event",
+            "caladan:name": "UnauthorizeRegisteredServiceActionEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "service",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "action",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xdd62ff6d9c23793871e7d4796bde6c5dfb2bf8bcbd4186411cee3eb9f6189521",
+            "caladan:signature": "RegisterBeneficiaryEvent(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "RegisterBeneficiaryEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x33f51cf787669db5b5aff6ba597298fd010748de93aaadef29aae876cef4a8c3",
+            "caladan:signature": "DeregisterBeneficiaryEvent(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "DeregisterBeneficiaryEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/nahmii/nahmii: Client Fund"
+                }
+            ]
+        }
+    ]
+}

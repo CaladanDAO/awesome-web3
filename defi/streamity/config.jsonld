@@ -1,0 +1,5302 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/streamity",
+    "@type": "caladan:Project",
+    "caladan:name": "streamity",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token",
+                    "evm:chainID": 1,
+                    "evm:address": "0x0e22734e078d6e399bcee40a549db591c4ea46cb"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213",
+                    "evm:chainID": 1,
+                    "evm:address": "0x121a7b80d7e73dbe928f783d4009074063bf659d"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Wallet App",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Wallet App",
+                    "evm:chainID": 1,
+                    "evm:address": "0x46c635b772115ad2c3df7abe0d35eb908abad4b8"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk",
+                    "evm:chainID": 1,
+                    "evm:address": "0x9bf25700727d10a857099d1033ce2cc493c3b61a"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: Ecosystem",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: Ecosystem",
+                    "evm:chainID": 1,
+                    "evm:address": "0xa9ce8204c3a882c412dab5cd4c114674e4498762"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM",
+                    "evm:chainID": 1,
+                    "evm:address": "0xb4f584ecbdce12cca1259e5faf4d9cfb9fc4045f"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x06fdde03",
+            "caladan:signature": "name()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "name",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x095ea7b3",
+            "caladan:signature": "approve(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approve",
+            "caladan:inputs": [
+                {
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x18160ddd",
+            "caladan:signature": "totalSupply()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "totalSupply",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x23b872dd",
+            "caladan:signature": "transferFrom(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferFrom",
+            "caladan:inputs": [
+                {
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x2e0f2625",
+            "caladan:signature": "DECIMALS()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "DECIMALS",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x2ff2e9dc",
+            "caladan:signature": "INITIAL_SUPPLY()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "INITIAL_SUPPLY",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x313ce567",
+            "caladan:signature": "decimals()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "decimals",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x39509351",
+            "caladan:signature": "increaseAllowance(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "increaseAllowance",
+            "caladan:inputs": [
+                {
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "addedValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x3f4ba83a",
+            "caladan:signature": "unpause()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "unpause",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x42966c68",
+            "caladan:signature": "burn(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "burn",
+            "caladan:inputs": [
+                {
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x46fbf68e",
+            "caladan:signature": "isPauser(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isPauser",
+            "caladan:inputs": [
+                {
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x5c975abb",
+            "caladan:signature": "paused()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "paused",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x6ef8d66d",
+            "caladan:signature": "renouncePauser()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "renouncePauser",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x70a08231",
+            "caladan:signature": "balanceOf(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "balanceOf",
+            "caladan:inputs": [
+                {
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x79cc6790",
+            "caladan:signature": "burnFrom(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "burnFrom",
+            "caladan:inputs": [
+                {
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x82dc1ec4",
+            "caladan:signature": "addPauser(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addPauser",
+            "caladan:inputs": [
+                {
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x8456cb59",
+            "caladan:signature": "pause()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "pause",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x95d89b41",
+            "caladan:signature": "symbol()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "symbol",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xa457c2d7",
+            "caladan:signature": "decreaseAllowance(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "decreaseAllowance",
+            "caladan:inputs": [
+                {
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "subtractedValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xa9059cbb",
+            "caladan:signature": "transfer(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transfer",
+            "caladan:inputs": [
+                {
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xbb4c9f0b",
+            "caladan:signature": "multiSend(address[],uint256[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "multiSend",
+            "caladan:inputs": [
+                {
+                    "name": "_beneficiaries",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "_values",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xdd62ed3e",
+            "caladan:signature": "allowance(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "allowance",
+            "caladan:inputs": [
+                {
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0x8d5004028f09180abc4210f60fbf14955ac50d24898f80bef2b1efe077e75bd6",
+            "caladan:signature": "0()",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x62e78cea01bee320cd4e420270b5ea74000d11b0c9f74754ebdbfc544b05a258",
+            "caladan:signature": "Paused(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Paused",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5db9ee0a495bf2e6ff9c91a7834c1ba4fdd244a5e8aa4e537bd38aeae4b073aa",
+            "caladan:signature": "Unpaused(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Unpaused",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6719d08c1888103bea251a4ed56406bd0c3e69723c8a1686e017e7bbe159b6f8",
+            "caladan:signature": "PauserAdded(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "PauserAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xcd265ebaf09df2871cc7bd4133404a235ba12eff2041bb89d9c714a2621c7c7e",
+            "caladan:signature": "PauserRemoved(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "PauserRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "caladan:signature": "Transfer(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Transfer",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "caladan:signature": "Approval(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Approval",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x024c7ec7",
+            "caladan:signature": "restrictRegistryUpdate(bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "restrictRegistryUpdate",
+            "caladan:inputs": [
+                {
+                    "name": "_adminOnly",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x0ca78923",
+            "caladan:signature": "updateConnector(address,uint32,bool,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateConnector",
+            "caladan:inputs": [
+                {
+                    "name": "_connectorToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "uint32",
+                    "@type": "uint32"
+                },
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "_virtualBalance",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x0e53aae9",
+            "caladan:signature": "connectors(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "connectors",
+            "caladan:inputs": [
+                {
+                    "name": "_address",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "uint32",
+                    "@type": "uint32"
+                },
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x1120a776",
+            "caladan:signature": "bancorX()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "bancorX",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x15226b54",
+            "caladan:signature": "getReserveBalance(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getReserveBalance",
+            "caladan:inputs": [
+                {
+                    "name": "_reserveToken",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x19b64015",
+            "caladan:signature": "connectorTokens(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "connectorTokens",
+            "caladan:inputs": [
+                {
+                    "name": "_index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x1e1401f8",
+            "caladan:signature": "getReturn(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getReturn",
+            "caladan:inputs": [
+                {
+                    "name": "_fromToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_toToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x21e6b53d",
+            "caladan:signature": "transferTokenOwnership(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferTokenOwnership",
+            "caladan:inputs": [
+                {
+                    "name": "_newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": true,
+            "@id": "0x22742564",
+            "caladan:signature": "quickConvertPrioritized(address[],uint256,uint256,uint256,uint8,bytes32,bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "quickConvertPrioritized",
+            "caladan:inputs": [
+                {
+                    "name": "_path",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_minReturn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_block",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_v",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "name": "_r",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "_s",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x228d2820",
+            "caladan:signature": "disableConversions(bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "disableConversions",
+            "caladan:inputs": [
+                {
+                    "name": "_disable",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x2a2e2f0c",
+            "caladan:signature": "convertInternal(address,address,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "convertInternal",
+            "caladan:inputs": [
+                {
+                    "name": "_fromToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_toToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_minReturn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x2c12b446",
+            "caladan:signature": "getReserveRatio(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getReserveRatio",
+            "caladan:inputs": [
+                {
+                    "name": "_reserveToken",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x2cc1cd65",
+            "caladan:signature": "completeXConversion2(address[],uint256,uint256,uint256[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "completeXConversion2",
+            "caladan:inputs": [
+                {
+                    "name": "_path",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "_minReturn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_conversionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_signature",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x38a5e016",
+            "caladan:signature": "acceptTokenOwnership()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "acceptTokenOwnership",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x3aa0145a",
+            "caladan:signature": "getFinalAmount(uint256,uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getFinalAmount",
+            "caladan:inputs": [
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_magnitude",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x3e8ff43f",
+            "caladan:signature": "converterType()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "converterType",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x3f4d2fc2",
+            "caladan:signature": "addConnector(address,uint32,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addConnector",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_weight",
+                    "type": "uint32",
+                    "@type": "uint32"
+                },
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x415f1240",
+            "caladan:signature": "liquidate(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "liquidate",
+            "caladan:inputs": [
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x41a5b33d",
+            "caladan:signature": "withdrawFromToken(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawFromToken",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x42906029",
+            "caladan:signature": "newManager()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "newManager",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x481c6a75",
+            "caladan:signature": "manager()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "manager",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x49d10b64",
+            "caladan:signature": "updateRegistry()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateRegistry",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x4af80f0e",
+            "caladan:signature": "setConversionWhitelist(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setConversionWhitelist",
+            "caladan:inputs": [
+                {
+                    "name": "_whitelist",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x50057351",
+            "caladan:signature": "completeXConversion(address[],uint256,uint256,uint256,uint8,bytes32,bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "completeXConversion",
+            "caladan:inputs": [
+                {
+                    "name": "_path",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "_minReturn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_conversionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_block",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_v",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "name": "_r",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "_s",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x54fd4d50",
+            "caladan:signature": "version()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "version",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x579cd3ca",
+            "caladan:signature": "conversionFee()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "conversionFee",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x5e35359e",
+            "caladan:signature": "withdrawTokens(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawTokens",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x5e5144eb",
+            "caladan:signature": "change(address,address,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "change",
+            "caladan:inputs": [
+                {
+                    "name": "_fromToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_toToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_minReturn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x61cd756e",
+            "caladan:signature": "prevRegistry()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "prevRegistry",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x677c0812",
+            "caladan:signature": "enableVirtualBalances(uint16)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "enableVirtualBalances",
+            "caladan:inputs": [
+                {
+                    "name": "_scaleFactor",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x6a49d2c4",
+            "caladan:signature": "addReserve(address,uint32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addReserve",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_ratio",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x6ebf36c0",
+            "caladan:signature": "convert2(address,address,uint256,uint256,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "convert2",
+            "caladan:inputs": [
+                {
+                    "name": "_fromToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_toToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_minReturn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_affiliateAccount",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_affiliateFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x71f52bf3",
+            "caladan:signature": "connectorTokenCount()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "connectorTokenCount",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x72b44b2c",
+            "caladan:signature": "getSaleReturn(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getSaleReturn",
+            "caladan:inputs": [
+                {
+                    "name": "_reserveToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_sellAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x75892cf1",
+            "caladan:signature": "convert(address,address,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "convert",
+            "caladan:inputs": [
+                {
+                    "name": "_fromToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_toToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_minReturn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x79ba5097",
+            "caladan:signature": "acceptOwnership()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "acceptOwnership",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x7b103999",
+            "caladan:signature": "registry()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "registry",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x8da5cb5b",
+            "caladan:signature": "owner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "owner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Wallet App"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: Ecosystem"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x8e3047e0",
+            "caladan:signature": "getCrossConnectorReturn(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getCrossConnectorReturn",
+            "caladan:inputs": [
+                {
+                    "name": "_fromConnectorToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_toConnectorToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x92d1abb7",
+            "caladan:signature": "CONVERTER_CONVERSION_WHITELIST()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "CONVERTER_CONVERSION_WHITELIST",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x935e2ae1",
+            "caladan:signature": "updateReserveVirtualBalance(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateReserveVirtualBalance",
+            "caladan:inputs": [
+                {
+                    "name": "_reserveToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_virtualBalance",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x94c275ad",
+            "caladan:signature": "maxConversionFee()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "maxConversionFee",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x9b99a8e2",
+            "caladan:signature": "reserveTokenCount()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "reserveTokenCount",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x9e568553",
+            "caladan:signature": "disableConnectorSale(address,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "disableConnectorSale",
+            "caladan:inputs": [
+                {
+                    "name": "_connectorToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_disable",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa2c4c336",
+            "caladan:signature": "getPurchaseReturn(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getPurchaseReturn",
+            "caladan:inputs": [
+                {
+                    "name": "_reserveToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_depositAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xa6a11c71",
+            "caladan:signature": "disableReserveSale(address,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "disableReserveSale",
+            "caladan:inputs": [
+                {
+                    "name": "_reserveToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_disable",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": true,
+            "@id": "0xb3a426d5",
+            "caladan:signature": "quickConvertPrioritized2(address[],uint256,uint256,uint256[],address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "quickConvertPrioritized2",
+            "caladan:inputs": [
+                {
+                    "name": "_path",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_minReturn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_signature",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "name": "_affiliateAccount",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_affiliateFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xb4a176d3",
+            "caladan:signature": "restoreRegistry()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "restoreRegistry",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xbf754558",
+            "caladan:signature": "conversionsEnabled()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "conversionsEnabled",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xc45d3d92",
+            "caladan:signature": "conversionWhitelist()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "conversionWhitelist",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xc8c2fe6c",
+            "caladan:signature": "acceptManagement()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "acceptManagement",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xc976a359",
+            "caladan:signature": "adminOnly()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "adminOnly",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xca1d209d",
+            "caladan:signature": "fund(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "fund",
+            "caladan:inputs": [
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xcf73266a",
+            "caladan:signature": "getCrossReserveReturn(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getCrossReserveReturn",
+            "caladan:inputs": [
+                {
+                    "name": "_fromReserveToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_toReserveToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd031370b",
+            "caladan:signature": "reserveTokens(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "reserveTokens",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd4ee1d90",
+            "caladan:signature": "newOwner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "newOwner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xd55ec697",
+            "caladan:signature": "upgrade()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "upgrade",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd66bd524",
+            "caladan:signature": "reserves(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "reserves",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "virtualBalance",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "ratio",
+                    "type": "uint32",
+                    "@type": "uint32"
+                },
+                {
+                    "name": "isVirtualBalanceEnabled",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "isSaleEnabled",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "isSet",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd8959512",
+            "caladan:signature": "getConnectorBalance(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getConnectorBalance",
+            "caladan:inputs": [
+                {
+                    "name": "_connectorToken",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xd924f0c3",
+            "caladan:signature": "setBancorX(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setBancorX",
+            "caladan:inputs": [
+                {
+                    "name": "_bancorX",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": true,
+            "@id": "0xe4dd22f6",
+            "caladan:signature": "quickConvert2(address[],uint256,uint256,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "quickConvert2",
+            "caladan:inputs": [
+                {
+                    "name": "_path",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_minReturn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_affiliateAccount",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_affiliateFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe4edf852",
+            "caladan:signature": "transferManagement(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferManagement",
+            "caladan:inputs": [
+                {
+                    "name": "_newManager",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xecbca55d",
+            "caladan:signature": "setConversionFee(uint32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setConversionFee",
+            "caladan:inputs": [
+                {
+                    "name": "_conversionFee",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": true,
+            "@id": "0xf0843ba9",
+            "caladan:signature": "quickConvert(address[],uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "quickConvert",
+            "caladan:inputs": [
+                {
+                    "name": "_path",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_minReturn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xf2fde38b",
+            "caladan:signature": "transferOwnership(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferOwnership",
+            "caladan:inputs": [
+                {
+                    "name": "_newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Wallet App"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: Ecosystem"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xfc0c546a",
+            "caladan:signature": "token()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "token",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xfe417fa5",
+            "caladan:signature": "claimTokens(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimTokens",
+            "caladan:inputs": [
+                {
+                    "name": "_from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0x2e11879676d3e83eaeb0ec83575db89c93f8546e81a490ba69095a0fef1fd581",
+            "caladan:signature": "0(address,address,uint32,address,uint32)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_registry",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_maxConversionFee",
+                    "type": "uint32",
+                    "@type": "uint32"
+                },
+                {
+                    "name": "_reserveToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_reserveRatio",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x276856b36cbc45526a0ba64f44611557a2a8b68662c5388e9fe6d72e86e1c8cb",
+            "caladan:signature": "Conversion(address,address,address,uint256,uint256,int256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Conversion",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "_fromToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "_toToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "_trader",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "_return",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "_conversionFee",
+                    "type": "int256",
+                    "@type": "int256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8a6a7f53b3c8fa1dc4b83e3f1be668c1b251ff8d44cdcb83eb3acec3fec6a788",
+            "caladan:signature": "PriceDataUpdate(address,uint256,uint256,uint32)",
+            "@type": "caladan:Event",
+            "caladan:name": "PriceDataUpdate",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "_connectorToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_tokenSupply",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "_connectorBalance",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "_connectorWeight",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x81cd2ffb37dd237c0e4e2a3de5265fcf9deb43d3e7801e80db9f1ccfba7ee600",
+            "caladan:signature": "ConversionFeeUpdate(uint32,uint32)",
+            "@type": "caladan:Event",
+            "caladan:name": "ConversionFeeUpdate",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "_prevFee",
+                    "type": "uint32",
+                    "@type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "name": "_newFee",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb8e670608a57255ce4f35952b324cba70211a4200a91ce81d26e06d488c1f66b",
+            "caladan:signature": "ConversionsEnable(bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "ConversionsEnable",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "_conversionsEnabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x64622fbd54039f76d87a876ecaea9bdb6b9b493d7a35ca38ae82b53dcddbe2e4",
+            "caladan:signature": "VirtualBalancesEnable(bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "VirtualBalancesEnable",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "_enabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xbe4cc281795971a471c980e842627a7f1ea3892ddfce8c5b6357cd2611c19732",
+            "caladan:signature": "ManagerUpdate(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ManagerUpdate",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "_prevManager",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "_newManager",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x343765429aea5a34b3ff6a3785a98a5abb2597aca87bfbb58632c173d585373a",
+            "caladan:signature": "OwnerUpdate(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnerUpdate",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "_prevOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "_newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Bancor: Converter 213"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8fe135a5a04c7d6ddb26aa37db1887e9779d8ef139686911e5e4ce60df88aeb4",
+            "caladan:signature": "AddEth(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "AddEth",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Wallet App"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "caladan:signature": "OwnershipTransferred(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnershipTransferred",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Wallet App"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: Ecosystem"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xbc596dda632fa66a043d99409a7485f3255315aa7e497b5d9142d3b055e42d0f",
+            "caladan:signature": "Swap(address,bytes32,address,address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Swap",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "_tradeID",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_cFrom",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_cOut",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_vFrom",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_vOut",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Wallet App"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xfbd282fd47320239a5597bc3f2a5983771284e87aad2f7e089efa1b2dee70d87",
+            "caladan:signature": "SwapAltChain(address,bytes32,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "SwapAltChain",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "_tradeID",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_cFrom",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_vFrom",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Wallet App"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x4748773e5c486b5aca8ada069bc130db6db4653be6d921c635e8467af1a14331",
+            "caladan:signature": "TransferAltChain(bytes32,address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "TransferAltChain",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "_tradeID",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Wallet App"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": true,
+            "@id": "0xc2ac3aff",
+            "caladan:signature": "addEth()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "addEth",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Wallet App"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": true,
+            "@id": "0x0d5d936d",
+            "caladan:signature": "swap(bytes32,address,address,uint256,uint256,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "swap",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "_tradeID",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_cFrom",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_cOut",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_vFrom",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_vOut",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_time",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_sign",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Wallet App"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": true,
+            "@id": "0x366bc51f",
+            "caladan:signature": "swapAltChain(bytes32,address,uint256,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "swapAltChain",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "_tradeID",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_cFrom",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_vFrom",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_time",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_sign",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Wallet App"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x81dc5361",
+            "caladan:signature": "swapList(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "swapList",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Wallet App"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xd409cfb4",
+            "caladan:signature": "transferAltChain(bytes32,address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferAltChain",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "_tradeID",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Wallet App"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xd9caed12",
+            "caladan:signature": "withdraw(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdraw",
+            "caladan:inputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: STM Wallet App"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x03b9b4f9",
+            "caladan:signature": "releaseTokens(bytes32,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "releaseTokens",
+            "caladan:inputs": [
+                {
+                    "name": "_hashDeal",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "_additionalGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x30e9f6ed",
+            "caladan:signature": "STATUS_NO_DEAL()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "STATUS_NO_DEAL",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x35ba9af8",
+            "caladan:signature": "availableForWithdrawal()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "availableForWithdrawal",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x41b6f6ce",
+            "caladan:signature": "getStatusDeal(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getStatusDeal",
+            "caladan:inputs": [
+                {
+                    "name": "_hashDeal",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x4f1fa7ef",
+            "caladan:signature": "streamityContractAddress()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "streamityContractAddress",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: Ecosystem"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x53122f56",
+            "caladan:signature": "streamityTransfers(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "streamityTransfers",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "cancelTime",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "seller",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "buyer",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "status",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "name": "commission",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "isAltCoin",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x5937de14",
+            "caladan:signature": "STATUS_DEAL_RELEASE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "STATUS_DEAL_RELEASE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x6583e239",
+            "caladan:signature": "STATUS_DEAL_APPROVE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "STATUS_DEAL_APPROVE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x8b845c1d",
+            "caladan:signature": "withdrawCommisionToAddressAltCoin(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawCommisionToAddressAltCoin",
+            "caladan:inputs": [
+                {
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: Ecosystem"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x92a93d33",
+            "caladan:signature": "payAltCoin(bytes32,address,address,uint256,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "payAltCoin",
+            "caladan:inputs": [
+                {
+                    "name": "_tradeID",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "_seller",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_buyer",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_commission",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_sign",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xa9a1fb96",
+            "caladan:signature": "releaseTokensForce(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "releaseTokensForce",
+            "caladan:inputs": [
+                {
+                    "name": "_hashDeal",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xb0dbce71",
+            "caladan:signature": "setStreamityContractAddress(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setStreamityContractAddress",
+            "caladan:inputs": [
+                {
+                    "name": "newAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: Ecosystem"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xda3e3397",
+            "caladan:signature": "approveToken(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approveToken",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe0f47580",
+            "caladan:signature": "withdrawCommisionToAddress(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawCommisionToAddress",
+            "caladan:inputs": [
+                {
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe5994905",
+            "caladan:signature": "transferTokenFrom(address,address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferTokenFrom",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_transferTo",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_transferFrom",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe5a17818",
+            "caladan:signature": "cancelSeller(bytes32,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "cancelSeller",
+            "caladan:inputs": [
+                {
+                    "name": "_hashDeal",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "_additionalGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xf28c0716",
+            "caladan:signature": "approveDeal(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approveDeal",
+            "caladan:inputs": [
+                {
+                    "name": "_hashDeal",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xf2dfa136",
+            "caladan:signature": "STATUS_DEAL_WAIT_CONFIRMATION()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "STATUS_DEAL_WAIT_CONFIRMATION",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xf5537ede",
+            "caladan:signature": "transferToken(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferToken",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_transferTo",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xfd8bcf6d",
+            "caladan:signature": "requestCancelationTime()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "requestCancelationTime",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": true,
+            "@id": "0xfe908b7a",
+            "caladan:signature": "pay(bytes32,address,address,uint256,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "pay",
+            "caladan:inputs": [
+                {
+                    "name": "_tradeID",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "_seller",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_buyer",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_commission",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_sign",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "caladan:signature": "0(address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "name": "streamityContract",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: Ecosystem"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xbefa990333ef4d20a2b9cec2b1901be2750b757182f35d2373675ed20d3a0f1f",
+            "caladan:signature": "StartDealEvent(bytes32,address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "StartDealEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "_hashDeal",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "name": "_seller",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_buyer",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xa2cd0f243a44961385e90ee4cca3f1581e1014788936e12115c211265f34fbcb",
+            "caladan:signature": "ApproveDealEvent(bytes32,address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ApproveDealEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "_hashDeal",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "name": "_seller",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_buyer",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf6fa827616c433d804e6640e57ef007771e25349e04446dfe9c048a69b4aef77",
+            "caladan:signature": "ReleasedEvent(bytes32,address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ReleasedEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "_hashDeal",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "name": "_seller",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_buyer",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xfc2da483b193ee3021dffb921f0fcb089c9318b30b63250e2e5d0be6ac5ed846",
+            "caladan:signature": "SellerCancelEvent(bytes32,address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SellerCancelEvent",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "_hashDeal",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "name": "_seller",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_buyer",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: StreamDesk"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x02399125",
+            "caladan:signature": "EMPTY()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "EMPTY",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: Ecosystem"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x1e89d545",
+            "caladan:signature": "multiTransfer(address[],uint256[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "multiTransfer",
+            "caladan:inputs": [
+                {
+                    "name": "_addresses",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "_amounts",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: Ecosystem"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x20388b19",
+            "caladan:signature": "payAltCoin(uint8,bytes32,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "payAltCoin",
+            "caladan:inputs": [
+                {
+                    "name": "_vendor",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "name": "_tradeID",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_sign",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: Ecosystem"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x8ac5852b",
+            "caladan:signature": "stmTransfers(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "stmTransfers",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: Ecosystem"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb0c8f16981b10e0e1975600200227a786549ab9ceb3015ec6771c919cac81c98",
+            "caladan:signature": "Multisended(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Multisended",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "total",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: Ecosystem"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x16244105d59fefbfae5a8f05724a38a40879cb391dd45607797c610ba17930a3",
+            "caladan:signature": "Trade(uint8,bytes32)",
+            "@type": "caladan:Event",
+            "caladan:name": "Trade",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "_vendor",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "name": "_tradeID",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Streamity: Ecosystem"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xdccd412f0b1252819cb1fd330b93224ca42612892bb3f4f789976e6d81936496",
+            "caladan:signature": "Burn(address,uint256,uint256,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Burn",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount0",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount1",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x4c209b5fc8ad50758f13e2e1088ba56a560dff690a1c6fef26394f4c03821c4f",
+            "caladan:signature": "Mint(address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Mint",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount0",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount1",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822",
+            "caladan:signature": "Swap(address,uint256,uint256,uint256,uint256,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Swap",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount0In",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount1In",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount0Out",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount1Out",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x1c411e9a96e071241c2f21f7726b17ae89e3cab4c78be50e062b03a9fffbbad1",
+            "caladan:signature": "Sync(uint112,uint112)",
+            "@type": "caladan:Event",
+            "caladan:name": "Sync",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint112",
+                    "name": "reserve0",
+                    "type": "uint112",
+                    "@type": "uint112"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint112",
+                    "name": "reserve1",
+                    "type": "uint112",
+                    "@type": "uint112"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x3644e515",
+            "caladan:signature": "DOMAIN_SEPARATOR()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "DOMAIN_SEPARATOR",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xba9a7a56",
+            "caladan:signature": "MINIMUM_LIQUIDITY()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "MINIMUM_LIQUIDITY",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x30adf81f",
+            "caladan:signature": "PERMIT_TYPEHASH()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "PERMIT_TYPEHASH",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x89afcb44",
+            "caladan:signature": "burn(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "burn",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount0",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount1",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xc45a0155",
+            "caladan:signature": "factory()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "factory",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x0902f1ac",
+            "caladan:signature": "getReserves()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getReserves",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint112",
+                    "name": "_reserve0",
+                    "type": "uint112",
+                    "@type": "uint112"
+                },
+                {
+                    "internalType": "uint112",
+                    "name": "_reserve1",
+                    "type": "uint112",
+                    "@type": "uint112"
+                },
+                {
+                    "internalType": "uint32",
+                    "name": "_blockTimestampLast",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x485cc955",
+            "caladan:signature": "initialize(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "initialize",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_token0",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_token1",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x7464fc3d",
+            "caladan:signature": "kLast()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "kLast",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x6a627842",
+            "caladan:signature": "mint(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "mint",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "liquidity",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x7ecebe00",
+            "caladan:signature": "nonces(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "nonces",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xd505accf",
+            "caladan:signature": "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "permit",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "v",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "r",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "s",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x5909c0d5",
+            "caladan:signature": "price0CumulativeLast()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "price0CumulativeLast",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x5a3d5493",
+            "caladan:signature": "price1CumulativeLast()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "price1CumulativeLast",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xbc25cf77",
+            "caladan:signature": "skim(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "skim",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x022c0d9f",
+            "caladan:signature": "swap(uint256,uint256,address,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "swap",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount0Out",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount1Out",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xfff6cae9",
+            "caladan:signature": "sync()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "sync",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x0dfe1681",
+            "caladan:signature": "token0()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "token0",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd21220a7",
+            "caladan:signature": "token1()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "token1",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/streamity/Uniswap V2: STM"
+                }
+            ]
+        }
+    ]
+}

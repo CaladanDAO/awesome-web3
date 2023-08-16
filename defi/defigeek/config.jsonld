@@ -1,0 +1,429 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/defigeek",
+    "@type": "caladan:Project",
+    "caladan:name": "defigeek",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/defigeek/null",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/defigeek/null",
+                    "evm:chainID": 1,
+                    "evm:address": "0x961dd84059505d59f82ce4fb87d3c09bec65301d"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "constant": true,
+            "@id": "0x06fdde03",
+            "caladan:signature": "name()",
+            "@type": "caladan:Function",
+            "caladan:name": "name",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/defigeek/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0x095ea7b3",
+            "caladan:signature": "approve(address,uint256)",
+            "@type": "caladan:Function",
+            "caladan:name": "approve",
+            "caladan:inputs": [
+                {
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/defigeek/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x18160ddd",
+            "caladan:signature": "totalSupply()",
+            "@type": "caladan:Function",
+            "caladan:name": "totalSupply",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/defigeek/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0x23b872dd",
+            "caladan:signature": "transferFrom(address,address,uint256)",
+            "@type": "caladan:Function",
+            "caladan:name": "transferFrom",
+            "caladan:inputs": [
+                {
+                    "name": "_from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/defigeek/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x313ce567",
+            "caladan:signature": "decimals()",
+            "@type": "caladan:Function",
+            "caladan:name": "decimals",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/defigeek/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x54fd4d50",
+            "caladan:signature": "version()",
+            "@type": "caladan:Function",
+            "caladan:name": "version",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/defigeek/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x70a08231",
+            "caladan:signature": "balanceOf(address)",
+            "@type": "caladan:Function",
+            "caladan:name": "balanceOf",
+            "caladan:inputs": [
+                {
+                    "name": "_owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "balance",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/defigeek/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x95d89b41",
+            "caladan:signature": "symbol()",
+            "@type": "caladan:Function",
+            "caladan:name": "symbol",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/defigeek/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0xa9059cbb",
+            "caladan:signature": "transfer(address,uint256)",
+            "@type": "caladan:Function",
+            "caladan:name": "transfer",
+            "caladan:inputs": [
+                {
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/defigeek/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0xcae9ca51",
+            "caladan:signature": "approveAndCall(address,uint256,bytes)",
+            "@type": "caladan:Function",
+            "caladan:name": "approveAndCall",
+            "caladan:inputs": [
+                {
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_extraData",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/defigeek/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0xdd62ed3e",
+            "caladan:signature": "allowance(address,address)",
+            "@type": "caladan:Function",
+            "caladan:name": "allowance",
+            "caladan:inputs": [
+                {
+                    "name": "_owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "remaining",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/defigeek/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xe823478a439bb67ab3f619681e4601c3257d68b4d9fa0167ece870fc3e0599ec",
+            "caladan:signature": "0(uint256,string,uint8,string)",
+            "@type": "caladan:Event",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "name": "_initialAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_tokenName",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "_decimalUnits",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "name": "_tokenSymbol",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/defigeek/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "caladan:signature": "Transfer(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Transfer",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "_from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/defigeek/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "caladan:signature": "Approval(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Approval",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "_owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/defigeek/null"
+                }
+            ]
+        }
+    ]
+}

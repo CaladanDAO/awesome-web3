@@ -1,0 +1,3987 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/nft/nftx",
+    "@type": "caladan:Project",
+    "caladan:name": "nftx",
+    "caladan:dataset": "nft",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent",
+                    "evm:chainID": 1,
+                    "evm:address": "0x40d73df4f99bae688ce3c23a01022224fe16c7b2"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/nftx/null",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null",
+                    "evm:chainID": 1,
+                    "evm:address": "0x87d73e916d7057945c9bcd8cdd94e42a6f47f776"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe",
+                    "evm:chainID": 1,
+                    "evm:address": "0xaa29881aac939a025a3ab58024d7dd46200fb93d"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x007bb003",
+            "caladan:signature": "ADD_PROTECTED_TOKEN_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ADD_PROTECTED_TOKEN_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x01ffc9a7",
+            "caladan:signature": "supportsInterface(bytes4)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "supportsInterface",
+            "caladan:inputs": [
+                {
+                    "name": "_interfaceId",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x0803fac0",
+            "caladan:signature": "hasInitialized()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "hasInitialized",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x11a5e409",
+            "caladan:signature": "ERC1271_INTERFACE_ID()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ERC1271_INTERFACE_ID",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x150b7a02",
+            "caladan:signature": "onERC721Received(address,address,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "onERC721Received",
+            "caladan:inputs": [
+                {
+                    "name": "_operator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x1626ba7e",
+            "caladan:signature": "isValidSignature(bytes32,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isValidSignature",
+            "caladan:inputs": [
+                {
+                    "name": "_hash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "_signature",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x1ce30181",
+            "caladan:signature": "ERC1271_RETURN_INVALID_SIGNATURE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ERC1271_RETURN_INVALID_SIGNATURE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x206b60f9",
+            "caladan:signature": "TRANSFER_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "TRANSFER_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x20c13b0b",
+            "caladan:signature": "isValidSignature(bytes,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isValidSignature",
+            "caladan:inputs": [
+                {
+                    "name": "_data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "name": "_signature",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x26f06d24",
+            "caladan:signature": "getProtectedTokensLength()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getProtectedTokensLength",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x2914b9bd",
+            "caladan:signature": "getEVMScriptExecutor(bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getEVMScriptExecutor",
+            "caladan:inputs": [
+                {
+                    "name": "_script",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x32f0a3b5",
+            "caladan:signature": "getRecoveryVault()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getRecoveryVault",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x368c3c34",
+            "caladan:signature": "RUN_SCRIPT_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "RUN_SCRIPT_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x3e4eb756",
+            "caladan:signature": "SAFE_EXECUTE_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "SAFE_EXECUTE_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x42b2d066",
+            "caladan:signature": "REMOVE_PROTECTED_TOKEN_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "REMOVE_PROTECTED_TOKEN_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": true,
+            "@id": "0x47e7ef24",
+            "caladan:signature": "deposit(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "deposit",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x48a0c8dd",
+            "caladan:signature": "isDepositable()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isDepositable",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x4c7ec0b0",
+            "caladan:signature": "presignHash(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "presignHash",
+            "caladan:inputs": [
+                {
+                    "name": "_hash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x54842f14",
+            "caladan:signature": "DESIGNATE_SIGNER_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "DESIGNATE_SIGNER_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x578eb50b",
+            "caladan:signature": "removeProtectedToken(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeProtectedToken",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x5fa5e4e6",
+            "caladan:signature": "EXECUTE_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "EXECUTE_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x6298e902",
+            "caladan:signature": "addProtectedToken(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addProtectedToken",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x7e7db6e1",
+            "caladan:signature": "allowRecoverability(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "allowRecoverability",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x80afdea8",
+            "caladan:signature": "appId()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "appId",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x8129fc1c",
+            "caladan:signature": "initialize()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "initialize",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x851a3790",
+            "caladan:signature": "protectedTokens(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "protectedTokens",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x8b3dd749",
+            "caladan:signature": "getInitializationBlock()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getInitializationBlock",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x9890cdca",
+            "caladan:signature": "ERC1271_RETURN_VALID_SIGNATURE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ERC1271_RETURN_VALID_SIGNATURE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x9d4941d8",
+            "caladan:signature": "transferToVault(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferToVault",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa1658fad",
+            "caladan:signature": "canPerform(address,bytes32,uint256[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "canPerform",
+            "caladan:inputs": [
+                {
+                    "name": "_sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "_params",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa479e508",
+            "caladan:signature": "getEVMScriptRegistry()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getEVMScriptRegistry",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xa83e52b4",
+            "caladan:signature": "setDesignatedSigner(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setDesignatedSigner",
+            "caladan:inputs": [
+                {
+                    "name": "_designatedSigner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xaae25051",
+            "caladan:signature": "designatedSigner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "designatedSigner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xab23c345",
+            "caladan:signature": "safeExecute(address,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "safeExecute",
+            "caladan:inputs": [
+                {
+                    "name": "_target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb03bdb04",
+            "caladan:signature": "PROTECTED_TOKENS_CAP()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "PROTECTED_TOKENS_CAP",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb06c4244",
+            "caladan:signature": "ADD_PRESIGNED_HASH_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ADD_PRESIGNED_HASH_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb4fa653c",
+            "caladan:signature": "isPresigned(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isPresigned",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xb61d27f6",
+            "caladan:signature": "execute(address,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "execute",
+            "caladan:inputs": [
+                {
+                    "name": "_target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_ethValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xbeabacc8",
+            "caladan:signature": "transfer(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transfer",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xc0774df3",
+            "caladan:signature": "canForward(address,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "canForward",
+            "caladan:inputs": [
+                {
+                    "name": "_sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_evmScript",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd4aae0c4",
+            "caladan:signature": "kernel()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "kernel",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xd948d468",
+            "caladan:signature": "forward(bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "forward",
+            "caladan:inputs": [
+                {
+                    "name": "_evmScript",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xde4796ed",
+            "caladan:signature": "isPetrified()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isPetrified",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xe3d670d7",
+            "caladan:signature": "balance(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "balance",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xfd64eccb",
+            "caladan:signature": "isForwarder()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "isForwarder",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x47f4287d5285559a03d8affeadc53ef3fca238a63c256c08a22bfd30fd5d33ce",
+            "caladan:signature": "SafeExecute(address,address,bytes)",
+            "@type": "caladan:Event",
+            "caladan:name": "SafeExecute",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc25cfed0b22da6a56f0e5ff784979a0b8623eddf2aee4acd33c2adefb09cbab6",
+            "caladan:signature": "Execute(address,address,uint256,bytes)",
+            "@type": "caladan:Event",
+            "caladan:name": "Execute",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "ethValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf70a5123a7f334e5dac1d9aa3a6aafbc316712bf2519ffe0d3aa4f7cba52767e",
+            "caladan:signature": "AddProtectedToken(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AddProtectedToken",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3da25279c93c5b22b359bebff8b5ddbfd9b0506be8344b93c9a7dc999459fe04",
+            "caladan:signature": "RemoveProtectedToken(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "RemoveProtectedToken",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb150212e573caa2a0216cf8f273ef996af143fd7b2d35abd92c8105536cac160",
+            "caladan:signature": "PresignHash(address,bytes32)",
+            "@type": "caladan:Event",
+            "caladan:name": "PresignHash",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "hash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3ecf54ed9acd859c5ee7f080794267b8f08b65d2446d816cef1efccd6d00d735",
+            "caladan:signature": "SetDesignatedSigner(address,address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SetDesignatedSigner",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "oldSigner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "newSigner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe0d2ab3bf6896c073bb33b920a9b60f3c8207b3cc3b7561c3101cb081a8f0883",
+            "caladan:signature": "ReceiveERC721(address,address,address,uint256,bytes)",
+            "@type": "caladan:Event",
+            "caladan:name": "ReceiveERC721",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "operator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x239e7f6cdac8fb35a788a46b431b54da87de90b82448a2c294be5e92a6e579af",
+            "caladan:signature": "VaultTransfer(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "VaultTransfer",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2790b90165fd3973ad7edde4eca71b4f8808dd4857a2a3a3e8ae5642a5cb196e",
+            "caladan:signature": "VaultDeposit(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "VaultDeposit",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5229a5dba83a54ae8cb5b51bdd6de9474cacbe9dd332f5185f3a4f4f2e3f4ad9",
+            "caladan:signature": "ScriptResult(address,bytes,bytes,bytes)",
+            "@type": "caladan:Event",
+            "caladan:name": "ScriptResult",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "executor",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "script",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "name": "input",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "name": "returnData",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x596caf56044b55fb8c4ca640089bbc2b63cae3e978b851f5745cbb7c5b288e02",
+            "caladan:signature": "RecoverToVault(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "RecoverToVault",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "vault",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/Agent"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x06fdde03",
+            "caladan:signature": "name()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "name",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x095ea7b3",
+            "caladan:signature": "approve(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approve",
+            "caladan:inputs": [
+                {
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x17634514",
+            "caladan:signature": "creationBlock()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "creationBlock",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x18160ddd",
+            "caladan:signature": "totalSupply()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "totalSupply",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x23b872dd",
+            "caladan:signature": "transferFrom(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferFrom",
+            "caladan:inputs": [
+                {
+                    "name": "_from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x313ce567",
+            "caladan:signature": "decimals()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "decimals",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x3cebb823",
+            "caladan:signature": "changeController(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "changeController",
+            "caladan:inputs": [
+                {
+                    "name": "_newController",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x4ee2cd7e",
+            "caladan:signature": "balanceOfAt(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "balanceOfAt",
+            "caladan:inputs": [
+                {
+                    "name": "_owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_blockNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x54fd4d50",
+            "caladan:signature": "version()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "version",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x6638c087",
+            "caladan:signature": "createCloneToken(string,uint8,string,uint256,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "createCloneToken",
+            "caladan:inputs": [
+                {
+                    "name": "_cloneTokenName",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "_cloneDecimalUnits",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "name": "_cloneTokenSymbol",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "_snapshotBlock",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_transfersEnabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x70a08231",
+            "caladan:signature": "balanceOf(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "balanceOf",
+            "caladan:inputs": [
+                {
+                    "name": "_owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "balance",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x80a54001",
+            "caladan:signature": "parentToken()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "parentToken",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x827f32c0",
+            "caladan:signature": "generateTokens(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "generateTokens",
+            "caladan:inputs": [
+                {
+                    "name": "_owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x95d89b41",
+            "caladan:signature": "symbol()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "symbol",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x981b24d0",
+            "caladan:signature": "totalSupplyAt(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "totalSupplyAt",
+            "caladan:inputs": [
+                {
+                    "name": "_blockNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xa9059cbb",
+            "caladan:signature": "transfer(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transfer",
+            "caladan:inputs": [
+                {
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xbef97c87",
+            "caladan:signature": "transfersEnabled()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "transfersEnabled",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xc5bcc4f1",
+            "caladan:signature": "parentSnapShotBlock()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "parentSnapShotBlock",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xcae9ca51",
+            "caladan:signature": "approveAndCall(address,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approveAndCall",
+            "caladan:inputs": [
+                {
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_extraData",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xd3ce77fe",
+            "caladan:signature": "destroyTokens(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "destroyTokens",
+            "caladan:inputs": [
+                {
+                    "name": "_owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xdd62ed3e",
+            "caladan:signature": "allowance(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "allowance",
+            "caladan:inputs": [
+                {
+                    "name": "_owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "remaining",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xdf8de3e7",
+            "caladan:signature": "claimTokens(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimTokens",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xe77772fe",
+            "caladan:signature": "tokenFactory()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "tokenFactory",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xf41e60c5",
+            "caladan:signature": "enableTransfers(bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "enableTransfers",
+            "caladan:inputs": [
+                {
+                    "name": "_transfersEnabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xf77c4791",
+            "caladan:signature": "controller()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "controller",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0xa74680a5ebde8fda01fb8f88867f569d0f1f38d46231a2692d353f5a0deb904f",
+            "caladan:signature": "0(address,address,uint256,string,uint8,string,bool)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenFactory",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_parentToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_parentSnapShotBlock",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_tokenName",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "_decimalUnits",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "name": "_tokenSymbol",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "_transfersEnabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf931edb47c50b4b4104c187b5814a9aef5f709e17e2ecf9617e860cacade929c",
+            "caladan:signature": "ClaimedTokens(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ClaimedTokens",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "_controller",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "caladan:signature": "Transfer(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Transfer",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "_from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x086c875b377f900b07ce03575813022f05dd10ed7640b5282cf6d3c3fc352ade",
+            "caladan:signature": "NewCloneToken(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "NewCloneToken",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "_cloneToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_snapshotBlock",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "caladan:signature": "Approval(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Approval",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "_owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x8d5004028f09180abc4210f60fbf14955ac50d24898f80bef2b1efe077e75bd6",
+            "caladan:signature": "0()",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x9465fa0c962cc76958e6373a993326400c1c94f8be2fe3a952adfa7f60b2ea26",
+            "caladan:signature": "AddedOwner(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AddedOwner",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf2a0eb156472d1440255b0d7c1e19cc07115d1051fe605b0dce69acfec884d9c",
+            "caladan:signature": "ApproveHash(bytes32,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ApproveHash",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "approvedHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5ac6c46c93c8d0e53714ba3b53db3e7c046da994313d7ed0d192028bc7c228b0",
+            "caladan:signature": "ChangedFallbackHandler(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ChangedFallbackHandler",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "handler",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x1151116914515bc0891ff9047a6cb32cf902546f83066499bcf8ba33d2353fa2",
+            "caladan:signature": "ChangedGuard(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ChangedGuard",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "guard",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x610f7ff2b304ae8903c3de74c60c6ab1f7d6226b3f52c5161905bb5ad4039c93",
+            "caladan:signature": "ChangedThreshold(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ChangedThreshold",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xaab4fa2b463f581b2b32cb3b7e3b704b9ce37cc209b5fb4d77e593ace4054276",
+            "caladan:signature": "DisabledModule(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "DisabledModule",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xecdf3a3effea5783a3c4c2140e677577666428d44ed9d474a0b3a4c9943f8440",
+            "caladan:signature": "EnabledModule(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "EnabledModule",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x23428b18acfb3ea64b08dc0c1d296ea9c09702c09083ca5272e64d115b687d23",
+            "caladan:signature": "ExecutionFailure(bytes32,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ExecutionFailure",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "txHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "payment",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xacd2c8702804128fdb0db2bb49f6d127dd0181c13fd45dbfe16de0930e2bd375",
+            "caladan:signature": "ExecutionFromModuleFailure(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ExecutionFromModuleFailure",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6895c13664aa4f67288b25d7a21d7aaa34916e355fb9b6fae0a139a9085becb8",
+            "caladan:signature": "ExecutionFromModuleSuccess(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ExecutionFromModuleSuccess",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x442e715f626346e8c54381002da614f62bee8d27386535b2521ec8540898556e",
+            "caladan:signature": "ExecutionSuccess(bytes32,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ExecutionSuccess",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "txHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "payment",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf8d49fc529812e9a7c5c50e69c20f0dccc0db8fa95c98bc58cc9a4f1c1299eaf",
+            "caladan:signature": "RemovedOwner(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "RemovedOwner",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3d0ce9bfc3ed7d6862dbb28b2dea94561fe714a1b4d019aa8af39730d1ad7c3d",
+            "caladan:signature": "SafeReceived(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "SafeReceived",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x141df868a6331af528e38c83b7aa03edc19be66e37ae67f9285bf4f8e3c6a1a8",
+            "caladan:signature": "SafeSetup(address,address[],uint256,address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SafeSetup",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "initiator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address[]",
+                    "name": "owners",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "initializer",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "fallbackHandler",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe7f4675038f4f6034dfcbbb24c4dc08e4ebf10eb9d257d3d02c0f38d122ac6e4",
+            "caladan:signature": "SignMsg(bytes32)",
+            "@type": "caladan:Event",
+            "caladan:name": "SignMsg",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "msgHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xffa1ad74",
+            "caladan:signature": "VERSION()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "VERSION",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x0d582f13",
+            "caladan:signature": "addOwnerWithThreshold(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addOwnerWithThreshold",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xd4d9bdcd",
+            "caladan:signature": "approveHash(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approveHash",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "hashToApprove",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x7d832974",
+            "caladan:signature": "approvedHashes(address,bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "approvedHashes",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x694e80c3",
+            "caladan:signature": "changeThreshold(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "changeThreshold",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x12fb68e0",
+            "caladan:signature": "checkNSignatures(bytes32,bytes,bytes,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "checkNSignatures",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "dataHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "signatures",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "requiredSignatures",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x934f3a11",
+            "caladan:signature": "checkSignatures(bytes32,bytes,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "checkSignatures",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "dataHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "signatures",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xe009cfde",
+            "caladan:signature": "disableModule(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "disableModule",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "prevModule",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xf698da25",
+            "caladan:signature": "domainSeparator()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "domainSeparator",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x610b5925",
+            "caladan:signature": "enableModule(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "enableModule",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xe86637db",
+            "caladan:signature": "encodeTransactionData(address,uint256,bytes,uint8,uint256,uint256,uint256,address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "encodeTransactionData",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "safeTxGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "baseGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "gasPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "gasToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "refundReceiver",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x6a761202",
+            "caladan:signature": "execTransaction(address,uint256,bytes,uint8,uint256,uint256,uint256,address,address,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "execTransaction",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "safeTxGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "baseGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "gasPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "gasToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "refundReceiver",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "signatures",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x468721a7",
+            "caladan:signature": "execTransactionFromModule(address,uint256,bytes,uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "execTransactionFromModule",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x5229073f",
+            "caladan:signature": "execTransactionFromModuleReturnData(address,uint256,bytes,uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "execTransactionFromModuleReturnData",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "returnData",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x3408e470",
+            "caladan:signature": "getChainId()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getChainId",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xcc2f8452",
+            "caladan:signature": "getModulesPaginated(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getModulesPaginated",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "start",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "pageSize",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "array",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "next",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xa0e67e2b",
+            "caladan:signature": "getOwners()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getOwners",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "",
+                    "type": "address[]",
+                    "@type": "address[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x5624b25b",
+            "caladan:signature": "getStorageAt(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getStorageAt",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "offset",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "length",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xe75235b8",
+            "caladan:signature": "getThreshold()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getThreshold",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xd8d11f78",
+            "caladan:signature": "getTransactionHash(address,uint256,bytes,uint8,uint256,uint256,uint256,address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getTransactionHash",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "safeTxGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "baseGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "gasPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "gasToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "refundReceiver",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x2d9ad53d",
+            "caladan:signature": "isModuleEnabled(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isModuleEnabled",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x2f54bf6e",
+            "caladan:signature": "isOwner(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isOwner",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xaffed0e0",
+            "caladan:signature": "nonce()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "nonce",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xf8dc5dd9",
+            "caladan:signature": "removeOwner(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeOwner",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "prevOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xc4ca3a9c",
+            "caladan:signature": "requiredTxGas(address,uint256,bytes,uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "requiredTxGas",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xf08a0323",
+            "caladan:signature": "setFallbackHandler(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setFallbackHandler",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "handler",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xe19a9dd9",
+            "caladan:signature": "setGuard(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setGuard",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "guard",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xb63e800d",
+            "caladan:signature": "setup(address[],uint256,address,bytes,address,address,uint256,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setup",
+            "caladan:inputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "_owners",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "address",
+                    "name": "fallbackHandler",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "paymentToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "payment",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "paymentReceiver",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0x5ae6bd37",
+            "caladan:signature": "signedMessages(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "signedMessages",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xb4faba09",
+            "caladan:signature": "simulateAndRevert(address,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "simulateAndRevert",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "targetContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "calldataPayload",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xe318b52b",
+            "caladan:signature": "swapOwner(address,address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "swapOwner",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "prevOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "oldOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/nftx/GnosisSafe"
+                }
+            ]
+        }
+    ]
+}

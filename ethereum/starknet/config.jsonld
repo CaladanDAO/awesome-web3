@@ -1,0 +1,3397 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/ethereum/starknet",
+    "@type": "caladan:Project",
+    "caladan:name": "starknet",
+    "caladan:dataset": "ethereum",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge",
+                    "evm:chainID": 1,
+                    "evm:address": "0x0437465dfb5b79726e35f08559b0cbea55bb585c"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge",
+                    "evm:chainID": 1,
+                    "evm:address": "0x283751a21eafbfcd52297820d27c1f1963d9b5b4"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge",
+                    "evm:chainID": 1,
+                    "evm:address": "0xbb3400f107804dfb482565ff1ec8d8ae66747605"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge",
+                    "evm:chainID": 1,
+                    "evm:address": "0xf6080d9fbeebcd44d89affbfd42f098cbff92816"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge",
+                    "evm:chainID": 1,
+                    "evm:address": "0x659a00c33263d9254fed382de81349426c795bb6"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: Memory Page Fact Registry",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: Memory Page Fact Registry",
+                    "evm:chainID": 1,
+                    "evm:address": "0x96375087b2f6efc59e5e0dd5111b4d090ebfdd8b"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge",
+                    "evm:chainID": 1,
+                    "evm:address": "0xae0ee0a63a2ce6baeeffe56e7714fb4efe48d419"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet",
+                    "evm:chainID": 1,
+                    "evm:address": "0xc662c410c0ecf747543f5ba90660f6abebd9c8c4"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "@id": "0x8d5004028f09180abc4210f60fbf14955ac50d24898f80bef2b1efe077e75bd6",
+            "caladan:signature": "0()",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6e11fb1b7f119e3f2fa29896ef5fdf8b8a2d0d4df6fe90ba8668e7d8b2ffa25e",
+            "caladan:signature": "Approve(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Approve",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x184450df2e323acec0ed3b5c7531b81f9b4cdef7914dfd4c0a4317416bb5251b",
+            "caladan:signature": "Deny(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Deny",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "usr",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xdd0e34038ac38b2a1ce960229778ac48a8719bc900b6c4f8d0475c6e8b385a60",
+            "caladan:signature": "Rely(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Rely",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "usr",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xe1f21c67",
+            "caladan:signature": "approve(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approve",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x9c52a7f1",
+            "caladan:signature": "deny(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "deny",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "usr",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x65fae35e",
+            "caladan:signature": "rely(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "rely",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "usr",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xbf353dbb",
+            "caladan:signature": "wards(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "wards",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xa3748f0a92719d6e7ce7f9c9c450772749c23429c6a57c2d47fcb44e96994886",
+            "caladan:signature": "0(uint256)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "upgradeActivationDelay",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc13b75a5f14b69ebdc2431a5d475b3bff371abe251b5064144306fbd9c4de35c",
+            "caladan:signature": "FinalizedImplementation(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "FinalizedImplementation",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x723a7080d63c133cf338e44e00705cc1b7b2bde7e88d6218a8d62710a329ce1b",
+            "caladan:signature": "ImplementationAdded(address,bytes,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "ImplementationAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "initializer",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe99b980b5259f200e4c1da973ff0251b6d9aaa144714c8773976ecd62b8ebe8d",
+            "caladan:signature": "ImplementationRemoved(address,bytes,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "ImplementationRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "initializer",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xff14288d542bc1c1d15a652cb52af735f065c0c9d70b48e454a203c260733544",
+            "caladan:signature": "ImplementationUpgraded(address,bytes)",
+            "@type": "caladan:Event",
+            "caladan:name": "ImplementationUpgraded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "initializer",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xcfb473e6c03f9a29ddaf990e736fa3de5188a0bd85d684f5b6e164ebfbfff5d2",
+            "caladan:signature": "LogNewGovernorAccepted(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogNewGovernorAccepted",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "acceptedGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6166272c8d3f5f579082f2827532732f97195007983bb5b83ac12c56700b01a6",
+            "caladan:signature": "LogNominatedGovernor(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogNominatedGovernor",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "nominatedGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x7a8dc7dd7fffb43c4807438fa62729225156941e641fd877938f4edade3429f5",
+            "caladan:signature": "LogNominationCancelled()",
+            "@type": "caladan:Event",
+            "caladan:name": "LogNominationCancelled",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd75f94825e770b8b512be8e74759e252ad00e102e38f50cce2f7c6f868a29599",
+            "caladan:signature": "LogRemovedGovernor(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogRemovedGovernor",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "removedGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x56f36dbf",
+            "caladan:signature": "PROXY_GOVERNANCE_TAG()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "PROXY_GOVERNANCE_TAG",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xc5ab8453",
+            "caladan:signature": "PROXY_VERSION()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "PROXY_VERSION",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x20cea94d",
+            "caladan:signature": "UPGRADE_DELAY_SLOT()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "UPGRADE_DELAY_SLOT",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x5e3a97e7",
+            "caladan:signature": "addImplementation(address,bytes,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addImplementation",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x72a44f07",
+            "caladan:signature": "getUpgradeActivationDelay()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getUpgradeActivationDelay",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "delay",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x5c60da1b",
+            "caladan:signature": "implementation()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "implementation",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "_implementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x439fab91",
+            "caladan:signature": "initialize(bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "initialize",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xe907fa3c",
+            "caladan:signature": "isNotFinalized()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isNotFinalized",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "notFinal",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x6684b1d6",
+            "caladan:signature": "proxyAcceptGovernance()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "proxyAcceptGovernance",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xf9bcdde4",
+            "caladan:signature": "proxyCancelNomination()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "proxyCancelNomination",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xb449ea5d",
+            "caladan:signature": "proxyIsGovernor(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "proxyIsGovernor",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x8757653f",
+            "caladan:signature": "proxyNominateNewGovernor(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "proxyNominateNewGovernor",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x12f16e6d",
+            "caladan:signature": "proxyRemoveGovernor(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "proxyRemoveGovernor",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "governorForRemoval",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x5cef2e86",
+            "caladan:signature": "removeImplementation(address,bytes,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeImplementation",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "removedImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x7147855d",
+            "caladan:signature": "upgradeTo(address,bytes,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "upgradeTo",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x5adaebf387789484ad7a9d39a3a21a522a5b51567b5bb3efc6d0263cb3703a33",
+            "caladan:signature": "0(address,address,uint256,address,uint256)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_starkNet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_dai",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_l2Dai",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_escrow",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_l2DaiBridge",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x1cdde67b72a90f19919ac732a437ac2f7a10fc128d28c2a6e525d89ce5cd9d3a",
+            "caladan:signature": "Closed()",
+            "@type": "caladan:Event",
+            "caladan:name": "Closed",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x27342a36c014a937136f67690b80039f954cc7acd1d6a2f5bca3f3d3e7b94837",
+            "caladan:signature": "LogCancelDeposit(uint256,address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogCancelDeposit",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "l2Recipient",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "l1Recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6defc6f2eb7fe7d2a05d39d89d53405300c4dafb0e9cd1d6affeb7c02a9c3e54",
+            "caladan:signature": "LogCeiling(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogCeiling",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "ceiling",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x9dbb0e7dda3e09710ce75b801addc87cf9d9c6c581641b3275fca409ad086c62",
+            "caladan:signature": "LogDeposit(address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogDeposit",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "l1Sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "l2Recipient",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xdee288762e02cf1a2e99896626b9675625e9fa32cce23d9ee7d490763436eaa3",
+            "caladan:signature": "LogForceWithdrawal(address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogForceWithdrawal",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "l1Recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "l2Sender",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x0abf56f125eb3b9ec6b166b22f262406810c29da2da4c902a6ee31694ae11a39",
+            "caladan:signature": "LogMaxDeposit(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogMaxDeposit",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "maxDeposit",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb8b6bc18e48f410a36e8867df19f26eb867bad25616833b0ed9141f6d8933929",
+            "caladan:signature": "LogStartDepositCancellation(uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogStartDepositCancellation",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "l2Receipient",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb4214c8c54fc7442f36d3682f59aebaf09358a4431835b30efb29d52cf9e1e91",
+            "caladan:signature": "LogWithdrawal(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogWithdrawal",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "l1Recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x6c6e4ae3",
+            "caladan:signature": "cancelDeposit(uint256,uint256,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "cancelDeposit",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "l2Recipient",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "l1Recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x753ed1bd",
+            "caladan:signature": "ceiling()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ceiling",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x43d726d6",
+            "caladan:signature": "close()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "close",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xf4b9fa75",
+            "caladan:signature": "dai()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "dai",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xe2bbb158",
+            "caladan:signature": "deposit(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "deposit",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "l2Recipient",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xe2fdcc17",
+            "caladan:signature": "escrow()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "escrow",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xfd1275eb",
+            "caladan:signature": "forceWithdrawal(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "forceWithdrawal",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "l2Sender",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x47535d7b",
+            "caladan:signature": "isOpen()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isOpen",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x422e67f4",
+            "caladan:signature": "l2Dai()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "l2Dai",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x5417908f",
+            "caladan:signature": "l2DaiBridge()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "l2DaiBridge",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x6083e59a",
+            "caladan:signature": "maxDeposit()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "maxDeposit",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x8f02cf97",
+            "caladan:signature": "setCeiling(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setCeiling",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_ceiling",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xbb371fdd",
+            "caladan:signature": "setMaxDeposit(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setMaxDeposit",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_maxDeposit",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x0b43773e",
+            "caladan:signature": "starkNet()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "starkNet",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x7c1c29ac",
+            "caladan:signature": "startDepositCancellation(uint256,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "startDepositCancellation",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "l2Recipient",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x00f714ce",
+            "caladan:signature": "withdraw(uint256,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdraw",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "l1Recipient",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb8b9c39aeba1cfd98c38dfeebe11c2f7e02b334cbe9f05f22b442a5d9c1ea0c5",
+            "caladan:signature": "LogMemoryPageFactContinuous(bytes32,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogMemoryPageFactContinuous",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "factHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "memoryHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "prod",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: Memory Page Fact Registry"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x98fd0d40bd3e226c28fb29ff2d386bd8f9e19f2f8436441e6b854651d3b687b3",
+            "caladan:signature": "LogMemoryPageFactRegular(bytes32,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogMemoryPageFactRegular",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "factHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "memoryHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "prod",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: Memory Page Fact Registry"
+                }
+            ]
+        },
+        {
+            "@id": "0xd6354e15",
+            "caladan:signature": "hasRegisteredFact()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "hasRegisteredFact",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: Memory Page Fact Registry"
+                }
+            ]
+        },
+        {
+            "@id": "0x6a938567",
+            "caladan:signature": "isValid(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isValid",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "fact",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: Memory Page Fact Registry"
+                }
+            ]
+        },
+        {
+            "@id": "0x5578ceae",
+            "caladan:signature": "registerContinuousMemoryPage(uint256,uint256[],uint256,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "registerContinuousMemoryPage",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "startAddr",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "values",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "z",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "alpha",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "prime",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "factHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "memoryHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "prod",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: Memory Page Fact Registry"
+                }
+            ]
+        },
+        {
+            "@id": "0x405a6362",
+            "caladan:signature": "registerRegularMemoryPage(uint256[],uint256,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "registerRegularMemoryPage",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "memoryPairs",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "z",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "alpha",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "prime",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "factHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "memoryHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "prod",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: Memory Page Fact Registry"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x393c6beb5756a944b2967f15f31ff671e312e945d7a84fd3bdcfd6b408b2dc79",
+            "caladan:signature": "ConfigHashChanged(address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ConfigHashChanged",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "changedBy",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oldConfigHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newConfigHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x7a06c571aa77f34d9706c51e5d8122b5595aebeaa34233bfe866f22befb973b1",
+            "caladan:signature": "ConsumedMessageToL1(uint256,address,uint256[])",
+            "@type": "caladan:Event",
+            "caladan:name": "ConsumedMessageToL1",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "fromAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "toAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x9592d37825c744e33fa80c469683bbd04d336241bb600b574758efd182abe26a",
+            "caladan:signature": "ConsumedMessageToL2(address,uint256,uint256,uint256[],uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ConsumedMessageToL2",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "fromAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "toAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "selector",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6823b073d48d6e3a7d385eeb601452d680e74bb46afe3255a7d778f3a9b17681",
+            "caladan:signature": "Finalized()",
+            "@type": "caladan:Event",
+            "caladan:name": "Finalized",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x4264ac208b5fde633ccdd42e0f12c3d6d443a4f3779bbf886925b94665b63a22",
+            "caladan:signature": "LogMessageToL1(uint256,address,uint256[])",
+            "@type": "caladan:Event",
+            "caladan:name": "LogMessageToL1",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "fromAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "toAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xdb80dd488acf86d17c747445b0eabb5d57c541d3bd7b6b87af987858e5066b2b",
+            "caladan:signature": "LogMessageToL2(address,uint256,uint256,uint256[],uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogMessageToL2",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "fromAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "toAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "selector",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x50a18c352ee1c02ffe058e15c2eb6e58be387c81e73cc1e17035286e54c19a57",
+            "caladan:signature": "LogOperatorAdded(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogOperatorAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xec5f6c3a91a1efb1f9a308bb33c6e9e66bf9090fad0732f127dfdbf516d0625d",
+            "caladan:signature": "LogOperatorRemoved(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogOperatorRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x9866f8ddfe70bb512b2f2b28b49d4017c43f7ba775f1a20c61c13eea8cdac111",
+            "caladan:signature": "LogStateTransitionFact(bytes32)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogStateTransitionFact",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "stateTransitionFact",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd342ddf7a308dec111745b00315c14b7efb2bdae570a6856e088ed0c65a3576c",
+            "caladan:signature": "LogStateUpdate(uint256,int256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogStateUpdate",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "globalRoot",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "blockNumber",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "blockHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8abd2ec2e0a10c82f5b60ea00455fa96c41fd144f225fcc52b8d83d94f803ed8",
+            "caladan:signature": "MessageToL2Canceled(address,uint256,uint256,uint256[],uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "MessageToL2Canceled",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "fromAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "toAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "selector",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2e00dccd686fd6823ec7dc3e125582aa82881b6ff5f6b5a73856e1ea8338a3be",
+            "caladan:signature": "MessageToL2CancellationStarted(address,uint256,uint256,uint256[],uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "MessageToL2CancellationStarted",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "fromAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "toAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "selector",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x600a61c1b32ac42fb2fe76e8fc7582a98106668fc16dcd85567cd3937363e49b",
+            "caladan:signature": "ProgramHashChanged(address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ProgramHashChanged",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "changedBy",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oldProgramHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newProgramHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x6170ff1b",
+            "caladan:signature": "cancelL1ToL2Message(uint256,uint256,uint256[],uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "cancelL1ToL2Message",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "toAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "selector",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0xe1f1176d",
+            "caladan:signature": "configHash()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "configHash",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x2c9dd5c0",
+            "caladan:signature": "consumeMessageFromL2(uint256,uint256[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "consumeMessageFromL2",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "fromAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x4bb278f3",
+            "caladan:signature": "finalize()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "finalize",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x54eccba4",
+            "caladan:signature": "getMaxL1MsgFee()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "getMaxL1MsgFee",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0xeeb72866",
+            "caladan:signature": "identify()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "identify",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x8d4e4083",
+            "caladan:signature": "isFinalized()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isFinalized",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x33eeb147",
+            "caladan:signature": "isFrozen()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isFrozen",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x6d70f7ae",
+            "caladan:signature": "isOperator(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isOperator",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x9be446bf",
+            "caladan:signature": "l1ToL2MessageCancellations(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "l1ToL2MessageCancellations",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "msgHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x018cccdf",
+            "caladan:signature": "l1ToL2MessageNonce()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "l1ToL2MessageNonce",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x77c7d7a9",
+            "caladan:signature": "l1ToL2Messages(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "l1ToL2Messages",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "msgHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0xa46efaf3",
+            "caladan:signature": "l2ToL1Messages(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "l2ToL1Messages",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "msgHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x8303bd8a",
+            "caladan:signature": "messageCancellationDelay()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "messageCancellationDelay",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x8a9bf090",
+            "caladan:signature": "programHash()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "programHash",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x3682a450",
+            "caladan:signature": "registerOperator(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "registerOperator",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOperator",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x3e3aa6c5",
+            "caladan:signature": "sendMessageToL2(uint256,uint256,uint256[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "sendMessageToL2",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "toAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "selector",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x3d07b336",
+            "caladan:signature": "setConfigHash(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setConfigHash",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "newConfigHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0xc99d397f",
+            "caladan:signature": "setMessageCancellationDelay(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setMessageCancellationDelay",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "delayInSeconds",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0xe87e7332",
+            "caladan:signature": "setProgramHash(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setProgramHash",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "newProgramHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x946be3ed",
+            "caladan:signature": "starknetAcceptGovernance()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "starknetAcceptGovernance",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0xe37fec25",
+            "caladan:signature": "starknetCancelNomination()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "starknetCancelNomination",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x01a01590",
+            "caladan:signature": "starknetIsGovernor(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "starknetIsGovernor",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x91a66a26",
+            "caladan:signature": "starknetNominateNewGovernor(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "starknetNominateNewGovernor",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x84f921cd",
+            "caladan:signature": "starknetRemoveGovernor(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "starknetRemoveGovernor",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "governorForRemoval",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x7a98660b",
+            "caladan:signature": "startL1ToL2MessageCancellation(uint256,uint256,uint256[],uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "startL1ToL2MessageCancellation",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "toAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "selector",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x382d83e3",
+            "caladan:signature": "stateBlockHash()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "stateBlockHash",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x35befa5d",
+            "caladan:signature": "stateBlockNumber()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "stateBlockNumber",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "int256",
+                    "name": "",
+                    "type": "int256",
+                    "@type": "int256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x9588eca2",
+            "caladan:signature": "stateRoot()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "stateRoot",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x96115bc2",
+            "caladan:signature": "unregisterOperator(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "unregisterOperator",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "removedOperator",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x77552641",
+            "caladan:signature": "updateState(uint256[],uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateState",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "programOutput",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "onchainDataHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "onchainDataSize",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        }
+    ]
+}

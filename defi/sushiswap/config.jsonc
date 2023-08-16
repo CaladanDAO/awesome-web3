@@ -1,0 +1,126 @@
+{
+    "name": "defi_sushiswap",
+    "names": {
+        "0x088ee5007c98a9677165d78dd2109ae4a3d04d0c": "SushiSwap: YFI",
+        "0x0d51b575591f8f74a2763ade75d3cdcf6789266f": "SushiSwap: Simple SLP TWAP1 Oracle V1",
+        "0x11ca5375adafd6205e41131a4409f182677996e6": "SushiSwap: Boring Helper V1",
+        "0x1766733112408b95239ad1951925567cb1203084": "SushiSwap: SushiSwap Swapper V1",
+        "0x19b3eb3af5d93b77a5619b047de0eed7115a19e7": "GnosisSafe212",
+        "0x2cba6ab6574646badc84f0544d05059e57a5dc42": "SushiSwap: Kashi Pair Medium Risk V1",
+        "0x66f03b0d30838a3fee971928627ea6f59b236065": "SushiSwap: Simple SLP TWAP0 Oracle V1",
+        "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2": "SushiToken  (SUSHI)",
+        "0x6cbfbb38498df0e1e7a4506593cdb02db9001564": "SushiSwap: Pegged Oracle V1",
+        "0xc2edad668740f1aa35e4d8f227fb8e17dca888cd": "SushiSwap: MasterChef LP Staking Pool",
+        "0xcbe6b83e77cdc011cc18f6f0df8444e5783ed982": "SushiSwap: Merkle Distributor",
+        "0xd766147bc5a0044a6b4f4323561b162870fcbb48": "SushiSwap: Chainlink Oracle V1",
+        "0xd9e1ce17f2641f24ae83637ab66a2cca9c378b9f": "SushiSwap: Router",
+        "0xe94b5eec1fa96ceecbd33ef5baa8d00e4493f4f3": "GnosisSafe213",
+        "0xf73b31c07e3f8ea8f7c59ac58ed1f878708c8a76": "SushiSwap: Dev Fund"
+    },
+    "contracts": {
+        "SushiSwap: YFI": {
+            "addresses": {
+                "1": "0x088ee5007c98a9677165d78dd2109ae4a3d04d0c"
+            }
+        },
+        "SushiSwap: Simple SLP TWAP1 Oracle V1": {
+            "addresses": {
+                "1": "0x0d51b575591f8f74a2763ade75d3cdcf6789266f"
+            }
+        },
+        "SushiSwap: Boring Helper V1": {
+            "addresses": {
+                "1": "0x11ca5375adafd6205e41131a4409f182677996e6"
+            }
+        },
+        "SushiSwap: SushiSwap Swapper V1": {
+            "addresses": {
+                "1": "0x1766733112408b95239ad1951925567cb1203084"
+            }
+        },
+        "GnosisSafe212": {
+            "addresses": {
+                "1": "0x19b3eb3af5d93b77a5619b047de0eed7115a19e7"
+            }
+        },
+        "SushiSwap: Kashi Pair Medium Risk V1": {
+            "addresses": {
+                "1": "0x2cba6ab6574646badc84f0544d05059e57a5dc42"
+            }
+        },
+        "SushiSwap: Simple SLP TWAP0 Oracle V1": {
+            "addresses": {
+                "1": "0x66f03b0d30838a3fee971928627ea6f59b236065"
+            }
+        },
+        "SushiToken  (SUSHI)": {
+            "addresses": {
+                "1": "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2"
+            }
+        },
+        "SushiSwap: Pegged Oracle V1": {
+            "addresses": {
+                "1": "0x6cbfbb38498df0e1e7a4506593cdb02db9001564"
+            }
+        },
+        "SushiSwap: MasterChef LP Staking Pool": {
+            "addresses": {
+                "1": "0xc2edad668740f1aa35e4d8f227fb8e17dca888cd"
+            }
+        },
+        "SushiSwap: Merkle Distributor": {
+            "addresses": {
+                "1": "0xcbe6b83e77cdc011cc18f6f0df8444e5783ed982"
+            }
+        },
+        "SushiSwap: Chainlink Oracle V1": {
+            "addresses": {
+                "1": "0xd766147bc5a0044a6b4f4323561b162870fcbb48"
+            }
+        },
+        "SushiSwap: Router": {
+            "addresses": {
+                "1": "0xd9e1ce17f2641f24ae83637ab66a2cca9c378b9f"
+            }
+        },
+        "GnosisSafe213": {
+            "addresses": {
+                "1": "0xe94b5eec1fa96ceecbd33ef5baa8d00e4493f4f3"
+            }
+        },
+        "SushiSwap: Dev Fund": {
+            "addresses": {
+                "1": "0xf73b31c07e3f8ea8f7c59ac58ed1f878708c8a76"
+            }
+        }
+    },
+    "calls": [
+            "swapExactTokensForETH(uint256,uint256,address[],address,uint256)",
+            "swapExactETHForTokens(uint256,address[],address,uint256)",
+            "swapExactTokensForTokens(uint256,uint256,address[],address,uint256)",
+            "swapETHForExactTokens(uint256,address[],address,uint256)",
+            "swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+            "addLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+            "swapExactETHForTokensSupportingFeeOnTransferTokens(uint256,address[],address,uint256)",
+            "removeLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+            "swapTokensForExactTokens(uint256,uint256,address[],address,uint256)",
+            "swapExactTokensForTokensSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+            "withdraw(uint256,uint256)",
+            "removeLiquidityETHWithPermit(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+            "deposit(uint256,uint256)",
+            "swapTokensForExactETH(uint256,uint256,address[],address,uint256)",
+            "addLiquidity(address,address,uint256,uint256,uint256,uint256,address,uint256)",
+            "removeLiquidity(address,address,uint256,uint256,uint256,address,uint256)",
+            "removeLiquidityWithPermit(address,address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+            "execTransaction(address,uint256,bytes,uint8,uint256,uint256,uint256,address,address,bytes)"
+    ],
+    "events": [
+            "Withdraw(address,uint256,uint256)",
+            "Deposit(address,uint256,uint256)",
+            "Sync(uint112,uint112)",
+            "Swap(address,uint256,uint256,uint256,uint256,address)",
+            "Mint(address,uint256,uint256)",
+            "ExecutionSuccess(bytes32,uint256)",
+            "Burn(address,uint256,uint256,address)"
+    ]
+}

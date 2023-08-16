@@ -1,0 +1,3786 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/staking",
+    "@type": "caladan:Project",
+    "caladan:name": "staking",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking",
+                    "evm:chainID": 1,
+                    "evm:address": "0x5954ab967bc958940b7eb73ee84797dc8a2afbb9"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3",
+                    "evm:chainID": 1,
+                    "evm:address": "0xba7f8b5fb1b19c1211c5d49550fcd149177a5eaf"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/staking/null",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null",
+                    "evm:chainID": 1,
+                    "evm:address": "0xe194d30afdbae89b3118b8b7bc7b331cc3333b88"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "@id": "0x01ec49bf576ece2a62b82caa5fdbc24131c4da5c25b0f45975c7e6dea2363d08",
+            "caladan:signature": "0(address,address,address,address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_apeCoinContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_baycContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_maycContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_bakcContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xba52c1b557a071c43e942ae1592caffd78935705bc312d66927fc394d0a59ee9",
+            "caladan:signature": "BAKCAlreadyPaired()",
+            "@type": "caladan:Event",
+            "caladan:name": "BAKCAlreadyPaired",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xde72b61e246065eb7022926ea1a69dd38ce8f16d7b0bc174f6799a33a9067eb3",
+            "caladan:signature": "BAKCNotOwnedOrPaired()",
+            "@type": "caladan:Event",
+            "caladan:name": "BAKCNotOwnedOrPaired",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x5cd83192a9b3476fea3f0be800358988c207cc45b2beac8d8a18738bff19c39e",
+            "caladan:signature": "CallerNotOwner()",
+            "@type": "caladan:Event",
+            "caladan:name": "CallerNotOwner",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x50e75a80aeba2aa67a5c328b341fa352239beef6407d85b481793b93bf60eacf",
+            "caladan:signature": "DepositMoreThanOneAPE()",
+            "@type": "caladan:Event",
+            "caladan:name": "DepositMoreThanOneAPE",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x8b853e25625cf2b6ef3eea262acc6c674431745086efb368300546005db31bfa",
+            "caladan:signature": "EndNotWholeHour()",
+            "@type": "caladan:Event",
+            "caladan:name": "EndNotWholeHour",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xf03ac3745db71d962046d16f033dbe11376e8a8b3f3ae39b6e2fc1979712cde9",
+            "caladan:signature": "ExceededCapAmount()",
+            "@type": "caladan:Event",
+            "caladan:name": "ExceededCapAmount",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x9acaefc7314e59163af7f482b2ad1ba1aa2edffbb9d826aa9587f75c16bf8c00",
+            "caladan:signature": "ExceededStakedAmount()",
+            "@type": "caladan:Event",
+            "caladan:name": "ExceededStakedAmount",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x0afa7ee8aa4367910d5856a37f6b4089daa295089d0dcd462775aaff9059abbf",
+            "caladan:signature": "InvalidPoolId()",
+            "@type": "caladan:Event",
+            "caladan:name": "InvalidPoolId",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xa3fdbb52f2ec32a5f41366843108301932484c479af81e301394cc51045ec8f5",
+            "caladan:signature": "MainTokenNotOwnedOrPaired()",
+            "@type": "caladan:Event",
+            "caladan:name": "MainTokenNotOwnedOrPaired",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x4a2f38658e59bab518fada5e0221038bc76b5b1a86bff7ef519f2e552e0903e8",
+            "caladan:signature": "NeitherTokenInPairOwnedByCaller()",
+            "@type": "caladan:Event",
+            "caladan:name": "NeitherTokenInPairOwnedByCaller",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x2c8348bbf3d9d3de4347d2bb02cdcb2ce335f68031a02d7470f1825eb3b5708f",
+            "caladan:signature": "NotOwnerOfBAKC()",
+            "@type": "caladan:Event",
+            "caladan:name": "NotOwnerOfBAKC",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x2b19ae758d3b06be06625137230dc0561c727afbb5639d6d38f2869fe4c99c13",
+            "caladan:signature": "NotOwnerOfMain()",
+            "@type": "caladan:Event",
+            "caladan:name": "NotOwnerOfMain",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xccc819da5a94cb0cad4e27d71e0bac53b25ffa76fc3656656f4bf320a78d282f",
+            "caladan:signature": "ProvidedTokensNotPaired()",
+            "@type": "caladan:Event",
+            "caladan:name": "ProvidedTokensNotPaired",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xe373a0855af733b085551b06e003b7ac0c505015370c19d79b9856423ba156c8",
+            "caladan:signature": "SplitPairCantPartiallyWithdraw()",
+            "@type": "caladan:Event",
+            "caladan:name": "SplitPairCantPartiallyWithdraw",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xd67e3109e92b759098e974af55f2f19bc52ed8c321482b68078f4a36b8ce374e",
+            "caladan:signature": "StartMustBeGreaterThanEnd()",
+            "@type": "caladan:Event",
+            "caladan:name": "StartMustBeGreaterThanEnd",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x9424dcd99018b094501868ea9bb18c0eab072ccb55abe3a418f7d975d273ef80",
+            "caladan:signature": "StartMustEqualLastEnd()",
+            "@type": "caladan:Event",
+            "caladan:name": "StartMustEqualLastEnd",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xf7985df1c05c5dba778d4fb533b922e71b9f4d235a0d4f81ec0bc91dcd97751a",
+            "caladan:signature": "StartNotWholeHour()",
+            "@type": "caladan:Event",
+            "caladan:name": "StartNotWholeHour",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x4614cb023857c56f71db52748b774cddb70514f95743d9a51faf8e7f54ac8b42",
+            "caladan:signature": "UncommitWrongParameters()",
+            "@type": "caladan:Event",
+            "caladan:name": "UncommitWrongParameters",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x030f754a3e747235920c21afeca14e881b260d41c7e657ada6c0b049f7eebca9",
+            "caladan:signature": "ClaimRewards(address,uint256,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ClaimRewards",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd334b3114fc25cbd72389ff9c361d5f8b0924e35fa237c65ac209a2cdcf4ba13",
+            "caladan:signature": "ClaimRewardsNft(address,uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ClaimRewardsNft",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "poolId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x89d57e873af45054d40b801ca64ca06a1627c5682ab9be494a9f2846ef157d8a",
+            "caladan:signature": "ClaimRewardsPairNft(address,uint256,uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ClaimRewardsPairNft",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "mainTypePoolId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "mainTokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "bakcTokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe31c7b8d08ee7db0afa68782e1028ef92305caeea8626633ad44d413e30f6b2f",
+            "caladan:signature": "Deposit(address,uint256,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Deposit",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8863bdbe28273fa04cbc67c9e51785cff607a419b43ee367e4c3c01edb1d7b56",
+            "caladan:signature": "DepositNft(address,uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "DepositNft",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "poolId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb3f27c1805319c01731f5717816fcfc579c3452c5ff4ffadc41284a7288f24ef",
+            "caladan:signature": "DepositPairNft(address,uint256,uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "DepositPairNft",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "mainTypePoolId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "mainTokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "bakcTokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "caladan:signature": "OwnershipTransferred(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnershipTransferred",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3be3541fc42237d611b30329040bfa4569541d156560acdbbae57640d20b8f46",
+            "caladan:signature": "UpdatePool(uint256,uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "UpdatePool",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "poolId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "lastRewardedBlock",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "stakedAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "accumulatedRewardsPerShare",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x56c54ba9bd38d8fd62012e42c7ee564519b09763c426d331b3661b537ead19b2",
+            "caladan:signature": "Withdraw(address,uint256,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Withdraw",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x46916533b23d6665275e4143ec7eeb4b6b4ae92178ebbfe99f112564d2c7b1aa",
+            "caladan:signature": "WithdrawNft(address,uint256,uint256,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "WithdrawNft",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "poolId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x63a13470c4507d4f2c9d1bad1b7d603229456f8ebe7d3048d5cd8a02cf8d1ee6",
+            "caladan:signature": "WithdrawPairNft(address,uint256,uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "WithdrawPairNft",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "mainTypePoolId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "mainTokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "bakcTokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xbb628f20",
+            "caladan:signature": "addTimeRange(uint256,uint256,uint256,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addTimeRange",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_poolId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_startTimestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_endTimeStamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_capPerPosition",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x05ece226",
+            "caladan:signature": "addressPosition(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "addressPosition",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "stakedAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "int256",
+                    "name": "rewardsDebt",
+                    "type": "int256",
+                    "@type": "int256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xac7ad9ba",
+            "caladan:signature": "apeCoin()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "apeCoin",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract IERC20",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xb4f95752",
+            "caladan:signature": "bakcToMain(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "bakcToMain",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint248",
+                    "name": "tokenId",
+                    "type": "uint248",
+                    "@type": "uint248"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "isPaired",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x2ee2de66",
+            "caladan:signature": "claimApeCoin(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimApeCoin",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_recipient",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x07f5fa4a",
+            "caladan:signature": "claimBAKC((uint128,uint128)[],(uint128,uint128)[],address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimBAKC",
+            "caladan:inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint128",
+                            "name": "mainTokenId",
+                            "type": "uint128"
+                        },
+                        {
+                            "internalType": "uint128",
+                            "name": "bakcTokenId",
+                            "type": "uint128"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.PairNft[]",
+                    "name": "_baycPairs",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint128",
+                            "name": "mainTokenId",
+                            "type": "uint128"
+                        },
+                        {
+                            "internalType": "uint128",
+                            "name": "bakcTokenId",
+                            "type": "uint128"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.PairNft[]",
+                    "name": "_maycPairs",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_recipient",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xb682e859",
+            "caladan:signature": "claimBAYC(uint256[],address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimBAYC",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "_nfts",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_recipient",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x57a26300",
+            "caladan:signature": "claimMAYC(uint256[],address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimMAYC",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "_nfts",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_recipient",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x8279e760",
+            "caladan:signature": "claimSelfApeCoin()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimSelfApeCoin",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xe0347e4f",
+            "caladan:signature": "claimSelfBAKC((uint128,uint128)[],(uint128,uint128)[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimSelfBAKC",
+            "caladan:inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint128",
+                            "name": "mainTokenId",
+                            "type": "uint128"
+                        },
+                        {
+                            "internalType": "uint128",
+                            "name": "bakcTokenId",
+                            "type": "uint128"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.PairNft[]",
+                    "name": "_baycPairs",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint128",
+                            "name": "mainTokenId",
+                            "type": "uint128"
+                        },
+                        {
+                            "internalType": "uint128",
+                            "name": "bakcTokenId",
+                            "type": "uint128"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.PairNft[]",
+                    "name": "_maycPairs",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x20a325d0",
+            "caladan:signature": "claimSelfBAYC(uint256[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimSelfBAYC",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "_nfts",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x381b4682",
+            "caladan:signature": "claimSelfMAYC(uint256[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimSelfMAYC",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "_nfts",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xbd5023a9",
+            "caladan:signature": "depositApeCoin(uint256,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "depositApeCoin",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_recipient",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xd346cbd9",
+            "caladan:signature": "depositBAKC((uint32,uint32,uint184)[],(uint32,uint32,uint184)[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "depositBAKC",
+            "caladan:inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint32",
+                            "name": "mainTokenId",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint32",
+                            "name": "bakcTokenId",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint184",
+                            "name": "amount",
+                            "type": "uint184"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.PairNftDepositWithAmount[]",
+                    "name": "_baycPairs",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint32",
+                            "name": "mainTokenId",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint32",
+                            "name": "bakcTokenId",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint184",
+                            "name": "amount",
+                            "type": "uint184"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.PairNftDepositWithAmount[]",
+                    "name": "_maycPairs",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x46583a05",
+            "caladan:signature": "depositBAYC((uint32,uint224)[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "depositBAYC",
+            "caladan:inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint32",
+                            "name": "tokenId",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint224",
+                            "name": "amount",
+                            "type": "uint224"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.SingleNft[]",
+                    "name": "_nfts",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x8ecbffa7",
+            "caladan:signature": "depositMAYC((uint32,uint224)[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "depositMAYC",
+            "caladan:inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint32",
+                            "name": "tokenId",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint224",
+                            "name": "amount",
+                            "type": "uint224"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.SingleNft[]",
+                    "name": "_nfts",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x9dcaafb4",
+            "caladan:signature": "depositSelfApeCoin(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "depositSelfApeCoin",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x04238994",
+            "caladan:signature": "getAllStakes(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getAllStakes",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "poolId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "tokenId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "deposited",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "unclaimed",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "rewards24hr",
+                            "type": "uint256"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "mainTokenId",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "mainTypePoolId",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct ApeCoinStaking.DashboardPair",
+                            "name": "pair",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.DashboardStake[]",
+                    "name": "",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xd9f11fb2",
+            "caladan:signature": "getApeCoinStake(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getApeCoinStake",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "poolId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "tokenId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "deposited",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "unclaimed",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "rewards24hr",
+                            "type": "uint256"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "mainTokenId",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "mainTypePoolId",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct ApeCoinStaking.DashboardPair",
+                            "name": "pair",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.DashboardStake",
+                    "name": "",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x00191b44",
+            "caladan:signature": "getBakcStakes(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getBakcStakes",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "poolId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "tokenId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "deposited",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "unclaimed",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "rewards24hr",
+                            "type": "uint256"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "mainTokenId",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "mainTypePoolId",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct ApeCoinStaking.DashboardPair",
+                            "name": "pair",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.DashboardStake[]",
+                    "name": "",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x9860037e",
+            "caladan:signature": "getBaycStakes(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getBaycStakes",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "poolId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "tokenId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "deposited",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "unclaimed",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "rewards24hr",
+                            "type": "uint256"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "mainTokenId",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "mainTypePoolId",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct ApeCoinStaking.DashboardPair",
+                            "name": "pair",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.DashboardStake[]",
+                    "name": "",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xf4c6f602",
+            "caladan:signature": "getMaycStakes(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getMaycStakes",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "poolId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "tokenId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "deposited",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "unclaimed",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "rewards24hr",
+                            "type": "uint256"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "mainTokenId",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "mainTypePoolId",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct ApeCoinStaking.DashboardPair",
+                            "name": "pair",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.DashboardStake[]",
+                    "name": "",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x770dade5",
+            "caladan:signature": "getPoolsUI()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getPoolsUI",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "poolId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "stakedAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint48",
+                                    "name": "startTimestampHour",
+                                    "type": "uint48"
+                                },
+                                {
+                                    "internalType": "uint48",
+                                    "name": "endTimestampHour",
+                                    "type": "uint48"
+                                },
+                                {
+                                    "internalType": "uint96",
+                                    "name": "rewardsPerHour",
+                                    "type": "uint96"
+                                },
+                                {
+                                    "internalType": "uint96",
+                                    "name": "capPerPosition",
+                                    "type": "uint96"
+                                }
+                            ],
+                            "internalType": "struct ApeCoinStaking.TimeRange",
+                            "name": "currentTimeRange",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.PoolUI",
+                    "name": "",
+                    "type": "tuple",
+                    "@type": "tuple"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "poolId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "stakedAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint48",
+                                    "name": "startTimestampHour",
+                                    "type": "uint48"
+                                },
+                                {
+                                    "internalType": "uint48",
+                                    "name": "endTimestampHour",
+                                    "type": "uint48"
+                                },
+                                {
+                                    "internalType": "uint96",
+                                    "name": "rewardsPerHour",
+                                    "type": "uint96"
+                                },
+                                {
+                                    "internalType": "uint96",
+                                    "name": "capPerPosition",
+                                    "type": "uint96"
+                                }
+                            ],
+                            "internalType": "struct ApeCoinStaking.TimeRange",
+                            "name": "currentTimeRange",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.PoolUI",
+                    "name": "",
+                    "type": "tuple",
+                    "@type": "tuple"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "poolId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "stakedAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint48",
+                                    "name": "startTimestampHour",
+                                    "type": "uint48"
+                                },
+                                {
+                                    "internalType": "uint48",
+                                    "name": "endTimestampHour",
+                                    "type": "uint48"
+                                },
+                                {
+                                    "internalType": "uint96",
+                                    "name": "rewardsPerHour",
+                                    "type": "uint96"
+                                },
+                                {
+                                    "internalType": "uint96",
+                                    "name": "capPerPosition",
+                                    "type": "uint96"
+                                }
+                            ],
+                            "internalType": "struct ApeCoinStaking.TimeRange",
+                            "name": "currentTimeRange",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.PoolUI",
+                    "name": "",
+                    "type": "tuple",
+                    "@type": "tuple"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "poolId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "stakedAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint48",
+                                    "name": "startTimestampHour",
+                                    "type": "uint48"
+                                },
+                                {
+                                    "internalType": "uint48",
+                                    "name": "endTimestampHour",
+                                    "type": "uint48"
+                                },
+                                {
+                                    "internalType": "uint96",
+                                    "name": "rewardsPerHour",
+                                    "type": "uint96"
+                                },
+                                {
+                                    "internalType": "uint96",
+                                    "name": "capPerPosition",
+                                    "type": "uint96"
+                                }
+                            ],
+                            "internalType": "struct ApeCoinStaking.TimeRange",
+                            "name": "currentTimeRange",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.PoolUI",
+                    "name": "",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x0ed368f1",
+            "caladan:signature": "getSplitStakes(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getSplitStakes",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "poolId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "tokenId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "deposited",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "unclaimed",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "rewards24hr",
+                            "type": "uint256"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "mainTokenId",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "mainTypePoolId",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct ApeCoinStaking.DashboardPair",
+                            "name": "pair",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.DashboardStake[]",
+                    "name": "",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x09e833c6",
+            "caladan:signature": "getTimeRangeBy(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getTimeRangeBy",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_poolId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint48",
+                            "name": "startTimestampHour",
+                            "type": "uint48"
+                        },
+                        {
+                            "internalType": "uint48",
+                            "name": "endTimestampHour",
+                            "type": "uint48"
+                        },
+                        {
+                            "internalType": "uint96",
+                            "name": "rewardsPerHour",
+                            "type": "uint96"
+                        },
+                        {
+                            "internalType": "uint96",
+                            "name": "capPerPosition",
+                            "type": "uint96"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.TimeRange",
+                    "name": "",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x304f88c0",
+            "caladan:signature": "mainToBakc(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "mainToBakc",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint248",
+                    "name": "tokenId",
+                    "type": "uint248",
+                    "@type": "uint248"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "isPaired",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x0bb4d82a",
+            "caladan:signature": "nftContracts(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "nftContracts",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract ERC721Enumerable",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x98ada4a2",
+            "caladan:signature": "nftPosition(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "nftPosition",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "stakedAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "int256",
+                    "name": "rewardsDebt",
+                    "type": "int256",
+                    "@type": "int256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x8da5cb5b",
+            "caladan:signature": "owner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "owner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x2c018f91",
+            "caladan:signature": "pendingRewards(uint256,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "pendingRewards",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_poolId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xac4afa38",
+            "caladan:signature": "pools(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "pools",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint48",
+                    "name": "lastRewardedTimestampHour",
+                    "type": "uint48",
+                    "@type": "uint48"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "lastRewardsRangeIndex",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "internalType": "uint96",
+                    "name": "stakedAmount",
+                    "type": "uint96",
+                    "@type": "uint96"
+                },
+                {
+                    "internalType": "uint96",
+                    "name": "accumulatedRewardsPerShare",
+                    "type": "uint96",
+                    "@type": "uint96"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xd363dc17",
+            "caladan:signature": "removeLastTimeRange(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeLastTimeRange",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_poolId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x715018a6",
+            "caladan:signature": "renounceOwnership()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "renounceOwnership",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xd7464ee9",
+            "caladan:signature": "rewardsBy(uint256,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "rewardsBy",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_poolId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_from",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_to",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xf5679189",
+            "caladan:signature": "stakedTotal(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "stakedTotal",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2fde38b",
+            "caladan:signature": "transferOwnership(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferOwnership",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "@id": "0x51eb05a6",
+            "caladan:signature": "updatePool(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updatePool",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_poolId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xe4e81847",
+            "caladan:signature": "withdrawApeCoin(uint256,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawApeCoin",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_recipient",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x26fb2249",
+            "caladan:signature": "withdrawBAKC((uint32,uint32,uint184,bool)[],(uint32,uint32,uint184,bool)[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawBAKC",
+            "caladan:inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint32",
+                            "name": "mainTokenId",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint32",
+                            "name": "bakcTokenId",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint184",
+                            "name": "amount",
+                            "type": "uint184"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "isUncommit",
+                            "type": "bool"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.PairNftWithdrawWithAmount[]",
+                    "name": "_baycPairs",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint32",
+                            "name": "mainTokenId",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint32",
+                            "name": "bakcTokenId",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint184",
+                            "name": "amount",
+                            "type": "uint184"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "isUncommit",
+                            "type": "bool"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.PairNftWithdrawWithAmount[]",
+                    "name": "_maycPairs",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xaceb3629",
+            "caladan:signature": "withdrawBAYC((uint32,uint224)[],address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawBAYC",
+            "caladan:inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint32",
+                            "name": "tokenId",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint224",
+                            "name": "amount",
+                            "type": "uint224"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.SingleNft[]",
+                    "name": "_nfts",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_recipient",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xed23c906",
+            "caladan:signature": "withdrawMAYC((uint32,uint224)[],address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawMAYC",
+            "caladan:inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint32",
+                            "name": "tokenId",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint224",
+                            "name": "amount",
+                            "type": "uint224"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.SingleNft[]",
+                    "name": "_nfts",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_recipient",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0x7f60d338",
+            "caladan:signature": "withdrawSelfApeCoin(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawSelfApeCoin",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xfe31446c",
+            "caladan:signature": "withdrawSelfBAYC((uint32,uint224)[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawSelfBAYC",
+            "caladan:inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint32",
+                            "name": "tokenId",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint224",
+                            "name": "amount",
+                            "type": "uint224"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.SingleNft[]",
+                    "name": "_nfts",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "@id": "0xc63389c3",
+            "caladan:signature": "withdrawSelfMAYC((uint32,uint224)[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawSelfMAYC",
+            "caladan:inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint32",
+                            "name": "tokenId",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint224",
+                            "name": "amount",
+                            "type": "uint224"
+                        }
+                    ],
+                    "internalType": "struct ApeCoinStaking.SingleNft[]",
+                    "name": "_nfts",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/Apecoin: Staking"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0x517d5955ce3c06eaf11438c03b573c37bc6bb235d0463c05b34c209023925f19",
+            "caladan:signature": "0(address,address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_zrxProxyAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_zrxTokenAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3147867c59d17e8fa9d522465651d44aae0a9e38f902f3475b97e58072f0ed4c",
+            "caladan:signature": "AuthorizedAddressAdded(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AuthorizedAddressAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "caller",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x1f32c1b084e2de0713b8fb16bd46bb9df710a3dbeae2f3ca93af46e016dcc6b0",
+            "caladan:signature": "AuthorizedAddressRemoved(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AuthorizedAddressRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "caller",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c",
+            "caladan:signature": "Deposit(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Deposit",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xdc2ba7cd6b8e3bf6f27f665a737e34fb7f72f480a597b51686332c539fab0448",
+            "caladan:signature": "InCatastrophicFailureMode(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "InCatastrophicFailureMode",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb72b2a9919ffd08bc0d415d8a38b1395a40377207a9867cac2e3c10b1aa560fc",
+            "caladan:signature": "StakingProxySet(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "StakingProxySet",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "stakingProxyAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x884edad9ce6fa2440d8a54cc123490eb96d2768479d49ff9c7366125a9424364",
+            "caladan:signature": "Withdraw(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Withdraw",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xab1ca8eb645c27b1fa85b29ed92584109de7cc576a907cddaa0bf3f1f7f25310",
+            "caladan:signature": "ZrxProxySet(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ZrxProxySet",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "zrxProxyAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x42f1181e",
+            "caladan:signature": "addAuthorizedAddress(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addAuthorizedAddress",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x494503d4",
+            "caladan:signature": "authorities(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "authorities",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb9181611",
+            "caladan:signature": "authorized(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "authorized",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x70a08231",
+            "caladan:signature": "balanceOf(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "balanceOf",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x9706e0c0",
+            "caladan:signature": "balanceOfZrxVault()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "balanceOfZrxVault",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x15cc36f2",
+            "caladan:signature": "depositFrom(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "depositFrom",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xc02e5a7f",
+            "caladan:signature": "enterCatastrophicFailure()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "enterCatastrophicFailure",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd39de6e9",
+            "caladan:signature": "getAuthorizedAddresses()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getAuthorizedAddresses",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "",
+                    "type": "address[]",
+                    "@type": "address[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x266df27c",
+            "caladan:signature": "isInCatastrophicFailure()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isInCatastrophicFailure",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x70712939",
+            "caladan:signature": "removeAuthorizedAddress(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeAuthorizedAddress",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x9ad26744",
+            "caladan:signature": "removeAuthorizedAddressAtIndex(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeAuthorizedAddressAtIndex",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x6bf3f9e5",
+            "caladan:signature": "setStakingProxy(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setStakingProxy",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_stakingProxyAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xca5b0218",
+            "caladan:signature": "setZrxProxy(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setZrxProxy",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_zrxProxyAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xc4d8f237",
+            "caladan:signature": "stakingProxyAddress()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "stakingProxyAddress",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xf957ddba",
+            "caladan:signature": "withdrawAllFrom(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawAllFrom",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x9470b0bd",
+            "caladan:signature": "withdrawFrom(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawFrom",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x4551ab31",
+            "caladan:signature": "zrxAssetProxy()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "zrxAssetProxy",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract IAssetProxy",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/0x: ZRX Vault V3"
+                }
+            ]
+        },
+        {
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "caladan:signature": "0(address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_stakingToken",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x0fb5a6b4",
+            "caladan:signature": "duration()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "duration",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x008cc262",
+            "caladan:signature": "earned(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "earned",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x67d3b488",
+            "caladan:signature": "finishAt()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "finishAt",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x3d18b912",
+            "caladan:signature": "getReward()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "getReward",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x80faa57d",
+            "caladan:signature": "lastTimeRewardApplicable()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "lastTimeRewardApplicable",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x3c6b16ab",
+            "caladan:signature": "notifyRewardAmount(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "notifyRewardAmount",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xcd3daf9d",
+            "caladan:signature": "rewardPerToken()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "rewardPerToken",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xdf136d65",
+            "caladan:signature": "rewardPerTokenStored()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "rewardPerTokenStored",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x7b0a47ee",
+            "caladan:signature": "rewardRate()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "rewardRate",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x0700037d",
+            "caladan:signature": "rewards(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "rewards",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xcc1a378f",
+            "caladan:signature": "setRewardsDuration(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setRewardsDuration",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_duration",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xa694fc3a",
+            "caladan:signature": "stake(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "stake",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x72f702f3",
+            "caladan:signature": "stakingToken()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "stakingToken",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract IERC20",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x18160ddd",
+            "caladan:signature": "totalSupply()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "totalSupply",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x7519ab50",
+            "caladan:signature": "updatedAt()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "updatedAt",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x8b876347",
+            "caladan:signature": "userRewardPerTokenPaid(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "userRewardPerTokenPaid",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x2e1a7d4d",
+            "caladan:signature": "withdraw(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdraw",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/staking/null"
+                }
+            ]
+        }
+    ]
+}

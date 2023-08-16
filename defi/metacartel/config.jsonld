@@ -1,0 +1,2092 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/metacartel",
+    "@type": "caladan:Project",
+    "caladan:name": "metacartel",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/metacartel/null",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null",
+                    "evm:chainID": 1,
+                    "evm:address": "0x4570b4faf71e23942b8b9f934b47ccedf7540162"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "payable": false,
+            "@id": "0x1468326ee449361063a9f7a553b802e96e7f7288a21a52278a12a7f749f16333",
+            "caladan:signature": "0(address,address[],uint256,uint256,uint256,uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_summoner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address[]",
+                    "name": "_approvedTokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_periodDuration",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_votingPeriodLength",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_gracePeriodLength",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_proposalDeposit",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_dilutionBound",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_processingReward",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc215fed6680bb02d323dc3f8b8f85241572607538426059c9232601bd293c3be",
+            "caladan:signature": "CancelProposal(uint256,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "CancelProposal",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "applicantAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x0e347d00d3e9e6cdff9e6c09092c9ff1bd448f9b3dfb7091b30939ec5e7a3c73",
+            "caladan:signature": "ProcessGuildKickProposal(uint256,uint256,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "ProcessGuildKickProposal",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "proposalIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "didPass",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x86f74240ecee9e4230d26ff92e17fee978460d9c0f78f5c88b2864c9e7a49427",
+            "caladan:signature": "ProcessProposal(uint256,uint256,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "ProcessProposal",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "proposalIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "didPass",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2094fc13d2ecb0acd6861e82bd006c7e5ab6f312ec0c6cdfe3d1a01ee54d885a",
+            "caladan:signature": "ProcessWhitelistProposal(uint256,uint256,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "ProcessWhitelistProposal",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "proposalIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "didPass",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xcad1a1c68982832d9abc314de8a1e5d5e8c81b0588961e360766736d10c3be1a",
+            "caladan:signature": "Ragequit(address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Ragequit",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "memberAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "sharesToBurn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "lootToBurn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2a383a979381335e3eb401ac01dd8083e024ff0256bf5338456ffc0063390bbd",
+            "caladan:signature": "SponsorProposal(address,address,uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "SponsorProposal",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "delegateKey",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "memberAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "proposalIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "startingPeriod",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xa763e0f5e4f4e33a3397b4ba22677c9b6fd2075ed6504596333006ff2f3e3874",
+            "caladan:signature": "SubmitProposal(address,uint256,uint256,uint256,address,uint256,address,string,bool[6],uint256,address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SubmitProposal",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "applicant",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "sharesRequested",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "lootRequested",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tributeOffered",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "tributeToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "paymentRequested",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "paymentToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "details",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool[6]",
+                    "name": "flags",
+                    "type": "bool[6]",
+                    "@type": "bool[6]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "delegateKey",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "memberAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x804f03797630bf8b8a46b9371608abbf7d78a20df720e477bab641957ca68a20",
+            "caladan:signature": "SubmitVote(uint256,uint256,address,address,uint8)",
+            "@type": "caladan:Event",
+            "caladan:name": "SubmitVote",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "proposalIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "delegateKey",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "memberAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "uintVote",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc9943dac607a408ce079996205c3b771a7e464a5cf3859bc3315813f965e9240",
+            "caladan:signature": "SummonComplete(address,address[],uint256,uint256,uint256,uint256,uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "SummonComplete",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "summoner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address[]",
+                    "name": "tokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "summoningTime",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "periodDuration",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "votingPeriodLength",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "gracePeriodLength",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "proposalDeposit",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "dilutionBound",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "processingReward",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x9381e53ffdc9733a6783a6f8665be3f89c231bb81a6771996ed553b4e75c0fe3",
+            "caladan:signature": "TokensCollected(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "TokensCollected",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountToCollect",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xde7b64a369e10562cc2e71f0f1f944eaf144b75fead6ecb51fac9c4dd6934885",
+            "caladan:signature": "UpdateDelegateKey(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "UpdateDelegateKey",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "memberAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newDelegateKey",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x9b1bfa7fa9ee420a16e124f794c35ac9f90472acc99140eb2f6447c714cad8eb",
+            "caladan:signature": "Withdraw(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Withdraw",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "memberAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xe681c4aa",
+            "caladan:signature": "ESCROW()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ESCROW",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xf5d54c77",
+            "caladan:signature": "GUILD()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "GUILD",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x27efc086",
+            "caladan:signature": "TOTAL()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "TOTAL",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x1dafede0",
+            "caladan:signature": "approvedTokens(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "approvedTokens",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa3dc3800",
+            "caladan:signature": "canRagequit(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "canRagequit",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "highestIndexYesVote",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe0a8f6f5",
+            "caladan:signature": "cancelProposal(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "cancelProposal",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x59999b41",
+            "caladan:signature": "collectTokens(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "collectTokens",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xc89039c5",
+            "caladan:signature": "depositToken()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "depositToken",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xafe5475f",
+            "caladan:signature": "dilutionBound()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "dilutionBound",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x086146d2",
+            "caladan:signature": "getCurrentPeriod()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getCurrentPeriod",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x044a0ca8",
+            "caladan:signature": "getMemberProposalVote(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getMemberProposalVote",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "memberAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "proposalIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "enum Moloch.Vote",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb2643aab",
+            "caladan:signature": "getProposalFlags(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getProposalFlags",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool[6]",
+                    "name": "",
+                    "type": "bool[6]",
+                    "@type": "bool[6]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x797daf70",
+            "caladan:signature": "getProposalQueueLength()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getProposalQueueLength",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x78a89567",
+            "caladan:signature": "getTokenCount()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getTokenCount",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x73f8fd4b",
+            "caladan:signature": "getUserTokenBalance(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getUserTokenBalance",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x63858f2d",
+            "caladan:signature": "gracePeriodLength()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "gracePeriodLength",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x9425a476",
+            "caladan:signature": "hasVotingPeriodExpired(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "hasVotingPeriodExpired",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "startingPeriod",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x402c1794",
+            "caladan:signature": "memberAddressByDelegateKey(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "memberAddressByDelegateKey",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x08ae4b0c",
+            "caladan:signature": "members(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "members",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "delegateKey",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "shares",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "loot",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "exists",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "highestIndexYesVote",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "jailed",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb470aade",
+            "caladan:signature": "periodDuration()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "periodDuration",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe1a0e3fa",
+            "caladan:signature": "processGuildKickProposal(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "processGuildKickProposal",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "proposalIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe63bc62d",
+            "caladan:signature": "processProposal(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "processProposal",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "proposalIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x3793ab3c",
+            "caladan:signature": "processWhitelistProposal(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "processWhitelistProposal",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "proposalIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x03e32fa1",
+            "caladan:signature": "processingReward()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "processingReward",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xda35c664",
+            "caladan:signature": "proposalCount()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "proposalCount",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x8b15a605",
+            "caladan:signature": "proposalDeposit()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "proposalDeposit",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x3b214a74",
+            "caladan:signature": "proposalQueue(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "proposalQueue",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x013cf08b",
+            "caladan:signature": "proposals(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "proposals",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "applicant",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "proposer",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "sponsor",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "sharesRequested",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "lootRequested",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tributeOffered",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "tributeToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "paymentRequested",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "paymentToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "startingPeriod",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "yesVotes",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "noVotes",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "string",
+                    "name": "details",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "maxTotalSharesAndLootAtYesVote",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x3fc24bba",
+            "caladan:signature": "proposedToKick(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "proposedToKick",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xe1780345",
+            "caladan:signature": "proposedToWhitelist(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "proposedToWhitelist",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xdfdd369e",
+            "caladan:signature": "ragekick(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "ragekick",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "memberToKick",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x15eb349e",
+            "caladan:signature": "ragequit(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "ragequit",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "sharesToBurn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "lootToBurn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x9746d940",
+            "caladan:signature": "sponsorProposal(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "sponsorProposal",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x115b2d18",
+            "caladan:signature": "submitGuildKickProposal(address,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "submitGuildKickProposal",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "memberToKick",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "string",
+                    "name": "details",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x590f940b",
+            "caladan:signature": "submitProposal(address,uint256,uint256,uint256,address,uint256,address,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "submitProposal",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "applicant",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "sharesRequested",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "lootRequested",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tributeOffered",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "tributeToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "paymentRequested",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "paymentToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "string",
+                    "name": "details",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x99653fbe",
+            "caladan:signature": "submitVote(uint256,uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "submitVote",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "proposalIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "uintVote",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xfeb7ea1d",
+            "caladan:signature": "submitWhitelistProposal(address,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "submitWhitelistProposal",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "tokenToWhitelist",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "string",
+                    "name": "details",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x7d5b6c72",
+            "caladan:signature": "summoningTime()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "summoningTime",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x753d7563",
+            "caladan:signature": "tokenWhitelist(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "tokenWhitelist",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x9d1722cb",
+            "caladan:signature": "totalGuildBankTokens()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "totalGuildBankTokens",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x635e99aa",
+            "caladan:signature": "totalLoot()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "totalLoot",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x3a98ef39",
+            "caladan:signature": "totalShares()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "totalShares",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x2582bf2a",
+            "caladan:signature": "updateDelegateKey(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateDelegateKey",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newDelegateKey",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x45f2d105",
+            "caladan:signature": "userTokenBalances(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "userTokenBalances",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x8340bbce",
+            "caladan:signature": "votingPeriodLength()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "votingPeriodLength",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x0cf20cc9",
+            "caladan:signature": "withdrawBalance(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawBalance",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x4482394b",
+            "caladan:signature": "withdrawBalances(address[],uint256[],bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawBalances",
+            "caladan:inputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "tokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "amounts",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "max",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metacartel/null"
+                }
+            ]
+        }
+    ]
+}

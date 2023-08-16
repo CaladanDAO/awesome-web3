@@ -1,0 +1,2463 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/sorare",
+    "@type": "caladan:Project",
+    "caladan:name": "sorare",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy",
+                    "evm:chainID": 1,
+                    "evm:address": "0x2cabd63f6f28b493f33d13e34060f0959f3570ae"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)",
+                    "evm:chainID": 1,
+                    "evm:address": "0x629a673a8242c2ac4b7b8c5d8735fbeac21a6205"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/sorare/Committee",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Committee",
+                    "evm:chainID": 1,
+                    "evm:address": "0x879cd57975d596004863d30c59d579ef78bbbe32"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/sorare/StarkExchange",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/StarkExchange",
+                    "evm:chainID": 1,
+                    "evm:address": "0xf5c9f957705bea56a7e806943f98f7777b995826"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "@id": "0xa3748f0a92719d6e7ce7f9c9c450772749c23429c6a57c2d47fcb44e96994886",
+            "caladan:signature": "0(uint256)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "upgradeActivationDelay",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc13b75a5f14b69ebdc2431a5d475b3bff371abe251b5064144306fbd9c4de35c",
+            "caladan:signature": "FinalizedImplementation(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "FinalizedImplementation",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x723a7080d63c133cf338e44e00705cc1b7b2bde7e88d6218a8d62710a329ce1b",
+            "caladan:signature": "ImplementationAdded(address,bytes,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "ImplementationAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "initializer",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe99b980b5259f200e4c1da973ff0251b6d9aaa144714c8773976ecd62b8ebe8d",
+            "caladan:signature": "ImplementationRemoved(address,bytes,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "ImplementationRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "initializer",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xff14288d542bc1c1d15a652cb52af735f065c0c9d70b48e454a203c260733544",
+            "caladan:signature": "ImplementationUpgraded(address,bytes)",
+            "@type": "caladan:Event",
+            "caladan:name": "ImplementationUpgraded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "initializer",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xcfb473e6c03f9a29ddaf990e736fa3de5188a0bd85d684f5b6e164ebfbfff5d2",
+            "caladan:signature": "LogNewGovernorAccepted(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogNewGovernorAccepted",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "acceptedGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6166272c8d3f5f579082f2827532732f97195007983bb5b83ac12c56700b01a6",
+            "caladan:signature": "LogNominatedGovernor(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogNominatedGovernor",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "nominatedGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x7a8dc7dd7fffb43c4807438fa62729225156941e641fd877938f4edade3429f5",
+            "caladan:signature": "LogNominationCancelled()",
+            "@type": "caladan:Event",
+            "caladan:name": "LogNominationCancelled",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd75f94825e770b8b512be8e74759e252ad00e102e38f50cce2f7c6f868a29599",
+            "caladan:signature": "LogRemovedGovernor(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogRemovedGovernor",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "removedGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x56f36dbf",
+            "caladan:signature": "PROXY_GOVERNANCE_TAG()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "PROXY_GOVERNANCE_TAG",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0xc5ab8453",
+            "caladan:signature": "PROXY_VERSION()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "PROXY_VERSION",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x20cea94d",
+            "caladan:signature": "UPGRADE_DELAY_SLOT()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "UPGRADE_DELAY_SLOT",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x5e3a97e7",
+            "caladan:signature": "addImplementation(address,bytes,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addImplementation",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x72a44f07",
+            "caladan:signature": "getUpgradeActivationDelay()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getUpgradeActivationDelay",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "delay",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x5c60da1b",
+            "caladan:signature": "implementation()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "implementation",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "_implementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x439fab91",
+            "caladan:signature": "initialize(bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "initialize",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/StarkExchange"
+                }
+            ]
+        },
+        {
+            "@id": "0xe907fa3c",
+            "caladan:signature": "isNotFinalized()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isNotFinalized",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "notFinal",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x6684b1d6",
+            "caladan:signature": "proxyAcceptGovernance()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "proxyAcceptGovernance",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0xf9bcdde4",
+            "caladan:signature": "proxyCancelNomination()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "proxyCancelNomination",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0xb449ea5d",
+            "caladan:signature": "proxyIsGovernor(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "proxyIsGovernor",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "testGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x8757653f",
+            "caladan:signature": "proxyNominateNewGovernor(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "proxyNominateNewGovernor",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x12f16e6d",
+            "caladan:signature": "proxyRemoveGovernor(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "proxyRemoveGovernor",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "governorForRemoval",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x5cef2e86",
+            "caladan:signature": "removeImplementation(address,bytes,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeImplementation",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "removedImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x7147855d",
+            "caladan:signature": "upgradeTo(address,bytes,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "upgradeTo",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x517d5955ce3c06eaf11438c03b573c37bc6bb235d0463c05b34c209023925f19",
+            "caladan:signature": "0(address,address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "sorareCardsAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "relayAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "caladan:signature": "Approval(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Approval",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "approved",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31",
+            "caladan:signature": "ApprovalForAll(address,address,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "ApprovalForAll",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "approved",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "caladan:signature": "OwnershipTransferred(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnershipTransferred",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+            "caladan:signature": "RoleGranted(bytes32,address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "RoleGranted",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b",
+            "caladan:signature": "RoleRevoked(bytes32,address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "RoleRevoked",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "caladan:signature": "Transfer(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Transfer",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0xa217fddf",
+            "caladan:signature": "DEFAULT_ADMIN_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "DEFAULT_ADMIN_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0xd5391393",
+            "caladan:signature": "MINTER_ROLE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "MINTER_ROLE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x983b2d56",
+            "caladan:signature": "addMinter(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addMinter",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x095ea7b3",
+            "caladan:signature": "approve(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approve",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x70a08231",
+            "caladan:signature": "balanceOf(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "balanceOf",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x6c0360eb",
+            "caladan:signature": "baseURI()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "baseURI",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x309e11fc",
+            "caladan:signature": "blockRelay()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "blockRelay",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x2850d20e",
+            "caladan:signature": "createCardAndMintToken(uint256,uint16,uint8,uint16,bytes32,uint16,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "createCardAndMintToken",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "playerId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "season",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "scarcity",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "serialNumber",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "metadata",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "clubId",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x081812fc",
+            "caladan:signature": "getApproved(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getApproved",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x9188d312",
+            "caladan:signature": "getCard(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getCard",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "playerId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "season",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "scarcity",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "serialNumber",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "metadata",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "clubId",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x4a39d2b8",
+            "caladan:signature": "getClub(uint16)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getClub",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint16",
+                    "name": "clubId",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "country",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "city",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "yearFounded",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0xe55ae4e8",
+            "caladan:signature": "getPlayer(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getPlayer",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "playerId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "yearOfBirth",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "monthOfBirth",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "dayOfBirth",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x32deedc6",
+            "caladan:signature": "getRelayAddress()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getRelayAddress",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x248a9ca3",
+            "caladan:signature": "getRoleAdmin(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getRoleAdmin",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x9010d07c",
+            "caladan:signature": "getRoleMember(bytes32,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getRoleMember",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0xca15c873",
+            "caladan:signature": "getRoleMemberCount(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getRoleMemberCount",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x2f2ff15d",
+            "caladan:signature": "grantRole(bytes32,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "grantRole",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x91d14854",
+            "caladan:signature": "hasRole(bytes32,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "hasRole",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0xe985e9c5",
+            "caladan:signature": "isApprovedForAll(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isApprovedForAll",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0xe5951e60",
+            "caladan:signature": "migrateTokens(uint256[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "migrateTokens",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "tokenIds",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0xa140ae23",
+            "caladan:signature": "mintToken(uint256,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "mintToken",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "cardId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x06fdde03",
+            "caladan:signature": "name()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "name",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0xd8787fde",
+            "caladan:signature": "nextContract()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "nextContract",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract INextContract",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x8da5cb5b",
+            "caladan:signature": "owner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "owner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x6352211e",
+            "caladan:signature": "ownerOf(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ownerOf",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x5f112c68",
+            "caladan:signature": "renounceMinter(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "renounceMinter",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x715018a6",
+            "caladan:signature": "renounceOwnership()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "renounceOwnership",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x36568abe",
+            "caladan:signature": "renounceRole(bytes32,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "renounceRole",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0xcfbd4885",
+            "caladan:signature": "revokeMinter(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "revokeMinter",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0xd547741f",
+            "caladan:signature": "revokeRole(bytes32,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "revokeRole",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x42842e0e",
+            "caladan:signature": "safeTransferFrom(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "safeTransferFrom",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0xb88d4fde",
+            "caladan:signature": "safeTransferFrom(address,address,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "safeTransferFrom",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0xa22cb465",
+            "caladan:signature": "setApprovalForAll(address,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setApprovalForAll",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "approved",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x53390100",
+            "caladan:signature": "setNextContract(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setNextContract",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "nextContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x99e0dd7c",
+            "caladan:signature": "setTokenURIPrefix(string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setTokenURIPrefix",
+            "caladan:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "prefix",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x16b1b0c8",
+            "caladan:signature": "sorareCards()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "sorareCards",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract ISorareCards",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x01ffc9a7",
+            "caladan:signature": "supportsInterface(bytes4)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "supportsInterface",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "interfaceId",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x95d89b41",
+            "caladan:signature": "symbol()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "symbol",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x4f6ccce7",
+            "caladan:signature": "tokenByIndex(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "tokenByIndex",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x2f745c59",
+            "caladan:signature": "tokenOfOwnerByIndex(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "tokenOfOwnerByIndex",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0xc87b56dd",
+            "caladan:signature": "tokenURI(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "tokenURI",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x4d9c5e58",
+            "caladan:signature": "tokensOfOwner(address,uint8,uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "tokensOfOwner",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "page",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "rows",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x18160ddd",
+            "caladan:signature": "totalSupply()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "totalSupply",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0x23b872dd",
+            "caladan:signature": "transferFrom(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferFrom",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2fde38b",
+            "caladan:signature": "transferOwnership(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferOwnership",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Sorare  (SOR)"
+                }
+            ]
+        },
+        {
+            "@id": "0xe3125b5545de3133adbf51c219d0f25e8116cfa057bc4bf19cf2860bc4d24839",
+            "caladan:signature": "0(address[],uint256)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "committeeMembers",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "numSignaturesRequired",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Committee"
+                }
+            ]
+        },
+        {
+            "@id": "0xd6354e15",
+            "caladan:signature": "hasRegisteredFact()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "hasRegisteredFact",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Committee"
+                }
+            ]
+        },
+        {
+            "@id": "0xeeb72866",
+            "caladan:signature": "identify()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "identify",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Committee"
+                }
+            ]
+        },
+        {
+            "@id": "0xa230c524",
+            "caladan:signature": "isMember(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isMember",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Committee"
+                }
+            ]
+        },
+        {
+            "@id": "0x6a938567",
+            "caladan:signature": "isValid(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isValid",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "fact",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Committee"
+                }
+            ]
+        },
+        {
+            "@id": "0xce757d29",
+            "caladan:signature": "signaturesRequired()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "signaturesRequired",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Committee"
+                }
+            ]
+        },
+        {
+            "@id": "0x504f7f6f",
+            "caladan:signature": "verifyAvailabilityProof(bytes32,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "verifyAvailabilityProof",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "claimHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "availabilityProofs",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/Committee"
+                }
+            ]
+        },
+        {
+            "@id": "0xffa1ad74",
+            "caladan:signature": "VERSION()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "VERSION",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/StarkExchange"
+                }
+            ]
+        },
+        {
+            "@id": "0x2f9014b4",
+            "caladan:signature": "getSubContract(bytes4)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getSubContract",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "selector",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/StarkExchange"
+                }
+            ]
+        },
+        {
+            "@id": "0xd4e878e8",
+            "caladan:signature": "handlingContractId(bytes4)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "handlingContractId",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "selector",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "id",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/sorare/StarkExchange"
+                }
+            ]
+        }
+    ]
+}

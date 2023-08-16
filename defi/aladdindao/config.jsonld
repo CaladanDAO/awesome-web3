@@ -1,0 +1,59 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/aladdindao",
+    "@type": "caladan:Project",
+    "caladan:name": "aladdindao",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/aladdindao/GnosisSafe",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aladdindao/GnosisSafe",
+                    "evm:chainID": 1,
+                    "evm:address": "0x28c921adac4c1072658eb01a28da06b5f651ef62"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aladdindao/GnosisSafe",
+                    "evm:chainID": 1,
+                    "evm:address": "0xc40549aa1d05c30af23a1c4a5af6ba11fcafe23f"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "payable": false,
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "caladan:signature": "0(address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_masterCopy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aladdindao/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aladdindao/GnosisSafe"
+                }
+            ]
+        }
+    ]
+}

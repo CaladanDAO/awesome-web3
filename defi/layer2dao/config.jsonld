@@ -1,0 +1,26 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/layer2dao",
+    "@type": "caladan:Project",
+    "caladan:name": "layer2dao",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/layer2dao/Layer2DAO (L2DAO)",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/layer2dao/Layer2DAO (L2DAO)",
+                    "evm:chainID": 42161,
+                    "evm:address": "0x2cab3abfc1670d1a452df502e216a66883cdf079"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": []
+}

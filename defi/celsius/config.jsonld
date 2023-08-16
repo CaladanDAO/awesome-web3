@@ -1,0 +1,4616 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/celsius",
+    "@type": "caladan:Project",
+    "caladan:name": "celsius",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3",
+                    "evm:chainID": 1,
+                    "evm:address": "0x4859df02d1c7cd85c2a283708958aaa7728bad67"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1",
+                    "evm:chainID": 1,
+                    "evm:address": "0x520da65f3b9b93a5bb6a1db911de40ae197aa639"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1",
+                    "evm:chainID": 1,
+                    "evm:address": "0x64875aaa68d1d5521666c67d692ee0b926b08b2f"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1",
+                    "evm:chainID": 1,
+                    "evm:address": "0xf9e293d5d793ddc1ae4f778761e0b3e4aa7cf2dd"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1",
+                    "evm:chainID": 1,
+                    "evm:address": "0x9b436168dd080f1f95d1919258c64590263c0dae"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)",
+                    "evm:chainID": 1,
+                    "evm:address": "0xaaaebe6fe48e54f431b0c390cfaf0b017d09d42d"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/celsius/null",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null",
+                    "evm:chainID": 1,
+                    "evm:address": "0xfe4546fefe124f30788c4cc1bb9aa6907a7987f9"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "anonymous": false,
+            "@id": "0x7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f",
+            "caladan:signature": "AdminChanged(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AdminChanged",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "previousAdmin",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newAdmin",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x1cf3b03a6cf19fa2baba4df148e9dcabedea7f8a5c07840e207e5c089be95d3e",
+            "caladan:signature": "BeaconUpgraded(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "BeaconUpgraded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "beacon",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "caladan:signature": "OwnershipTransferred(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnershipTransferred",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b",
+            "caladan:signature": "Upgraded(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Upgraded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xa12ed149",
+            "caladan:signature": "addWalletAddress(uint8,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addWalletAddress",
+            "caladan:inputs": [
+                {
+                    "internalType": "enum AddressManager.Network",
+                    "name": "network",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "string",
+                    "name": "addr",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xc4d66de8",
+            "caladan:signature": "initialize(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "initialize",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xf56be7a8",
+            "caladan:signature": "networkName(uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "networkName",
+            "caladan:inputs": [
+                {
+                    "internalType": "enum AddressManager.Network",
+                    "name": "network",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x8da5cb5b",
+            "caladan:signature": "owner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "owner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xfda6122b",
+            "caladan:signature": "removeWalletAddress(uint8,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeWalletAddress",
+            "caladan:inputs": [
+                {
+                    "internalType": "enum AddressManager.Network",
+                    "name": "network",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x715018a6",
+            "caladan:signature": "renounceOwnership()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "renounceOwnership",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2fde38b",
+            "caladan:signature": "transferOwnership(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferOwnership",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x3659cfe6",
+            "caladan:signature": "upgradeTo(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "upgradeTo",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x4f1ef286",
+            "caladan:signature": "upgradeToAndCall(address,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "upgradeToAndCall",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x51689c24",
+            "caladan:signature": "walletAddresses(uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "walletAddresses",
+            "caladan:inputs": [
+                {
+                    "internalType": "enum AddressManager.Network",
+                    "name": "network",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "string[]",
+                    "name": "",
+                    "type": "string[]",
+                    "@type": "string[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                }
+            ]
+        },
+        {
+            "@id": "0x4e937bd0",
+            "caladan:signature": "walletAddressesMap(uint8,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "walletAddressesMap",
+            "caladan:inputs": [
+                {
+                    "internalType": "enum AddressManager.Network",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                }
+            ]
+        },
+        {
+            "@id": "0xff160c5b346850b54875889a5c2a96c51183608718ab1d81bc7aab8e2dff8395",
+            "caladan:signature": "0(address,bytes)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "payable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_logic",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x223b98d94c41731cdd22de1620b8068f235f50059503fdbc0ffaee92d4f51deb",
+            "caladan:signature": "0(string,string,address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "symbol",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "contract AggregatorV3Interface",
+                    "name": "resFeed",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xaf6ebb6594c3be37f747a8a4692decee2e128c133145b92b98391af1e942bb52",
+            "caladan:signature": "AddressAddedToBlacklist(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AddressAddedToBlacklist",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xca6d1e885708b837a7647aeb7f4163ee4ca96058e08ac767be8d23c972c50270",
+            "caladan:signature": "AddressAddedToWhitelist(address,uint8,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AddressAddedToWhitelist",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint8",
+                    "name": "whitelist",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc5d633221a999da7b50bad97ddd6cff0c917455d8651123a6433642833252b7c",
+            "caladan:signature": "AddressRemovedFromBlacklist(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AddressRemovedFromBlacklist",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb50a30a0fa972f89fbb2b514d12b31f5a5d64f53603402de7939742cd8507f6e",
+            "caladan:signature": "AddressRemovedFromWhitelist(address,uint8,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AddressRemovedFromWhitelist",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint8",
+                    "name": "whitelist",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "caladan:signature": "Approval(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Approval",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x0254250bff2b56bce9719dfb6237446b9159bfbe2368f9dfe449d85da99b2be0",
+            "caladan:signature": "BlacklistEnabledUpdated(address,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "BlacklistEnabledUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "updatedBy",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bool",
+                    "name": "enabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x891e671759c21e48221125d0aa55b5574dc00b3e3225e40f6cb10dde820822ad",
+            "caladan:signature": "BlacklisterAdded(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "BlacklisterAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBlacklister",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc76ab32d91026761e52ef1016d8293a11dbb26424e34581575cefc484d10c6f3",
+            "caladan:signature": "BlacklisterRemoved(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "BlacklisterRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBlacklister",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xbac40739b0d4ca32fa2d82fc91630465ba3eddd1598da6fca393b26fb63b9453",
+            "caladan:signature": "Burn(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Burn",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "burner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x86515ebaad527298e98929c064c075f5a2604cc80afc0db29e73c01a36f8e98c",
+            "caladan:signature": "BurnerAdded(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "BurnerAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBurner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x85222465e0d438163a28671b59fc9ebeb03bf39f880ddd36c8315da7512b31c0",
+            "caladan:signature": "BurnerRemoved(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "BurnerRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBurner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xeeaed647dc622e55877c30943e5c1d4feb92d1b8cfcc88d974163e9787bde9af",
+            "caladan:signature": "CodeAddressUpdated(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "CodeAddressUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xab8530f87dc9b59234c4623bf917212bb2536d647574c8e7e5da92c2ede0c9f8",
+            "caladan:signature": "Mint(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Mint",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "minter",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3c091dafb1d99e4a4c333024492eac3b2cd8bf921a3dd547c937db33be307bb8",
+            "caladan:signature": "MinterAdded(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "MinterAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedMinter",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x4b5ef9a786cf64a7d82ebcf2d5132667edc9faef4ac36260d9a9e52c526b6232",
+            "caladan:signature": "MinterRemoved(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "MinterRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedMinter",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x107a9fafffb7ac890f780879e423760c9ffea8dcee8045681f40f542aede2cb8",
+            "caladan:signature": "OracleAddressUpdated(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OracleAddressUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb0353d563a9aa5231878c83727dc723a3cb8a38c2917f8ac2b777aa564c8a0d5",
+            "caladan:signature": "OutboundWhitelistUpdated(address,uint8,uint8,bool,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "OutboundWhitelistUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "updatedBy",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint8",
+                    "name": "sourceWhitelist",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint8",
+                    "name": "destinationWhitelist",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "from",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "to",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc82bdbbf677a2462f2a7e22e4ba9abd209496b69cd7b868b3b1d28f76e09a40a",
+            "caladan:signature": "OwnerAdded(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnerAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe594d081b4382713733fe631966432c9cea5199afb2db5c3c1931f9f93003679",
+            "caladan:signature": "OwnerRemoved(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnerRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x62e78cea01bee320cd4e420270b5ea74000d11b0c9f74754ebdbfc544b05a258",
+            "caladan:signature": "Paused(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Paused",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe0953c403a52f9dc1fef4202a8d33975c958b727bee0d7b5b328965ddad98d81",
+            "caladan:signature": "PauserAdded(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "PauserAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedPauser",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb75903ade4a0fdb07d60c882c22c779e2e1c751883c37aecdcc92a8ec72b046e",
+            "caladan:signature": "PauserRemoved(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "PauserRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedPauser",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb698e31a2abee5824d0d7bcfd2339aead7f9e9ae413fba50bf554ff3fa470b7b",
+            "caladan:signature": "Revoke(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Revoke",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "revoker",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x64a989949bb484d2d275229a9d310b5d9dc273a560dd639c337aaf6f67fb73b6",
+            "caladan:signature": "RevokeToAddress(address,address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "RevokeToAddress",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "revoker",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2b5f18afd9a7b21f41bf023b012b3d4c8a22a21b79fa425cd4494ecbe2970196",
+            "caladan:signature": "RevokerAdded(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "RevokerAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedRevoker",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb6fe3ab11eb9ab1d9f1d41c8f42a5d72d10122099ba1548e4a6d1a4d8cefec4b",
+            "caladan:signature": "RevokerRemoved(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "RevokerRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedRevoker",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "caladan:signature": "Transfer(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Transfer",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5db9ee0a495bf2e6ff9c91a7834c1ba4fdd244a5e8aa4e537bd38aeae4b073aa",
+            "caladan:signature": "Unpaused(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Unpaused",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb535c5f7f150db8dbf22962fc390e7fa9026b9c29ffad714197bee4620572bd6",
+            "caladan:signature": "WhitelistEnabledUpdated(address,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "WhitelistEnabledUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "updatedBy",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bool",
+                    "name": "enabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5f36f4f5999f34947706fca376b955319b858573bf9d6bc59303c9a4cd80ced0",
+            "caladan:signature": "WhitelisterAdded(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "WhitelisterAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedWhitelister",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3ed21605dd544629fb45f2ccaedcc095ba1dbea540fb6eaf5493a7479856b0be",
+            "caladan:signature": "WhitelisterRemoved(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "WhitelisterRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedWhitelister",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xba54b1ce",
+            "caladan:signature": "FAILURE_BLACKLIST()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "FAILURE_BLACKLIST",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x611649c1",
+            "caladan:signature": "FAILURE_BLACKLIST_MESSAGE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "FAILURE_BLACKLIST_MESSAGE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x1fb45ec0",
+            "caladan:signature": "FAILURE_NON_WHITELIST()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "FAILURE_NON_WHITELIST",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xc8934462",
+            "caladan:signature": "FAILURE_NON_WHITELIST_MESSAGE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "FAILURE_NON_WHITELIST_MESSAGE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x3f713709",
+            "caladan:signature": "FAILURE_PAUSED()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "FAILURE_PAUSED",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x489c1b25",
+            "caladan:signature": "FAILURE_PAUSED_MESSAGE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "FAILURE_PAUSED_MESSAGE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x0e969a05",
+            "caladan:signature": "SUCCESS_CODE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "SUCCESS_CODE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xe7984d17",
+            "caladan:signature": "SUCCESS_MESSAGE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "SUCCESS_MESSAGE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x97af6744",
+            "caladan:signature": "UNKNOWN_ERROR()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "UNKNOWN_ERROR",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xdd4d208c",
+            "caladan:signature": "_RETURN_VALUE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "_RETURN_VALUE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x7bb06eea",
+            "caladan:signature": "addBlacklister(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addBlacklister",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xf44637ba",
+            "caladan:signature": "addBurner(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addBurner",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x983b2d56",
+            "caladan:signature": "addMinter(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addMinter",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x7065cb48",
+            "caladan:signature": "addOwner(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addOwner",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x82dc1ec4",
+            "caladan:signature": "addPauser(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addPauser",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x961a66f6",
+            "caladan:signature": "addRevoker(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addRevoker",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x44337ea1",
+            "caladan:signature": "addToBlacklist(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addToBlacklist",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "addressToAdd",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x0263b858",
+            "caladan:signature": "addToWhitelist(address,uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addToWhitelist",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "addressToAdd",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "whitelist",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xeaf9144a",
+            "caladan:signature": "addWhitelister(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addWhitelister",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xea72d6ee",
+            "caladan:signature": "addressBlacklists(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "addressBlacklists",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x92e6d68b",
+            "caladan:signature": "addressWhitelists(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "addressWhitelists",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xdd62ed3e",
+            "caladan:signature": "allowance(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "allowance",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "@id": "0x095ea7b3",
+            "caladan:signature": "approve(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approve",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "@id": "0x70a08231",
+            "caladan:signature": "balanceOf(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "balanceOf",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "@id": "0x9dc29fac",
+            "caladan:signature": "burn(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "burn",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2c2b9ae",
+            "caladan:signature": "checkBlacklistAllowed(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "checkBlacklistAllowed",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x9437e2fe",
+            "caladan:signature": "checkWhitelistAllowed(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "checkWhitelistAllowed",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x313ce567",
+            "caladan:signature": "decimals()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "decimals",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "@id": "0xa457c2d7",
+            "caladan:signature": "decreaseAllowance(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "decreaseAllowance",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "subtractedValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xd4ce1415",
+            "caladan:signature": "detectTransferRestriction(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "detectTransferRestriction",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xd9d98ce4",
+            "caladan:signature": "flashFee(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "flashFee",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x5cffe9de",
+            "caladan:signature": "flashLoan(address,address,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "flashLoan",
+            "caladan:inputs": [
+                {
+                    "internalType": "contract IERC3156FlashBorrowerUpgradeable",
+                    "name": "receiver",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x940a1dc0",
+            "caladan:signature": "flashMintFee()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "flashMintFee",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xa9468e7d",
+            "caladan:signature": "flashMintFeeReceiver()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "flashMintFeeReceiver",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xabd108ba",
+            "caladan:signature": "getLogicAddress()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getLogicAddress",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "logicAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x39509351",
+            "caladan:signature": "increaseAllowance(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "increaseAllowance",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "addedValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xca9aeada",
+            "caladan:signature": "initialize(address,string,string,uint256,address,bool,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "initialize",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "symbol",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "initialSupply",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "contract AggregatorV3Interface",
+                    "name": "resFeed",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "whitelistEnabled",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "flashMintEnabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x878dd332",
+            "caladan:signature": "isBlacklistEnabled()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isBlacklistEnabled",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xb66cd56c",
+            "caladan:signature": "isBlacklister(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isBlacklister",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x4334614a",
+            "caladan:signature": "isBurner(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isBurner",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x0e77a06f",
+            "caladan:signature": "isFlashMintEnabled()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isFlashMintEnabled",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xaa271e1a",
+            "caladan:signature": "isMinter(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isMinter",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x2f54bf6e",
+            "caladan:signature": "isOwner(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isOwner",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x46fbf68e",
+            "caladan:signature": "isPauser(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isPauser",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xf6c4b01f",
+            "caladan:signature": "isRevoker(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isRevoker",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x184d69ab",
+            "caladan:signature": "isWhitelistEnabled()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isWhitelistEnabled",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x7d0c269f",
+            "caladan:signature": "isWhitelister(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isWhitelister",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x613255ab",
+            "caladan:signature": "maxFlashLoan(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "maxFlashLoan",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x7f4ab1dd",
+            "caladan:signature": "messageForTransferRestriction(uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "messageForTransferRestriction",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "restrictionCode",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x40c10f19",
+            "caladan:signature": "mint(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "mint",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x06fdde03",
+            "caladan:signature": "name()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "name",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "@id": "0xe9594508",
+            "caladan:signature": "outboundWhitelistsEnabled(uint8,uint8)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "outboundWhitelistsEnabled",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x8456cb59",
+            "caladan:signature": "pause()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "pause",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x5c975abb",
+            "caladan:signature": "paused()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "paused",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x52d1902d",
+            "caladan:signature": "proxiableUUID()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "proxiableUUID",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x0cd865ec",
+            "caladan:signature": "recover(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "recover",
+            "caladan:inputs": [
+                {
+                    "internalType": "contract IERC20Upgradeable",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x9fcf1007",
+            "caladan:signature": "removeBlacklister(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeBlacklister",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x02846858",
+            "caladan:signature": "removeBurner(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeBurner",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x537df3b6",
+            "caladan:signature": "removeFromBlacklist(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeFromBlacklist",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "addressToRemove",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x8ab1d681",
+            "caladan:signature": "removeFromWhitelist(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeFromWhitelist",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "addressToRemove",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x3092afd5",
+            "caladan:signature": "removeMinter(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeMinter",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x173825d9",
+            "caladan:signature": "removeOwner(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeOwner",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x6b2c0f55",
+            "caladan:signature": "removePauser(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removePauser",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xc06f8b94",
+            "caladan:signature": "removeRevoker(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeRevoker",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x82c3f79c",
+            "caladan:signature": "removeWhitelister(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeWhitelister",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x11857106",
+            "caladan:signature": "reserveFeed()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "reserveFeed",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract AggregatorV3Interface",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xeac449d9",
+            "caladan:signature": "revoke(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "revoke",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xcc00551e",
+            "caladan:signature": "revokeToAddress(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "revokeToAddress",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x1201cbd0",
+            "caladan:signature": "setBlacklistEnabled(bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setBlacklistEnabled",
+            "caladan:inputs": [
+                {
+                    "internalType": "bool",
+                    "name": "enabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x56326a7b",
+            "caladan:signature": "setFlashMintEnabled(bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setFlashMintEnabled",
+            "caladan:inputs": [
+                {
+                    "internalType": "bool",
+                    "name": "enabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x1d2a0e3d",
+            "caladan:signature": "setFlashMintFee(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setFlashMintFee",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x044dc120",
+            "caladan:signature": "setFlashMintFeeReceiver(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setFlashMintFeeReceiver",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x052d9e7e",
+            "caladan:signature": "setWhitelistEnabled(bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setWhitelistEnabled",
+            "caladan:inputs": [
+                {
+                    "internalType": "bool",
+                    "name": "enabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x95d89b41",
+            "caladan:signature": "symbol()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "symbol",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "@id": "0x18160ddd",
+            "caladan:signature": "totalSupply()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "totalSupply",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "@id": "0xa9059cbb",
+            "caladan:signature": "transfer(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transfer",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "@id": "0x23b872dd",
+            "caladan:signature": "transferFrom(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferFrom",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "@id": "0x3f4ba83a",
+            "caladan:signature": "unpause()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "unpause",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x912a9885",
+            "caladan:signature": "updateCodeAddress(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateCodeAddress",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xf7023bb6",
+            "caladan:signature": "updateOracleAddress(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateOracleAddress",
+            "caladan:inputs": [
+                {
+                    "internalType": "contract AggregatorV3Interface",
+                    "name": "resFeed",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x3973b596",
+            "caladan:signature": "updateOutboundWhitelistEnabled(uint8,uint8,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateOutboundWhitelistEnabled",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "sourceWhitelist",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "destinationWhitelist",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "newEnabledValue",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x3ccfd60b",
+            "caladan:signature": "withdraw()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdraw",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x842b7379cc721f303b1651a900fcec0dac34ddb080ad5876df3be717f450ee33",
+            "caladan:signature": "AddReserveVault(bytes32,address,address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "AddReserveVault",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "vault",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "calculator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x75882868cbdb288204e73eec346dcf59d437f884acb337fd6a9a96a02f043ef1",
+            "caladan:signature": "CreateReserve(bytes32,address,string,string)",
+            "@type": "caladan:Event",
+            "caladan:name": "CreateReserve",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "description",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x564abcbd57303a898130b89efaf9a05c5bfa6011b2304fb30eb9c5584c4b5af6",
+            "caladan:signature": "DeleteReserve(bytes32,address,string,string)",
+            "@type": "caladan:Event",
+            "caladan:name": "DeleteReserve",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "description",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x88dd359ee67342ed6fabc07d184b1c622d718334624bdffcc2d00d5569aa4f85",
+            "caladan:signature": "RemoveReserveVault(bytes32,address,address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "RemoveReserveVault",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "vault",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "calculator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                }
+            ]
+        },
+        {
+            "@id": "0xbc375c13",
+            "caladan:signature": "addReserveVault(bytes32,address,address,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addReserveVault",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "vault",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "calculator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "numerator",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "denominator",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                }
+            ]
+        },
+        {
+            "@id": "0xd5c9b115",
+            "caladan:signature": "createReserve(string,string,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "createReserve",
+            "caladan:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "description",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "chainId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                }
+            ]
+        },
+        {
+            "@id": "0xffdf8b84",
+            "caladan:signature": "deleteReserve(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "deleteReserve",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                }
+            ]
+        },
+        {
+            "@id": "0xe9456017",
+            "caladan:signature": "getReserveLength()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getReserveLength",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                }
+            ]
+        },
+        {
+            "@id": "0xd1af6d03",
+            "caladan:signature": "getReserveValue(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "getReserveValue",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                }
+            ]
+        },
+        {
+            "@id": "0x97778f1e",
+            "caladan:signature": "getReserveVault(bytes32,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getReserveVault",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "vault",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "calculator",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "numerator",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "denominator",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct CollateralManagerV1.Vault",
+                    "name": "",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                }
+            ]
+        },
+        {
+            "@id": "0xea633af3",
+            "caladan:signature": "getReserveVaults(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getReserveVaults",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "vault",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "calculator",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "numerator",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "denominator",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct CollateralManagerV1.Vault[]",
+                    "name": "",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                }
+            ]
+        },
+        {
+            "@id": "0xc9b31bb4",
+            "caladan:signature": "getReserveVaultsLength(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getReserveVaultsLength",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                }
+            ]
+        },
+        {
+            "@id": "0x6ea792f5",
+            "caladan:signature": "removeReserveVault(bytes32,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeReserveVault",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                }
+            ]
+        },
+        {
+            "@id": "0x77733f2d",
+            "caladan:signature": "reserveMap(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "reserveMap",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "description",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "chainId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                }
+            ]
+        },
+        {
+            "@id": "0x8334278d",
+            "caladan:signature": "reserves(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "reserves",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                }
+            ]
+        },
+        {
+            "@id": "0x8d4e39ec",
+            "caladan:signature": "vaultsMap(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "vaultsMap",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x01502460",
+            "caladan:signature": "freezeTransfers()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "freezeTransfers",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x13af4035",
+            "caladan:signature": "setOwner(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setOwner",
+            "caladan:inputs": [
+                {
+                    "name": "_newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x31c420d4",
+            "caladan:signature": "unfreezeTransfers()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "unfreezeTransfers",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x426a8493",
+            "caladan:signature": "approve(address,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approve",
+            "caladan:inputs": [
+                {
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_currentValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_newValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x6d1b229d",
+            "caladan:signature": "burnTokens(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "burnTokens",
+            "caladan:inputs": [
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0xa3748f0a92719d6e7ce7f9c9c450772749c23429c6a57c2d47fcb44e96994886",
+            "caladan:signature": "0(uint256)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenCount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x615acbaede366d76a8b8cb2a9ada6a71495f0786513d71aa97aaf0c3910b78de",
+            "caladan:signature": "Freeze()",
+            "@type": "caladan:Event",
+            "caladan:name": "Freeze",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2f05ba71d0df11bf5fa562a6569d70c4f80da84284badbe015ce1456063d0ded",
+            "caladan:signature": "Unfreeze()",
+            "@type": "caladan:Event",
+            "caladan:name": "Unfreeze",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                }
+            ]
+        },
+        {
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "caladan:signature": "0(address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "contractLogic",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        }
+    ]
+}

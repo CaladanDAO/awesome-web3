@@ -28,22 +28,13 @@
             }
         }
     },
-    "projectlogs": [
-        [
-            "MessageSent(bytes)",
-            6244
-        ],
-        [
-            "MessageReceived(address,uint32,uint64,bytes32,bytes)",
-            5888
-        ]
+    "calls": [
+      "receiveMessage(bytes,bytes)",
+      "depositForBurn(uint256,uint32,bytes32,address)"
     ],
-    "projectcalls": [
-        [
-            "receiveMessage(bytes,bytes)",
-            3704
-        ]
-    ],
-    "calls": ["receiveMessage(bytes,bytes)","depositForBurn(uint256,uint32,bytes32,address)"],
-    "events": ["MessageReceived(address,uint32,uint64,bytes32,bytes)","MessageSent(bytes)","MintAndWithdraw(address,uint256,address)"]
+    "events": [
+     "MessageReceived(address,uint32,uint64,bytes32,bytes)",
+     "MessageSent(bytes)",
+     "MintAndWithdraw(address,uint256,address)"
+    ]
 }

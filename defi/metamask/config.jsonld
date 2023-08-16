@@ -1,0 +1,598 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/metamask",
+    "@type": "caladan:Project",
+    "caladan:name": "metamask",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router",
+                    "evm:chainID": 1,
+                    "evm:address": "0x881d40237659c251811cec9c364ef91dc08d300c"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/metamask/GnosisSafe",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/GnosisSafe",
+                    "evm:chainID": 1,
+                    "evm:address": "0xf326e4de8f66a0bdc0970b79e0924e33c79f1915"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "caladan:signature": "0(address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "contract ICHI",
+                    "name": "_chi",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb00061f7cc154fc23eb34671ab724fc7eb7b806abae871abae8f1eafce972135",
+            "caladan:signature": "AdapterRemoved(string)",
+            "@type": "caladan:Event",
+            "caladan:name": "AdapterRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "string",
+                    "name": "aggregatorId",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x779d768d36d59231b0853572f8ee1997a2a762b871abf2c81f18f4bf2af3c726",
+            "caladan:signature": "AdapterSet(string,address,bytes4,bytes)",
+            "@type": "caladan:Event",
+            "caladan:name": "AdapterSet",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "string",
+                    "name": "aggregatorId",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addr",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes4",
+                    "name": "selector",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "caladan:signature": "OwnershipTransferred(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnershipTransferred",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x62e78cea01bee320cd4e420270b5ea74000d11b0c9f74754ebdbfc544b05a258",
+            "caladan:signature": "Paused(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Paused",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xbeee1e6e7fe307ddcf84b0a16137a4430ad5e2480fc4f4a8e250ab56ccd7630d",
+            "caladan:signature": "Swap(string,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Swap",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "string",
+                    "name": "aggregatorId",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5db9ee0a495bf2e6ff9c91a7834c1ba4fdd244a5e8aa4e537bd38aeae4b073aa",
+            "caladan:signature": "Unpaused(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Unpaused",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "@id": "0xb5268389",
+            "caladan:signature": "adapterRemoved(string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "adapterRemoved",
+            "caladan:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "@id": "0xb84f5d1e",
+            "caladan:signature": "adapters(string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "adapters",
+            "caladan:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "addr",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes4",
+                    "name": "selector",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "@id": "0xc92aecc4",
+            "caladan:signature": "chi()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "chi",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract ICHI",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "@id": "0x8da5cb5b",
+            "caladan:signature": "owner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "owner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "@id": "0x558b7dd1",
+            "caladan:signature": "pauseSwaps()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "pauseSwaps",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "@id": "0x5c975abb",
+            "caladan:signature": "paused()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "paused",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "@id": "0x3ef11fd7",
+            "caladan:signature": "removeAdapter(string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeAdapter",
+            "caladan:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "aggregatorId",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "@id": "0x715018a6",
+            "caladan:signature": "renounceOwnership()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "renounceOwnership",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "@id": "0x459a39fb",
+            "caladan:signature": "setAdapter(string,address,bytes4,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setAdapter",
+            "caladan:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "aggregatorId",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "address",
+                    "name": "addr",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes4",
+                    "name": "selector",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "@id": "0xe8edc816",
+            "caladan:signature": "spender()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "spender",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract Spender",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "@id": "0x5f575529",
+            "caladan:signature": "swap(string,address,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "swap",
+            "caladan:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "aggregatorId",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "contract IERC20",
+                    "name": "tokenFrom",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "@id": "0x6b68764c",
+            "caladan:signature": "swapUsingGasToken(string,address,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "swapUsingGasToken",
+            "caladan:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "aggregatorId",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "contract IERC20",
+                    "name": "tokenFrom",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2fde38b",
+            "caladan:signature": "transferOwnership(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferOwnership",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        },
+        {
+            "@id": "0x9804a380",
+            "caladan:signature": "unpauseSwaps()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "unpauseSwaps",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/metamask/Metamask: Swap Router"
+                }
+            ]
+        }
+    ]
+}

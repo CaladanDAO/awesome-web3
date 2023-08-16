@@ -1,0 +1,54 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/evmos",
+    "@type": "caladan:Project",
+    "caladan:name": "evmos",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/evmos/BridgeToken",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/evmos/BridgeToken",
+                    "evm:chainID": 1,
+                    "evm:address": "0x93581991f68dbae1ea105233b67f7fa0d6bdee7b"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "@id": "0xff160c5b346850b54875889a5c2a96c51183608718ab1d81bc7aab8e2dff8395",
+            "caladan:signature": "0(address,bytes)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "payable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_upgradeBeacon",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_initializationCalldata",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/evmos/BridgeToken"
+                }
+            ]
+        }
+    ]
+}

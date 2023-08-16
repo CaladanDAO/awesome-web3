@@ -1,0 +1,91 @@
+{
+  "@context": {
+    "@vocab": "http://caladandao.org/vocab",
+    "caladan": "http://caladandao.org/caladan/"
+  },
+  "@type": "caladan:Index",
+  "caladan:recipes": [
+    {
+      "@type": "caladan:Dataset",
+      "caladan:project": "awesome-web3",
+      "caladan:dataset": "dex",
+      "caladan:table": "trades",
+      "caladan:recipe": "/defi/dex/trades.jsonc"
+    }
+  ],
+  "caladan:projects": [
+    {
+      "@id": "CaladanDAO/awesome-web3/bridges/cctp",
+      "@type": "caladan:Project",
+      "caladan:nftAddress": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
+      "caladan:dataset": "bridges",
+      "caladan:name": "cctp",
+      "caladan:url": "/bridges/cctp/config.jsonc"
+    },
+    {
+      "@id": "CaladanDAO/awesome-web3/ethereum/base",
+      "@type": "caladan:Project",
+      "caladan:nftAddress": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
+      "caladan:dataset": "ethereum",
+      "caladan:name": "base",
+      "caladan:url": "/ethereum/base/config.jsonc"
+    },
+    {
+      "@id": "CaladanDAO/awesome-web3/ethereum/optimism",
+      "@type": "caladan:Project",
+      "caladan:nftAddress": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
+      "caladan:dataset": "ethereum",
+      "caladan:name": "optimism",
+      "caladan:url": "/ethereum/optimism/config.jsonc"
+    },
+    {
+      "@id": "CaladanDAO/awesome-web3/ethereum/pgn",
+      "@type": "caladan:Project",
+      "caladan:nftAddress": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
+      "caladan:dataset": "ethereum",
+      "caladan:name": "pgn",
+      "caladan:url": "/ethereum/pgn/config.jsonc"
+    },
+    {
+      "@id": "CaladanDAO/awesome-web3/funding/gitcoin/allo",
+      "@type": "caladan:Project",
+      "caladan:nftAddress": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
+      "caladan:dataset": "gitcoin",
+      "caladan:name": "allo",
+      "caladan:url": "/funding/gitcoin/allo/config.jsonc"
+    },
+    {
+      "@id": "CaladanDAO/awesome-web3/dex/uniswap",
+      "@type": "caladan:Project",
+      "caladan:nftAddress": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
+      "caladan:dataset": "defi",
+      "caladan:name": "uniswap",
+      "caladan:url": "/defi/dex/uniswap/config.jsonc"
+    },
+    {
+      "@id": "CaladanDAO/awesome-web3/dex/sushiswap",
+      "@type": "caladan:Project",
+      "caladan:nftAddress": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
+      "caladan:dataset": "defi",
+      "caladan:name": "sushiswap",
+      "caladan:url": "/defi/dex/sushiswap/config.jsonc"
+    },
+    {
+      "@id": "CaladanDAO/awesome-web3/dex/curve",
+      "caladan:nftAddress": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
+      "@type": "caladan:Project",
+      "caladan:dataset": "defi",
+      "caladan:name": "curve",
+      "caladan:url": "/defi/dex/curve/config.jsonc"
+    },
+    {
+      "@id": "CaladanDAO/awesome-web3/naming/ens",
+      "caladan:nftAddress": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
+      "@type": "caladan:Project",
+      "caladan:dataset": "naming",
+      "caladan:name": "ens",
+      "caladan:url": "/naming/ens/config.jsonc"
+    }
+  ]
+}
+

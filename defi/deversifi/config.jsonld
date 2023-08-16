@@ -1,0 +1,531 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/deversifi",
+    "@type": "caladan:Project",
+    "caladan:name": "deversifi",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: Merkle Statement",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: Merkle Statement",
+                    "evm:chainID": 1,
+                    "evm:address": "0x0af10d116a5cf10ca8835a0d775e0b248114fad0"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: FRI Statement",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: FRI Statement",
+                    "evm:chainID": 1,
+                    "evm:address": "0x2742a152be5032dafbc885ba1801ffbc2345de7b"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: Memory Page Fact Registry",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: Memory Page Fact Registry",
+                    "evm:chainID": 1,
+                    "evm:address": "0xc8e4ee91e7c14d625b829d2c2e87cf7348eca449"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: GPS Statement Verifier",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: GPS Statement Verifier",
+                    "evm:chainID": 1,
+                    "evm:address": "0xd4cf925b9d0f4d1ccf82ab97c25130657474ee19"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd6354e15",
+            "caladan:signature": "hasRegisteredFact()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "hasRegisteredFact",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: Merkle Statement"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: FRI Statement"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: Memory Page Fact Registry"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: GPS Statement Verifier"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x6a938567",
+            "caladan:signature": "isValid(bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isValid",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "fact",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: Merkle Statement"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: FRI Statement"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: Memory Page Fact Registry"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: GPS Statement Verifier"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x3fe317a6",
+            "caladan:signature": "verifyMerkle(uint256[],uint256[],uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "verifyMerkle",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "merkleView",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "initialMerkleQueue",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "height",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "expectedRoot",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: Merkle Statement"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x16298c4eb3718e3472be44fc630569ed86dc073363b2f8291c987b88d571b212",
+            "caladan:signature": "LogGas(string,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogGas",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "val",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: FRI Statement"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe85a6a28",
+            "caladan:signature": "verifyFRI(uint256[],uint256[],uint256,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "verifyFRI",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "proof",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "friQueue",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "evaluationPoint",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "friStepSize",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "expectedRoot",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: FRI Statement"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8bbe8b5dd8fa8ba8e98731d31da30c82ee30e7cc051582c903c9f954a64b4b59",
+            "caladan:signature": "LogMemoryPageFact(bytes32,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogMemoryPageFact",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "factHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "memoryHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "prod",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: Memory Page Fact Registry"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x5578ceae",
+            "caladan:signature": "registerContinuousMemoryPage(uint256,uint256[],uint256,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "registerContinuousMemoryPage",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "startAddr",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "values",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "z",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "alpha",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "prime",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "factHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "memoryHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "prod",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: Memory Page Fact Registry"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x405a6362",
+            "caladan:signature": "registerRegularMemoryPage(uint256[],uint256,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "registerRegularMemoryPage",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "memoryPairs",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "z",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "alpha",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "prime",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "factHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "memoryHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "prod",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: Memory Page Fact Registry"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0xbfbcce1690fc5c24ae6b652bd703c39886951c1e5177d6af32b3cf2a77bd0d0d",
+            "caladan:signature": "0(address,address,address[])",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "bootloaderProgramContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "memoryPageFactRegistry_",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address[]",
+                    "name": "cairoVerifierContracts",
+                    "type": "address[]",
+                    "@type": "address[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: GPS Statement Verifier"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xeeb72866",
+            "caladan:signature": "identify()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "identify",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: GPS Statement Verifier"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x9b3b76cc",
+            "caladan:signature": "verifyProofAndRegister(uint256[],uint256[],uint256[],uint256[],uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "verifyProofAndRegister",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "proofParams",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "proof",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "taskMetadata",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "cairoAuxInput",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "cairoVerifierId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/deversifi/Deversifi: GPS Statement Verifier"
+                }
+            ]
+        }
+    ]
+}

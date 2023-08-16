@@ -1,0 +1,488 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/cex/bittrex",
+    "@type": "caladan:Project",
+    "caladan:name": "bittrex",
+    "caladan:dataset": "cex",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller",
+                    "evm:chainID": 1,
+                    "evm:address": "0xa3c1e324ca1ce40db73ed6026c4a177f099b5770"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex 2",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex 2",
+                    "evm:chainID": 1,
+                    "evm:address": "0xe94b04a0fed112f3664e45adb2b8915693dd5ff3"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x19449cb2",
+            "caladan:signature": "changeAuthorizedCaller(address)",
+            "@type": "caladan:Function",
+            "caladan:name": "changeAuthorizedCaller",
+            "caladan:inputs": [
+                {
+                    "name": "_newCaller",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x28090abb",
+            "caladan:signature": "logSweep(address,address,address,uint256)",
+            "@type": "caladan:Function",
+            "caladan:name": "logSweep",
+            "caladan:inputs": [
+                {
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x3c18d318",
+            "caladan:signature": "sweeperOf(address)",
+            "@type": "caladan:Function",
+            "caladan:name": "sweeperOf",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x5e949fa0",
+            "caladan:signature": "changeDestination(address)",
+            "@type": "caladan:Function",
+            "caladan:name": "changeDestination",
+            "caladan:inputs": [
+                {
+                    "name": "_dest",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x5ed7ca5b",
+            "caladan:signature": "halt()",
+            "@type": "caladan:Function",
+            "caladan:name": "halt",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x6fcb1500",
+            "caladan:signature": "defaultSweeper()",
+            "@type": "caladan:Function",
+            "caladan:name": "defaultSweeper",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x77bb09eb",
+            "caladan:signature": "addSweeper(address,address)",
+            "@type": "caladan:Function",
+            "caladan:name": "addSweeper",
+            "caladan:inputs": [
+                {
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_sweeper",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x8da5cb5b",
+            "caladan:signature": "owner()",
+            "@type": "caladan:Function",
+            "caladan:name": "owner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x97dc97cb",
+            "caladan:signature": "authorizedCaller()",
+            "@type": "caladan:Function",
+            "caladan:name": "authorizedCaller",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xa6f9dae1",
+            "caladan:signature": "changeOwner(address)",
+            "@type": "caladan:Function",
+            "caladan:name": "changeOwner",
+            "caladan:inputs": [
+                {
+                    "name": "_owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xa9b1d507",
+            "caladan:signature": "makeWallet()",
+            "@type": "caladan:Function",
+            "caladan:name": "makeWallet",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "wallet",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb269681d",
+            "caladan:signature": "destination()",
+            "@type": "caladan:Function",
+            "caladan:name": "destination",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb9b8af0b",
+            "caladan:signature": "halted()",
+            "@type": "caladan:Function",
+            "caladan:name": "halted",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xbe9a6555",
+            "caladan:signature": "start()",
+            "@type": "caladan:Function",
+            "caladan:name": "start",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0x8d5004028f09180abc4210f60fbf14955ac50d24898f80bef2b1efe077e75bd6",
+            "caladan:signature": "0()",
+            "@type": "caladan:Event",
+            "caladan:name": "0",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xef4c8685c12779a52dae7549eb7defa8523f67a054ad425b877a6b2da469a331",
+            "caladan:signature": "LogNewWallet(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogNewWallet",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "receiver",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xa64da754fccf55aa65a1f0128a648633fade3884b236e879ee9f64c78df5d5d7",
+            "caladan:signature": "LogSweep(address,address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "LogSweep",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex: Controller"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0x0f2c9329",
+            "caladan:signature": "split(address,address)",
+            "@type": "caladan:Function",
+            "caladan:name": "split",
+            "caladan:inputs": [
+                {
+                    "name": "targetFork",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "targetNoFork",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex 2"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x23919512b2162ddc59b67a65e3b03c419d4105366f7d4a632f5d3c3bee9b1cff",
+            "caladan:signature": "e(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "e",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "a",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/bittrex/Bittrex 2"
+                }
+            ]
+        }
+    ]
+}

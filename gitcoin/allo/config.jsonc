@@ -1,0 +1,38 @@
+{
+    "name": "gitcoin_allo",
+    "names": {
+        "0x03506ed3f57892c85db20c36846e9c808afe9ef4": "ProjectRegistry",
+        "0x56296242ca408ba36393f3981879ff9692f193cc": "ProgramFactory",
+        "0x9cb7f434ad3250d1656854a9ec7a71ecec6ee1ef": "TransparentUpgradeableProxy"
+    },
+    "contracts": {
+        "ProjectRegistry": {
+            "addresses": {
+                "1": "0x03506ed3f57892c85db20c36846e9c808afe9ef4"
+            }
+        },
+        "ProgramFactory": {
+            "addresses": {
+                "1": "0x56296242ca408ba36393f3981879ff9692f193cc"
+            }
+        },
+        "TransparentUpgradeableProxy": {
+            "addresses": {
+                "1": "0x9cb7f434ad3250d1656854a9ec7a71ecec6ee1ef"
+            }
+        }
+    },
+    "calls": [
+            "createProject((uint256,string))",
+            "create(bytes)",
+            "updateProjectMetadata(uint256,(uint256,string))",
+            "updateRoundImplementation(address)"
+    ],
+    "events": [
+            "MetadataUpdated(uint256,(uint256,string))",
+            "ProjectCreated(uint256,address)",
+            "ProgramCreated(address,address)",
+            "Upgraded(address)",
+            "RoundImplementationUpdated(address)"
+     ]
+}

@@ -1,0 +1,160 @@
+{
+  "@context": {
+    "@vocab": "http://example.com/ethereum-ontology/",
+    "curve": "http://caladandao.org/curve/",
+    "erc20": "http://caladandao.org/erc20/"
+  },
+  "@graph": [
+    {
+      "@id": "curve:tokenID",
+      "@type": "rdf:Class",
+      "rdfs:label": "Token ID",
+      "rdfs:comment": "Represents a unique ID associated with a token in the Curve system."
+    },
+    {
+      "@id": "erc20:address",
+      "@type": "rdf:Class",
+      "rdfs:label": "ERC20 Token Address",
+      "rdfs:comment": "Represents the address of an ERC20 token on the Ethereum blockchain."
+    },
+    {
+      "@id": "curve:tokenSoldID",
+      "@type": ["rdf:Property", "curve:tokenID"],
+      "rdfs:label": "Token Sold ID",
+      "rdfs:comment": "Represents the ID of the token sold in the Curve system."
+    },
+    {
+      "@id": "curve:tokenBoughtID",
+      "@type": ["rdf:Property", "curve:tokenID"],
+      "rdfs:label": "Token Bought ID",
+      "rdfs:comment": "Represents the ID of the token bought in the Curve system."
+    },
+    {
+      "@id": "curve:tokenAddressMapping",
+      "@type": "rdf:Property",
+      "rdfs:label": "Token Address Mapping",
+      "rdfs:comment": "Represents a mapping between a token ID and an ERC20 Token Address.",
+      "javascript:abi": {
+        "@type": "rdf:Class",
+        "rdfs:label": "MappingFunction",
+        "javascript:function": {
+          "@type": "rdf:Property",
+          "rdfs:label": "getAddress",
+          "rdfs:comment": "A function to get the ERC20 Token Address associated with a token ID.",
+          "javascript:inputs": [
+            {
+              "@type": "curve:tokenID",
+              "rdfs:label": "tokenId",
+              "rdfs:comment": "The token ID for which the ERC20 Token Address is required."
+            }
+          ],
+          "javascript:outputs": [
+            {
+              "@type": "erc20:address",
+              "rdfs:label": "tokenAddress",
+              "rdfs:comment": "The ERC20 Token Address associated with the given token ID."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@id": "curve:curve_price_ratio",
+      "@type": "javascript:abi",
+      "rdfs:label": "Curve Price Ratio",
+      "rdfs:comment": "Represents a mapping function to calculate the price ratio of tokens sold to tokens bought.",
+      "javascript:function": {
+        "@type": "rdf:Property",
+        "rdfs:label": "calculatePriceRatio",
+        "rdfs:comment": "A function to calculate the price ratio of tokens sold to tokens bought.",
+        "javascript:inputs": [
+          {
+            "@type": "rdf:Property",
+            "rdfs:label": "tokensSold",
+            "rdfs:comment": "The number of tokens sold."
+          },
+          {
+            "@type": "rdf:Property",
+            "rdfs:label": "tokensBought",
+            "rdfs:comment": "The number of tokens bought."
+          }
+        ],
+        "javascript:outputs": [
+          {
+            "@type": "xsd:float",
+            "rdfs:label": "price_ratio",
+            "rdfs:comment": "The calculated price ratio."
+          }
+        ]
+      }
+    }
+  ]
+}
+
+
+{
+  "@context": {
+    "@vocab": "http://example.com/ethereum-ontology/",
+    "eth": "http://caladandao.org/ethereum/",
+    "web3": "http://caladandao.org/web3-semantics/",
+    "dex": "http://caladandao.org/dex/",
+    "curve": "http://caladandao.org/curve/",
+    "schema": "https://schema.org/"
+  },
+  "@type": "eth:Event",
+  "eth:anonymous": false,
+  "eth:inputs": [
+    {
+      "@type": "dex:Taker",
+      "eth:internalType": "address",
+      "eth:name": "buyer",
+      "eth:type": "address",
+      "web3:web3Semantics": "web3.eth.sender",
+      "schema:label": "Buyer"
+    },
+    {
+      "@type": "curve:tokenSoldID",
+      "eth:internalType": "uint256",
+      "eth:name": "soldId",
+      "eth:type": "uint256",
+      "web3:web3Semantics": "web3.eth.dex.curve.tokenSoldID",
+      "schema:label": "Sold ID"
+    },
+    {
+      "@type": "schema:MonetaryAmount",
+      "eth:internalType": "uint256",
+      "eth:name": "tokensSold",
+      "eth:type": "uint256",
+      "web3:web3Semantics": "web3.eth.dex.curve.tokenAmountSold",
+      "schema:label": "Tokens Sold"
+    },
+    {
+      "@type": "curve:tokenBoughtID",
+      "eth:internalType": "uint256",
+      "eth:name": "boughtId",
+      "eth:type": "uint256",
+      "web3:web3Semantics": "web3.eth.dex.curve.tokenBoughtID",
+      "schema:label": "Bought ID"
+    },
+    {
+      "@type": "schema:MonetaryAmount",
+      "eth:internalType": "uint256",
+      "eth:name": "tokensBought",
+      "eth:type": "uint256",
+      "web3:web3Semantics": "web3.eth.tokenAmountBought",
+      "schema:label": "Tokens Bought"
+    }
+  ],
+  "eth:name": "TokenExchange",
+  "eth:type": "event",
+  "web3semantics": {
+    "web3.eth.dex.swap.curve_coins_lookup": {
+      "soldId": ["tokensSold"],
+      "boughtId": ["tokensBought"]
+    },
+    "web3.eth.dex.swap.curve_price_ratio": {
+      "soldId": ["tokensSold"],
+      "boughtId": ["tokensBought"]
+    }
+  }
+}

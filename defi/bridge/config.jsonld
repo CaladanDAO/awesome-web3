@@ -1,0 +1,112 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/bridge",
+    "@type": "caladan:Project",
+    "caladan:name": "bridge",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/bridge/HabitatV1",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/bridge/HabitatV1",
+                    "evm:chainID": 1,
+                    "evm:address": "0x96e471b5945373de238963b4e032d3574be4d195"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "caladan:signature": "0(address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "initialImplementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/bridge/HabitatV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x98f7f6a06026bc1e4789634d93bff8d19b1c3b070cc440b6a6ae70bae9fec6dc",
+            "caladan:signature": "BlockBeacon()",
+            "@type": "caladan:Event",
+            "caladan:name": "BlockBeacon",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/bridge/HabitatV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb078ebcc4cca318b4b52d21e9a19505dfb2bcdaad38bee3d6b5d95b7d329b870",
+            "caladan:signature": "CustomBlockBeacon()",
+            "@type": "caladan:Event",
+            "caladan:name": "CustomBlockBeacon",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/bridge/HabitatV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd180748b1b0c35f46942acf30f64a94a79d303ffd18cce62cbbb733b436298cb",
+            "caladan:signature": "NewSolution()",
+            "@type": "caladan:Event",
+            "caladan:name": "NewSolution",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/bridge/HabitatV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x1af6bceb4b9de70d3a0d322db3ebde262ab3f6375cc4c59f04a39834d8c03f0d",
+            "caladan:signature": "RollupUpgrade(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "RollupUpgrade",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/bridge/HabitatV1"
+                }
+            ]
+        }
+    ]
+}

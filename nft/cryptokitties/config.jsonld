@@ -1,0 +1,3715 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/nft/cryptokitties",
+    "@type": "caladan:Project",
+    "caladan:name": "cryptokitties",
+    "caladan:dataset": "nft",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)",
+                    "evm:chainID": 1,
+                    "evm:address": "0x06012c8cf97bead5deae237070f9587f8e7a266d"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers",
+                    "evm:chainID": 1,
+                    "evm:address": "0x57831a0c76ba6b4fdcbadd6cb48cb26e8fc15e93"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction",
+                    "evm:chainID": 1,
+                    "evm:address": "0xb1690c08e213a35ed9bab7b318de14420fb57d8c"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: GeneScience",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: GeneScience",
+                    "evm:chainID": 1,
+                    "evm:address": "0xb77feddb7e627a78140a2a32cac65a49ed1dba8e"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction",
+                    "evm:chainID": 1,
+                    "evm:address": "0xc7af99fe5513eb6710e6d5f44f9989da40f27f26"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x01ffc9a7",
+            "caladan:signature": "supportsInterface(bytes4)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "supportsInterface",
+            "caladan:inputs": [
+                {
+                    "name": "_interfaceID",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x0519ce79",
+            "caladan:signature": "cfoAddress()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "cfoAddress",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x0560ff44",
+            "caladan:signature": "tokenMetadata(uint256,string)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "tokenMetadata",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_preferredTransport",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "infoUrl",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x05e45546",
+            "caladan:signature": "promoCreatedCount()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "promoCreatedCount",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x06fdde03",
+            "caladan:signature": "name()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "name",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x095ea7b3",
+            "caladan:signature": "approve(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approve",
+            "caladan:inputs": [
+                {
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x0a0f8168",
+            "caladan:signature": "ceoAddress()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ceoAddress",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x0e583df0",
+            "caladan:signature": "GEN0_STARTING_PRICE()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "GEN0_STARTING_PRICE",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x14001f4c",
+            "caladan:signature": "setSiringAuctionAddress(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setSiringAuctionAddress",
+            "caladan:inputs": [
+                {
+                    "name": "_address",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x18160ddd",
+            "caladan:signature": "totalSupply()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "totalSupply",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x183a7947",
+            "caladan:signature": "pregnantKitties()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "pregnantKitties",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x1940a936",
+            "caladan:signature": "isPregnant(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isPregnant",
+            "caladan:inputs": [
+                {
+                    "name": "_kittyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x19c2f201",
+            "caladan:signature": "GEN0_AUCTION_DURATION()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "GEN0_AUCTION_DURATION",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x21717ebf",
+            "caladan:signature": "siringAuction()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "siringAuction",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x23b872dd",
+            "caladan:signature": "transferFrom(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferFrom",
+            "caladan:inputs": [
+                {
+                    "name": "_from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x24e7a38a",
+            "caladan:signature": "setGeneScienceAddress(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setGeneScienceAddress",
+            "caladan:inputs": [
+                {
+                    "name": "_address",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x27d7874c",
+            "caladan:signature": "setCEO(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setCEO",
+            "caladan:inputs": [
+                {
+                    "name": "_newCEO",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x2ba73c15",
+            "caladan:signature": "setCOO(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setCOO",
+            "caladan:inputs": [
+                {
+                    "name": "_newCOO",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x3d7d3f5a",
+            "caladan:signature": "createSaleAuction(uint256,uint256,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "createSaleAuction",
+            "caladan:inputs": [
+                {
+                    "name": "_kittyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_startingPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_endingPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_duration",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x3f4ba83a",
+            "caladan:signature": "unpause()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "unpause",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x46116e6f",
+            "caladan:signature": "sireAllowedToAddress(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "sireAllowedToAddress",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x46d22c70",
+            "caladan:signature": "canBreedWith(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "canBreedWith",
+            "caladan:inputs": [
+                {
+                    "name": "_matronId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_sireId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x481af3d3",
+            "caladan:signature": "kittyIndexToApproved(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "kittyIndexToApproved",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x4ad8c938",
+            "caladan:signature": "createSiringAuction(uint256,uint256,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "createSiringAuction",
+            "caladan:inputs": [
+                {
+                    "name": "_kittyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_startingPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_endingPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_duration",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x4b85fd55",
+            "caladan:signature": "setAutoBirthFee(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setAutoBirthFee",
+            "caladan:inputs": [
+                {
+                    "name": "val",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x4dfff04f",
+            "caladan:signature": "approveSiring(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "approveSiring",
+            "caladan:inputs": [
+                {
+                    "name": "_addr",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_sireId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x4e0a3379",
+            "caladan:signature": "setCFO(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setCFO",
+            "caladan:inputs": [
+                {
+                    "name": "_newCFO",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x56129134",
+            "caladan:signature": "createPromoKitty(uint256,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "createPromoKitty",
+            "caladan:inputs": [
+                {
+                    "name": "_genes",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x5663896e",
+            "caladan:signature": "setSecondsPerBlock(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setSecondsPerBlock",
+            "caladan:inputs": [
+                {
+                    "name": "secs",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x5c975abb",
+            "caladan:signature": "paused()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "paused",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x5fd8c710",
+            "caladan:signature": "withdrawBalance()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawBalance",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x6352211e",
+            "caladan:signature": "ownerOf(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ownerOf",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x680eba27",
+            "caladan:signature": "GEN0_CREATION_LIMIT()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "GEN0_CREATION_LIMIT",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x6af04a57",
+            "caladan:signature": "newContractAddress()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "newContractAddress",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x6fbde40d",
+            "caladan:signature": "setSaleAuctionAddress(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setSaleAuctionAddress",
+            "caladan:inputs": [
+                {
+                    "name": "_address",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x70a08231",
+            "caladan:signature": "balanceOf(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "balanceOf",
+            "caladan:inputs": [
+                {
+                    "name": "_owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "count",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x71587988",
+            "caladan:signature": "setNewAddress(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setNewAddress",
+            "caladan:inputs": [
+                {
+                    "name": "_v2Address",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x7a7d4937",
+            "caladan:signature": "secondsPerBlock()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "secondsPerBlock",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x8456cb59",
+            "caladan:signature": "pause()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "pause",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x8462151c",
+            "caladan:signature": "tokensOfOwner(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "tokensOfOwner",
+            "caladan:inputs": [
+                {
+                    "name": "_owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "ownerTokens",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x88c2a0bf",
+            "caladan:signature": "giveBirth(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "giveBirth",
+            "caladan:inputs": [
+                {
+                    "name": "_matronId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x91876e57",
+            "caladan:signature": "withdrawAuctionBalances()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawAuctionBalances",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x95d89b41",
+            "caladan:signature": "symbol()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "symbol",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x9d6fac6f",
+            "caladan:signature": "cooldowns(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "cooldowns",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa45f4bfc",
+            "caladan:signature": "kittyIndexToOwner(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "kittyIndexToOwner",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xa9059cbb",
+            "caladan:signature": "transfer(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transfer",
+            "caladan:inputs": [
+                {
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb047fb50",
+            "caladan:signature": "cooAddress()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "cooAddress",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb0c35c05",
+            "caladan:signature": "autoBirthFee()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "autoBirthFee",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xbc4006f5",
+            "caladan:signature": "erc721Metadata()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "erc721Metadata",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xc3bea9af",
+            "caladan:signature": "createGen0Auction(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "createGen0Auction",
+            "caladan:inputs": [
+                {
+                    "name": "_genes",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd3e6f49f",
+            "caladan:signature": "isReadyToBreed(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isReadyToBreed",
+            "caladan:inputs": [
+                {
+                    "name": "_kittyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xdefb9584",
+            "caladan:signature": "PROMO_CREATION_LIMIT()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "PROMO_CREATION_LIMIT",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe17b25af",
+            "caladan:signature": "setMetadataAddress(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setMetadataAddress",
+            "caladan:inputs": [
+                {
+                    "name": "_contractAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xe6cbe351",
+            "caladan:signature": "saleAuction()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "saleAuction",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xe98b7f4d",
+            "caladan:signature": "getKitty(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getKitty",
+            "caladan:inputs": [
+                {
+                    "name": "_id",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "isGestating",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "isReady",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "cooldownIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "nextActionAt",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "siringWithId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "birthTime",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "matronId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "sireId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "generation",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "genes",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": true,
+            "@id": "0xed60ade6",
+            "caladan:signature": "bidOnSiringAuction(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "bidOnSiringAuction",
+            "caladan:inputs": [
+                {
+                    "name": "_sireId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_matronId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xf1ca9410",
+            "caladan:signature": "gen0CreatedCount()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "gen0CreatedCount",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xf2b47d52",
+            "caladan:signature": "geneScience()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "geneScience",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": true,
+            "@id": "0xf7d8c883",
+            "caladan:signature": "breedWithAuto(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "breedWithAuto",
+            "caladan:inputs": [
+                {
+                    "name": "_matronId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_sireId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0x8d5004028f09180abc4210f60fbf14955ac50d24898f80bef2b1efe077e75bd6",
+            "caladan:signature": "0()",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x241ea03ca20251805084d27d4440371c34a0b85ff108f6bb5611248f73818b80",
+            "caladan:signature": "Pregnant(address,uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Pregnant",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "matronId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "sireId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "cooldownEndBlock",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "caladan:signature": "Transfer(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Transfer",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "caladan:signature": "Approval(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Approval",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "approved",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x0a5311bd2a6608f08a180df2ee7c5946819a649b204b554bb8e39825b2c50ad5",
+            "caladan:signature": "Birth(address,uint256,uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Birth",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "kittyId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "matronId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "sireId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "genes",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x450db8da6efbe9c22f2347f7c2021231df1fc58d3ae9a2fa75d39fa446199305",
+            "caladan:signature": "ContractUpgrade(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ContractUpgrade",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "newContract",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKittie...  (CK)"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x054f7d9c",
+            "caladan:signature": "frozen()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "frozen",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x14806a32",
+            "caladan:signature": "globalDuration()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "globalDuration",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x1c091a5f",
+            "caladan:signature": "batchRemoveExpired(uint256[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "batchRemoveExpired",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenIds",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x1f747458",
+            "caladan:signature": "setLostAndFound(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setLostAndFound",
+            "caladan:inputs": [
+                {
+                    "name": "_newLostAndFound",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x2d5796ac",
+            "caladan:signature": "setOfferCut(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setOfferCut",
+            "caladan:inputs": [
+                {
+                    "name": "_newOfferCut",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x302890e1",
+            "caladan:signature": "lostAndFoundAddress()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "lostAndFoundAddress",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x3a3d55a0",
+            "caladan:signature": "setMinimumPriceIncrement(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setMinimumPriceIncrement",
+            "caladan:inputs": [
+                {
+                    "name": "_newMinimumPriceIncrement",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x45394dad",
+            "caladan:signature": "withdrawTotalLostAndFoundBalance()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawTotalLostAndFoundBalance",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x4ae772a4",
+            "caladan:signature": "setMinimumTotalValue(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setMinimumTotalValue",
+            "caladan:inputs": [
+                {
+                    "name": "_newMinTotal",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x4e8dc003",
+            "caladan:signature": "fulfillOffer(uint256,uint128)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "fulfillOffer",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_minOfferPrice",
+                    "type": "uint128",
+                    "@type": "uint128"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": true,
+            "@id": "0x56d282fc",
+            "caladan:signature": "updateOffer(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "updateOffer",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x5ac165af",
+            "caladan:signature": "totalCFOEarnings()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "totalCFOEarnings",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x62a5af3b",
+            "caladan:signature": "freeze()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "freeze",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x69250729",
+            "caladan:signature": "minimumTotalValue()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "minimumTotalValue",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x7ae86385",
+            "caladan:signature": "totalLostAndFoundBalance()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "totalLostAndFoundBalance",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x8c0ceea5",
+            "caladan:signature": "setGlobalDuration(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setGlobalDuration",
+            "caladan:inputs": [
+                {
+                    "name": "_newDuration",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x930add29",
+            "caladan:signature": "withdrawTotalCFOEarnings()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawTotalCFOEarnings",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": true,
+            "@id": "0xa269993d",
+            "caladan:signature": "createOffer(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "createOffer",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xbea12e00",
+            "caladan:signature": "offerCut()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "offerCut",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xbff2273e",
+            "caladan:signature": "setUnsuccessfulFee(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setUnsuccessfulFee",
+            "caladan:inputs": [
+                {
+                    "name": "_newUnsuccessfulFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xc65b98e7",
+            "caladan:signature": "unsuccessfulFee()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "unsuccessfulFee",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd531fe2b",
+            "caladan:signature": "tokenIdToOffer(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "tokenIdToOffer",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "expiresAt",
+                    "type": "uint64",
+                    "@type": "uint64"
+                },
+                {
+                    "name": "bidder",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "offerCut",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "name": "total",
+                    "type": "uint128",
+                    "@type": "uint128"
+                },
+                {
+                    "name": "unsuccessfulFee",
+                    "type": "uint128",
+                    "@type": "uint128"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xdb341765",
+            "caladan:signature": "minimumPriceIncrement()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "minimumPriceIncrement",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xdd1b7a0f",
+            "caladan:signature": "nonFungibleContract()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "nonFungibleContract",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe1302e2b",
+            "caladan:signature": "bidderWithdrawFunds(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "bidderWithdrawFunds",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xef706adf",
+            "caladan:signature": "cancelOffer(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "cancelOffer",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0x13f809b2466ef9f668533d5cdd75caac0136dbc6453483522a4ca0321c3d725b",
+            "caladan:signature": "0(address,address,uint256,uint256,uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "name": "_nftAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_cooAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_globalDuration",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_minimumTotalValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_minimumPriceIncrement",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_unsuccessfulFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_offerCut",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x05a7f246d4cdcfed1a85bd6331d1638fa8d47fffd48ede9a22f93d06641f309c",
+            "caladan:signature": "OfferCreated(uint256,address,uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "OfferCreated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "bidder",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "expiresAt",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "total",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "offerPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x0f30ae9004015531e44539aa93fcbe6e33146abeeed21661204fa432da6bc075",
+            "caladan:signature": "OfferCancelled(uint256,address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "OfferCancelled",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "bidder",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "bidderReceived",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "fee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x9accbcf984c4cd67a675ee4d38143974e1fa62aa95da283bd4ca645e408ec283",
+            "caladan:signature": "OfferFulfilled(uint256,address,address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "OfferFulfilled",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "bidder",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "ownerReceived",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "fee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x56cb95d5e0f3ba4459f610fef3ba603635cef803d945e97c316cdeb392903991",
+            "caladan:signature": "OfferUpdated(uint256,address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "OfferUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "bidder",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "newExpiresAt",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "totalRaised",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd876ee5dd9082a3ac4fe7be4799528f1d5f3545cee1516f2821d0f8ecc9d629c",
+            "caladan:signature": "ExpiredOfferRemoved(uint256,address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ExpiredOfferRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "bidder",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "bidderReceived",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "fee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2014255827f37802573fb6164526f1d41d309fd57001e38c8f169ffb76117098",
+            "caladan:signature": "BidderWithdrewFundsWhenFrozen(uint256,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "BidderWithdrewFundsWhenFrozen",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "bidder",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x47b2b7bdacd5004b5f20c86ec07ecda11e5ac511d4ad9ed9ed2c5af4c42cb4bd",
+            "caladan:signature": "PushFundsFailed(uint256,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "PushFundsFailed",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x66be647974b8677ccbdb171c9fd037f0f64af878ddc5b7f0923da6a32173ae47",
+            "caladan:signature": "GlobalDurationUpdated(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "GlobalDurationUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x4193e3b6c8a874196e0068cb9b96b2aaef71a2d90fc46254c4508e1003996bd5",
+            "caladan:signature": "MinimumTotalValueUpdated(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "MinimumTotalValueUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2fa1029ea9a56473df3e068ba4dc7f4343efacb8a54b808f595f78d1d62f0035",
+            "caladan:signature": "MinimumPriceIncrementUpdated(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "MinimumPriceIncrementUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x4a13d5076f950a8eb96f30e1f814eecade18fcebc5042f3ce669cea283edaefd",
+            "caladan:signature": "OfferCutUpdated(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "OfferCutUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xfa4a24dc8c85bb39a38146f43e5611e67c18d4df990b85be0fa17a8d9c7f3cc9",
+            "caladan:signature": "UnsuccessfulFeeUpdated(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "UnsuccessfulFeeUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Offers"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x27ebe40a",
+            "caladan:signature": "createAuction(uint256,uint256,uint256,uint256,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "createAuction",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_startingPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_endingPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_duration",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_seller",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": true,
+            "@id": "0x454a2ab3",
+            "caladan:signature": "bid(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "bid",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x484eccb4",
+            "caladan:signature": "lastGen0SalePrices(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "lastGen0SalePrices",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x78bd7935",
+            "caladan:signature": "getAuction(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getAuction",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "seller",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "startingPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "endingPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "duration",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "startedAt",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x83b5ff8b",
+            "caladan:signature": "ownerCut()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ownerCut",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x85b86188",
+            "caladan:signature": "isSaleClockAuction()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isSaleClockAuction",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x878eb368",
+            "caladan:signature": "cancelAuctionWhenPaused(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "cancelAuctionWhenPaused",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x8a98a9cc",
+            "caladan:signature": "gen0SaleCount()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "gen0SaleCount",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x8da5cb5b",
+            "caladan:signature": "owner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "owner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x96b5a755",
+            "caladan:signature": "cancelAuction(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "cancelAuction",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xc55d0f56",
+            "caladan:signature": "getCurrentPrice(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getCurrentPrice",
+            "caladan:inputs": [
+                {
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xeac9d94c",
+            "caladan:signature": "averageGen0SalePrice()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "averageGen0SalePrice",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xf2fde38b",
+            "caladan:signature": "transferOwnership(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferOwnership",
+            "caladan:inputs": [
+                {
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0xf52a1df1eea63aaa9fd7d5fe5100a9c3cb585a1dd460425ba47fa405b208a833",
+            "caladan:signature": "0(address,uint256)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "name": "_nftAddr",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_cut",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xa9c8dfcda5664a5a124c713e386da27de87432d5b668e79458501eb296389ba7",
+            "caladan:signature": "AuctionCreated(uint256,uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "AuctionCreated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "startingPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "endingPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "duration",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x4fcc30d90a842164dd58501ab874a101a3749c3d4747139cefe7c876f4ccebd2",
+            "caladan:signature": "AuctionSuccessful(uint256,uint256,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AuctionSuccessful",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "totalPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "winner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2809c7e17bf978fbc7194c0a694b638c4215e9140cacc6c38ca36010b45697df",
+            "caladan:signature": "AuctionCancelled(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "AuctionCancelled",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6985a02210a168e66602d3235cb6db0e70f92b3ba4d376a33c0f3d9434bff625",
+            "caladan:signature": "Pause()",
+            "@type": "caladan:Event",
+            "caladan:name": "Pause",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x7805862f689e2f13df9f062ff482ad3ad112aca9e0847911ed832e158c525b33",
+            "caladan:signature": "Unpause()",
+            "@type": "caladan:Event",
+            "caladan:name": "Unpause",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Sales Auction"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x0d9f5aed",
+            "caladan:signature": "mixGenes(uint256,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "mixGenes",
+            "caladan:inputs": [
+                {
+                    "name": "_genes1",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_genes2",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_targetBlock",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: GeneScience"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x1597ee44",
+            "caladan:signature": "encode(uint8[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "encode",
+            "caladan:inputs": [
+                {
+                    "name": "_traits",
+                    "type": "uint8[]",
+                    "@type": "uint8[]"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "_genes",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: GeneScience"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x33695c59",
+            "caladan:signature": "privilegedBirtherWindowSize()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "privilegedBirtherWindowSize",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: GeneScience"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x54c15b82",
+            "caladan:signature": "isGeneScience()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isGeneScience",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: GeneScience"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x61a76900",
+            "caladan:signature": "decode(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "decode",
+            "caladan:inputs": [
+                {
+                    "name": "_genes",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint8[]",
+                    "@type": "uint8[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: GeneScience"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x77a74a20",
+            "caladan:signature": "expressingTraits(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "expressingTraits",
+            "caladan:inputs": [
+                {
+                    "name": "_genes",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint8[12]",
+                    "@type": "uint8[12]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: GeneScience"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xfe2787e8",
+            "caladan:signature": "setPrivilegedBirther(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setPrivilegedBirther",
+            "caladan:inputs": [
+                {
+                    "name": "_birtherAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: GeneScience"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0x517d5955ce3c06eaf11438c03b573c37bc6bb235d0463c05b34c209023925f19",
+            "caladan:signature": "0(address,address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "name": "_privilegedBirtherAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_kittyCoreAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: GeneScience"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x76190f8f",
+            "caladan:signature": "isSiringClockAuction()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isSiringClockAuction",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/cryptokitties/CryptoKitties: Siring Auction"
+                }
+            ]
+        }
+    ]
+}

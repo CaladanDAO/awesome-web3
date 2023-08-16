@@ -1,0 +1,3086 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/dutchx",
+    "@type": "caladan:Project",
+    "caladan:name": "dutchx",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange",
+                    "evm:chainID": 1,
+                    "evm:address": "0x2bae491b065032a76be1db9e9ecf5738afae203e"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange Helper",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange Helper",
+                    "evm:chainID": 1,
+                    "evm:address": "0x64832950abccaa3d02ab8eb09aa058d789f5bb6a"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange Proxy",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange Proxy",
+                    "evm:chainID": 1,
+                    "evm:address": "0xb9812e2fa995ec53b5b6df34d21f9304762c5497"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x00599e65",
+            "caladan:signature": "getTokenOrder(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "getTokenOrder",
+            "caladan:inputs": [
+                {
+                    "name": "token1",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "token2",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x02ffc0b0",
+            "caladan:signature": "getApprovedAddressesOfList(address[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getApprovedAddressesOfList",
+            "caladan:inputs": [
+                {
+                    "name": "addressesToCheck",
+                    "type": "address[]",
+                    "@type": "address[]"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool[]",
+                    "@type": "bool[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x04e80e90",
+            "caladan:signature": "getMasterCopy()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getMasterCopy",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x06d58f2a",
+            "caladan:signature": "claimAndWithdraw(address,address,address,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimAndWithdraw",
+            "caladan:inputs": [
+                {
+                    "name": "sellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "buyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "returned",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "frtsIssued",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "newBal",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x0c57cfba",
+            "caladan:signature": "claimAndWithdrawTokensFromSeveralAuctionsAsBuyer(address[],address[],uint256[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimAndWithdrawTokensFromSeveralAuctionsAsBuyer",
+            "caladan:inputs": [
+                {
+                    "name": "auctionSellTokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "auctionBuyTokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "auctionIndices",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "name": "frtsIssued",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x0e7c0f80",
+            "caladan:signature": "masterCopyCountdown()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "masterCopyCountdown",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x1006a41f",
+            "caladan:signature": "auctionStarts(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "auctionStarts",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x14584a9d",
+            "caladan:signature": "getAuctionIndex(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getAuctionIndex",
+            "caladan:inputs": [
+                {
+                    "name": "token1",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "token2",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x2cef4dac",
+            "caladan:signature": "updateMasterCopy()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateMasterCopy",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x30690468",
+            "caladan:signature": "atleastZero(int256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "atleastZero",
+            "caladan:inputs": [
+                {
+                    "name": "a",
+                    "type": "int256",
+                    "@type": "int256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x37775807",
+            "caladan:signature": "buyerBalances(address,address,uint256,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "buyerBalances",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x403fbf54",
+            "caladan:signature": "initiateEthUsdOracleUpdate(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "initiateEthUsdOracleUpdate",
+            "caladan:inputs": [
+                {
+                    "name": "_ethUSDOracle",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x47e7ef24",
+            "caladan:signature": "deposit(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "deposit",
+            "caladan:inputs": [
+                {
+                    "name": "tokenAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x4bf8e7a2",
+            "caladan:signature": "getPriceInPastAuction(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getPriceInPastAuction",
+            "caladan:inputs": [
+                {
+                    "name": "token1",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "token2",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "num",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "den",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x4e30a66c",
+            "caladan:signature": "safeToAdd(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "safeToAdd",
+            "caladan:inputs": [
+                {
+                    "name": "a",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "b",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x59f96ae5",
+            "caladan:signature": "postSellOrder(address,address,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "postSellOrder",
+            "caladan:inputs": [
+                {
+                    "name": "sellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "buyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x5e7f22c2",
+            "caladan:signature": "postBuyOrder(address,address,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "postBuyOrder",
+            "caladan:inputs": [
+                {
+                    "name": "sellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "buyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "newBuyerBal",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x5ec2c7bf",
+            "caladan:signature": "auctioneer()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "auctioneer",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x65054e55",
+            "caladan:signature": "claimSellerFunds(address,address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimSellerFunds",
+            "caladan:inputs": [
+                {
+                    "name": "sellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "buyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "returned",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "frtsIssued",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x657a37ad",
+            "caladan:signature": "depositAndSell(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "depositAndSell",
+            "caladan:inputs": [
+                {
+                    "name": "sellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "buyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "newBal",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "newSellerBal",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x65b0d711",
+            "caladan:signature": "updateApprovalOfToken(address[],bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateApprovalOfToken",
+            "caladan:inputs": [
+                {
+                    "name": "token",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "approved",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x6d1ea3fa",
+            "caladan:signature": "approvedTokens(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "approvedTokens",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x6e6260fa",
+            "caladan:signature": "thresholdNewTokenPair()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "thresholdNewTokenPair",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x6ea68360",
+            "caladan:signature": "newMasterCopy()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "newMasterCopy",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x706eb3ab",
+            "caladan:signature": "ethUSDOracle()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ethUSDOracle",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x7420a32f",
+            "caladan:signature": "getClearingTime(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getClearingTime",
+            "caladan:inputs": [
+                {
+                    "name": "token1",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "token2",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "time",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x771602f7",
+            "caladan:signature": "add(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "add",
+            "caladan:inputs": [
+                {
+                    "name": "a",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "b",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x7895dd21",
+            "caladan:signature": "claimTokensFromSeveralAuctionsAsSeller(address[],address[],uint256[],address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimTokensFromSeveralAuctionsAsSeller",
+            "caladan:inputs": [
+                {
+                    "name": "auctionSellTokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "auctionBuyTokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "auctionIndices",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "name": "",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x796a8076",
+            "caladan:signature": "updateAuctioneer(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateAuctioneer",
+            "caladan:inputs": [
+                {
+                    "name": "_auctioneer",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x7ae2b5c7",
+            "caladan:signature": "min(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "min",
+            "caladan:inputs": [
+                {
+                    "name": "a",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "b",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x7bf1a627",
+            "caladan:signature": "ethToken()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "ethToken",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x821b98f3",
+            "caladan:signature": "closeTheoreticalClosedAuction(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "closeTheoreticalClosedAuction",
+            "caladan:inputs": [
+                {
+                    "name": "sellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "buyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x8261eb1b",
+            "caladan:signature": "frtToken()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "frtToken",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x82a57b43",
+            "caladan:signature": "claimAndWithdrawTokensFromSeveralAuctionsAsSeller(address[],address[],uint256[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimAndWithdrawTokensFromSeveralAuctionsAsSeller",
+            "caladan:inputs": [
+                {
+                    "name": "auctionSellTokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "auctionBuyTokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "auctionIndices",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "name": "frtsIssued",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x9fec8e96",
+            "caladan:signature": "claimedAmounts(address,address,uint256,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "claimedAmounts",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa48cef4a",
+            "caladan:signature": "oracleInterfaceCountdown()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "oracleInterfaceCountdown",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa619486e",
+            "caladan:signature": "masterCopy()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "masterCopy",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange Proxy"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xacb10351",
+            "caladan:signature": "setupDutchExchange(address,address,address,address,address,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setupDutchExchange",
+            "caladan:inputs": [
+                {
+                    "name": "_frtToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_owlToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_auctioneer",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_ethToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_ethUSDOracle",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_thresholdNewTokenPair",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_thresholdNewAuction",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xb0293850",
+            "caladan:signature": "claimBuyerFunds(address,address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimBuyerFunds",
+            "caladan:inputs": [
+                {
+                    "name": "sellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "buyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "returned",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "frtsIssued",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb04c0239",
+            "caladan:signature": "clearingTimes(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "clearingTimes",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb3c2083f",
+            "caladan:signature": "sellVolumesNext(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "sellVolumesNext",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb64c4905",
+            "caladan:signature": "sellVolumesCurrent(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "sellVolumesCurrent",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb67d77c5",
+            "caladan:signature": "sub(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "sub",
+            "caladan:inputs": [
+                {
+                    "name": "a",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "b",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb8beafd6",
+            "caladan:signature": "buyVolumes(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "buyVolumes",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xc1a21bf3",
+            "caladan:signature": "sellerBalances(address,address,uint256,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "sellerBalances",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xc23f001f",
+            "caladan:signature": "balances(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "balances",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xc6af43f9",
+            "caladan:signature": "updateThresholdNewAuction(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateThresholdNewAuction",
+            "caladan:inputs": [
+                {
+                    "name": "_thresholdNewAuction",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xc8a4ac9c",
+            "caladan:signature": "mul(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "mul",
+            "caladan:inputs": [
+                {
+                    "name": "a",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "b",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xcb10fa76",
+            "caladan:signature": "safeToMul(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "safeToMul",
+            "caladan:inputs": [
+                {
+                    "name": "a",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "b",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xcd04ccfc",
+            "caladan:signature": "newProposalEthUSDOracle()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "newProposalEthUSDOracle",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xcd94a2a4",
+            "caladan:signature": "owlToken()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "owlToken",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xd3cc8d1c",
+            "caladan:signature": "claimTokensFromSeveralAuctionsAsBuyer(address[],address[],uint256[],address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "claimTokensFromSeveralAuctionsAsBuyer",
+            "caladan:inputs": [
+                {
+                    "name": "auctionSellTokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "auctionBuyTokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "auctionIndices",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "name": "",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xdae595e5",
+            "caladan:signature": "getAuctionStart(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getAuctionStart",
+            "caladan:inputs": [
+                {
+                    "name": "token1",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "token2",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "auctionStart",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xdf6af7d1",
+            "caladan:signature": "getUnclaimedBuyerFunds(address,address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getUnclaimedBuyerFunds",
+            "caladan:inputs": [
+                {
+                    "name": "sellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "buyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "unclaimedBuyerFunds",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "num",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "den",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe1c95bb9",
+            "caladan:signature": "updateThresholdNewTokenPair(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateThresholdNewTokenPair",
+            "caladan:inputs": [
+                {
+                    "name": "_thresholdNewTokenPair",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xe31c71c4",
+            "caladan:signature": "safeToSub(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "safeToSub",
+            "caladan:inputs": [
+                {
+                    "name": "a",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "b",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe9f8cd70",
+            "caladan:signature": "addTokenPair(address,address,uint256,uint256,uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addTokenPair",
+            "caladan:inputs": [
+                {
+                    "name": "token1",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "token2",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "token1Funding",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "token2Funding",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "initialClosingPriceNum",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "initialClosingPriceDen",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xebcc0de1",
+            "caladan:signature": "closingPrices(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "closingPrices",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "num",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "den",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xedd0b5cb",
+            "caladan:signature": "getFeeRatio(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getFeeRatio",
+            "caladan:inputs": [
+                {
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "num",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "den",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xee93114c",
+            "caladan:signature": "thresholdNewAuction()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "thresholdNewAuction",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xf3fef3a3",
+            "caladan:signature": "withdraw(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdraw",
+            "caladan:inputs": [
+                {
+                    "name": "tokenAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xf41d97fc",
+            "caladan:signature": "getPriceOfTokenInLastAuction(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getPriceOfTokenInLastAuction",
+            "caladan:inputs": [
+                {
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "num",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "den",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xf4279d1f",
+            "caladan:signature": "updateEthUSDOracle()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateEthUSDOracle",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xf625ee28",
+            "caladan:signature": "startMasterCopyCountdown(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "startMasterCopyCountdown",
+            "caladan:inputs": [
+                {
+                    "name": "_masterCopy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xf79710fd",
+            "caladan:signature": "extraTokens(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "extraTokens",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xfac7abe3",
+            "caladan:signature": "latestAuctionIndices(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "latestAuctionIndices",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xfdab1b7b",
+            "caladan:signature": "getCurrentAuctionPrice(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getCurrentAuctionPrice",
+            "caladan:inputs": [
+                {
+                    "name": "sellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "buyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "num",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "den",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2cb77763bc1e8490c1a904905c4d74b4269919aca114464f4bb4d911e60de364",
+            "caladan:signature": "NewDeposit(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "NewDeposit",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6e2e05fb6a732995d6952d9158ca6b75f11cc6bf5a4af943aa1eb475a249440b",
+            "caladan:signature": "NewWithdrawal(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "NewWithdrawal",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3681d6f6ad159bac260c32828859f6df545bbf841c6e70787bcf0acbc390512a",
+            "caladan:signature": "NewSellOrder(address,address,address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "NewSellOrder",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "buyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf1751a362067564d5feb9ed26f1898bb14c17e1254e3724d454bc2ae80195c25",
+            "caladan:signature": "NewBuyOrder(address,address,address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "NewBuyOrder",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "buyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xa3ac9b53d029621ef95693b5f9b1d0b0da75029fe8530389271be02715e24c13",
+            "caladan:signature": "NewSellerFundsClaim(address,address,address,uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "NewSellerFundsClaim",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "buyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "frtsIssued",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x4d1c39fd1a9c74f88b9f90c7b439b7e5dc6f26b6ff280fd497fdec5c538aaf52",
+            "caladan:signature": "NewBuyerFundsClaim(address,address,address,uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "NewBuyerFundsClaim",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "buyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "frtsIssued",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6f4b2adffa0c3e90e47fdcd9d2c36f48b57eb3271dce519997271073dac17be9",
+            "caladan:signature": "NewTokenPair(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "NewTokenPair",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "buyToken",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb5806f8610464e96807c2b147620cc721c65309647f16cfccdf9fb7bd95152ac",
+            "caladan:signature": "AuctionCleared(address,address,uint256,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "AuctionCleared",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "buyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "sellVolume",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "buyVolume",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x20017e7b1ef8e7882103f55ff346ca3135c4afe13dff1da2f01b482aece766a5",
+            "caladan:signature": "AuctionStartScheduled(address,address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "AuctionStartScheduled",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "buyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "auctionStart",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x30c4d3fe752442ffa2415fd4e6398cb9e378bab963f042ce30ef4363b6ad93b6",
+            "caladan:signature": "Fee(address,address,address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Fee",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "primaryToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "secondarToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "auctionIndex",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "fee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3f174cfd713408ca6e4620d1efcc241b23fc39aa7d4694bd98610d3384dc001c",
+            "caladan:signature": "NewOracleProposal(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "NewOracleProposal",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "priceOracleInterface",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc091bf3abd3a42f670f8ad1a6ad5b849311210403e1d85d6ac31f43114d5ca6e",
+            "caladan:signature": "Approval(address,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "Approval",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "approved",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x36dceb79f427eda3edba9ac3c1d4db7a6e4d0b8637d97320847d93fa8e2f7a04",
+            "caladan:signature": "NewMasterCopyProposal(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "NewMasterCopyProposal",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "newMasterCopy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x01a521d6",
+            "caladan:signature": "getSellerBalancesOfCurrentAuctions(address[],address[],address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getSellerBalancesOfCurrentAuctions",
+            "caladan:inputs": [
+                {
+                    "name": "auctionSellTokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "auctionBuyTokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange Helper"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x84429579",
+            "caladan:signature": "getRunningTokenPairs(address[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getRunningTokenPairs",
+            "caladan:inputs": [
+                {
+                    "name": "tokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "tokens1",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "tokens2",
+                    "type": "address[]",
+                    "@type": "address[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange Helper"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xbc88adc4",
+            "caladan:signature": "getBuyerBalancesOfCurrentAuctions(address[],address[],address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getBuyerBalancesOfCurrentAuctions",
+            "caladan:inputs": [
+                {
+                    "name": "auctionSellTokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "auctionBuyTokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange Helper"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xc9042b1e",
+            "caladan:signature": "dx()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "dx",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange Helper"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd3062b24",
+            "caladan:signature": "getIndicesWithClaimableTokensForBuyers(address,address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getIndicesWithClaimableTokensForBuyers",
+            "caladan:inputs": [
+                {
+                    "name": "auctionSellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "auctionBuyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "lastNAuctions",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "indices",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "name": "usersBalances",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange Helper"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xf97ea6fc",
+            "caladan:signature": "getIndicesWithClaimableTokensForSellers(address,address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getIndicesWithClaimableTokensForSellers",
+            "caladan:inputs": [
+                {
+                    "name": "auctionSellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "auctionBuyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "lastNAuctions",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "indices",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "name": "usersBalances",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange Helper"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "caladan:signature": "0(address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "name": "_dx",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange Helper"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dutchx/DutchX: Exchange Proxy"
+                }
+            ]
+        }
+    ]
+}

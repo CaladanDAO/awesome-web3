@@ -1,0 +1,999 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/gitcoin/allo",
+    "@type": "caladan:Project",
+    "caladan:name": "allo",
+    "caladan:dataset": "gitcoin",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProjectRegistry",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProjectRegistry",
+                    "evm:chainID": 1,
+                    "evm:address": "0x03506ed3f57892c85db20c36846e9c808afe9ef4"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProgramFactory",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProgramFactory",
+                    "evm:chainID": 1,
+                    "evm:address": "0x56296242ca408ba36393f3981879ff9692f193cc"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy",
+                    "evm:chainID": 1,
+                    "evm:address": "0x9cb7f434ad3250d1656854a9ec7a71ecec6ee1ef"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "anonymous": false,
+            "@id": "0x7f26b83ff96e1f2b6a682f133852f6798a09c465da95921460cefb3847402498",
+            "caladan:signature": "Initialized(uint8)",
+            "@type": "caladan:Event",
+            "caladan:name": "Initialized",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "version",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProjectRegistry"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProgramFactory"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf92c2639c25d6a22c38e6d6b293f74a9b22491273b1dbb67fc1255222696be5b",
+            "caladan:signature": "MetadataUpdated(uint256,(uint256,string))",
+            "@type": "caladan:Event",
+            "caladan:name": "MetadataUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "projectID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "protocol",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "pointer",
+                            "type": "string"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct MetaPtr",
+                    "name": "metaPtr",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProjectRegistry"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xab7a51f59a55e3b65bbabf99457f8955ff12366d20e368988c35d2eab9bd8df9",
+            "caladan:signature": "OwnerAdded(uint256,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnerAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "projectID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProjectRegistry"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2d2f043cb8f93c6464e5ce5b93e72c2863eeb044241ea316d2a5a9af93207121",
+            "caladan:signature": "OwnerRemoved(uint256,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnerRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "projectID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProjectRegistry"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x63c92f9505d420bff631cb9df33be952bdc11e2118da36a850b43e6bcc4ce4de",
+            "caladan:signature": "ProjectCreated(uint256,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ProjectCreated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "projectID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProjectRegistry"
+                }
+            ]
+        },
+        {
+            "@id": "0xfd5423a8",
+            "caladan:signature": "addProjectOwner(uint256,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addProjectOwner",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "projectID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProjectRegistry"
+                }
+            ]
+        },
+        {
+            "@id": "0x3044ef7f",
+            "caladan:signature": "createProject((uint256,string))",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "createProject",
+            "caladan:inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "protocol",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "pointer",
+                            "type": "string"
+                        }
+                    ],
+                    "internalType": "struct MetaPtr",
+                    "name": "metadata",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProjectRegistry"
+                }
+            ]
+        },
+        {
+            "@id": "0xe63f592c",
+            "caladan:signature": "getProjectOwners(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getProjectOwners",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "projectID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "",
+                    "type": "address[]",
+                    "@type": "address[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProjectRegistry"
+                }
+            ]
+        },
+        {
+            "@id": "0x8129fc1c",
+            "caladan:signature": "initialize()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "initialize",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProjectRegistry"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProgramFactory"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x78892204",
+            "caladan:signature": "projectOwnersCount(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "projectOwnersCount",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "projectID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProjectRegistry"
+                }
+            ]
+        },
+        {
+            "@id": "0x107046bd",
+            "caladan:signature": "projects(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "projects",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "protocol",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "pointer",
+                            "type": "string"
+                        }
+                    ],
+                    "internalType": "struct MetaPtr",
+                    "name": "metadata",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProjectRegistry"
+                }
+            ]
+        },
+        {
+            "@id": "0xc73b302e",
+            "caladan:signature": "projectsCount()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "projectsCount",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProjectRegistry"
+                }
+            ]
+        },
+        {
+            "@id": "0xc172dc23",
+            "caladan:signature": "projectsOwners(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "projectsOwners",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "count",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProjectRegistry"
+                }
+            ]
+        },
+        {
+            "@id": "0x2d9fcf03",
+            "caladan:signature": "removeProjectOwner(uint256,address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeProjectOwner",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "projectID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "prevOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProjectRegistry"
+                }
+            ]
+        },
+        {
+            "@id": "0x834a9736",
+            "caladan:signature": "updateProjectMetadata(uint256,(uint256,string))",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateProjectMetadata",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "projectID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "protocol",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "pointer",
+                            "type": "string"
+                        }
+                    ],
+                    "internalType": "struct MetaPtr",
+                    "name": "metadata",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProjectRegistry"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "caladan:signature": "OwnershipTransferred(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnershipTransferred",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProgramFactory"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6c4425c98f554a6097c41acbe5e20a9f5cd159d2785a3e9b71ef2966562f55ca",
+            "caladan:signature": "ProgramContractUpdated(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ProgramContractUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "programContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProgramFactory"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x75c1d3f36bb0928522da6c9e9c8d8f4706b7fe8ba337c8adb9ed61ce3571dfb9",
+            "caladan:signature": "ProgramCreated(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ProgramCreated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "programContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "programImplementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProgramFactory"
+                }
+            ]
+        },
+        {
+            "@id": "0xcf5ba53f",
+            "caladan:signature": "create(bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "create",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "encodedParameters",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProgramFactory"
+                }
+            ]
+        },
+        {
+            "@id": "0x8da5cb5b",
+            "caladan:signature": "owner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "owner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProgramFactory"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x482b760f",
+            "caladan:signature": "programContract()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "programContract",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProgramFactory"
+                }
+            ]
+        },
+        {
+            "@id": "0x715018a6",
+            "caladan:signature": "renounceOwnership()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "renounceOwnership",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProgramFactory"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2fde38b",
+            "caladan:signature": "transferOwnership(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferOwnership",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProgramFactory"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x695d9651",
+            "caladan:signature": "updateProgramContract(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateProgramContract",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newProgramContract",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/ProgramFactory"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xa58967f5e07bd2405f0758a5019f9448cf74c83b2a4ce3bb0744f6d89a66157f",
+            "caladan:signature": "AlloSettingsUpdated(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AlloSettingsUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "alloSettings",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x9ea0518c708ef5dfce96e410b66495be1d381b18199887003dd508e0cc19dc77",
+            "caladan:signature": "RoundCreated(address,address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "RoundCreated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "roundAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "ownedBy",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "roundImplementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x80dfd4a16b3bbb75be7e2b6efaa25fff123212f0ca69500dd77518910aec82b5",
+            "caladan:signature": "RoundImplementationUpdated(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "RoundImplementationUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "roundImplementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0xffa1ad74",
+            "caladan:signature": "VERSION()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "VERSION",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x9c3b68ce",
+            "caladan:signature": "alloSettings()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "alloSettings",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0xbc31bca9",
+            "caladan:signature": "create(bytes,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "create",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "encodedParameters",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "address",
+                    "name": "ownedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0xaffed0e0",
+            "caladan:signature": "nonce()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "nonce",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0xa8586438",
+            "caladan:signature": "roundImplementation()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "roundImplementation",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x5614ea4e",
+            "caladan:signature": "updateAlloSettings(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateAlloSettings",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newAlloSettings",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0xbe8c0b2f",
+            "caladan:signature": "updateRoundImplementation(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateRoundImplementation",
+            "caladan:inputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "newRoundImplementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/gitcoin/allo/TransparentUpgradeableProxy"
+                }
+            ]
+        }
+    ]
+}

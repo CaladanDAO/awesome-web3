@@ -1,0 +1,83 @@
+{
+  "@context": {
+    "Contracts": "http://ethon.consensys.net/Contracts",
+    "fungible": "http://caladandao.org/ethereum/tokens/fungible",
+    "erc20": "http://caladandao.org/ethereum/tokens/erc20",
+    "tokenAddress": { "@type": "erc20", "@id": "a" },
+    "amount": { "@type": "uint256", "@id": "z" },
+    "transfer": {
+      "@context": {
+        "sender": { "@type": "address", "@id": "x", "state": "balanceOf" },
+        "receiver": { "@type": "address", "@id": "y", "state": "balanceOf" }
+      },
+      "@id": "https://example.com/contexts/transfer.jsonld",
+      "asserts": [
+        "diff(a, 'balanceOf', x) = -z",
+        "diff(a, 'balanceOf', y) = z"
+      ]
+    },
+    "approve": {
+      "@context": {
+        "spender": { "@type": "address", "@id": "x", "state": "allowance" }
+      },
+      "@id": "https://example.com/contexts/approve.jsonld",
+      "asserts": [
+        "end(a, 'allowance', x) = z"
+      ]
+    },
+    "mint": {
+      "@context": {
+        "minter": { "@type": "address", "@id": "x" }
+      },
+      "@id": "https://example.com/contexts/mint.jsonld",
+      "asserts": [
+        "diff(a, 'totalSupply') = z"
+      ]
+    },
+    "burn": {
+      "@context": {
+        "burner": { "@type": "address", "@id": "x" }
+      },
+      "@id": "https://example.com/contexts/burn.jsonld",
+      "asserts": [
+        "diff(a, 'totalSupply') = -z"
+      ]
+    }
+  },
+  "abi": [
+    {
+      "@type": "Contracts:Event",
+      "name": "Transfer",
+      "anonymous": false,
+      "inputs": [
+        {
+          "@type": "token:sender",
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address",
+          "@role": "transfer:sender"
+        },
+        {
+          "@type": "token:recipient",
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address",
+          "@role": "transfer:receiver"
+        },
+        {
+          "@type": "token:fungibleamount",
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256",
+          "@role": "fungible:amount",
+          "decorate": "tokens:decorateFungibleAmount"
+        }
+      ]
+    }
+  ]
+}
+
+

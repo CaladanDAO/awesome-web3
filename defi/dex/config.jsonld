@@ -1,0 +1,532 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/dex",
+    "@type": "caladan:Project",
+    "caladan:name": "dex",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature",
+                    "evm:chainID": 1,
+                    "evm:address": "0xe66b31678d6c16e9ebf358268a790b763c133750"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "@id": "0xfca1fbd252ca3a3155c4f509ff4215349d6fc81565cce96ed027b4d823dc7f64",
+            "caladan:signature": "0(address,address,address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "contract IZeroEx",
+                    "name": "zeroEx",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "allowanceTarget",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x12de7cdcfa92c9e2744861bffda63417a4bc29e3c916f0d3e9655d684cc7acc6",
+            "caladan:signature": "AllowanceTargetChanged(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AllowanceTargetChanged",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "allowanceTarget",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x373c72efabe4ef3e552ff77838be729f3bc3d8c586df0012902d1baa2377fa1d",
+            "caladan:signature": "BeneficiaryChanged(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "BeneficiaryChanged",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc161c67ca327eadedf1f0825c92841b42fcc2127c83d52d8849770c997f99620",
+            "caladan:signature": "ImplementationOverrideSet(bytes4,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ImplementationOverrideSet",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes4",
+                    "name": "signature",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "caladan:signature": "OwnershipTransferred(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnershipTransferred",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x058ec768b4d987625b47f998642d52a1ef938ff8445348c5653a5a7c15c9d792",
+            "caladan:signature": "ZeroExChanged(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ZeroExChanged",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "zeroEx",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0xf7c3a33b",
+            "caladan:signature": "getAllowanceTarget()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getAllowanceTarget",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0x565a2e2c",
+            "caladan:signature": "getBeneficiary()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getBeneficiary",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0x972fdd26",
+            "caladan:signature": "getFunctionImplementation(bytes4)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "getFunctionImplementation",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "signature",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "impl",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0xb6016b77",
+            "caladan:signature": "getZeroEx()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getZeroEx",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract IZeroEx",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0xfe53d0b6",
+            "caladan:signature": "optimalSwap(bytes,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "optimalSwap",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "msgData",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "address",
+                    "name": "feeToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0x8da5cb5b",
+            "caladan:signature": "owner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "owner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0x5cf54026",
+            "caladan:signature": "proxiedSwap(bytes,address,address,uint256,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "proxiedSwap",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "msgData",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "address",
+                    "name": "feeToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "inputToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "inputAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "outputToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0x715018a6",
+            "caladan:signature": "renounceOwnership()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "renounceOwnership",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0x8a14c759",
+            "caladan:signature": "setAllowanceTarget(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setAllowanceTarget",
+            "caladan:inputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "newAllowanceTarget",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0x1c31f710",
+            "caladan:signature": "setBeneficiary(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setBeneficiary",
+            "caladan:inputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0xfdf03fa1",
+            "caladan:signature": "setImplementationOverride(bytes4,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setImplementationOverride",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "signature",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                },
+                {
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0xf9143826",
+            "caladan:signature": "setZeroEx(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setZeroEx",
+            "caladan:inputs": [
+                {
+                    "internalType": "contract IZeroEx",
+                    "name": "newZeroEx",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2fde38b",
+            "caladan:signature": "transferOwnership(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferOwnership",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        }
+    ]
+}

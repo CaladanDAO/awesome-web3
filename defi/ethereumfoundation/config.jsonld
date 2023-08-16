@@ -1,0 +1,841 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/ethereumfoundation",
+    "@type": "caladan:Project",
+    "caladan:name": "ethereumfoundation",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/EthDev",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/EthDev",
+                    "evm:chainID": 1,
+                    "evm:address": "0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar",
+                    "evm:chainID": 1,
+                    "evm:address": "0xfb6916095ca1df60bb79ce92ce3ea74c37c5d359"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "constant": true,
+            "@id": "0x013cf08b",
+            "caladan:signature": "proposals(uint256)",
+            "@type": "caladan:Function",
+            "caladan:name": "proposals",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "description",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "votingDeadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "executed",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "proposalPassed",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "numberOfVotes",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "currentResult",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "proposalHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0x237e9492",
+            "caladan:signature": "executeProposal(uint256,bytes)",
+            "@type": "caladan:Function",
+            "caladan:name": "executeProposal",
+            "caladan:inputs": [
+                {
+                    "name": "proposalNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "transactionBytecode",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "result",
+                    "type": "int256",
+                    "@type": "int256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x39106821",
+            "caladan:signature": "memberId(address)",
+            "@type": "caladan:Function",
+            "caladan:name": "memberId",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x400e3949",
+            "caladan:signature": "numProposals()",
+            "@type": "caladan:Function",
+            "caladan:name": "numProposals",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x50c34878",
+            "caladan:signature": "priceOfAUnicornInFinney()",
+            "@type": "caladan:Function",
+            "caladan:name": "priceOfAUnicornInFinney",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0x522103fa",
+            "caladan:signature": "changeUnicorn(uint256,address)",
+            "@type": "caladan:Function",
+            "caladan:name": "changeUnicorn",
+            "caladan:inputs": [
+                {
+                    "name": "newUnicornPriceInFinney",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "newUnicornAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x5daf08ca",
+            "caladan:signature": "members(uint256)",
+            "@type": "caladan:Function",
+            "caladan:name": "members",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "member",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "voteWeight",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "canAddProposals",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "memberSince",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x69bd3436",
+            "caladan:signature": "debatingPeriodInMinutes()",
+            "@type": "caladan:Function",
+            "caladan:name": "debatingPeriodInMinutes",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x8160f0b5",
+            "caladan:signature": "minimumQuorum()",
+            "@type": "caladan:Function",
+            "caladan:name": "minimumQuorum",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0x824dbc9a",
+            "caladan:signature": "changeMembership(address,uint256,bool,string)",
+            "@type": "caladan:Function",
+            "caladan:name": "changeMembership",
+            "caladan:inputs": [
+                {
+                    "name": "targetMember",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "voteWeight",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "canAddProposals",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "memberName",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0x83876bc9",
+            "caladan:signature": "newProposalInWei(address,uint256,string,bytes)",
+            "@type": "caladan:Function",
+            "caladan:name": "newProposalInWei",
+            "caladan:inputs": [
+                {
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "weiAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "JobDescription",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "transactionBytecode",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "proposalID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x8da5cb5b",
+            "caladan:signature": "owner()",
+            "@type": "caladan:Function",
+            "caladan:name": "owner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0xaa02a90f",
+            "caladan:signature": "majorityMargin()",
+            "@type": "caladan:Function",
+            "caladan:name": "majorityMargin",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "int256",
+                    "@type": "int256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0xb7782455",
+            "caladan:signature": "unicornAddress()",
+            "@type": "caladan:Function",
+            "caladan:name": "unicornAddress",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0xb9f256cd",
+            "caladan:signature": "newProposalInEther(address,uint256,string,bytes)",
+            "@type": "caladan:Function",
+            "caladan:name": "newProposalInEther",
+            "caladan:inputs": [
+                {
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "etherAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "JobDescription",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "transactionBytecode",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "proposalID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0xbcca1fd3",
+            "caladan:signature": "changeVotingRules(uint256,uint256,int256)",
+            "@type": "caladan:Function",
+            "caladan:name": "changeVotingRules",
+            "caladan:inputs": [
+                {
+                    "name": "minimumQuorumForProposals",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "minutesForDebate",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "marginOfVotesForMajority",
+                    "type": "int256",
+                    "@type": "int256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0xd3c0715b",
+            "caladan:signature": "vote(uint256,bool,string)",
+            "@type": "caladan:Function",
+            "caladan:name": "vote",
+            "caladan:inputs": [
+                {
+                    "name": "proposalNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "supportsProposal",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "justificationText",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "voteID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0xeceb2945",
+            "caladan:signature": "checkProposalCode(uint256,address,uint256,bytes)",
+            "@type": "caladan:Function",
+            "caladan:name": "checkProposalCode",
+            "caladan:inputs": [
+                {
+                    "name": "proposalNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "transactionBytecode",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "codeChecksOut",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0xf2fde38b",
+            "caladan:signature": "transferOwnership(address)",
+            "@type": "caladan:Function",
+            "caladan:name": "transferOwnership",
+            "caladan:inputs": [
+                {
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "@id": "0x180a08bde25b03262fd4d22c3eb1b03358efbd0d6117b5cb6efc9671bd5818c8",
+            "caladan:signature": "0(uint256,uint256,int256,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "name": "minimumQuorumForProposals",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "minutesForDebate",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "marginOfVotesForMajority",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "congressLeader",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x646fec02522b41e7125cfc859a64fd4f4cefd5dc3b6237ca0abe251ded1fa881",
+            "caladan:signature": "ProposalAdded(uint256,address,uint256,string)",
+            "@type": "caladan:Event",
+            "caladan:name": "ProposalAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "proposalID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "description",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc34f869b7ff431b034b7b9aea9822dac189a685e0b015c7d1be3add3f89128e8",
+            "caladan:signature": "Voted(uint256,bool,address,string)",
+            "@type": "caladan:Event",
+            "caladan:name": "Voted",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "proposalID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "position",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "name": "voter",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "justification",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd220b7272a8b6d0d7d6bcdace67b936a8f175e6d5c1b3ee438b72256b32ab3af",
+            "caladan:signature": "ProposalTallied(uint256,int256,uint256,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "ProposalTallied",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "proposalID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "result",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "name": "quorum",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "active",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x4cea7af04e7093442a4d8d039e7b517557c4787a8cf68f900473c9bf3abfae4c",
+            "caladan:signature": "MembershipChanged(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "MembershipChanged",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "member",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xa439d3fa452be5e0e1e24a8145e715f4fd8b9c08c96a42fd82a855a85e5d57de",
+            "caladan:signature": "ChangeOfRules(uint256,uint256,int256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ChangeOfRules",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "minimumQuorum",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "debatingPeriodInMinutes",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "majorityMargin",
+                    "type": "int256",
+                    "@type": "int256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation/FoundationTipJar"
+                }
+            ]
+        }
+    ]
+}

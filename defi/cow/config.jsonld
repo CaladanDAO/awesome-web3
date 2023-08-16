@@ -1,0 +1,3585 @@
+{
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
+    },
+    "@id": "caladan:awesome-web3/defi/cow",
+    "@type": "caladan:Project",
+    "caladan:name": "cow",
+    "caladan:dataset": "defi",
+    "caladan:contracts": [
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/cow/GPv2AllowListAuthentication",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/GPv2AllowListAuthentication",
+                    "evm:chainID": 1,
+                    "evm:address": "0x2c4c28ddbdac9c5e7055b4c863b72ea0149d8afe"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/cow/TokenDistro",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/TokenDistro",
+                    "evm:chainID": 1,
+                    "evm:address": "0x68ffaac7a431f276fe73604c127bd78e49070c92"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement",
+                    "evm:chainID": 1,
+                    "evm:address": "0x9008d19f58aabd9ed0d60971565aa8510560ab41"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2AllowListAuthentication",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2AllowListAuthentication",
+                    "evm:chainID": 1,
+                    "evm:address": "0x9e7ae8bdba9aa346739792d219a808884996db67"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/cow/GnosisSafe",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/GnosisSafe",
+                    "evm:chainID": 1,
+                    "evm:address": "0xa1cb7762f40318ee0260f53e15de835ff001cb7e"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2VaultRelayer",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2VaultRelayer",
+                    "evm:chainID": 1,
+                    "evm:address": "0xc92e8bdf79f0507f65a392b0ab4667716bfe0110"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)",
+                    "evm:chainID": 1,
+                    "evm:address": "0xd057b63f5e69cf1b929b356b579cba08d7688048"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)",
+            "@type": "caladan:Contract",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)",
+                    "evm:chainID": 1,
+                    "evm:address": "0xdef1ca1fb7fbcdc777520aa7f396b4e015f497ab"
+                }
+            ]
+        }
+    ],
+    "caladan:abi": [
+        {
+            "@id": "0xf4cdf172cc7506b91d98e0359a5c279763d5b96961955aeb2ee09387c4f1d047",
+            "caladan:signature": "0(address,address,bytes)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "payable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "implementationAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "ownerAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/GPv2AllowListAuthentication"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/TokenDistro"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "caladan:signature": "OwnershipTransferred(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnershipTransferred",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/GPv2AllowListAuthentication"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5570d70a002632a7b0b3c9304cc89efb62d8da9eca0dbd7752c83b7379068296",
+            "caladan:signature": "ProxyImplementationUpdated(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ProxyImplementationUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/GPv2AllowListAuthentication"
+                }
+            ]
+        },
+        {
+            "@id": "0x8da5cb5b",
+            "caladan:signature": "owner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "owner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/GPv2AllowListAuthentication"
+                }
+            ]
+        },
+        {
+            "@id": "0x01ffc9a7",
+            "caladan:signature": "supportsInterface(bytes4)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "supportsInterface",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "id",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/GPv2AllowListAuthentication"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2fde38b",
+            "caladan:signature": "transferOwnership(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferOwnership",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/GPv2AllowListAuthentication"
+                }
+            ]
+        },
+        {
+            "@id": "0x3659cfe6",
+            "caladan:signature": "upgradeTo(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "upgradeTo",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/GPv2AllowListAuthentication"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/TokenDistro"
+                }
+            ]
+        },
+        {
+            "@id": "0x4f1ef286",
+            "caladan:signature": "upgradeToAndCall(address,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "upgradeToAndCall",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/GPv2AllowListAuthentication"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/TokenDistro"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f",
+            "caladan:signature": "AdminChanged(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AdminChanged",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "previousAdmin",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newAdmin",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/TokenDistro"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x1cf3b03a6cf19fa2baba4df148e9dcabedea7f8a5c07840e207e5c089be95d3e",
+            "caladan:signature": "BeaconUpgraded(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "BeaconUpgraded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "beacon",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/TokenDistro"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b",
+            "caladan:signature": "Upgraded(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Upgraded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/TokenDistro"
+                }
+            ]
+        },
+        {
+            "@id": "0xf851a440",
+            "caladan:signature": "admin()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "admin",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "admin_",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/TokenDistro"
+                }
+            ]
+        },
+        {
+            "@id": "0x8f283970",
+            "caladan:signature": "changeAdmin(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "changeAdmin",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newAdmin",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/TokenDistro"
+                }
+            ]
+        },
+        {
+            "@id": "0x5c60da1b",
+            "caladan:signature": "implementation()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "implementation",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "implementation_",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/TokenDistro"
+                }
+            ]
+        },
+        {
+            "@id": "0x517d5955ce3c06eaf11438c03b573c37bc6bb235d0463c05b34c209023925f19",
+            "caladan:signature": "0(address,address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "contract GPv2Authentication",
+                    "name": "authenticator_",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "contract IVault",
+                    "name": "vault_",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xed99827efb37016f2275f98c4bcf71c7551c75d59e9b450f79fa32e60be672c2",
+            "caladan:signature": "Interaction(address,uint256,bytes4)",
+            "@type": "caladan:Event",
+            "caladan:name": "Interaction",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes4",
+                    "name": "selector",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x875b6cb035bbd4ac6500fabc6d1e4ca5bdc58a3e2b424ccb5c24cdbebeb009a9",
+            "caladan:signature": "OrderInvalidated(address,bytes)",
+            "@type": "caladan:Event",
+            "caladan:name": "OrderInvalidated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "orderUid",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x01bf7c8b0ca55deecbea89d7e58295b7ffbf685fd0d96801034ba8c6ffe1c68d",
+            "caladan:signature": "PreSignature(address,bytes,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "PreSignature",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "orderUid",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "signed",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x40338ce1a7c49204f0099533b1e9a7ee0a3d261f84974ab7af36105b8c4e9db4",
+            "caladan:signature": "Settlement(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Settlement",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "solver",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xa07a543ab8a018198e99ca0184c93fe9050a79400a0a723441f84de1d972cc17",
+            "caladan:signature": "Trade(address,address,address,uint256,uint256,uint256,bytes)",
+            "@type": "caladan:Event",
+            "caladan:name": "Trade",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "contract IERC20",
+                    "name": "sellToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "contract IERC20",
+                    "name": "buyToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "sellAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "buyAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "feeAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "orderUid",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "@id": "0x2335c76b",
+            "caladan:signature": "authenticator()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "authenticator",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract GPv2Authentication",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "@id": "0xf698da25",
+            "caladan:signature": "domainSeparator()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "domainSeparator",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "@id": "0x2479fb6e",
+            "caladan:signature": "filledAmount(bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "filledAmount",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "@id": "0xed9f35ce",
+            "caladan:signature": "freeFilledAmountStorage(bytes[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "freeFilledAmountStorage",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes[]",
+                    "name": "orderUids",
+                    "type": "bytes[]",
+                    "@type": "bytes[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "@id": "0xa2a7d51b",
+            "caladan:signature": "freePreSignatureStorage(bytes[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "freePreSignatureStorage",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes[]",
+                    "name": "orderUids",
+                    "type": "bytes[]",
+                    "@type": "bytes[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "@id": "0x5624b25b",
+            "caladan:signature": "getStorageAt(uint256,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getStorageAt",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "offset",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "length",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2AllowListAuthentication"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x15337bc0",
+            "caladan:signature": "invalidateOrder(bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "invalidateOrder",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "orderUid",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "@id": "0xd08d33d1",
+            "caladan:signature": "preSignature(bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "preSignature",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "@id": "0xec6cb13f",
+            "caladan:signature": "setPreSignature(bytes,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setPreSignature",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "orderUid",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "signed",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "@id": "0x3f20acba",
+            "caladan:signature": "settle(address[],uint256[],(uint256,uint256,address,uint256,uint256,uint32,bytes32,uint256,uint256,uint256,bytes)[],(address,uint256,bytes))",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "settle",
+            "caladan:inputs": [
+                {
+                    "internalType": "contract IERC20[]",
+                    "name": "tokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "clearingPrices",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "sellTokenIndex",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "buyTokenIndex",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "receiver",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "sellAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "buyAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint32",
+                            "name": "validTo",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "appData",
+                            "type": "bytes32"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "feeAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "flags",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "executedAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bytes",
+                            "name": "signature",
+                            "type": "bytes"
+                        }
+                    ],
+                    "internalType": "struct GPv2Trade.Data[]",
+                    "name": "trades",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "target",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "value",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bytes",
+                            "name": "callData",
+                            "type": "bytes"
+                        }
+                    ],
+                    "internalType": "struct GPv2Interaction.Data[][3]",
+                    "name": "interactions",
+                    "type": "tuple[][3]",
+                    "@type": "tuple[][3]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "@id": "0xf84436bd",
+            "caladan:signature": "simulateDelegatecall(address,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "simulateDelegatecall",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "targetContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "calldataPayload",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "response",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2AllowListAuthentication"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x43218e19",
+            "caladan:signature": "simulateDelegatecallInternal(address,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "simulateDelegatecallInternal",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "targetContract",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "calldataPayload",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "response",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2AllowListAuthentication"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x845a101f",
+            "caladan:signature": "swap((bytes32,uint256,uint256,uint256,bytes)[],address[],(uint256,uint256,address,uint256,uint256,uint32,bytes32,uint256,uint256,uint256,bytes))",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "swap",
+            "caladan:inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "bytes32",
+                            "name": "poolId",
+                            "type": "bytes32"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "assetInIndex",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "assetOutIndex",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bytes",
+                            "name": "userData",
+                            "type": "bytes"
+                        }
+                    ],
+                    "internalType": "struct IVault.BatchSwapStep[]",
+                    "name": "swaps",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                },
+                {
+                    "internalType": "contract IERC20[]",
+                    "name": "tokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "sellTokenIndex",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "buyTokenIndex",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "receiver",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "sellAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "buyAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint32",
+                            "name": "validTo",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "appData",
+                            "type": "bytes32"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "feeAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "flags",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "executedAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bytes",
+                            "name": "signature",
+                            "type": "bytes"
+                        }
+                    ],
+                    "internalType": "struct GPv2Trade.Data",
+                    "name": "trade",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "@id": "0xfbfa77cf",
+            "caladan:signature": "vault()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "vault",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract IVault",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "@id": "0x9b552cc2",
+            "caladan:signature": "vaultRelayer()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "vaultRelayer",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract GPv2VaultRelayer",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2Settlement"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x605c2dbf762e5f7d60a546d42e7205dcb1b011ebc62a61736a57c9089d3a4350",
+            "caladan:signature": "ManagerChanged(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ManagerChanged",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newManager",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "oldManager",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2AllowListAuthentication"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x41f9d09dd5159251f8a8e482bbe097b7c01a5e6f70c5a0ddb494906464fc9dd7",
+            "caladan:signature": "SolverAdded(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SolverAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "solver",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2AllowListAuthentication"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x640e18a2587e1d83e4fdabf70257d0a800ca4b2c1aaad1dfc485a4ad8bbbd6c6",
+            "caladan:signature": "SolverRemoved(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "SolverRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "solver",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2AllowListAuthentication"
+                }
+            ]
+        },
+        {
+            "@id": "0xec58f4b8",
+            "caladan:signature": "addSolver(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addSolver",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "solver",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2AllowListAuthentication"
+                }
+            ]
+        },
+        {
+            "@id": "0x7f7120fe",
+            "caladan:signature": "initializeManager(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "initializeManager",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "manager_",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2AllowListAuthentication"
+                }
+            ]
+        },
+        {
+            "@id": "0x02cc250d",
+            "caladan:signature": "isSolver(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isSolver",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "prospectiveSolver",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2AllowListAuthentication"
+                }
+            ]
+        },
+        {
+            "@id": "0x481c6a75",
+            "caladan:signature": "manager()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "manager",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2AllowListAuthentication"
+                }
+            ]
+        },
+        {
+            "@id": "0x8fd57b92",
+            "caladan:signature": "removeSolver(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeSolver",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "solver",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2AllowListAuthentication"
+                }
+            ]
+        },
+        {
+            "@id": "0xd0ebdbe7",
+            "caladan:signature": "setManager(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "setManager",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "manager_",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2AllowListAuthentication"
+                }
+            ]
+        },
+        {
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "caladan:signature": "0(address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_singleton",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/GnosisSafe"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2VaultRelayer"
+                }
+            ]
+        },
+        {
+            "@id": "0x4817a286",
+            "caladan:signature": "batchSwapWithFee(uint8,(bytes32,uint256,uint256,uint256,bytes)[],address[],(address,bool,address,bool),int256[],uint256,(address,address,uint256,bytes32))",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "batchSwapWithFee",
+            "caladan:inputs": [
+                {
+                    "internalType": "enum IVault.SwapKind",
+                    "name": "kind",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "bytes32",
+                            "name": "poolId",
+                            "type": "bytes32"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "assetInIndex",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "assetOutIndex",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bytes",
+                            "name": "userData",
+                            "type": "bytes"
+                        }
+                    ],
+                    "internalType": "struct IVault.BatchSwapStep[]",
+                    "name": "swaps",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                },
+                {
+                    "internalType": "contract IERC20[]",
+                    "name": "tokens",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "sender",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "fromInternalBalance",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "address payable",
+                            "name": "recipient",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "toInternalBalance",
+                            "type": "bool"
+                        }
+                    ],
+                    "internalType": "struct IVault.FundManagement",
+                    "name": "funds",
+                    "type": "tuple",
+                    "@type": "tuple"
+                },
+                {
+                    "internalType": "int256[]",
+                    "name": "limits",
+                    "type": "int256[]",
+                    "@type": "int256[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "account",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "contract IERC20",
+                            "name": "token",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "balance",
+                            "type": "bytes32"
+                        }
+                    ],
+                    "internalType": "struct GPv2Transfer.Data",
+                    "name": "feeTransfer",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "int256[]",
+                    "name": "tokenDeltas",
+                    "type": "int256[]",
+                    "@type": "int256[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2VaultRelayer"
+                }
+            ]
+        },
+        {
+            "@id": "0x7d10d11f",
+            "caladan:signature": "transferFromAccounts((address,address,uint256,bytes32)[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferFromAccounts",
+            "caladan:inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "account",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "contract IERC20",
+                            "name": "token",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "balance",
+                            "type": "bytes32"
+                        }
+                    ],
+                    "internalType": "struct GPv2Transfer.Data[]",
+                    "name": "transfers",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol: GPv2VaultRelayer"
+                }
+            ]
+        },
+        {
+            "@id": "0x1631d9daaf5bbb499a927bf554034de2009a3d4903a61bbdcb1e78ed681172ff",
+            "caladan:signature": "0(bytes32,address,address,address,address,uint256,address,uint256,address,uint256,address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "merkleRoot",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "cowToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "communityFundsTarget",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "investorFundsTarget",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "usdcToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "usdcPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "gnoToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "gnoPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "wrappedNativeToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "nativeTokenPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "teamController",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x646cf558a545d59f8a09cbf8a0eb8a9332f1d17834843b20fc8d154839dc46d7",
+            "caladan:signature": "AlreadyClaimed()",
+            "@type": "caladan:Event",
+            "caladan:name": "AlreadyClaimed",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x79ef7d072febb811f828ba45719965911f8d6eea4ec31c53cafd9125243e7e52",
+            "caladan:signature": "CannotSendNativeToken()",
+            "@type": "caladan:Event",
+            "caladan:name": "CannotSendNativeToken",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xf7704cc27a66d00574cb8a2c92646760dc2edcbc14dbdf45e1eaffd35d542171",
+            "caladan:signature": "ClaimingExpired()",
+            "@type": "caladan:Event",
+            "caladan:name": "ClaimingExpired",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x28de1fc90020ac7d53b5a5595224b9d4b9ddd4455a9fba250d9c5c9a9de828d1",
+            "caladan:signature": "ClaimingMoreThanMaximum()",
+            "@type": "caladan:Event",
+            "caladan:name": "ClaimingMoreThanMaximum",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x68a36fef59e544f4198558ccc78d7c488f4ce029dee7024111a9365db1eeac9f",
+            "caladan:signature": "FailedNativeTokenTransfer()",
+            "@type": "caladan:Event",
+            "caladan:name": "FailedNativeTokenTransfer",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x27eb4d5c062ae6b2e988248138b092e53563cbb9a1f89efe2d0c50b1699409fe",
+            "caladan:signature": "InvalidNativeTokenAmount()",
+            "@type": "caladan:Event",
+            "caladan:name": "InvalidNativeTokenAmount",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x46459bbd8a2128cfcf7c39e596be137990d95a06d31446de80630f1376ba18cf",
+            "caladan:signature": "InvalidNativeTokenValue()",
+            "@type": "caladan:Event",
+            "caladan:name": "InvalidNativeTokenValue",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x09bde339c6b182be216ee7ef8ccff6338c6ef7993445216112ae575c5438fd27",
+            "caladan:signature": "InvalidProof()",
+            "@type": "caladan:Event",
+            "caladan:name": "InvalidProof",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xa0387940506ad6b4247ae99fe3bb6dfaf665d17be449843a7c5ae65e7f0ff572",
+            "caladan:signature": "NotSupported()",
+            "@type": "caladan:Event",
+            "caladan:name": "NotSupported",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xb052d0e9aace742aefda9751947dbd3e916a7dfc417e78cbe32d6902175b8e6b",
+            "caladan:signature": "OnlyOwnerCanClaimPartially()",
+            "@type": "caladan:Event",
+            "caladan:name": "OnlyOwnerCanClaimPartially",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x1f78defd5c37396ecd512d09d5f707be320dee3372d280969fadab68f4596e6b",
+            "caladan:signature": "OnlyTeamController()",
+            "@type": "caladan:Event",
+            "caladan:name": "OnlyTeamController",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xd5cd510055d709ed3d945f0bce1a89edd0d3571fab1c154924e07c04ec0a5730",
+            "caladan:signature": "VestingNotCancelable()",
+            "@type": "caladan:Event",
+            "caladan:name": "VestingNotCancelable",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "caladan:signature": "Approval(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Approval",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd436e9973d1e44d40db4d4119e3c773cadb1323b263981968c14d3d191c0e148",
+            "caladan:signature": "Claimed(uint256,uint8,address,uint256,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Claimed",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum ClaimingInterface.ClaimType",
+                    "name": "claimType",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "claimant",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "claimableAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "claimedAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "caladan:signature": "Transfer(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Transfer",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x00d5958799b183a7b738d3ad5e711305293dd5076a37a4e3b7e6611dea6114f3",
+            "caladan:signature": "Vested(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Vested",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x9534c146324716c0538375208553c94318368250a36a4832f663bea2f3351fd3",
+            "caladan:signature": "VestingAdded(address,uint256,bool)",
+            "@type": "caladan:Event",
+            "caladan:name": "VestingAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isCancelable",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xcc22011f6028a0d1d9fcbfa015dec953b2bc08df296d28d2a6407b8fcf9c6c82",
+            "caladan:signature": "VestingStopped(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "VestingStopped",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "freedVestingBeneficiary",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xbe1ae6f9",
+            "caladan:signature": "VESTING_PERIOD_IN_SECONDS()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "VESTING_PERIOD_IN_SECONDS",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xdd62ed3e",
+            "caladan:signature": "allowance(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "allowance",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x095ea7b3",
+            "caladan:signature": "approve(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "approve",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x70a08231",
+            "caladan:signature": "balanceOf(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "balanceOf",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x9519f828",
+            "caladan:signature": "claim(uint256,uint8,address,uint256,uint256,bytes32[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "claim",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "enum ClaimingInterface.ClaimType",
+                    "name": "claimType",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "address",
+                    "name": "claimant",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "claimableAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "claimedAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes32[]",
+                    "name": "merkleProof",
+                    "type": "bytes32[]",
+                    "@type": "bytes32[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xf3507dab",
+            "caladan:signature": "claimMany(uint256[],uint8[],address[],uint256[],uint256[],bytes32[][],uint256[])",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "claimMany",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "indices",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "enum ClaimingInterface.ClaimType[]",
+                    "name": "claimTypes",
+                    "type": "uint8[]",
+                    "@type": "uint8[]"
+                },
+                {
+                    "internalType": "address[]",
+                    "name": "claimants",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "claimableAmounts",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "claimedAmounts",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "bytes32[][]",
+                    "name": "merkleProofs",
+                    "type": "bytes32[][]",
+                    "@type": "bytes32[][]"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "sentNativeTokens",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xe4a0ddf7",
+            "caladan:signature": "communityFundsTarget()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "communityFundsTarget",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x8cd8e8d2",
+            "caladan:signature": "cowToken()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "cowToken",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract IERC20",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xacaf21f7",
+            "caladan:signature": "cumulativeVestedBalance(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "cumulativeVestedBalance",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x313ce567",
+            "caladan:signature": "decimals()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "decimals",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xbfc12c05",
+            "caladan:signature": "deploymentTimestamp()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "deploymentTimestamp",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x1051e84f",
+            "caladan:signature": "fullAllocation(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "fullAllocation",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xbcfffb68",
+            "caladan:signature": "gnoPrice()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "gnoPrice",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xc61f2184",
+            "caladan:signature": "gnoToken()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "gnoToken",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract IERC20",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xb79b3713",
+            "caladan:signature": "instantlySwappableBalance(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "instantlySwappableBalance",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xb1d882eb",
+            "caladan:signature": "investorFundsTarget()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "investorFundsTarget",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xffd93cd5",
+            "caladan:signature": "isCancelable(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isCancelable",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x9e34070f",
+            "caladan:signature": "isClaimed(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isClaimed",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x2eb4a7ab",
+            "caladan:signature": "merkleRoot()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "merkleRoot",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x06fdde03",
+            "caladan:signature": "name()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "name",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x332572c4",
+            "caladan:signature": "nativeTokenPrice()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "nativeTokenPrice",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x68700028",
+            "caladan:signature": "newlyVestedBalance(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "newlyVestedBalance",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xb7d1d98e",
+            "caladan:signature": "stopClaim(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "stopClaim",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x94b918de",
+            "caladan:signature": "swap(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "swap",
+            "caladan:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x3e9ffbea",
+            "caladan:signature": "swapAll()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "swapAll",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "swappedBalance",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x0ca9279c",
+            "caladan:signature": "swappableBalanceOf(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "swappableBalanceOf",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x95d89b41",
+            "caladan:signature": "symbol()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "symbol",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x26f3acae",
+            "caladan:signature": "teamController()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "teamController",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x18160ddd",
+            "caladan:signature": "totalSupply()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "totalSupply",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xa9059cbb",
+            "caladan:signature": "transfer(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "transfer",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x23b872dd",
+            "caladan:signature": "transferFrom(address,address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "transferFrom",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xdacee347",
+            "caladan:signature": "usdcPrice()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "usdcPrice",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x11eac855",
+            "caladan:signature": "usdcToken()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "usdcToken",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract IERC20",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xa2a626f8",
+            "caladan:signature": "vestedAllocation(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "vestedAllocation",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x254800d4",
+            "caladan:signature": "vestingStart()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "vestingStart",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xa0ef91df",
+            "caladan:signature": "withdrawEth()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "withdrawEth",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x17fcb39b",
+            "caladan:signature": "wrappedNativeToken()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "wrappedNativeToken",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "contract IERC20",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (vCOW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xee3b5c9a779a6cdfba7317e181cb6efe8b42ac09d64ab387bbb36e8228c2594b",
+            "caladan:signature": "0(address,address,uint256)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "initialTokenHolder",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "cowDao",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "totalSupply",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x7b064715f32b24ab56df9e0f33301ff4c2291178e00ede41b1c80acb8acfeffc",
+            "caladan:signature": "AlreadyInflated()",
+            "@type": "caladan:Event",
+            "caladan:name": "AlreadyInflated",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x2c6af20854e9983471f0fe2913d9e14202663b60c9a441d2d13e769fcc4988ef",
+            "caladan:signature": "ExceedingMintCap()",
+            "@type": "caladan:Event",
+            "caladan:name": "ExceedingMintCap",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xfe72c36e8b0bb0ea0bbfca7d2dc88ceb8831d9ca20d92e357fc2578a3157bf69",
+            "caladan:signature": "OnlyCowDao()",
+            "@type": "caladan:Event",
+            "caladan:name": "OnlyCowDao",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x3644e515",
+            "caladan:signature": "DOMAIN_SEPARATOR()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "DOMAIN_SEPARATOR",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x5862bf3d",
+            "caladan:signature": "MAX_YEARLY_INFLATION()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "MAX_YEARLY_INFLATION",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xcd42dcbe",
+            "caladan:signature": "TIME_BETWEEN_MINTINGS()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "TIME_BETWEEN_MINTINGS",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xe2d51489",
+            "caladan:signature": "cowDao()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "cowDao",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xa457c2d7",
+            "caladan:signature": "decreaseAllowance(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "decreaseAllowance",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "subtractedValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x39509351",
+            "caladan:signature": "increaseAllowance(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "increaseAllowance",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "addedValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x40c10f19",
+            "caladan:signature": "mint(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "mint",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0x7ecebe00",
+            "caladan:signature": "nonces(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "nonces",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xd505accf",
+            "caladan:signature": "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "permit",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "v",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "r",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "s",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        },
+        {
+            "@id": "0xfde9e07a",
+            "caladan:signature": "timestampLastMinting()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "timestampLastMinting",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/cow/CoW Protocol...  (COW)"
+                }
+            ]
+        }
+    ]
+}
