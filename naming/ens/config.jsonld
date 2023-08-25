@@ -1528,6 +1528,7 @@
             "@id": "0x69e37f151eb98a09618ddaa80c8cfaf1ce5996867c489f45b555b412271ebf27",
             "caladan:signature": "NameRegistered(string,bytes32,address,uint256,uint256,uint256)",
             "@type": "caladan:Event",
+            "caladan:indexed": true,
             "caladan:name": "NameRegistered",
             "caladan:inputs": [
                 {
@@ -2109,6 +2110,7 @@
             "@id": "0xacf1a841",
             "caladan:signature": "renew(string,uint256)",
             "@type": "caladan:Function",
+            "caladan:indexed": true,
             "evm:stateMutability": "payable",
             "caladan:name": "renew",
             "caladan:inputs": [
@@ -4405,6 +4407,7 @@
             "caladan:signature": "TextChanged(bytes32,string,string)",
             "@type": "caladan:Event",
             "caladan:name": "TextChanged",
+	    "caladan:indexed": true,
             "caladan:inputs": [
                 {
                     "indexed": true,
@@ -5931,6 +5934,7 @@
             "payable": false,
             "@id": "0x28ed4f6c",
             "caladan:signature": "reclaim(uint256,address)",
+            "caladan:indexed": true,
             "@type": "caladan:Function",
             "evm:stateMutability": "nonpayable",
             "caladan:name": "reclaim",

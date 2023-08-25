@@ -1,9 +1,33 @@
 {
-    "@context": {
-        "@vocab": "http://caladandao.org/vocab",
-        "caladan": "http://caladandao.org/caladan/",
-        "evm": "http://caladandao.org/"
+    "@context": [
+     {
+        "caladan": "https://raw.githubusercontent.com/CaladanDAO/awesome-web3/dev/",
+        "Contracts": "http://ethon.consensys.net/Contracts",
+        "fungible": "http://caladandao.org/ethereum/tokens/fungible",
+        "erc20": "http://caladandao.org/ethereum/tokens/erc20",
+        "assets": "http://caladandao.org/assets",
+	"transfer": "http://caladandao.org/concepts/transfer",
+	"approve": "http://caladandao.org/concepts/approve",
+	"mint": "http://caladandao.org/concepts/mint",
+	"burn": "http://caladandao.org/concepts/burn"
     },
+    {
+        "@vocab": "transfer:",
+	"sender": "transfer:sender",
+	"receiver": "transfer:receiver",
+	"amount": "transfer:fungibleamount"
+    },
+    {
+        "@vocab": "erc20:",
+	"symbol": "erc20:symbol",
+	"tokenAddress": "erc20:tokenAddress"
+    },
+    {   "@vocab": "evm:",
+        "evm": "http://caladandao.org/",
+	"chainID": "evm:chainID",
+	"address": "evm:addresschainID"
+    }
+    ],
     "@id": "caladan:awesome-web3/defi/uniswap",
     "@type": "caladan:Project",
     "caladan:name": "uniswap",
@@ -153,7 +177,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/GnosisSafe",
+		    "@id": "CaladanDAO/awesome-web3/defi/uniswap/GnosisSafe",
                     "evm:chainID": 1,
                     "evm:address": "0xe571dc7a558bb6d68ffe264c3d7bb98b0c6c73fc"
                 }
@@ -556,6 +580,7 @@
             "@id": "0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822",
             "caladan:signature": "Swap(address,uint256,uint256,uint256,uint256,address)",
             "@type": "caladan:Event",
+            "caladan:indexed": true,
             "caladan:name": "Swap",
             "caladan:inputs": [
                 {
@@ -563,42 +588,68 @@
                     "internalType": "address",
                     "name": "sender",
                     "type": "address",
-                    "@type": "address"
+		    "refersTo": "http://caladandao.org/concepts/swapv3#sender",
+		    "@type": "ethereum:address"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
                     "name": "amount0In",
                     "type": "uint256",
-                    "@type": "uint256"
+		    "currency": {
+		        "@type": "ethereum:erc20",
+			"@id": "transfer:erc20",
+			"refersTo": "http://caladandao.org/concepts/swapv2#token0"
+		    },
+		    "refersTo": "http://caladandao.org/concepts/swapv2#amount0In",
+                    "@type": "schema:MonetaryAmount"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
                     "name": "amount1In",
                     "type": "uint256",
-                    "@type": "uint256"
+		    "currency": {
+		        "@type": "ethereum:erc20",
+			"@id": "transfer:erc20",
+			"refersTo": "http://caladandao.org/concepts/swapv2#token1"
+		    },
+		    "refersTo": "http://caladandao.org/concepts/swapv2#amount1In",
+                    "@type": "schema:MonetaryAmount"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
                     "name": "amount0Out",
                     "type": "uint256",
-                    "@type": "uint256"
+		    "currency": {
+		        "@type": "ethereum:erc20",
+			"@id": "transfer:erc20",
+			"refersTo": "http://caladandao.org/concepts/swapv2#token0"
+		    },
+		    "refersTo": "http://caladandao.org/concepts/swapv2#amount0Out",
+                    "@type": "schema:MonetaryAmount"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
                     "name": "amount1Out",
                     "type": "uint256",
-                    "@type": "uint256"
+		    "currency": {
+		        "@type": "ethereum:erc20",
+			"@id": "transfer:erc20",
+			"refersTo": "http://caladandao.org/concepts/swapv2#token1"
+		    },
+		    "refersTo": "http://caladandao.org/concepts/swapv2#amount1Out",
+                    "@type": "schema:MonetaryAmount"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
                     "name": "to",
                     "type": "address",
-                    "@type": "address"
+		    "refersTo": "http://caladandao.org/concepts/swapv2#recipient",
+		    "@type": "ethereum:address"
                 }
             ],
             "caladan:deployments": [
@@ -614,6 +665,7 @@
             "caladan:signature": "Sync(uint112,uint112)",
             "@type": "caladan:Event",
             "caladan:name": "Sync",
+            "caladan:indexed": true,
             "caladan:inputs": [
                 {
                     "indexed": false,
@@ -637,7 +689,7 @@
                 }
             ]
         },
-        {
+	{
             "anonymous": false,
             "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
             "caladan:signature": "Transfer(address,address,uint256)",
@@ -645,25 +697,36 @@
             "caladan:name": "Transfer",
             "caladan:inputs": [
                 {
-                    "indexed": true,
+		    "@type": "ethereum:address",
+		    "@id": "transfer:sender",
+		    "indexed": true,
                     "internalType": "address",
                     "name": "from",
                     "type": "address",
-                    "@type": "address"
+		    "refersTo": "http://caladandao.org/concepts/transfer#sender"
                 },
                 {
+		    "@type": "ethereum:address",
+		    "@id": "transfer:receiver",
                     "indexed": true,
                     "internalType": "address",
                     "name": "to",
                     "type": "address",
-                    "@type": "address"
+		    "refersTo": "http://caladandao.org/concepts/transfer#receiver"
                 },
                 {
+                    "@type": "schema:MonetaryAmount",
+		    "@id": "transfer:amount",
                     "indexed": false,
                     "internalType": "uint256",
                     "name": "value",
                     "type": "uint256",
-                    "@type": "uint256"
+		    "currency": {
+		        "@type": "ethereum:erc20",
+			"@id": "transfer:erc20",
+			"refersTo": "http://caladandao.org/concepts/transfer#erc20"
+		    },
+		    "refersTo": "http://caladandao.org/concepts/transfer#amount"
                 }
             ],
             "caladan:deployments": [
@@ -4554,29 +4617,35 @@
             "anonymous": false,
             "@id": "0x0d3648bd0f6ba80134a33ba9275ac585d9d315f0ad8355cddefde31afa28d0e9",
             "caladan:signature": "PairCreated(address,address,address,uint256)",
-            "@type": "caladan:Event",
+            "@type": "caladan:CreationEvent",
             "caladan:name": "PairCreated",
+	    "creator": {
+		"@id": "Ethereum:Contract"
+	    },
+	    "created": {
+		"@id": "#pair"
+	    },
             "caladan:inputs": [
                 {
                     "indexed": true,
                     "internalType": "address",
                     "name": "token0",
                     "type": "address",
-                    "@type": "address"
+                    "@type": "ethereum:erc20"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
                     "name": "token1",
                     "type": "address",
-                    "@type": "address"
+                    "@type": "ethereum:erc20"
                 },
                 {
                     "indexed": false,
                     "internalType": "address",
                     "name": "pair",
                     "type": "address",
-                    "@type": "address"
+                    "@type": "CaladanDAO/awesome-web3/defi/uniswap/UniswapV2Pair"
                 },
                 {
                     "indexed": false,
@@ -9671,49 +9740,64 @@
                     "internalType": "address",
                     "name": "sender",
                     "type": "address",
-                    "@type": "address"
+		    "refersTo": "http://caladandao.org/concepts/swapv3#sender",
+		    "@type": "ethereum:address"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
                     "name": "recipient",
                     "type": "address",
-                    "@type": "address"
+		    "refersTo": "http://caladandao.org/concepts/swapv3#recipient",
+		    "@type": "ethereum:address"
                 },
                 {
                     "indexed": false,
                     "internalType": "int256",
                     "name": "amount0",
                     "type": "int256",
-                    "@type": "int256"
+		    "currency": {
+		        "@type": "ethereum:erc20",
+			"@id": "transfer:erc20",
+			"refersTo": "http://caladandao.org/concepts/swapv3#token0"
+		    },
+		    "refersTo": "http://caladandao.org/concepts/swapv3#amount0",
+                    "@type": "schema:MonetaryAmount"
                 },
                 {
                     "indexed": false,
                     "internalType": "int256",
                     "name": "amount1",
                     "type": "int256",
-                    "@type": "int256"
+		    "currency": {
+		        "@type": "ethereum:erc20",
+			"@id": "transfer:erc20",
+			"refersTo": "http://caladandao.org/concepts/swapv3#token1"
+		    },
+		    "refersTo": "http://caladandao.org/concepts/swapv3#amount1",
+                    "@type": "schema:MonetaryAmount"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint160",
                     "name": "sqrtPriceX96",
                     "type": "uint160",
-                    "@type": "uint160"
+		    "refersTo": "http://caladandao.org/concepts/swapv3#x96",
+                    "@type": "swapv3:x96"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint128",
                     "name": "liquidity",
                     "type": "uint128",
-                    "@type": "uint128"
+                    "@type": "swap3:liquidity"
                 },
                 {
                     "indexed": false,
                     "internalType": "int24",
                     "name": "tick",
                     "type": "int24",
-                    "@type": "int24"
+                    "@type": "swapv3:tick"
                 }
             ],
             "caladan:deployments": [

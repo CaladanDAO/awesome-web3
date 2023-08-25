@@ -162,6 +162,7 @@
             "@id": "0x58200b4c34ae05ee816d710053fff3fb75af4395915d3d2a771b24aa10e3cc5d",
             "caladan:signature": "MessageReceived(address,uint32,uint64,bytes32,bytes)",
             "@type": "caladan:Event",
+            "caladan:indexed": true,
             "caladan:name": "MessageReceived",
             "caladan:inputs": [
                 {
@@ -724,6 +725,7 @@
             "@type": "caladan:Function",
             "evm:stateMutability": "nonpayable",
             "caladan:name": "receiveMessage",
+	    "caladan:indexed": true,
             "caladan:inputs": [
                 {
                     "internalType": "bytes",

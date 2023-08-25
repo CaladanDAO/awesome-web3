@@ -1,0 +1,44 @@
+#!/usr/bin/env node
+var Analytics = require("./analytics.js");
+const {
+    Command,
+    InvalidArgumentError
+} = require('commander');
+
+async function main() {
+    let cli_version = '1.0.0'
+    const program = new Command();
+
+    program
+        .name('analytics')
+        .description('Caladan DAO Analytics')
+        .version(`${cli_version}`);
+
+    program.command('generatelogs')
+        .option('-d, --dry', `Dry run`, false)
+        .action(async (opt) => {
+            let analytics = new Analytics()
+	    await analytics.generatelogs();
+            process.exit(0);
+        });
+
+    program.command('parse')
+        .option('-d, --dry', `Dry run`, false)
+        .action(async (opt) => {
+            let analytics = new Analytics()
+	    await analytics.parse();
+            process.exit(0);
+        });
+
+    await program.parseAsync(process.argv);
+}
+
+
+main()
+    .then(() => {
+        // do not process.exit(0) here
+    })
+    .catch((e) => {
+        console.error('ERROR', e);
+        process.exit(1);
+    });
