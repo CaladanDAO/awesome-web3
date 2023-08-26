@@ -1,0 +1,41 @@
+name: Analytic Log Generation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/deploy.yml
+      - src/analytics
+#  schedule:
+#    - cron: '*/10 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      PROJECT_ID: awesome-web3
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        node-version: [17.x]
+
+    steps:
+      - name: Authenticate GCP  
+        uses: google-github-actions/setup-gcloud@v0
+        with:
+        service_account_key: ${{secrets.GCP_SERVICE_ACCOUNT_KEY }}
+        project_id: ${{env.PROJECT_ID}}
+
+      - name: Install NodeJs 
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: |-
+          cd src/
+          npm install
+
+      - name: Run Application
+        run: ./analytics generatelogs
