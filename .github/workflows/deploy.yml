@@ -3,7 +3,7 @@ name: Analytic Log Generation
 on:
   push:
     branches:
-      - main
+      - dev
     paths:
       - .github/workflows/deploy.yml
       - src/analytics
@@ -24,18 +24,30 @@ jobs:
       - name: Authenticate GCP  
         uses: google-github-actions/setup-gcloud@v0
         with:
-        service_account_key: ${{secrets.GCP_SERVICE_ACCOUNT_KEY }}
-        project_id: ${{env.PROJECT_ID}}
+          service_account_key: ${{secrets.GCP_SERVICE_ACCOUNT_KEY }}
+          project_id: ${{env.PROJECT_ID}}
+
+      - name: Re-clone repository
+        run: git clone https://github.com/CaladanDAO/awesome-web3.git
 
       - name: Install NodeJs 
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Clear npm cache
+        run: npm cache clean --force    
+
       - name: Install dependencies
-        run: |-
-          cd src/
-          npm install
+        run: npm install
+        working-directory: awesome-web3
 
       - name: Run Application
-        run: ./analytics generatelogs
+        env:
+          DB_HOST: ${{ secrets.DB00_CNF_HOST }}
+          DB_USER: ${{ secrets.DB00_CNF_USER }}
+          DB_PASSWORD: ${{ secrets.DB00_CNF_PASSWORD }}
+          DB_NAME: ${{ secrets.DB00_CNF_DB }}
+        run: |-
+          cd awesome-web3/src/
+          ./analytics generatelogs

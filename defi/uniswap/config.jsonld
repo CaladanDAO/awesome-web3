@@ -1,33 +1,9 @@
 {
-    "@context": [
-     {
-        "caladan": "https://raw.githubusercontent.com/CaladanDAO/awesome-web3/dev/",
-        "Contracts": "http://ethon.consensys.net/Contracts",
-        "fungible": "http://caladandao.org/ethereum/tokens/fungible",
-        "erc20": "http://caladandao.org/ethereum/tokens/erc20",
-        "assets": "http://caladandao.org/assets",
-	"transfer": "http://caladandao.org/concepts/transfer",
-	"approve": "http://caladandao.org/concepts/approve",
-	"mint": "http://caladandao.org/concepts/mint",
-	"burn": "http://caladandao.org/concepts/burn"
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/",
+        "evm": "http://caladandao.org/"
     },
-    {
-        "@vocab": "transfer:",
-	"sender": "transfer:sender",
-	"receiver": "transfer:receiver",
-	"amount": "transfer:fungibleamount"
-    },
-    {
-        "@vocab": "erc20:",
-	"symbol": "erc20:symbol",
-	"tokenAddress": "erc20:tokenAddress"
-    },
-    {   "@vocab": "evm:",
-        "evm": "http://caladandao.org/",
-	"chainID": "evm:chainID",
-	"address": "evm:addresschainID"
-    }
-    ],
     "@id": "caladan:awesome-web3/defi/uniswap",
     "@type": "caladan:Project",
     "caladan:name": "uniswap",
@@ -36,6 +12,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/uniswap/MerkleDistributor",
             "@type": "caladan:Contract",
+            "caladan:contractName": "MerkleDistributor",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -48,6 +25,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/uniswap/UniswapV2Pair",
             "@type": "caladan:Contract",
+            "caladan:contractName": "UniswapV2Pair",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -60,6 +38,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/uniswap/Timelock",
             "@type": "caladan:Contract",
+            "caladan:contractName": "Timelock",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -72,6 +51,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/uniswap/UNI",
             "@type": "caladan:Contract",
+            "caladan:contractName": "UNI",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -84,6 +64,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/uniswap/UniswapV3Factory",
             "@type": "caladan:Contract",
+            "caladan:contractName": "UniswapV3Factory",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -94,32 +75,22 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/uniswap/null",
+            "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x3d30b1ab88d487b0f3061f40de76845bec3f1e94_1",
             "@type": "caladan:Contract",
+            "caladan:contractName": "contract_0x3d30b1ab88d487b0f3061f40de76845bec3f1e94_1",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null",
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x3d30b1ab88d487b0f3061f40de76845bec3f1e94_1",
                     "evm:chainID": 1,
                     "evm:address": "0x3d30b1ab88d487b0f3061f40de76845bec3f1e94"
-                },
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null",
-                    "evm:chainID": 1,
-                    "evm:address": "0x4750c43867ef5f89869132eccf19b9b6c4286e1a"
-                },
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null",
-                    "evm:chainID": 1,
-                    "evm:address": "0xe3953d9d317b834592ab58ab2c7a6ad22b54075d"
                 }
             ]
         },
         {
             "@id": "CaladanDAO/awesome-web3/defi/uniswap/UniversalRouterV1_2",
             "@type": "caladan:Contract",
+            "caladan:contractName": "UniversalRouterV1_2",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -130,8 +101,22 @@
             ]
         },
         {
+            "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x4750c43867ef5f89869132eccf19b9b6c4286e1a_1",
+            "@type": "caladan:Contract",
+            "caladan:contractName": "contract_0x4750c43867ef5f89869132eccf19b9b6c4286e1a_1",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x4750c43867ef5f89869132eccf19b9b6c4286e1a_1",
+                    "evm:chainID": 1,
+                    "evm:address": "0x4750c43867ef5f89869132eccf19b9b6c4286e1a"
+                }
+            ]
+        },
+        {
             "@id": "CaladanDAO/awesome-web3/defi/uniswap/TreasuryVester",
             "@type": "caladan:Contract",
+            "caladan:contractName": "TreasuryVester",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -144,6 +129,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/uniswap/UniswapV2Factory",
             "@type": "caladan:Contract",
+            "caladan:contractName": "UniswapV2Factory",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -156,6 +142,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/uniswap/UniswapV2Router02",
             "@type": "caladan:Contract",
+            "caladan:contractName": "UniswapV2Router02",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -168,6 +155,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/uniswap/GnosisSafe",
             "@type": "caladan:Contract",
+            "caladan:contractName": "GnosisSafe",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -177,7 +165,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-		    "@id": "CaladanDAO/awesome-web3/defi/uniswap/GnosisSafe",
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/GnosisSafe",
                     "evm:chainID": 1,
                     "evm:address": "0xe571dc7a558bb6d68ffe264c3d7bb98b0c6c73fc"
                 }
@@ -186,6 +174,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/uniswap/NonfungiblePositionManager",
             "@type": "caladan:Contract",
+            "caladan:contractName": "NonfungiblePositionManager",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -198,6 +187,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/uniswap/UniswapV3Pool",
             "@type": "caladan:Contract",
+            "caladan:contractName": "UniswapV3Pool",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -208,8 +198,22 @@
             ]
         },
         {
+            "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0xe3953d9d317b834592ab58ab2c7a6ad22b54075d_1",
+            "@type": "caladan:Contract",
+            "caladan:contractName": "contract_0xe3953d9d317b834592ab58ab2c7a6ad22b54075d_1",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0xe3953d9d317b834592ab58ab2c7a6ad22b54075d_1",
+                    "evm:chainID": 1,
+                    "evm:address": "0xe3953d9d317b834592ab58ab2c7a6ad22b54075d"
+                }
+            ]
+        },
+        {
             "@id": "CaladanDAO/awesome-web3/defi/uniswap/UniswapXExclusiveDutchOrderReactor",
             "@type": "caladan:Contract",
+            "caladan:contractName": "UniswapXExclusiveDutchOrderReactor",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -222,6 +226,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/uniswap/UniversalRouter",
             "@type": "caladan:Contract",
+            "caladan:contractName": "UniversalRouter",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -234,6 +239,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/uniswap/UniswapV2Router01",
             "@type": "caladan:Contract",
+            "caladan:contractName": "UniswapV2Router01",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -580,7 +586,6 @@
             "@id": "0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822",
             "caladan:signature": "Swap(address,uint256,uint256,uint256,uint256,address)",
             "@type": "caladan:Event",
-            "caladan:indexed": true,
             "caladan:name": "Swap",
             "caladan:inputs": [
                 {
@@ -588,68 +593,42 @@
                     "internalType": "address",
                     "name": "sender",
                     "type": "address",
-		    "refersTo": "http://caladandao.org/concepts/swapv3#sender",
-		    "@type": "ethereum:address"
+                    "@type": "address"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
                     "name": "amount0In",
                     "type": "uint256",
-		    "currency": {
-		        "@type": "ethereum:erc20",
-			"@id": "transfer:erc20",
-			"refersTo": "http://caladandao.org/concepts/swapv2#token0"
-		    },
-		    "refersTo": "http://caladandao.org/concepts/swapv2#amount0In",
-                    "@type": "schema:MonetaryAmount"
+                    "@type": "uint256"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
                     "name": "amount1In",
                     "type": "uint256",
-		    "currency": {
-		        "@type": "ethereum:erc20",
-			"@id": "transfer:erc20",
-			"refersTo": "http://caladandao.org/concepts/swapv2#token1"
-		    },
-		    "refersTo": "http://caladandao.org/concepts/swapv2#amount1In",
-                    "@type": "schema:MonetaryAmount"
+                    "@type": "uint256"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
                     "name": "amount0Out",
                     "type": "uint256",
-		    "currency": {
-		        "@type": "ethereum:erc20",
-			"@id": "transfer:erc20",
-			"refersTo": "http://caladandao.org/concepts/swapv2#token0"
-		    },
-		    "refersTo": "http://caladandao.org/concepts/swapv2#amount0Out",
-                    "@type": "schema:MonetaryAmount"
+                    "@type": "uint256"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
                     "name": "amount1Out",
                     "type": "uint256",
-		    "currency": {
-		        "@type": "ethereum:erc20",
-			"@id": "transfer:erc20",
-			"refersTo": "http://caladandao.org/concepts/swapv2#token1"
-		    },
-		    "refersTo": "http://caladandao.org/concepts/swapv2#amount1Out",
-                    "@type": "schema:MonetaryAmount"
+                    "@type": "uint256"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
                     "name": "to",
                     "type": "address",
-		    "refersTo": "http://caladandao.org/concepts/swapv2#recipient",
-		    "@type": "ethereum:address"
+                    "@type": "address"
                 }
             ],
             "caladan:deployments": [
@@ -665,7 +644,6 @@
             "caladan:signature": "Sync(uint112,uint112)",
             "@type": "caladan:Event",
             "caladan:name": "Sync",
-            "caladan:indexed": true,
             "caladan:inputs": [
                 {
                     "indexed": false,
@@ -689,7 +667,7 @@
                 }
             ]
         },
-	{
+        {
             "anonymous": false,
             "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
             "caladan:signature": "Transfer(address,address,uint256)",
@@ -697,36 +675,25 @@
             "caladan:name": "Transfer",
             "caladan:inputs": [
                 {
-		    "@type": "ethereum:address",
-		    "@id": "transfer:sender",
-		    "indexed": true,
+                    "indexed": true,
                     "internalType": "address",
                     "name": "from",
                     "type": "address",
-		    "refersTo": "http://caladandao.org/concepts/transfer#sender"
+                    "@type": "address"
                 },
                 {
-		    "@type": "ethereum:address",
-		    "@id": "transfer:receiver",
                     "indexed": true,
                     "internalType": "address",
                     "name": "to",
                     "type": "address",
-		    "refersTo": "http://caladandao.org/concepts/transfer#receiver"
+                    "@type": "address"
                 },
                 {
-                    "@type": "schema:MonetaryAmount",
-		    "@id": "transfer:amount",
                     "indexed": false,
                     "internalType": "uint256",
                     "name": "value",
                     "type": "uint256",
-		    "currency": {
-		        "@type": "ethereum:erc20",
-			"@id": "transfer:erc20",
-			"refersTo": "http://caladandao.org/concepts/transfer#erc20"
-		    },
-		    "refersTo": "http://caladandao.org/concepts/transfer#amount"
+                    "@type": "uint256"
                 }
             ],
             "caladan:deployments": [
@@ -3289,11 +3256,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x3d30b1ab88d487b0f3061f40de76845bec3f1e94_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x4750c43867ef5f89869132eccf19b9b6c4286e1a_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -3301,7 +3268,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0xe3953d9d317b834592ab58ab2c7a6ad22b54075d_1"
                 }
             ]
         },
@@ -3318,11 +3285,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x3d30b1ab88d487b0f3061f40de76845bec3f1e94_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x4750c43867ef5f89869132eccf19b9b6c4286e1a_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -3330,7 +3297,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0xe3953d9d317b834592ab58ab2c7a6ad22b54075d_1"
                 }
             ]
         },
@@ -3354,11 +3321,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x3d30b1ab88d487b0f3061f40de76845bec3f1e94_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x4750c43867ef5f89869132eccf19b9b6c4286e1a_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -3366,7 +3333,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0xe3953d9d317b834592ab58ab2c7a6ad22b54075d_1"
                 }
             ]
         },
@@ -3390,11 +3357,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x3d30b1ab88d487b0f3061f40de76845bec3f1e94_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x4750c43867ef5f89869132eccf19b9b6c4286e1a_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -3402,7 +3369,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0xe3953d9d317b834592ab58ab2c7a6ad22b54075d_1"
                 }
             ]
         },
@@ -3426,11 +3393,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x3d30b1ab88d487b0f3061f40de76845bec3f1e94_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x4750c43867ef5f89869132eccf19b9b6c4286e1a_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -3438,7 +3405,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0xe3953d9d317b834592ab58ab2c7a6ad22b54075d_1"
                 }
             ]
         },
@@ -3462,11 +3429,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x3d30b1ab88d487b0f3061f40de76845bec3f1e94_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x4750c43867ef5f89869132eccf19b9b6c4286e1a_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -3474,7 +3441,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0xe3953d9d317b834592ab58ab2c7a6ad22b54075d_1"
                 }
             ]
         },
@@ -3498,11 +3465,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x3d30b1ab88d487b0f3061f40de76845bec3f1e94_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x4750c43867ef5f89869132eccf19b9b6c4286e1a_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -3510,7 +3477,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0xe3953d9d317b834592ab58ab2c7a6ad22b54075d_1"
                 }
             ]
         },
@@ -3534,11 +3501,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x3d30b1ab88d487b0f3061f40de76845bec3f1e94_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x4750c43867ef5f89869132eccf19b9b6c4286e1a_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -3546,7 +3513,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0xe3953d9d317b834592ab58ab2c7a6ad22b54075d_1"
                 }
             ]
         },
@@ -3570,11 +3537,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x3d30b1ab88d487b0f3061f40de76845bec3f1e94_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x4750c43867ef5f89869132eccf19b9b6c4286e1a_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -3582,7 +3549,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0xe3953d9d317b834592ab58ab2c7a6ad22b54075d_1"
                 }
             ]
         },
@@ -3606,11 +3573,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x3d30b1ab88d487b0f3061f40de76845bec3f1e94_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0x4750c43867ef5f89869132eccf19b9b6c4286e1a_1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -3618,7 +3585,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/uniswap/contract_0xe3953d9d317b834592ab58ab2c7a6ad22b54075d_1"
                 }
             ]
         },
@@ -4617,35 +4584,29 @@
             "anonymous": false,
             "@id": "0x0d3648bd0f6ba80134a33ba9275ac585d9d315f0ad8355cddefde31afa28d0e9",
             "caladan:signature": "PairCreated(address,address,address,uint256)",
-            "@type": "caladan:CreationEvent",
+            "@type": "caladan:Event",
             "caladan:name": "PairCreated",
-	    "creator": {
-		"@id": "Ethereum:Contract"
-	    },
-	    "created": {
-		"@id": "#pair"
-	    },
             "caladan:inputs": [
                 {
                     "indexed": true,
                     "internalType": "address",
                     "name": "token0",
                     "type": "address",
-                    "@type": "ethereum:erc20"
+                    "@type": "address"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
                     "name": "token1",
                     "type": "address",
-                    "@type": "ethereum:erc20"
+                    "@type": "address"
                 },
                 {
                     "indexed": false,
                     "internalType": "address",
                     "name": "pair",
                     "type": "address",
-                    "@type": "CaladanDAO/awesome-web3/defi/uniswap/UniswapV2Pair"
+                    "@type": "address"
                 },
                 {
                     "indexed": false,
@@ -9740,64 +9701,49 @@
                     "internalType": "address",
                     "name": "sender",
                     "type": "address",
-		    "refersTo": "http://caladandao.org/concepts/swapv3#sender",
-		    "@type": "ethereum:address"
+                    "@type": "address"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
                     "name": "recipient",
                     "type": "address",
-		    "refersTo": "http://caladandao.org/concepts/swapv3#recipient",
-		    "@type": "ethereum:address"
+                    "@type": "address"
                 },
                 {
                     "indexed": false,
                     "internalType": "int256",
                     "name": "amount0",
                     "type": "int256",
-		    "currency": {
-		        "@type": "ethereum:erc20",
-			"@id": "transfer:erc20",
-			"refersTo": "http://caladandao.org/concepts/swapv3#token0"
-		    },
-		    "refersTo": "http://caladandao.org/concepts/swapv3#amount0",
-                    "@type": "schema:MonetaryAmount"
+                    "@type": "int256"
                 },
                 {
                     "indexed": false,
                     "internalType": "int256",
                     "name": "amount1",
                     "type": "int256",
-		    "currency": {
-		        "@type": "ethereum:erc20",
-			"@id": "transfer:erc20",
-			"refersTo": "http://caladandao.org/concepts/swapv3#token1"
-		    },
-		    "refersTo": "http://caladandao.org/concepts/swapv3#amount1",
-                    "@type": "schema:MonetaryAmount"
+                    "@type": "int256"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint160",
                     "name": "sqrtPriceX96",
                     "type": "uint160",
-		    "refersTo": "http://caladandao.org/concepts/swapv3#x96",
-                    "@type": "swapv3:x96"
+                    "@type": "uint160"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint128",
                     "name": "liquidity",
                     "type": "uint128",
-                    "@type": "swap3:liquidity"
+                    "@type": "uint128"
                 },
                 {
                     "indexed": false,
                     "internalType": "int24",
                     "name": "tick",
                     "type": "int24",
-                    "@type": "swapv3:tick"
+                    "@type": "int24"
                 }
             ],
             "caladan:deployments": [
