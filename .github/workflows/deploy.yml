@@ -1,14 +1,14 @@
-name: Analytics Log Generation
+name: Analytic Log Generation
 
 on:
   push:
     branches:
-      - main
+      - dev
     paths:
       - .github/workflows/deploy.yml
       - src/analytics
-  schedule:
-    - cron: '*/15 * * * *'
+#  schedule:
+#    - cron: '*/10 * * * *'
 
 jobs:
   build:
@@ -24,8 +24,14 @@ jobs:
       - name: Authenticate GCP
         uses: google-github-actions/setup-gcloud@v0
         with:
-          service_account_key: ${{secrets.GCP_SERVICE_ACCOUNT_KEY}}
+          service_account_key: ${{secrets.GCP_SERVICE_ACCOUNT_KEY }}
           project_id: ${{env.PROJECT_ID}}
+
+#      - name: Set up Cloud SDK
+#        uses: google-github-actions/setup-gcloud@v1
+
+#      - name: Use gcloud CLI
+#        run: gcloud info    
 
       - uses: actions/checkout@v2
       - name: Install NodeJs
@@ -49,6 +55,9 @@ jobs:
           echo "${{secrets.DB00_CNF}}" > /tmp/.db00.cnf
           echo "${{secrets.DB00_US_INDEXER_CNF}}" > /tmp/.db00-us-indexer.cnf
           echo "$GOOGLE_SERVICE_KEY" > /tmp/colorfulnotion.json
+
+#      - name: Set GCLOUD Authentication
+#        run: gcloud auth activate-service-account --key-file="/tmp/colorfulnotion.json"
 
       - name: Run Application
         run: |-
