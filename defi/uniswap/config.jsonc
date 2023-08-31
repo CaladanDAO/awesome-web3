@@ -1,4 +1,22 @@
 {
+    "features": {
+        "UniswapV2Pair": {
+            "eventFactory": [
+                "UniswapV2Factory"
+            ],
+            "callFactory": [
+                "UniswapV2Router01", "UniswapV2Router02"
+            ]
+        },
+	"UniswapV3Pool": {
+            "eventFactory": [
+                "UniswapV3Factory"
+            ],
+            "callFactory": [
+                "UniversalRouter", "UniversalRouterV1_2"
+            ]
+        }
+    },
     "calls": [
             "swapExactETHForTokensSupportingFeeOnTransferTokens(uint256,address[],address,uint256)",
             "swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",

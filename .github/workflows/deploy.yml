@@ -1,14 +1,14 @@
-name: Analytic Log Generation
+name: Analytics Log Generation
 
 on:
   push:
     branches:
-      - dev
+      - main
     paths:
       - .github/workflows/deploy.yml
       - src/analytics
-#  schedule:
-#    - cron: '*/10 * * * *'
+  schedule:
+    - cron: '*/15 * * * *'
 
 jobs:
   build:
@@ -21,33 +21,43 @@ jobs:
         node-version: [17.x]
 
     steps:
-      - name: Authenticate GCP  
+      - name: Authenticate GCP
         uses: google-github-actions/setup-gcloud@v0
         with:
-          service_account_key: ${{secrets.GCP_SERVICE_ACCOUNT_KEY }}
+          service_account_key: ${{secrets.GCP_SERVICE_ACCOUNT_KEY}}
           project_id: ${{env.PROJECT_ID}}
 
-      - name: Re-clone repository
-        run: git clone https://github.com/CaladanDAO/awesome-web3.git
-
-      - name: Install NodeJs 
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v2
+      - name: Install NodeJs
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Clear npm cache
-        run: npm cache clean --force    
-
       - name: Install dependencies
         run: npm install
-        working-directory: awesome-web3
+
+      - name: Configure Git Client
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+      - name: Create Temp File
+        id: create-temp-file
+        env:
+          GOOGLE_SERVICE_KEY: ${{secrets.GCP_SERVICE_ACCOUNT_KEY}}
+        run: |
+          echo "${{secrets.DB00_CNF}}" > /tmp/.db00.cnf
+          echo "${{secrets.DB00_US_INDEXER_CNF}}" > /tmp/.db00-us-indexer.cnf
+          echo "$GOOGLE_SERVICE_KEY" > /tmp/colorfulnotion.json
 
       - name: Run Application
-        env:
-          DB_HOST: ${{ secrets.DB00_CNF_HOST }}
-          DB_USER: ${{ secrets.DB00_CNF_USER }}
-          DB_PASSWORD: ${{ secrets.DB00_CNF_PASSWORD }}
-          DB_NAME: ${{ secrets.DB00_CNF_DB }}
         run: |-
-          cd awesome-web3/src/
-          ./analytics generatelogs
+             cd src/
+             ./analytics generatelogs
+        env: 
+          PROJECT_ID: awesome-web3
+          CALADAN_DB: /tmp/.db00.cnf
+          CALADAN_DB_REPLICA: /tmp/.db00-us-indexer.cnf
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/colorfulnotion.json
+
+

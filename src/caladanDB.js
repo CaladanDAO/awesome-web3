@@ -29,7 +29,6 @@ module.exports = class CaladanDB {
     CALADAN_EMAIL_USER = "";
     CALADAN_EMAIL_PASSWORD = "";
 
-    BQ_KEY = null;
 
     bigQuery = null;
     googleStorage = null;
@@ -47,6 +46,7 @@ module.exports = class CaladanDB {
         // 1. ready db config for WRITABLE mysql pool [always in US presently] using env variable POLKAHOLIC_DB
         let dbconfigFilename = (process.env.CALADAN_DB != undefined) ? process.env.CALADAN_DB : '/root/.mysql/.db00.cnf';
         try {
+	    console.log("process.env.GOOGLE_APPLICATION_CREDENTIALS ", process.env.GOOGLE_APPLICATION_CREDENTIALS);
             let dbconfig = ini.parseSync(dbconfigFilename);
             if (dbconfig.email != undefined) {
                 this.POLKAHOLIC_EMAIL_USER = dbconfig.email.email;
@@ -58,11 +58,10 @@ module.exports = class CaladanDB {
                 this.GC_BIGTABLE_CLUSTER = dbconfig.gc.bigtableCluster;
                 this.GC_STORAGE_BUCKET = dbconfig.gc.storageBucket;
             }
-
             if (dbconfig.bq != undefined) {
                 if (dbconfig.bq.substrateetlKey) {
-                    this.BQ_KEY = dbconfig.bq.substrateetlKey;
-                }
+		    this.BQ_KEY = dbconfig.bq.substrateetlKey;
+		}
             }
 
             if (dbconfig.externalapis != undefined) {
@@ -155,9 +154,9 @@ module.exports = class CaladanDB {
     get_big_query() {
         if (this.bigQuery) return this.bigQuery;
         this.bigQuery = new BigQuery({
-            projectId: this.GC_PROJECT,
-            keyFilename: this.BQ_KEY
+            projectId: this.GC_PROJECT
         })
+	console.log("BigQuery configured")
         return this.bigQuery;
     }
 

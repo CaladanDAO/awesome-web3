@@ -22,23 +22,6 @@ module.exports = class Analytics extends CaladanDB {
 	console.log(JSON.stringify(flattened, null, 4));
     }
     async generatelogs() {
-	// bigtable test - read wrapped ethereum record from accountrealtime
-	try {
-	    let rowKeys = ["0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"];
-            const [rows] = await this.btAccountRealtime.getRows({
-		keys: rowKeys,
-		filter: [{
-                    family: ["metadata"],
-                    column: {
-			cellLimit: 1
-		    }
-		}]
-            });
-	    console.log("bigtable test: ", JSON.stringify(rows[0].data, null, 4));
-	} catch (err) {
-	    console.log("bigtable error", err);
-	}
-
 	// mysql test - read chain latest block
 	try {
 	    let sql = "select chainID, id, blocksCovered from chain where crawling = 1";
@@ -56,6 +39,7 @@ module.exports = class Analytics extends CaladanDB {
 	}
 	
 	// bigquery test
+	console.log("CHECK1 BQKey", this.BQ_KEY);
 	let blockNumber = null
 	let blockTS = null
 	try {
@@ -78,7 +62,24 @@ module.exports = class Analytics extends CaladanDB {
 	} catch (err) {
 	    console.log("bigquery error", err);
 	}
-	
+
+	// bigtable test - read wrapped ethereum record from accountrealtime
+	try {
+	    let rowKeys = ["0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"];
+            const [rows] = await this.btAccountRealtime.getRows({
+		keys: rowKeys,
+		filter: [{
+                    family: ["metadata"],
+                    column: {
+			cellLimit: 1
+		    }
+		}]
+            });
+	    console.log("bigtable test: ", JSON.stringify(rows[0].data, null, 4));
+	} catch (err) {
+	    console.log("bigtable error", err);
+	}
+
 	// google storage test - read latest block of ethereum using above
 	try {
 	    const date = new Date(blockTS * 1000); // Convert Unix timestamp to milliseconds
