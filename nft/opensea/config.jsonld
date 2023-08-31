@@ -10,12 +10,13 @@
     "caladan:dataset": "nft",
     "caladan:contracts": [
         {
-            "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Transfer Helper",
+            "@id": "CaladanDAO/awesome-web3/nft/opensea/TransferHelper",
             "@type": "caladan:Contract",
+            "caladan:contractName": "TransferHelper",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Transfer Helper",
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/TransferHelper",
                     "evm:chainID": 1,
                     "evm:address": "0x0000000000c2d145a2526bd8c716263bfebe1a72"
                 }
@@ -24,6 +25,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/nft/opensea/SeaDrop",
             "@type": "caladan:Contract",
+            "caladan:contractName": "SeaDrop",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -36,6 +38,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/nft/opensea/EthereumFeeCollector",
             "@type": "caladan:Contract",
+            "caladan:contractName": "EthereumFeeCollector",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -46,72 +49,78 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone",
+            "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone",
             "@type": "caladan:Contract",
+            "caladan:contractName": "PausableZone",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone",
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone",
                     "evm:chainID": 1,
                     "evm:address": "0x004c00500000ad104d7dbd00e3ae0a5c00560c00"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit",
+            "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit",
             "@type": "caladan:Contract",
+            "caladan:contractName": "Conduit",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit",
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit",
                     "evm:chainID": 1,
                     "evm:address": "0x1e0049783f008a0085193e00003d00cd54003c71"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1",
+            "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange",
             "@type": "caladan:Contract",
+            "caladan:contractName": "WyvernExchange",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1",
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange",
                     "evm:chainID": 1,
                     "evm:address": "0x7be8076f4ea4a4ad08075c2508e481d6c946d12b"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()",
+            "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations",
             "@type": "caladan:Contract",
+            "caladan:contractName": "WyvernExchangeWithBulkCancellations",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()",
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations",
                     "evm:chainID": 1,
                     "evm:address": "0x7f268357a8c2552623316e2562d90e642bb538e5"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver",
+            "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver",
             "@type": "caladan:Contract",
+            "caladan:contractName": "OpenSeaENSResolver",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver",
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver",
                     "evm:chainID": 1,
                     "evm:address": "0x9c4e9cce4780062942a7fe34fa2fa7316c872956"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry",
+            "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry",
             "@type": "caladan:Contract",
+            "caladan:contractName": "WyvernProxyRegistry",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry",
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry",
                     "evm:chainID": 1,
                     "evm:address": "0xa5409ec958c83c3f309868babaca7c86dcb077c1"
                 }
@@ -136,11 +145,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Transfer Helper"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/TransferHelper"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -172,7 +181,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Transfer Helper"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/TransferHelper"
                 }
             ]
         },
@@ -204,7 +213,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Transfer Helper"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/TransferHelper"
                 }
             ]
         },
@@ -242,7 +251,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Transfer Helper"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/TransferHelper"
                 }
             ]
         },
@@ -280,7 +289,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Transfer Helper"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/TransferHelper"
                 }
             ]
         },
@@ -306,7 +315,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Transfer Helper"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/TransferHelper"
                 }
             ]
         },
@@ -319,7 +328,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Transfer Helper"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/TransferHelper"
                 }
             ]
         },
@@ -339,7 +348,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Transfer Helper"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/TransferHelper"
                 }
             ]
         },
@@ -352,11 +361,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Transfer Helper"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/TransferHelper"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 }
             ]
         },
@@ -369,11 +378,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Transfer Helper"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/TransferHelper"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 }
             ]
         },
@@ -386,7 +395,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Transfer Helper"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/TransferHelper"
                 }
             ]
         },
@@ -460,7 +469,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Transfer Helper"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/TransferHelper"
                 }
             ]
         },
@@ -482,15 +491,15 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         },
@@ -2833,7 +2842,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 }
             ]
         },
@@ -2976,7 +2985,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 }
             ]
         },
@@ -3009,23 +3018,23 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         },
@@ -3051,7 +3060,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 }
             ]
         },
@@ -3114,7 +3123,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 }
             ]
         },
@@ -3206,15 +3215,15 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         },
@@ -3240,19 +3249,19 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         },
@@ -3322,19 +3331,19 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         },
@@ -3443,11 +3452,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 }
             ]
         },
@@ -3460,7 +3469,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 }
             ]
         },
@@ -3480,7 +3489,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 }
             ]
         },
@@ -3494,7 +3503,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 }
             ]
         },
@@ -3516,7 +3525,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 }
             ]
         },
@@ -3530,7 +3539,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 }
             ]
         },
@@ -3559,7 +3568,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 }
             ]
         },
@@ -3710,7 +3719,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 }
             ]
         },
@@ -4007,7 +4016,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 }
             ]
         },
@@ -4256,7 +4265,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 }
             ]
         },
@@ -4303,7 +4312,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 }
             ]
         },
@@ -4526,7 +4535,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 }
             ]
         },
@@ -4548,7 +4557,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 }
             ]
         },
@@ -4563,7 +4572,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Pausable Zone"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/PausableZone"
                 }
             ]
         },
@@ -4601,7 +4610,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 }
             ]
         },
@@ -4621,7 +4630,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 }
             ]
         },
@@ -4647,7 +4656,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 }
             ]
         },
@@ -4691,7 +4700,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 }
             ]
         },
@@ -4704,7 +4713,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 }
             ]
         },
@@ -4717,7 +4726,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 }
             ]
         },
@@ -4737,7 +4746,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 }
             ]
         },
@@ -4781,7 +4790,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 }
             ]
         },
@@ -4794,7 +4803,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 }
             ]
         },
@@ -4823,7 +4832,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 }
             ]
         },
@@ -4884,7 +4893,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 }
             ]
         },
@@ -4940,7 +4949,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 }
             ]
         },
@@ -5034,7 +5043,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 }
             ]
         },
@@ -5062,7 +5071,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Conduit"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Conduit"
                 }
             ]
         },
@@ -5085,11 +5094,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5128,11 +5137,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5155,11 +5164,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5182,11 +5191,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5225,11 +5234,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5252,11 +5261,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5279,11 +5288,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5312,7 +5321,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 }
             ]
         },
@@ -5341,7 +5350,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 }
             ]
         },
@@ -5410,11 +5419,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5437,11 +5446,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5464,11 +5473,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5512,11 +5521,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5600,11 +5609,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5658,11 +5667,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5685,11 +5694,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5706,19 +5715,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         },
@@ -5787,11 +5796,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5860,11 +5869,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5932,11 +5941,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5959,11 +5968,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -5986,11 +5995,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6059,11 +6068,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6092,11 +6101,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6119,11 +6128,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6201,11 +6210,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6278,11 +6287,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6351,11 +6360,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6378,11 +6387,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6451,11 +6460,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6484,11 +6493,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6524,11 +6533,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6621,11 +6630,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6718,11 +6727,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6743,11 +6752,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6798,11 +6807,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6823,15 +6832,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Wyvern Exchange v1"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         },
@@ -6854,7 +6863,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6871,7 +6880,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6900,7 +6909,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -6983,7 +6992,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -7010,7 +7019,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/Wyvern Excha...  ()"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernExchangeWithBulkCancellations"
                 }
             ]
         },
@@ -7039,7 +7048,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7072,7 +7081,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7106,7 +7115,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7145,7 +7154,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7178,7 +7187,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7206,7 +7215,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7235,7 +7244,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7268,7 +7277,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7291,7 +7300,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7314,7 +7323,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7348,7 +7357,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7381,7 +7390,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7410,7 +7419,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7433,7 +7442,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7461,7 +7470,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7484,7 +7493,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7513,7 +7522,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7547,7 +7556,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7576,7 +7585,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7604,7 +7613,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7637,7 +7646,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7676,7 +7685,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7699,7 +7708,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7738,7 +7747,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7771,7 +7780,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7804,7 +7813,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7831,7 +7840,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7864,7 +7873,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7891,7 +7900,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7918,7 +7927,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7945,7 +7954,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: ENS Resolver"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSeaENSResolver"
                 }
             ]
         },
@@ -7968,7 +7977,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         },
@@ -7991,7 +8000,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         },
@@ -8014,7 +8023,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         },
@@ -8043,7 +8052,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         },
@@ -8072,7 +8081,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         },
@@ -8095,7 +8104,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         },
@@ -8124,7 +8133,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         },
@@ -8147,7 +8156,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         },
@@ -8170,7 +8179,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         },
@@ -8193,7 +8202,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         },
@@ -8216,7 +8225,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/opensea/OpenSea: Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/opensea/WyvernProxyRegistry"
                 }
             ]
         }

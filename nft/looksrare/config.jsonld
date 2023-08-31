@@ -10,180 +10,227 @@
     "caladan:dataset": "nft",
     "caladan:contracts": [
         {
-            "@id": "CaladanDAO/awesome-web3/nft/looksrare/null",
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle",
             "@type": "caladan:Contract",
+            "caladan:contractName": "Raffle",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle",
                     "evm:chainID": 1,
                     "evm:address": "0x0000000000009703ecd0ffea3143fc9096de91b0"
-                },
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null",
-                    "evm:chainID": 1,
-                    "evm:address": "0x000000000074f2e99d7602fca3cf0ffdca906495"
-                },
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null",
-                    "evm:chainID": 1,
-                    "evm:address": "0x0000000000a35231d7706bd1ee827d43245655ab"
-                },
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null",
-                    "evm:chainID": 1,
-                    "evm:address": "0x0000000000ad2c5a35209eeab701b2cd49ba3a0d"
-                },
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null",
-                    "evm:chainID": 1,
-                    "evm:address": "0x0000000000da151039ed034d1c5bacb47c284ed1"
-                },
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null",
-                    "evm:chainID": 1,
-                    "evm:address": "0x0000000000e58692bf5fa347312da78ca8bfc8d2"
-                },
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null",
-                    "evm:chainID": 1,
-                    "evm:address": "0x0000000000e655fae4d56241588680f86e3b2377"
                 }
             ]
         },
         {
             "@id": "CaladanDAO/awesome-web3/nft/looksrare/SeaportProxy",
             "@type": "caladan:Contract",
+            "caladan:contractName": "SeaportProxy",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/nft/looksrare/SeaportProxy",
                     "evm:chainID": 1,
                     "evm:address": "0x00000000005228b791a99a61f36a130d50600106"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/SeaportProxy",
+                    "evm:chainID": 1,
+                    "evm:address": "0x0000000000ad2c5a35209eeab701b2cd49ba3a0d"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3",
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareV2Proxy",
             "@type": "caladan:Contract",
+            "caladan:contractName": "LooksRareV2Proxy",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareV2Proxy",
+                    "evm:chainID": 1,
+                    "evm:address": "0x000000000074f2e99d7602fca3cf0ffdca906495"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/ERC20EnabledLooksRareAggregator",
+            "@type": "caladan:Contract",
+            "caladan:contractName": "ERC20EnabledLooksRareAggregator",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ERC20EnabledLooksRareAggregator",
+                    "evm:chainID": 1,
+                    "evm:address": "0x0000000000a35231d7706bd1ee827d43245655ab"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProxy",
+            "@type": "caladan:Contract",
+            "caladan:contractName": "LooksRareProxy",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProxy",
+                    "evm:chainID": 1,
+                    "evm:address": "0x0000000000da151039ed034d1c5bacb47c284ed1"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyCollectionOffer",
+            "@type": "caladan:Contract",
+            "caladan:contractName": "StrategyCollectionOffer",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyCollectionOffer",
+                    "evm:chainID": 1,
+                    "evm:address": "0x0000000000e58692bf5fa347312da78ca8bfc8d2"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol",
+            "@type": "caladan:Contract",
+            "caladan:contractName": "LooksRareProtocol",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol",
+                    "evm:chainID": 1,
+                    "evm:address": "0x0000000000e655fae4d56241588680f86e3b2377"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3",
+            "@type": "caladan:Contract",
+            "caladan:contractName": "AggregatorFeeSharingWithUniswapV3",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3",
                     "evm:chainID": 1,
                     "evm:address": "0x3ab16af1315dc6c95f83cbf522fecf98d00fd9ba"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Registry",
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeRegistry",
             "@type": "caladan:Contract",
+            "caladan:contractName": "RoyaltyFeeRegistry",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Registry",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeRegistry",
                     "evm:chainID": 1,
                     "evm:address": "0x55010472a93921a117aad9b055c141060c8d8022"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Standard Sale For Fixed Price",
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyStandardSaleForFixedPrice",
             "@type": "caladan:Contract",
+            "caladan:contractName": "StrategyStandardSaleForFixedPrice",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Standard Sale For Fixed Price",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyStandardSaleForFixedPrice",
                     "evm:chainID": 1,
                     "evm:address": "0x56244bb70cbd3ea9dc8007399f61dfc065190031"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Private Sale",
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyPrivateSale",
             "@type": "caladan:Contract",
+            "caladan:contractName": "StrategyPrivateSale",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Private Sale",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyPrivateSale",
                     "evm:chainID": 1,
                     "evm:address": "0x58d83536d3efedb9f7f2a1ec3bdaad2b1a4dd98c"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange",
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange",
             "@type": "caladan:Contract",
+            "caladan:contractName": "LooksRareExchange",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange",
                     "evm:chainID": 1,
                     "evm:address": "0x59728544b08ab483533076417fbbb2fd0b17ce3a"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter",
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter",
             "@type": "caladan:Contract",
+            "caladan:contractName": "RoyaltyFeeSetter",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter",
                     "evm:chainID": 1,
                     "evm:address": "0x66466107d9cae4da0176a699406419003f3c27a8"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Manager",
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeManager",
             "@type": "caladan:Contract",
+            "caladan:contractName": "RoyaltyFeeManager",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Manager",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeManager",
                     "evm:chainID": 1,
                     "evm:address": "0x7358182024c9f1b2e6b0153e60bf6156b7ef4906"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Any Item From Collection",
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyAnyItemFromCollectionForFixedPrice",
             "@type": "caladan:Contract",
+            "caladan:contractName": "StrategyAnyItemFromCollectionForFixedPrice",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Any Item From Collection",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyAnyItemFromCollectionForFixedPrice",
                     "evm:chainID": 1,
                     "evm:address": "0x86f909f70813cdb1bc733f4d97dc6b03b8e7e8f3"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Execution Manager",
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/ExecutionManager",
             "@type": "caladan:Contract",
+            "caladan:contractName": "ExecutionManager",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Execution Manager",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ExecutionManager",
                     "evm:chainID": 1,
                     "evm:address": "0x9cc58bf22a173c0fa8791c13df396d18185d62b2"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop",
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop",
             "@type": "caladan:Contract",
+            "caladan:contractName": "LooksRareAirdrop",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop",
                     "evm:chainID": 1,
                     "evm:address": "0xa35dce3e0e6ceb67a30b8d7f4aee721c949b5970"
                 }
@@ -192,6 +239,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/nft/looksrare/GnosisSafe",
             "@type": "caladan:Contract",
+            "caladan:contractName": "GnosisSafe",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -208,36 +256,39 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing",
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem",
             "@type": "caladan:Contract",
+            "caladan:contractName": "FeeSharingSystem",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem",
                     "evm:chainID": 1,
                     "evm:address": "0xbcd7254a1d759efa08ec7c3291b2e85c5dcc12ce"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Currency Manager",
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/CurrencyManager",
             "@type": "caladan:Contract",
+            "caladan:contractName": "CurrencyManager",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Currency Manager",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/CurrencyManager",
                     "evm:chainID": 1,
                     "evm:address": "0xc881addf409ee2c4b6bbc8b607c2c5cafab93d25"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)",
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken",
             "@type": "caladan:Contract",
+            "caladan:contractName": "LooksRareToken",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)",
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken",
                     "evm:chainID": 1,
                     "evm:address": "0xf4d2888d29d722226fafa5d9b24f9164c092421e"
                 }
@@ -298,7 +349,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -311,7 +362,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -324,7 +375,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -337,7 +388,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -350,7 +401,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -363,7 +414,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -376,7 +427,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -389,15 +440,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ERC20EnabledLooksRareAggregator"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -410,7 +461,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -423,7 +474,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -436,7 +487,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -444,15 +495,15 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareV2Proxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/SeaportProxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProxy"
                 }
             ]
         },
@@ -465,7 +516,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -478,7 +529,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -491,7 +542,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -504,7 +555,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -517,7 +568,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -530,7 +581,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -543,7 +594,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -556,7 +607,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -569,7 +620,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -582,7 +633,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -595,7 +646,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -608,7 +659,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -621,7 +672,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -634,11 +685,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -651,15 +702,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ERC20EnabledLooksRareAggregator"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -672,11 +723,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -689,7 +740,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -715,7 +766,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -728,7 +779,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -741,7 +792,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -754,7 +805,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -767,11 +818,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -784,11 +835,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -801,11 +852,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -818,11 +869,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -835,11 +886,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -853,11 +904,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -886,7 +937,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -922,7 +973,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -965,7 +1016,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -994,7 +1045,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1008,11 +1059,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -1041,11 +1092,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -1067,11 +1118,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -1093,15 +1144,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -1130,7 +1181,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1152,7 +1203,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1174,7 +1225,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1203,7 +1254,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1232,7 +1283,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1254,15 +1305,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -1284,7 +1335,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1306,7 +1357,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1328,7 +1379,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1350,7 +1401,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1372,7 +1423,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1394,7 +1445,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1416,7 +1467,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1438,7 +1489,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1460,7 +1511,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1482,7 +1533,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1504,7 +1555,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1526,19 +1577,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -1560,7 +1611,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1582,7 +1633,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1597,11 +1648,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -1623,7 +1674,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1657,7 +1708,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1679,7 +1730,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1701,7 +1752,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1716,11 +1767,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -1735,11 +1786,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -1859,7 +1910,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1881,7 +1932,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1915,7 +1966,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1956,7 +2007,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -1997,7 +2048,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -2063,7 +2114,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -2114,7 +2165,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -2129,11 +2180,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -2155,11 +2206,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -2188,11 +2239,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -2245,7 +2296,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -2267,51 +2318,51 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeRegistry"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Execution Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ExecutionManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Currency Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/CurrencyManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -2333,11 +2384,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -2359,15 +2410,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -2389,11 +2440,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -2415,7 +2466,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -2437,15 +2488,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -2474,7 +2525,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -2557,7 +2608,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -2579,7 +2630,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -2626,7 +2677,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -2667,7 +2718,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -2695,7 +2746,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -2717,7 +2768,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -2739,7 +2790,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -2761,7 +2812,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -2776,7 +2827,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -2804,7 +2855,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -2826,7 +2877,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/Raffle"
                 }
             ]
         },
@@ -2857,19 +2908,19 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareV2Proxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/SeaportProxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -2886,15 +2937,15 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareV2Proxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/SeaportProxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProxy"
                 }
             ]
         },
@@ -2911,7 +2962,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/SeaportProxy"
                 }
             ]
         },
@@ -2937,19 +2988,19 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareV2Proxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ERC20EnabledLooksRareAggregator"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/SeaportProxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProxy"
                 }
             ]
         },
@@ -3051,15 +3102,15 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareV2Proxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/SeaportProxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProxy"
                 }
             ]
         },
@@ -3085,15 +3136,15 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareV2Proxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/SeaportProxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProxy"
                 }
             ]
         },
@@ -3114,15 +3165,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ERC20EnabledLooksRareAggregator"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -3143,7 +3194,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ERC20EnabledLooksRareAggregator"
                 }
             ]
         },
@@ -3274,7 +3325,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ERC20EnabledLooksRareAggregator"
                 }
             ]
         },
@@ -3294,11 +3345,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -3311,11 +3362,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -3335,11 +3386,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -3352,11 +3403,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyCollectionOffer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -3369,7 +3420,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyCollectionOffer"
                 }
             ]
         },
@@ -3511,7 +3562,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyCollectionOffer"
                 }
             ]
         },
@@ -3653,7 +3704,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyCollectionOffer"
                 }
             ]
         },
@@ -3675,7 +3726,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyCollectionOffer"
                 }
             ]
         },
@@ -3793,7 +3844,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyCollectionOffer"
                 }
             ]
         },
@@ -3832,7 +3883,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -3845,7 +3896,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -3858,7 +3909,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -3871,7 +3922,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -3884,7 +3935,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -3897,7 +3948,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -3917,7 +3968,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -3930,7 +3981,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -3943,7 +3994,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -3956,7 +4007,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -3969,7 +4020,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -3982,7 +4033,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -3995,7 +4046,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4008,7 +4059,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4021,7 +4072,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4034,7 +4085,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4047,7 +4098,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4060,7 +4111,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4073,7 +4124,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4086,7 +4137,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4099,7 +4150,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4119,7 +4170,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4132,7 +4183,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4145,7 +4196,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4181,7 +4232,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4210,7 +4261,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4232,7 +4283,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4254,7 +4305,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4283,7 +4334,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4319,7 +4370,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4341,7 +4392,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4355,7 +4406,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4377,7 +4428,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4399,7 +4450,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4421,11 +4472,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -4489,7 +4540,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4518,7 +4569,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4561,7 +4612,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4590,7 +4641,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4692,7 +4743,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4794,7 +4845,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4816,7 +4867,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4868,7 +4919,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4890,7 +4941,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4919,7 +4970,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4941,7 +4992,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4963,7 +5014,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -4985,7 +5036,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5007,7 +5058,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5029,7 +5080,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5194,7 +5245,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5353,7 +5404,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5512,7 +5563,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5547,7 +5598,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5575,7 +5626,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5597,7 +5648,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5619,7 +5670,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5755,7 +5806,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5820,7 +5871,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5842,7 +5893,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5864,7 +5915,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5886,7 +5937,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5914,7 +5965,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5936,7 +5987,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5964,7 +6015,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -5979,7 +6030,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -6001,7 +6052,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -6023,7 +6074,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -6045,11 +6096,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -6089,7 +6140,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -6124,7 +6175,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -6159,7 +6210,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -6194,7 +6245,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/null"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareProtocol"
                 }
             ]
         },
@@ -6223,7 +6274,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6252,7 +6303,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6266,7 +6317,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6280,7 +6331,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6294,7 +6345,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6316,7 +6367,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6338,7 +6389,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6360,7 +6411,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6382,7 +6433,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6411,43 +6462,43 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeRegistry"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Execution Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ExecutionManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Currency Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/CurrencyManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -6476,7 +6527,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6498,7 +6549,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6520,7 +6571,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6542,11 +6593,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -6568,7 +6619,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6597,11 +6648,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -6623,7 +6674,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6638,7 +6689,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6653,7 +6704,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6675,7 +6726,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6697,7 +6748,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6712,7 +6763,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6734,7 +6785,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6756,7 +6807,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6778,15 +6829,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -6808,7 +6859,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6823,7 +6874,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6838,43 +6889,43 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeRegistry"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Execution Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ExecutionManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Currency Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/CurrencyManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -6896,11 +6947,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -6915,7 +6966,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6930,7 +6981,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6952,7 +7003,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -6974,11 +7025,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -7000,7 +7051,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -7022,43 +7073,43 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeRegistry"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Execution Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ExecutionManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Currency Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/CurrencyManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -7080,7 +7131,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -7095,7 +7146,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -7117,7 +7168,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -7139,7 +7190,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -7161,7 +7212,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -7183,7 +7234,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -7212,11 +7263,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -7238,7 +7289,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -7253,7 +7304,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Aggregator Fee Sharing Uniswap V3"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/AggregatorFeeSharingWithUniswapV3"
                 }
             ]
         },
@@ -7274,19 +7325,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeRegistry"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Standard Sale For Fixed Price"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyStandardSaleForFixedPrice"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Private Sale"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyPrivateSale"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Any Item From Collection"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyAnyItemFromCollectionForFixedPrice"
                 }
             ]
         },
@@ -7308,7 +7359,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeRegistry"
                 }
             ]
         },
@@ -7351,7 +7402,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeRegistry"
                 }
             ]
         },
@@ -7392,7 +7443,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeRegistry"
                 }
             ]
         },
@@ -7414,7 +7465,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeRegistry"
                 }
             ]
         },
@@ -7455,7 +7506,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeRegistry"
                 }
             ]
         },
@@ -7477,11 +7528,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeRegistry"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter"
                 }
             ]
         },
@@ -7521,11 +7572,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Registry"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeRegistry"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter"
                 }
             ]
         },
@@ -7547,15 +7598,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Standard Sale For Fixed Price"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyStandardSaleForFixedPrice"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Private Sale"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyPrivateSale"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Any Item From Collection"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyAnyItemFromCollectionForFixedPrice"
                 }
             ]
         },
@@ -7716,15 +7767,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Standard Sale For Fixed Price"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyStandardSaleForFixedPrice"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Private Sale"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyPrivateSale"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Any Item From Collection"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyAnyItemFromCollectionForFixedPrice"
                 }
             ]
         },
@@ -7885,15 +7936,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Standard Sale For Fixed Price"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyStandardSaleForFixedPrice"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Private Sale"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyPrivateSale"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Any Item From Collection"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyAnyItemFromCollectionForFixedPrice"
                 }
             ]
         },
@@ -7915,15 +7966,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Standard Sale For Fixed Price"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyStandardSaleForFixedPrice"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Private Sale"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyPrivateSale"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Strategy Any Item From Collection"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/StrategyAnyItemFromCollectionForFixedPrice"
                 }
             ]
         },
@@ -7968,7 +8019,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -7997,7 +8048,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8026,7 +8077,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8048,7 +8099,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8070,7 +8121,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8092,7 +8143,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8114,7 +8165,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8164,7 +8215,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8249,7 +8300,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8334,7 +8385,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8356,7 +8407,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8378,7 +8429,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8400,7 +8451,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8422,7 +8473,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8444,7 +8495,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8479,7 +8530,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8621,7 +8672,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8763,7 +8814,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8905,7 +8956,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8927,7 +8978,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8949,7 +9000,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8971,7 +9022,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -8993,7 +9044,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -9015,7 +9066,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -9037,7 +9088,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -9066,7 +9117,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Exchange"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareExchange"
                 }
             ]
         },
@@ -9088,7 +9139,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter"
                 }
             ]
         },
@@ -9110,11 +9161,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeManager"
                 }
             ]
         },
@@ -9136,7 +9187,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter"
                 }
             ]
         },
@@ -9171,7 +9222,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter"
                 }
             ]
         },
@@ -9193,11 +9244,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeManager"
                 }
             ]
         },
@@ -9219,7 +9270,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter"
                 }
             ]
         },
@@ -9259,7 +9310,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter"
                 }
             ]
         },
@@ -9299,7 +9350,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter"
                 }
             ]
         },
@@ -9339,7 +9390,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Setter"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeSetter"
                 }
             ]
         },
@@ -9386,7 +9437,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Royalty Fee Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/RoyaltyFeeManager"
                 }
             ]
         },
@@ -9408,7 +9459,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Execution Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ExecutionManager"
                 }
             ]
         },
@@ -9430,7 +9481,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Execution Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ExecutionManager"
                 }
             ]
         },
@@ -9452,7 +9503,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Execution Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ExecutionManager"
                 }
             ]
         },
@@ -9481,7 +9532,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Execution Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ExecutionManager"
                 }
             ]
         },
@@ -9503,7 +9554,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Execution Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ExecutionManager"
                 }
             ]
         },
@@ -9525,7 +9576,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Execution Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ExecutionManager"
                 }
             ]
         },
@@ -9566,7 +9617,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Execution Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/ExecutionManager"
                 }
             ]
         },
@@ -9629,7 +9680,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -9658,7 +9709,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -9680,7 +9731,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -9702,7 +9753,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -9724,7 +9775,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -9746,7 +9797,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -9768,7 +9819,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -9790,7 +9841,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -9812,7 +9863,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -9834,7 +9885,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -9875,7 +9926,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -9997,7 +10048,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -10019,7 +10070,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -10048,7 +10099,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -10070,7 +10121,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -10092,7 +10143,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -10107,7 +10158,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -10129,7 +10180,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -10144,7 +10195,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -10166,7 +10217,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -10181,7 +10232,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Airdrop"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareAirdrop"
                 }
             ]
         },
@@ -10214,7 +10265,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10250,7 +10301,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10279,7 +10330,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10315,7 +10366,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10351,7 +10402,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10373,7 +10424,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10402,7 +10453,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10424,7 +10475,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10452,7 +10503,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10467,7 +10518,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10489,7 +10540,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10511,7 +10562,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10533,7 +10584,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10555,7 +10606,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10577,7 +10628,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10599,7 +10650,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10627,7 +10678,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10655,7 +10706,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10677,7 +10728,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Fee Sharing"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/FeeSharingSystem"
                 }
             ]
         },
@@ -10699,7 +10750,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Currency Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/CurrencyManager"
                 }
             ]
         },
@@ -10721,7 +10772,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Currency Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/CurrencyManager"
                 }
             ]
         },
@@ -10743,7 +10794,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Currency Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/CurrencyManager"
                 }
             ]
         },
@@ -10772,7 +10823,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Currency Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/CurrencyManager"
                 }
             ]
         },
@@ -10794,7 +10845,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Currency Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/CurrencyManager"
                 }
             ]
         },
@@ -10816,7 +10867,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Currency Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/CurrencyManager"
                 }
             ]
         },
@@ -10857,7 +10908,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare: Currency Manager"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/CurrencyManager"
                 }
             ]
         },
@@ -10890,7 +10941,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -10926,7 +10977,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -10962,7 +11013,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -10984,7 +11035,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -11019,7 +11070,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -11054,7 +11105,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -11083,7 +11134,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -11105,7 +11156,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -11140,7 +11191,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -11175,7 +11226,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -11210,7 +11261,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -11232,7 +11283,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -11254,7 +11305,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -11276,7 +11327,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -11311,7 +11362,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         },
@@ -11352,7 +11403,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRare To...  (LOOKS)"
+                    "@id": "CaladanDAO/awesome-web3/nft/looksrare/LooksRareToken"
                 }
             ]
         }

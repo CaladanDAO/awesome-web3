@@ -10,26 +10,44 @@
     "caladan:dataset": "bridges",
     "caladan:contracts": [
         {
-            "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool",
+            "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd",
             "@type": "caladan:Contract",
-            "caladan:contractName": "Across_Protocol_WBTC_Bridge_Pool",
+            "caladan:contractName": "BridgePoolProd",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd",
                     "evm:chainID": 1,
                     "evm:address": "0x02fbb64517e1c6ed69a6faa3abf37db0482f1152"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd",
+                    "evm:chainID": 1,
+                    "evm:address": "0x256c8919ce1ab0e33974cf6aa9c71561ef3017b6"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd",
+                    "evm:chainID": 1,
+                    "evm:address": "0x43298f9f91a4545df64748e78a2c777c580573d6"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd",
+                    "evm:chainID": 1,
+                    "evm:address": "0xdfe0ec39291e3b60aca122908f86809c9ee64e90"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Messenger",
+            "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Messenger",
             "@type": "caladan:Contract",
-            "caladan:contractName": "Across_Protocol_Arbitrum_Messenger",
+            "caladan:contractName": "Arbitrum_Messenger",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Messenger",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Messenger",
                     "evm:chainID": 1,
                     "evm:address": "0x0d8563d3b8b3fec542aae50a530c606dac4d1c4f"
                 }
@@ -49,26 +67,13 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool",
+            "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin",
             "@type": "caladan:Contract",
-            "caladan:contractName": "Across_Protocol_USDC_Bridge_Pool",
+            "caladan:contractName": "BridgeAdmin",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool",
-                    "evm:chainID": 1,
-                    "evm:address": "0x256c8919ce1ab0e33974cf6aa9c71561ef3017b6"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin",
-            "@type": "caladan:Contract",
-            "caladan:contractName": "Across_Protocol_Bridge_Admin",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin",
                     "evm:chainID": 1,
                     "evm:address": "0x30b44c676a05f1264d1de9cc31db5f2a945186b6"
                 }
@@ -88,13 +93,13 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Across_Config_Store_V2",
+            "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossConfigStore",
             "@type": "caladan:Contract",
-            "caladan:contractName": "Across_Protocol_Across_Config_Store_V2",
+            "caladan:contractName": "AcrossConfigStore",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Across_Config_Store_V2",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossConfigStore",
                     "evm:chainID": 1,
                     "evm:address": "0x3b03509645713718b78951126e0a6de6f10043f5"
                 }
@@ -114,52 +119,39 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle",
+            "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle",
             "@type": "caladan:Contract",
-            "caladan:contractName": "Across_Protocol_Skinny_Optimistic_Oracle",
+            "caladan:contractName": "SkinnyOptimisticOracle",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle",
                     "evm:chainID": 1,
                     "evm:address": "0x4060dba72344da74edaeeae51a71a57f7e96b6b4"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool",
+            "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken",
             "@type": "caladan:Contract",
-            "caladan:contractName": "Across_Protocol_Badger_Bridge_Pool",
+            "caladan:contractName": "AcrossToken",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool",
-                    "evm:chainID": 1,
-                    "evm:address": "0x43298f9f91a4545df64748e78a2c777c580573d6"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_",
-            "@type": "caladan:Contract",
-            "caladan:contractName": "Across_Proto_ACX_",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken",
                     "evm:chainID": 1,
                     "evm:address": "0x44108f0223a3c3028f5fe7aec7f9bb2e66bef82f"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Polygon_Token_Bridger_V2",
+            "@id": "CaladanDAO/awesome-web3/bridges/across/PolygonTokenBridger",
             "@type": "caladan:Contract",
-            "caladan:contractName": "Across_Protocol_Polygon_Token_Bridger_V2",
+            "caladan:contractName": "PolygonTokenBridger",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Polygon_Token_Bridger_V2",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/PolygonTokenBridger",
                     "evm:chainID": 1,
                     "evm:address": "0x48d990abda20afa1fd1da713abc041b60a922c65"
                 }
@@ -218,13 +210,13 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Adapter_V2",
+            "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Adapter",
             "@type": "caladan:Contract",
-            "caladan:contractName": "Across_Protocol_Arbitrum_Adapter_V2",
+            "caladan:contractName": "Arbitrum_Adapter",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Adapter_V2",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Adapter",
                     "evm:chainID": 1,
                     "evm:address": "0x937958992799bf4a9a656e6596fd10d7da5c2216"
                 }
@@ -253,19 +245,6 @@
                     "@id": "CaladanDAO/awesome-web3/bridges/across/HubPool",
                     "evm:chainID": 1,
                     "evm:address": "0xc186fa914353c44b2e33ebe05f21846f1048beda"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool",
-            "@type": "caladan:Contract",
-            "caladan:contractName": "Across_Protocol_UMA_Bridge_Pool",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool",
-                    "evm:chainID": 1,
-                    "evm:address": "0xdfe0ec39291e3b60aca122908f86809c9ee64e90"
                 }
             ]
         }
@@ -324,19 +303,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -372,23 +355,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -417,19 +404,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -551,19 +542,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -599,19 +594,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -647,19 +646,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -681,7 +684,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -717,19 +720,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -765,19 +772,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -850,19 +861,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -935,19 +950,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -969,7 +988,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1005,23 +1024,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1043,19 +1066,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1090,23 +1117,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1141,23 +1172,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1186,23 +1221,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1224,19 +1263,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1258,19 +1301,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1292,19 +1339,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1326,23 +1377,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1377,23 +1432,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1500,19 +1559,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1534,19 +1597,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1568,19 +1635,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1602,19 +1673,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1622,11 +1693,15 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/bridges/across/HubPool"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1661,19 +1736,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1787,19 +1866,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1821,19 +1904,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1841,7 +1928,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1876,23 +1963,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1921,19 +2012,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1955,19 +2050,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -1989,19 +2088,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2023,19 +2126,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2057,19 +2164,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2091,19 +2202,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2132,19 +2247,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2166,15 +2285,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2182,7 +2305,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2211,19 +2334,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Across_Config_Store_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossConfigStore"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2231,11 +2354,15 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/bridges/across/HubPool"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2257,23 +2384,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2295,19 +2426,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2329,19 +2464,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2363,23 +2502,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2401,19 +2544,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2435,23 +2582,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2521,19 +2672,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2603,19 +2758,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2644,19 +2803,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2678,7 +2841,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2706,19 +2869,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2740,19 +2907,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2760,11 +2927,15 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/bridges/across/HubPool"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2786,7 +2957,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2808,7 +2979,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -2915,19 +3086,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -3034,19 +3209,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -3068,19 +3247,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -3102,23 +3285,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -3133,19 +3320,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -3160,19 +3351,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -3187,19 +3382,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -3221,19 +3420,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -3241,11 +3440,15 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/bridges/across/HubPool"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -3267,23 +3470,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -3318,23 +3525,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -3375,23 +3586,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -3413,19 +3628,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -3447,19 +3666,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WBTC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_USDC_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Badger_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_UMA_Bridge_Pool"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_WETH_Bridge_Pool"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgePoolProd"
                 }
             ]
         },
@@ -3480,7 +3703,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Messenger"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Messenger"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -3513,19 +3736,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Messenger"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Messenger"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Across_Config_Store_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossConfigStore"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -3611,7 +3834,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Messenger"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Messenger"
                 }
             ]
         },
@@ -3633,7 +3856,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Messenger"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Messenger"
                 }
             ]
         },
@@ -3655,19 +3878,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Messenger"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Messenger"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Across_Config_Store_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossConfigStore"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -3733,7 +3956,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Messenger"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Messenger"
                 }
             ]
         },
@@ -3748,19 +3971,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Messenger"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Messenger"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Across_Config_Store_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossConfigStore"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -3790,19 +4013,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Messenger"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Messenger"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Across_Config_Store_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossConfigStore"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -3896,7 +4119,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Adapter_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Adapter"
                 }
             ]
         },
@@ -3955,7 +4178,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Adapter_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Adapter"
                 }
             ]
         },
@@ -4059,7 +4282,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Polygon_Token_Bridger_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/PolygonTokenBridger"
                 }
             ]
         },
@@ -4089,7 +4312,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Adapter_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Adapter"
                 }
             ]
         },
@@ -4159,7 +4382,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Adapter_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Adapter"
                 }
             ]
         },
@@ -4215,7 +4438,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Adapter_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Adapter"
                 }
             ]
         },
@@ -4298,7 +4521,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4327,7 +4550,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4363,7 +4586,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4392,7 +4615,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4428,7 +4651,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4457,7 +4680,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4479,7 +4702,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4501,7 +4724,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4523,7 +4746,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4566,7 +4789,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4607,7 +4830,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4629,11 +4852,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -4689,7 +4912,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4723,7 +4946,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4781,7 +5004,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4803,7 +5026,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -4859,7 +5082,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4881,7 +5104,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4903,7 +5126,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4931,7 +5154,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -4995,7 +5218,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -5036,7 +5259,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Bridge_Admin"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/BridgeAdmin"
                 }
             ]
         },
@@ -5065,7 +5288,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Across_Config_Store_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossConfigStore"
                 }
             ]
         },
@@ -5094,7 +5317,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Across_Config_Store_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossConfigStore"
                 }
             ]
         },
@@ -5123,7 +5346,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Across_Config_Store_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossConfigStore"
                 }
             ]
         },
@@ -5152,7 +5375,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Across_Config_Store_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossConfigStore"
                 }
             ]
         },
@@ -5180,7 +5403,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Across_Config_Store_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossConfigStore"
                 }
             ]
         },
@@ -5208,7 +5431,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Across_Config_Store_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossConfigStore"
                 }
             ]
         },
@@ -5402,7 +5625,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -5509,7 +5732,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -5616,7 +5839,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -5723,7 +5946,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -5830,7 +6053,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -5852,7 +6075,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -5874,7 +6097,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -5984,7 +6207,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -6100,7 +6323,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -6210,7 +6433,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -6320,7 +6543,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -6436,7 +6659,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -6558,7 +6781,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -6635,7 +6858,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -6700,7 +6923,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -6729,7 +6952,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -6845,7 +7068,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -6880,7 +7103,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Skinny_Optimistic_Oracle"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/SkinnyOptimisticOracle"
                 }
             ]
         },
@@ -6894,7 +7117,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 }
             ]
         },
@@ -6922,7 +7145,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 }
             ]
         },
@@ -6950,7 +7173,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Proto_ACX_"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/AcrossToken"
                 }
             ]
         },
@@ -7001,7 +7224,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Polygon_Token_Bridger_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/PolygonTokenBridger"
                 }
             ]
         },
@@ -7023,7 +7246,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Polygon_Token_Bridger_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/PolygonTokenBridger"
                 }
             ]
         },
@@ -7045,7 +7268,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Polygon_Token_Bridger_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/PolygonTokenBridger"
                 }
             ]
         },
@@ -7067,7 +7290,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Polygon_Token_Bridger_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/PolygonTokenBridger"
                 }
             ]
         },
@@ -7089,7 +7312,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Polygon_Token_Bridger_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/PolygonTokenBridger"
                 }
             ]
         },
@@ -7111,7 +7334,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Polygon_Token_Bridger_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/PolygonTokenBridger"
                 }
             ]
         },
@@ -7133,7 +7356,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Polygon_Token_Bridger_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/PolygonTokenBridger"
                 }
             ]
         },
@@ -7155,7 +7378,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Polygon_Token_Bridger_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/PolygonTokenBridger"
                 }
             ]
         },
@@ -7177,7 +7400,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Polygon_Token_Bridger_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/PolygonTokenBridger"
                 }
             ]
         },
@@ -7205,7 +7428,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Polygon_Token_Bridger_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/PolygonTokenBridger"
                 }
             ]
         },
@@ -8562,7 +8785,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Adapter_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Adapter"
                 }
             ]
         },
@@ -8584,7 +8807,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Adapter_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Adapter"
                 }
             ]
         },
@@ -8606,7 +8829,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Adapter_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Adapter"
                 }
             ]
         },
@@ -8628,7 +8851,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Adapter_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Adapter"
                 }
             ]
         },
@@ -8650,7 +8873,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Adapter_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Adapter"
                 }
             ]
         },
@@ -8672,7 +8895,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Adapter_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Adapter"
                 }
             ]
         },
@@ -8694,7 +8917,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/bridges/across/Across_Protocol_Arbitrum_Adapter_V2"
+                    "@id": "CaladanDAO/awesome-web3/bridges/across/Arbitrum_Adapter"
                 }
             ]
         },

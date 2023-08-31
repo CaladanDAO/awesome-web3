@@ -10,17 +10,33 @@
     "caladan:dataset": "defi",
     "caladan:contracts": [
         {
-            "@id": "CaladanDAO/awesome-web3/defi/treasure/MAGIC (MAGIC)",
+            "@id": "CaladanDAO/awesome-web3/defi/treasure/UpgradeableBeacon",
             "@type": "caladan:Contract",
+            "caladan:contractName": "UpgradeableBeacon",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/treasure/MAGIC (MAGIC)",
+                    "@id": "CaladanDAO/awesome-web3/defi/treasure/UpgradeableBeacon",
                     "evm:chainID": 42161,
                     "evm:address": "0x539bde0d7dbd336b79148aa742883198bbf60342"
                 }
             ]
         }
     ],
-    "caladan:abi": []
+    "caladan:abi": [
+        {
+            "@id": "0x8d5004028f09180abc4210f60fbf14955ac50d24898f80bef2b1efe077e75bd6",
+            "caladan:signature": "0()",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/treasure/UpgradeableBeacon"
+                }
+            ]
+        }
+    ]
 }

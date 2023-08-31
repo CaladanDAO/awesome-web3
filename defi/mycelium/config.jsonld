@@ -12,6 +12,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe",
             "@type": "caladan:Contract",
+            "caladan:contractName": "GnosisSafe",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -28,8 +29,22 @@
             ]
         },
         {
+            "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafeL2",
+            "@type": "caladan:Contract",
+            "caladan:contractName": "GnosisSafeL2",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafeL2",
+                    "evm:chainID": 42161,
+                    "evm:address": "0x9f59e27fd6c8d96dfb89da58c0c98bac07e7a21a"
+                }
+            ]
+        },
+        {
             "@id": "CaladanDAO/awesome-web3/defi/mycelium/TracerMultisigDAO",
             "@type": "caladan:Contract",
+            "caladan:contractName": "TracerMultisigDAO",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -40,12 +55,13 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/mycelium/null",
+            "@id": "CaladanDAO/awesome-web3/defi/mycelium/UpgradeableBeacon",
             "@type": "caladan:Contract",
+            "caladan:contractName": "UpgradeableBeacon",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/null",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/UpgradeableBeacon",
                     "evm:chainID": 42161,
                     "evm:address": "0xc74fe4c715510ec2f8c61d70d397b32043f55abe"
                 }
@@ -71,7 +87,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/UpgradeableBeacon"
                 }
             ]
         },
@@ -1768,6 +1784,27 @@
                 {
                     "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "caladan:signature": "0(address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_singleton",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/mycelium/GnosisSafeL2"
                 }
             ]
         },

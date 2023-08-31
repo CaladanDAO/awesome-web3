@@ -12,6 +12,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/synapse/GnosisSafe",
             "@type": "caladan:Contract",
+            "caladan:contractName": "GnosisSafe",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -28,12 +29,13 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)",
+            "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20",
             "@type": "caladan:Contract",
+            "caladan:contractName": "SynapseERC20",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)",
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20",
                     "evm:chainID": 1,
                     "evm:address": "0x0f2d719407fdbeff09d87557abb7232601fd9f29"
                 }
@@ -42,6 +44,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseBridge",
             "@type": "caladan:Contract",
+            "caladan:contractName": "SynapseBridge",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -52,20 +55,28 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 2",
+            "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap",
             "@type": "caladan:Contract",
+            "caladan:contractName": "NerveBridgeZap",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 2",
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap",
                     "evm:chainID": 1,
                     "evm:address": "0x518b553fe47208389271745155a6abf4a961ef28"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap",
+                    "evm:chainID": 1,
+                    "evm:address": "0xa2569370a9d4841c9a62fc51269110f2eb7e0171"
                 }
             ]
         },
         {
             "@id": "CaladanDAO/awesome-web3/defi/synapse/TimelockController",
             "@type": "caladan:Contract",
+            "caladan:contractName": "TimelockController",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -76,24 +87,13 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 1",
+            "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2",
             "@type": "caladan:Contract",
+            "caladan:contractName": "MiniChefV2",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 1",
-                    "evm:chainID": 1,
-                    "evm:address": "0xa2569370a9d4841c9a62fc51269110f2eb7e0171"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef",
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2",
                     "evm:chainID": 1,
                     "evm:address": "0xd10ef2a513cee0db54e959ef16cac711470b62cf"
                 }
@@ -1705,7 +1705,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -1741,7 +1741,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1781,7 +1781,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1821,7 +1821,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1861,7 +1861,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -1883,7 +1883,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1909,7 +1909,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -1931,7 +1931,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -1966,7 +1966,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2001,7 +2001,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2030,7 +2030,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2052,7 +2052,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2080,7 +2080,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2102,7 +2102,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2137,7 +2137,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2166,7 +2166,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2205,7 +2205,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2234,7 +2234,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2262,7 +2262,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2301,7 +2301,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2340,7 +2340,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2380,7 +2380,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2408,7 +2408,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2430,7 +2430,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2459,7 +2459,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2517,7 +2517,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2545,7 +2545,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2577,7 +2577,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2603,7 +2603,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2625,7 +2625,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2660,7 +2660,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2701,7 +2701,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse  (SYN)"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/SynapseERC20"
                 }
             ]
         },
@@ -2928,7 +2928,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 }
             ]
         },
@@ -2957,11 +2957,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 }
             ]
         },
@@ -2996,11 +2996,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 }
             ]
         },
@@ -3040,11 +3040,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 }
             ]
         },
@@ -3108,11 +3108,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 }
             ]
         },
@@ -3152,11 +3152,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 }
             ]
         },
@@ -3208,11 +3208,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 }
             ]
         },
@@ -3288,11 +3288,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 }
             ]
         },
@@ -4131,7 +4131,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 }
             ]
         },
@@ -4153,7 +4153,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 }
             ]
         },
@@ -4187,7 +4187,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 }
             ]
         },
@@ -4245,7 +4245,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: Bridge Zap 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/NerveBridgeZap"
                 }
             ]
         },
@@ -4599,7 +4599,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -4642,7 +4642,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -4685,7 +4685,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -4721,7 +4721,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -4764,7 +4764,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -4807,7 +4807,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -4829,7 +4829,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -4872,7 +4872,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -4901,7 +4901,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -4944,7 +4944,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -4966,7 +4966,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5000,7 +5000,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5041,7 +5041,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5056,7 +5056,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5090,7 +5090,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5118,7 +5118,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5146,7 +5146,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5175,7 +5175,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5197,7 +5197,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5219,7 +5219,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5241,7 +5241,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5276,7 +5276,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5340,7 +5340,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5381,7 +5381,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5403,7 +5403,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5432,7 +5432,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5472,7 +5472,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5494,7 +5494,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5516,7 +5516,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5538,7 +5538,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5572,7 +5572,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5618,7 +5618,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5659,7 +5659,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5693,7 +5693,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         },
@@ -5727,7 +5727,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/synapse/Synapse: MiniChef"
+                    "@id": "CaladanDAO/awesome-web3/defi/synapse/MiniChefV2"
                 }
             ]
         }

@@ -10,15 +10,21 @@
     "caladan:dataset": "ethereum",
     "caladan:contracts": [
         {
-            "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1",
+            "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin",
             "@type": "caladan:Contract",
-            "caladan:contractName": "contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1",
+            "caladan:contractName": "ProxyAdmin",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin",
                     "evm:chainID": 1,
                     "evm:address": "0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin",
+                    "evm:chainID": 8453,
+                    "evm:address": "0x4200000000000000000000000000000000000018"
                 }
             ]
         },
@@ -36,13 +42,13 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000006_8453",
+            "@id": "CaladanDAO/awesome-web3/ethereum/base/WETH9",
             "@type": "caladan:Contract",
-            "caladan:contractName": "contract_0x4200000000000000000000000000000000000006_8453",
+            "caladan:contractName": "WETH9",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000006_8453",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/WETH9",
                     "evm:chainID": 8453,
                     "evm:address": "0x4200000000000000000000000000000000000006"
                 }
@@ -62,13 +68,13 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000008_8453",
+            "@id": "CaladanDAO/awesome-web3/ethereum/base/Proxy",
             "@type": "caladan:Contract",
-            "caladan:contractName": "contract_0x4200000000000000000000000000000000000008_8453",
+            "caladan:contractName": "Proxy",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000008_8453",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/Proxy",
                     "evm:chainID": 8453,
                     "evm:address": "0x4200000000000000000000000000000000000008"
                 }
@@ -101,13 +107,13 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000011_8453",
+            "@id": "CaladanDAO/awesome-web3/ethereum/base/SequencerFeeVault",
             "@type": "caladan:Contract",
-            "caladan:contractName": "contract_0x4200000000000000000000000000000000000011_8453",
+            "caladan:contractName": "SequencerFeeVault",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000011_8453",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/SequencerFeeVault",
                     "evm:chainID": 8453,
                     "evm:address": "0x4200000000000000000000000000000000000011"
                 }
@@ -179,19 +185,6 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin",
-            "@type": "caladan:Contract",
-            "caladan:contractName": "ProxyAdmin",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin",
-                    "evm:chainID": 8453,
-                    "evm:address": "0x4200000000000000000000000000000000000018"
-                }
-            ]
-        },
-        {
             "@id": "CaladanDAO/awesome-web3/ethereum/base/BaseFeeVault",
             "@type": "caladan:Contract",
             "caladan:contractName": "BaseFeeVault",
@@ -244,13 +237,13 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x8efb6b5c4767b09dc9aa6af4eaa89f749522bae2_1",
+            "@id": "CaladanDAO/awesome-web3/ethereum/base/AddressManager",
             "@type": "caladan:Contract",
-            "caladan:contractName": "contract_0x8efb6b5c4767b09dc9aa6af4eaa89f749522bae2_1",
+            "caladan:contractName": "AddressManager",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x8efb6b5c4767b09dc9aa6af4eaa89f749522bae2_1",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/AddressManager",
                     "evm:chainID": 1,
                     "evm:address": "0x8efb6b5c4767b09dc9aa6af4eaa89f749522bae2"
                 }
@@ -275,7 +268,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -287,7 +280,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000008_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/Proxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -299,7 +292,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000011_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/SequencerFeeVault"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -364,11 +357,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x8efb6b5c4767b09dc9aa6af4eaa89f749522bae2_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/AddressManager"
                 }
             ]
         },
@@ -390,7 +383,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 }
             ]
         },
@@ -418,7 +411,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 }
             ]
         },
@@ -447,7 +440,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 }
             ]
         },
@@ -476,7 +469,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 }
             ]
         },
@@ -505,7 +498,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 }
             ]
         },
@@ -527,7 +520,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 }
             ]
         },
@@ -549,11 +542,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x8efb6b5c4767b09dc9aa6af4eaa89f749522bae2_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/AddressManager"
                 }
             ]
         },
@@ -582,7 +575,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 }
             ]
         },
@@ -597,11 +590,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x8efb6b5c4767b09dc9aa6af4eaa89f749522bae2_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/AddressManager"
                 }
             ]
         },
@@ -629,11 +622,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x8efb6b5c4767b09dc9aa6af4eaa89f749522bae2_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/AddressManager"
                 }
             ]
         },
@@ -655,7 +648,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 }
             ]
         },
@@ -683,7 +676,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 }
             ]
         },
@@ -711,7 +704,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 }
             ]
         },
@@ -733,7 +726,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 }
             ]
         },
@@ -755,11 +748,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x8efb6b5c4767b09dc9aa6af4eaa89f749522bae2_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/AddressManager"
                 }
             ]
         },
@@ -787,7 +780,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 }
             ]
         },
@@ -821,7 +814,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/ProxyAdmin"
                 }
             ]
         },
@@ -973,7 +966,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000006_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/WETH9"
                 }
             ]
         },
@@ -1002,7 +995,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000006_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/WETH9"
                 }
             ]
         },
@@ -1038,7 +1031,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000006_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/WETH9"
                 }
             ]
         },
@@ -1067,7 +1060,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000006_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/WETH9"
                 }
             ]
         },
@@ -1104,7 +1097,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000006_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/WETH9"
                 }
             ]
         },
@@ -1141,7 +1134,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000006_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/WETH9"
                 }
             ]
         },
@@ -1172,7 +1165,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000006_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/WETH9"
                 }
             ]
         },
@@ -1196,7 +1189,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000006_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/WETH9"
                 }
             ]
         },
@@ -1213,7 +1206,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000006_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/WETH9"
                 }
             ]
         },
@@ -1237,7 +1230,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000006_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/WETH9"
                 }
             ]
         },
@@ -1261,7 +1254,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000006_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/WETH9"
                 }
             ]
         },
@@ -1285,7 +1278,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000006_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/WETH9"
                 }
             ]
         },
@@ -1322,7 +1315,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000006_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/WETH9"
                 }
             ]
         },
@@ -1365,7 +1358,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000006_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/WETH9"
                 }
             ]
         },
@@ -1389,7 +1382,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000006_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/WETH9"
                 }
             ]
         },
@@ -1422,7 +1415,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000008_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/Proxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1434,7 +1427,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000011_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/SequencerFeeVault"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1496,7 +1489,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000008_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/Proxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1508,7 +1501,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000011_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/SequencerFeeVault"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1570,7 +1563,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000008_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/Proxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1582,7 +1575,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000011_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/SequencerFeeVault"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1644,7 +1637,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000008_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/Proxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1656,7 +1649,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000011_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/SequencerFeeVault"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1718,7 +1711,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000008_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/Proxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1730,7 +1723,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000011_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/SequencerFeeVault"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1792,7 +1785,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000008_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/Proxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1804,7 +1797,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000011_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/SequencerFeeVault"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1879,7 +1872,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000008_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/Proxy"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1891,7 +1884,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x4200000000000000000000000000000000000011_8453"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/SequencerFeeVault"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1990,7 +1983,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x8efb6b5c4767b09dc9aa6af4eaa89f749522bae2_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/AddressManager"
                 }
             ]
         },
@@ -2019,7 +2012,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/base/contract_0x8efb6b5c4767b09dc9aa6af4eaa89f749522bae2_1"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/base/AddressManager"
                 }
             ]
         }

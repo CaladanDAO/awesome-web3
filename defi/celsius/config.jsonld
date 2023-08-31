@@ -10,32 +10,47 @@
     "caladan:dataset": "defi",
     "caladan:contracts": [
         {
-            "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3",
+            "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager",
             "@type": "caladan:Contract",
+            "caladan:contractName": "AddressManager",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager",
                     "evm:chainID": 1,
                     "evm:address": "0x4859df02d1c7cd85c2a283708958aaa7728bad67"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager",
+                    "evm:chainID": 1,
+                    "evm:address": "0xfe4546fefe124f30788c4cc1bb9aa6907a7987f9"
                 }
             ]
         },
         {
             "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1",
             "@type": "caladan:Contract",
+            "caladan:contractName": "CollateralManagerV1",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1",
                     "evm:chainID": 1,
                     "evm:address": "0x520da65f3b9b93a5bb6a1db911de40ae197aa639"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1",
+                    "evm:chainID": 1,
+                    "evm:address": "0x9b436168dd080f1f95d1919258c64590263c0dae"
                 }
             ]
         },
         {
             "@id": "CaladanDAO/awesome-web3/defi/celsius/WrappedTokenV1",
             "@type": "caladan:Contract",
+            "caladan:contractName": "WrappedTokenV1",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -52,38 +67,15 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1",
+            "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken",
             "@type": "caladan:Contract",
+            "caladan:contractName": "CelsiusToken",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1",
-                    "evm:chainID": 1,
-                    "evm:address": "0x9b436168dd080f1f95d1919258c64590263c0dae"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)",
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken",
                     "evm:chainID": 1,
                     "evm:address": "0xaaaebe6fe48e54f431b0c390cfaf0b017d09d42d"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/celsius/null",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null",
-                    "evm:chainID": 1,
-                    "evm:address": "0xfe4546fefe124f30788c4cc1bb9aa6907a7987f9"
                 }
             ]
         }
@@ -114,7 +106,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -122,11 +114,11 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 }
             ]
         },
@@ -148,7 +140,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -156,11 +148,11 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 }
             ]
         },
@@ -189,15 +181,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 }
             ]
         },
@@ -219,7 +211,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -227,11 +219,11 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 }
             ]
         },
@@ -259,11 +251,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 }
             ]
         },
@@ -285,15 +277,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 }
             ]
         },
@@ -322,11 +314,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 }
             ]
         },
@@ -348,15 +340,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 }
             ]
         },
@@ -384,11 +376,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 }
             ]
         },
@@ -403,15 +395,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 }
             ]
         },
@@ -433,15 +425,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 }
             ]
         },
@@ -463,15 +455,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 }
             ]
         },
@@ -499,15 +491,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 }
             ]
         },
@@ -536,11 +528,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 }
             ]
         },
@@ -575,11 +567,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/AddressManager"
                 }
             ]
         },
@@ -809,7 +801,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -1493,7 +1485,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -2123,7 +2115,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -2162,7 +2154,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -2195,7 +2187,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -2326,7 +2318,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -3031,7 +3023,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -3586,7 +3578,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -3612,7 +3604,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -3651,7 +3643,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -3696,7 +3688,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -3854,7 +3846,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 }
             ]
         },
@@ -3897,7 +3889,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 }
             ]
         },
@@ -3940,7 +3932,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 }
             ]
         },
@@ -3990,7 +3982,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 }
             ]
         },
@@ -4036,7 +4028,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 }
             ]
         },
@@ -4070,7 +4062,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 }
             ]
         },
@@ -4092,7 +4084,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 }
             ]
         },
@@ -4114,7 +4106,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 }
             ]
         },
@@ -4143,7 +4135,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 }
             ]
         },
@@ -4200,7 +4192,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 }
             ]
         },
@@ -4251,7 +4243,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 }
             ]
         },
@@ -4280,7 +4272,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 }
             ]
         },
@@ -4308,7 +4300,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 }
             ]
         },
@@ -4355,7 +4347,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 }
             ]
         },
@@ -4384,7 +4376,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 }
             ]
         },
@@ -4413,7 +4405,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusX 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CollateralManagerV1"
                 }
             ]
         },
@@ -4430,7 +4422,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -4453,7 +4445,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -4470,7 +4462,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -4509,7 +4501,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -4538,7 +4530,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -4559,7 +4551,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -4573,7 +4565,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },
@@ -4587,7 +4579,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/celsius/Celsius  (CEL)"
+                    "@id": "CaladanDAO/awesome-web3/defi/celsius/CelsiusToken"
                 }
             ]
         },

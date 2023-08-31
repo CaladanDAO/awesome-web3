@@ -10,56 +10,78 @@
     "caladan:dataset": "defi",
     "caladan:contracts": [
         {
-            "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP",
+            "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm",
             "@type": "caladan:Contract",
+            "caladan:contractName": "LPFarm",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP",
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm",
                     "evm:chainID": 1,
                     "evm:address": "0x01acad2228f18598cd2b8611acd37992bf27313c"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm",
+                    "evm:chainID": 1,
+                    "evm:address": "0xa659e66e116d354e779d8dbb35319af67171ffb4"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm",
+                    "evm:chainID": 1,
+                    "evm:address": "0xd7b8ef47c08f824cea3d837afa61484e81d14bfb"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm",
+                    "evm:chainID": 1,
+                    "evm:address": "0xf991f1e1b8acd657661c89b5cd452d86de76a8c1"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm",
+                    "evm:chainID": 1,
+                    "evm:address": "0xfdf5709d44b26a7dd112556dd1b1ce53c0eaf454"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master",
+            "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController",
             "@type": "caladan:Contract",
+            "caladan:contractName": "FarmController",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master",
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController",
                     "evm:chainID": 1,
                     "evm:address": "0x0bdb7976c34ab05e5a9031f258b8956f68ee29cf"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
+                },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock",
-                    "evm:chainID": 1,
-                    "evm:address": "0x1337def11d788e62a253fea846a505ee1b57623f"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController",
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController",
                     "evm:chainID": 1,
                     "evm:address": "0x1337def159da6f97db7c4d0e257dc689837b9e70"
                 }
             ]
         },
         {
+            "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned",
+            "@type": "caladan:Contract",
+            "caladan:contractName": "TimelockOwned",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned",
+                    "evm:chainID": 1,
+                    "evm:address": "0x1337def11d788e62a253fea846a505ee1b57623f"
+                }
+            ]
+        },
+        {
             "@id": "CaladanDAO/awesome-web3/defi/armor/StakeManager",
             "@type": "caladan:Contract",
+            "caladan:contractName": "StakeManager",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -72,6 +94,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/armor/UtilizationFarm",
             "@type": "caladan:Contract",
+            "caladan:contractName": "UtilizationFarm",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -84,84 +107,32 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards",
             "@type": "caladan:Contract",
+            "caladan:contractName": "ReferralRewards",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards",
                     "evm:chainID": 1,
                     "evm:address": "0x1337def1c79053da23921a3634adbd12f3b748a5"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/armor/GnosisSafe",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
+                },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/GnosisSafe",
-                    "evm:chainID": 1,
-                    "evm:address": "0x1f28ed9d4792a567dad779235c2b766ab84d8e33"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP",
-                    "evm:chainID": 1,
-                    "evm:address": "0xa659e66e116d354e779d8dbb35319af67171ffb4"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP",
-                    "evm:chainID": 1,
-                    "evm:address": "0xd7b8ef47c08f824cea3d837afa61484e81d14bfb"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master",
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards",
                     "evm:chainID": 1,
                     "evm:address": "0xeff1cdc3cc01afab104b00a7d9cd09619b94ae8f"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP",
+            "@id": "CaladanDAO/awesome-web3/defi/armor/GnosisSafe",
             "@type": "caladan:Contract",
+            "caladan:contractName": "GnosisSafe",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP",
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/GnosisSafe",
                     "evm:chainID": 1,
-                    "evm:address": "0xf991f1e1b8acd657661c89b5cd452d86de76a8c1"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP",
-                    "evm:chainID": 1,
-                    "evm:address": "0xfdf5709d44b26a7dd112556dd1b1ce53c0eaf454"
+                    "evm:address": "0x1f28ed9d4792a567dad779235c2b766ab84d8e33"
                 }
             ]
         }
@@ -185,23 +156,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -230,23 +201,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -275,23 +246,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -320,23 +291,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -358,27 +329,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -407,27 +378,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -449,23 +420,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -494,27 +465,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -529,23 +500,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -560,23 +531,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -604,27 +575,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -646,27 +617,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -688,27 +659,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -730,27 +701,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -772,27 +743,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -814,23 +785,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -852,27 +823,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -894,27 +865,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -936,27 +907,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -978,31 +949,31 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -1031,27 +1002,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -1073,23 +1044,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -1111,23 +1082,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -1149,23 +1120,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -1187,27 +1158,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -1236,27 +1207,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -1278,23 +1249,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WBTC Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/DAI 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ARMOR/WETH Uni LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: ETH/ARMOR 1inch LP"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/LPFarm"
                 }
             ]
         },
@@ -1323,15 +1294,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 }
             ]
         },
@@ -1360,15 +1331,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 }
             ]
         },
@@ -1397,7 +1368,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 }
             ]
         },
@@ -1426,7 +1397,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 }
             ]
         },
@@ -1448,7 +1419,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 }
             ]
         },
@@ -1477,7 +1448,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 }
             ]
         },
@@ -1499,7 +1470,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 }
             ]
         },
@@ -1521,15 +1492,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 }
             ]
         },
@@ -1558,7 +1529,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 }
             ]
         },
@@ -1580,7 +1551,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 }
             ]
         },
@@ -1614,7 +1585,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 }
             ]
         },
@@ -1636,15 +1607,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 }
             ]
         },
@@ -1673,7 +1644,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 }
             ]
         },
@@ -1688,15 +1659,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 }
             ]
         },
@@ -1711,15 +1682,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 }
             ]
         },
@@ -1741,15 +1712,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 }
             ]
         },
@@ -1777,7 +1748,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 }
             ]
         },
@@ -1799,7 +1770,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 }
             ]
         },
@@ -1821,15 +1792,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 }
             ]
         },
@@ -1851,15 +1822,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 }
             ]
         },
@@ -1881,7 +1852,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 }
             ]
         },
@@ -1903,7 +1874,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 }
             ]
         },
@@ -1917,7 +1888,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned"
                 }
             ]
         },
@@ -1967,7 +1938,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned"
                 }
             ]
         },
@@ -2024,7 +1995,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned"
                 }
             ]
         },
@@ -2046,7 +2017,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned"
                 }
             ]
         },
@@ -2068,7 +2039,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned"
                 }
             ]
         },
@@ -2090,7 +2061,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned"
                 }
             ]
         },
@@ -2124,7 +2095,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned"
                 }
             ]
         },
@@ -2146,7 +2117,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Timelock"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/TimelockOwned"
                 }
             ]
         },
@@ -2167,7 +2138,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2212,7 +2183,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2246,7 +2217,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2280,7 +2251,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2314,7 +2285,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2348,7 +2319,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2382,7 +2353,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: FarmController"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/FarmController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2437,7 +2408,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 }
             ]
         },
@@ -2480,7 +2451,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 }
             ]
         },
@@ -2509,7 +2480,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 }
             ]
         },
@@ -2545,7 +2516,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 }
             ]
         },
@@ -2567,7 +2538,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 }
             ]
         },
@@ -2601,7 +2572,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 }
             ]
         },
@@ -2623,7 +2594,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 }
             ]
         },
@@ -2657,7 +2628,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/armor/Armor.fi: Referral Rewards Master"
+                    "@id": "CaladanDAO/awesome-web3/defi/armor/ReferralRewards"
                 }
             ]
         }

@@ -10,24 +10,26 @@
     "caladan:dataset": "defi",
     "caladan:contracts": [
         {
-            "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Aavegotchi GHST Token (PoS) (GHST)",
+            "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/UChildERC20",
             "@type": "caladan:Contract",
+            "caladan:contractName": "UChildERC20",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Aavegotchi GHST Token (PoS) (GHST)",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/UChildERC20",
                     "evm:chainID": 137,
                     "evm:address": "0x385eeac5cb85a38a9a07a70c73e0a3271cfb54a7"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Aavegotchi: DAO",
+            "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit",
             "@type": "caladan:Contract",
+            "caladan:contractName": "MultiSigWalletWithDailyLimit",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Aavegotchi: DAO",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit",
                     "evm:chainID": 137,
                     "evm:address": "0xb208f8bb431f580cc4b216826affb128cd1431ab"
                 }
@@ -36,6 +38,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Agent",
             "@type": "caladan:Contract",
+            "caladan:contractName": "Agent",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -48,6 +51,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/Vault",
             "@type": "caladan:Contract",
+            "caladan:contractName": "Vault",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -59,6 +63,1195 @@
         }
     ],
     "caladan:abi": [
+        {
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "caladan:signature": "0(address)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_proxyTo",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/UChildERC20"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xdbe5fd65bcdbae152f24ab660ea68e72b4d4705b57b16e0caae994e214680ee2",
+            "caladan:signature": "ProxyOwnerUpdate(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ProxyOwnerUpdate",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_new",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_old",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/UChildERC20"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd32d24edea94f55e932d9a008afc425a8561462d1b1f57bc6e508e9a6b9509e1",
+            "caladan:signature": "ProxyUpdated(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "ProxyUpdated",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_new",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_old",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/UChildERC20"
+                }
+            ]
+        },
+        {
+            "@id": "0x5c60da1b",
+            "caladan:signature": "implementation()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "implementation",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/UChildERC20"
+                }
+            ]
+        },
+        {
+            "@id": "0x025313a2",
+            "caladan:signature": "proxyOwner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "proxyOwner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/UChildERC20"
+                }
+            ]
+        },
+        {
+            "@id": "0x4555d5c9",
+            "caladan:signature": "proxyType()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "pure",
+            "caladan:name": "proxyType",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "proxyTypeId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/UChildERC20"
+                }
+            ]
+        },
+        {
+            "@id": "0xf1739cae",
+            "caladan:signature": "transferProxyOwnership(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferProxyOwnership",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/UChildERC20"
+                }
+            ]
+        },
+        {
+            "@id": "0xd88ca2c8",
+            "caladan:signature": "updateAndCall(address,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "payable",
+            "caladan:name": "updateAndCall",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_newProxyTo",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/UChildERC20"
+                }
+            ]
+        },
+        {
+            "@id": "0x025b22bc",
+            "caladan:signature": "updateImplementation(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "updateImplementation",
+            "caladan:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_newProxyTo",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/UChildERC20"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x025e7c27",
+            "caladan:signature": "owners(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "owners",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x173825d9",
+            "caladan:signature": "removeOwner(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeOwner",
+            "caladan:inputs": [
+                {
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x20ea8d86",
+            "caladan:signature": "revokeConfirmation(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "revokeConfirmation",
+            "caladan:inputs": [
+                {
+                    "name": "transactionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x2f54bf6e",
+            "caladan:signature": "isOwner(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isOwner",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x3411c81c",
+            "caladan:signature": "confirmations(uint256,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "confirmations",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x4bc9fdc2",
+            "caladan:signature": "calcMaxWithdraw()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "calcMaxWithdraw",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x54741525",
+            "caladan:signature": "getTransactionCount(bool,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getTransactionCount",
+            "caladan:inputs": [
+                {
+                    "name": "pending",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "executed",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "count",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x67eeba0c",
+            "caladan:signature": "dailyLimit()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "dailyLimit",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x6b0c932d",
+            "caladan:signature": "lastDay()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "lastDay",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x7065cb48",
+            "caladan:signature": "addOwner(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addOwner",
+            "caladan:inputs": [
+                {
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x784547a7",
+            "caladan:signature": "isConfirmed(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isConfirmed",
+            "caladan:inputs": [
+                {
+                    "name": "transactionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x8b51d13f",
+            "caladan:signature": "getConfirmationCount(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getConfirmationCount",
+            "caladan:inputs": [
+                {
+                    "name": "transactionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "count",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x9ace38c2",
+            "caladan:signature": "transactions(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "transactions",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "destination",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "name": "executed",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa0e67e2b",
+            "caladan:signature": "getOwners()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getOwners",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address[]",
+                    "@type": "address[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa8abe69a",
+            "caladan:signature": "getTransactionIds(uint256,uint256,bool,bool)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getTransactionIds",
+            "caladan:inputs": [
+                {
+                    "name": "from",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "to",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "pending",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "executed",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "_transactionIds",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb5dc40c3",
+            "caladan:signature": "getConfirmations(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getConfirmations",
+            "caladan:inputs": [
+                {
+                    "name": "transactionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "_confirmations",
+                    "type": "address[]",
+                    "@type": "address[]"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb77bf600",
+            "caladan:signature": "transactionCount()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "transactionCount",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xba51a6df",
+            "caladan:signature": "changeRequirement(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "changeRequirement",
+            "caladan:inputs": [
+                {
+                    "name": "_required",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xc01a8c84",
+            "caladan:signature": "confirmTransaction(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "confirmTransaction",
+            "caladan:inputs": [
+                {
+                    "name": "transactionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xc6427474",
+            "caladan:signature": "submitTransaction(address,uint256,bytes)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "submitTransaction",
+            "caladan:inputs": [
+                {
+                    "name": "destination",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "transactionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xcea08621",
+            "caladan:signature": "changeDailyLimit(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "changeDailyLimit",
+            "caladan:inputs": [
+                {
+                    "name": "_dailyLimit",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd74f8edd",
+            "caladan:signature": "MAX_OWNER_COUNT()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "MAX_OWNER_COUNT",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xdc8452cd",
+            "caladan:signature": "required()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "required",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe20056e6",
+            "caladan:signature": "replaceOwner(address,address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "replaceOwner",
+            "caladan:inputs": [
+                {
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xee22610b",
+            "caladan:signature": "executeTransaction(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "executeTransaction",
+            "caladan:inputs": [
+                {
+                    "name": "transactionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xf059cf2b",
+            "caladan:signature": "spentToday()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "spentToday",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0x18c004e5e5440bd967e1b3a7e512aa958f9005ba154842b863b8f64dd6ad3da6",
+            "caladan:signature": "0(address[],uint256,uint256)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "name": "_owners",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "name": "_required",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_dailyLimit",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc71bdc6afaf9b1aa90a7078191d4fc1adf3bf680fca3183697df6b0dc226bca2",
+            "caladan:signature": "DailyLimitChange(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "DailyLimitChange",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "dailyLimit",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x4a504a94899432a9846e1aa406dceb1bcfd538bb839071d49d1e5e23f5be30ef",
+            "caladan:signature": "Confirmation(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Confirmation",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "transactionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf6a317157440607f36269043eb55f1287a5a19ba2216afeab88cd46cbcfb88e9",
+            "caladan:signature": "Revocation(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Revocation",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "transactionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc0ba8fe4b176c1714197d43b9cc6bcf797a4a7461c5fe8d0ef6e184ae7601e51",
+            "caladan:signature": "Submission(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Submission",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "transactionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x33e13ecb54c3076d8e8bb8c2881800a4d972b792045ffae98fdf46df365fed75",
+            "caladan:signature": "Execution(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Execution",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "transactionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x526441bb6c1aba3c9a4a6ca1d6545da9c2333c8c48343ef398eb858d72b79236",
+            "caladan:signature": "ExecutionFailure(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "ExecutionFailure",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "transactionId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c",
+            "caladan:signature": "Deposit(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Deposit",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf39e6e1eb0edcf53c221607b54b00cd28f3196fed0a24994dc308b8f611b682d",
+            "caladan:signature": "OwnerAddition(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnerAddition",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8001553a916ef2f495d26a907cc54d96ed840d7bda71e73194bf5a9df7a76b90",
+            "caladan:signature": "OwnerRemoval(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnerRemoval",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xa3f1ee9126a074d9326c682f561767f710e927faa811f7a99829d49dc421797a",
+            "caladan:signature": "RequirementChange(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "RequirementChange",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "required",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/aavegotchi/MultiSigWalletWithDailyLimit"
+                }
+            ]
+        },
         {
             "constant": true,
             "payable": false,

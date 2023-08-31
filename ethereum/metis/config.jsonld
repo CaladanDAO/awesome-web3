@@ -12,18 +12,26 @@
         {
             "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger",
             "@type": "caladan:Contract",
+            "caladan:contractName": "L1CrossDomainMessenger",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger",
                     "evm:chainID": 1,
                     "evm:address": "0x081d1101855bd523ba69a9794e0217f0db6323ff"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger",
+                    "evm:chainID": 1,
+                    "evm:address": "0x8bf439ef7167023f009e24b21719ca5f768ecb36"
                 }
             ]
         },
         {
             "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer",
             "@type": "caladan:Contract",
+            "caladan:contractName": "ChainStorageContainer",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -35,25 +43,20 @@
                     "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer",
                     "evm:chainID": 1,
-                    "evm:address": "0xa91ea6f5d1eda8e6686639d6c88b309cf35d2e57"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
+                    "evm:address": "0x38473feb3a6366757a249db2ca4fbb2c663416b7"
+                },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer",
                     "evm:chainID": 1,
-                    "evm:address": "0x38473feb3a6366757a249db2ca4fbb2c663416b7"
+                    "evm:address": "0xa91ea6f5d1eda8e6686639d6c88b309cf35d2e57"
                 }
             ]
         },
         {
             "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1StandardBridge",
             "@type": "caladan:Contract",
+            "caladan:contractName": "L1StandardBridge",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -64,12 +67,13 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain",
+            "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain",
             "@type": "caladan:Contract",
+            "caladan:contractName": "CanonicalTransactionChain",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain",
                     "evm:chainID": 1,
                     "evm:address": "0x56a76bcc92361f6df8d75476fed8843edc70e1c9"
                 }
@@ -78,6 +82,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/ethereum/metis/GnosisSafe",
             "@type": "caladan:Contract",
+            "caladan:contractName": "GnosisSafe",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -88,20 +93,9 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation",
-                    "evm:chainID": 1,
-                    "evm:address": "0x8bf439ef7167023f009e24b21719ca5f768ecb36"
-                }
-            ]
-        },
-        {
             "@id": "CaladanDAO/awesome-web3/ethereum/metis/Lib_AddressManager",
             "@type": "caladan:Contract",
+            "caladan:contractName": "Lib_AddressManager",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -114,6 +108,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/ethereum/metis/MToken",
             "@type": "caladan:Contract",
+            "caladan:contractName": "MToken",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -124,12 +119,13 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: MVM Discount Oracle",
+            "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_DiscountOracle",
             "@type": "caladan:Contract",
+            "caladan:contractName": "MVM_DiscountOracle",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: MVM Discount Oracle",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_DiscountOracle",
                     "evm:chainID": 1,
                     "evm:address": "0xc8953ca384b4adc8b1b11b030afe2f05471664b0"
                 }
@@ -138,6 +134,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/ethereum/metis/StateCommitmentChain",
             "@type": "caladan:Contract",
+            "caladan:contractName": "StateCommitmentChain",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -150,6 +147,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_L2ChainManagerOnL1",
             "@type": "caladan:Contract",
+            "caladan:contractName": "MVM_L2ChainManagerOnL1",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -162,6 +160,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/ethereum/metis/BondManager",
             "@type": "caladan:Contract",
+            "caladan:contractName": "BondManager",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -204,7 +203,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -234,11 +233,11 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -278,7 +277,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -308,7 +307,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -344,7 +343,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -386,7 +385,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -423,7 +422,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -466,7 +465,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -496,7 +495,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -533,7 +532,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -563,7 +562,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -600,7 +599,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -630,15 +629,15 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -646,7 +645,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: MVM Discount Oracle"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_DiscountOracle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -680,11 +679,11 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -728,7 +727,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -758,7 +757,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -794,7 +793,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -836,7 +835,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -873,15 +872,15 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -889,7 +888,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: MVM Discount Oracle"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_DiscountOracle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -935,7 +934,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -965,7 +964,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1001,7 +1000,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Chain Storage Container Batches"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/ChainStorageContainer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1209,7 +1208,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1252,7 +1251,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1295,7 +1294,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1338,7 +1337,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1374,7 +1373,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1410,7 +1409,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1453,7 +1452,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1496,7 +1495,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1532,7 +1531,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1585,7 +1584,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1645,7 +1644,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1688,7 +1687,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1745,7 +1744,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1809,7 +1808,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1831,7 +1830,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1853,7 +1852,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1868,7 +1867,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1883,7 +1882,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1905,7 +1904,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -1943,7 +1942,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -1977,7 +1976,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2017,7 +2016,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2039,7 +2038,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2061,7 +2060,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2096,7 +2095,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2125,7 +2124,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2147,7 +2146,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2176,7 +2175,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2198,7 +2197,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2227,7 +2226,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2249,7 +2248,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2278,7 +2277,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2300,7 +2299,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2329,7 +2328,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2375,7 +2374,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2427,7 +2426,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2449,7 +2448,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2478,7 +2477,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2500,7 +2499,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2533,7 +2532,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2559,7 +2558,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2592,7 +2591,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2618,7 +2617,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2647,7 +2646,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2669,7 +2668,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2703,7 +2702,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2748,7 +2747,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2770,7 +2769,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2804,7 +2803,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2832,7 +2831,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2860,7 +2859,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2911,7 +2910,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Canonical Transaction Chain"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/CanonicalTransactionChain"
                 }
             ]
         },
@@ -2929,7 +2928,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -4463,7 +4462,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -4485,7 +4484,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -4507,7 +4506,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -4536,7 +4535,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -4566,7 +4565,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -4588,7 +4587,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -4645,7 +4644,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -4667,7 +4666,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -4689,7 +4688,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -4711,7 +4710,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -4740,7 +4739,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -4762,7 +4761,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -4777,7 +4776,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -4799,7 +4798,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -4911,7 +4910,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -5029,7 +5028,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -5058,7 +5057,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -5073,7 +5072,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -5133,7 +5132,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -5191,7 +5190,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -5225,7 +5224,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -5265,7 +5264,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -5294,7 +5293,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -5316,7 +5315,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -5346,7 +5345,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: Proxy Implementation"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/L1CrossDomainMessenger"
                 }
             ]
         },
@@ -6053,7 +6052,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: MVM Discount Oracle"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_DiscountOracle"
                 }
             ]
         },
@@ -6075,7 +6074,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: MVM Discount Oracle"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_DiscountOracle"
                 }
             ]
         },
@@ -6097,7 +6096,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: MVM Discount Oracle"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_DiscountOracle"
                 }
             ]
         },
@@ -6119,7 +6118,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: MVM Discount Oracle"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_DiscountOracle"
                 }
             ]
         },
@@ -6141,7 +6140,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: MVM Discount Oracle"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_DiscountOracle"
                 }
             ]
         },
@@ -6170,7 +6169,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: MVM Discount Oracle"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_DiscountOracle"
                 }
             ]
         },
@@ -6192,7 +6191,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: MVM Discount Oracle"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_DiscountOracle"
                 }
             ]
         },
@@ -6220,7 +6219,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: MVM Discount Oracle"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_DiscountOracle"
                 }
             ]
         },
@@ -6242,7 +6241,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: MVM Discount Oracle"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_DiscountOracle"
                 }
             ]
         },
@@ -6264,7 +6263,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: MVM Discount Oracle"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_DiscountOracle"
                 }
             ]
         },
@@ -6286,7 +6285,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: MVM Discount Oracle"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_DiscountOracle"
                 }
             ]
         },
@@ -6314,7 +6313,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: MVM Discount Oracle"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_DiscountOracle"
                 }
             ]
         },
@@ -6343,7 +6342,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/Metis Andromeda: MVM Discount Oracle"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/metis/MVM_DiscountOracle"
                 }
             ]
         },

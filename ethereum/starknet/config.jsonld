@@ -10,12 +10,13 @@
     "caladan:dataset": "ethereum",
     "caladan:contracts": [
         {
-            "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge",
+            "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1Escrow",
             "@type": "caladan:Contract",
+            "caladan:contractName": "L1Escrow",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1Escrow",
                     "evm:chainID": 1,
                     "evm:address": "0x0437465dfb5b79726e35f08559b0cbea55bb585c"
                 }
@@ -24,6 +25,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetERC20Bridge",
             "@type": "caladan:Contract",
+            "caladan:contractName": "StarknetERC20Bridge",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -46,24 +48,26 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge",
+            "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge",
             "@type": "caladan:Contract",
+            "caladan:contractName": "L1DAIBridge",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge",
                     "evm:chainID": 1,
                     "evm:address": "0x659a00c33263d9254fed382de81349426c795bb6"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: Memory Page Fact Registry",
+            "@id": "CaladanDAO/awesome-web3/ethereum/starknet/MemoryPageFactRegistry",
             "@type": "caladan:Contract",
+            "caladan:contractName": "MemoryPageFactRegistry",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: Memory Page Fact Registry",
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/MemoryPageFactRegistry",
                     "evm:chainID": 1,
                     "evm:address": "0x96375087b2f6efc59e5e0dd5111b4d090ebfdd8b"
                 }
@@ -72,6 +76,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarknetEthBridge",
             "@type": "caladan:Contract",
+            "caladan:contractName": "StarknetEthBridge",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -84,6 +89,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/ethereum/starknet/Starknet",
             "@type": "caladan:Contract",
+            "caladan:contractName": "Starknet",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -105,7 +111,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1Escrow"
                 }
             ]
         },
@@ -141,7 +147,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1Escrow"
                 }
             ]
         },
@@ -163,11 +169,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1Escrow"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -189,11 +195,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1Escrow"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -227,7 +233,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1Escrow"
                 }
             ]
         },
@@ -249,11 +255,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1Escrow"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -275,11 +281,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1Escrow"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -308,11 +314,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1Escrow"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1248,7 +1254,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1262,7 +1268,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1305,7 +1311,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1327,7 +1333,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1363,7 +1369,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1399,7 +1405,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1421,7 +1427,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1457,7 +1463,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1486,7 +1492,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1526,7 +1532,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1548,7 +1554,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1563,7 +1569,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1585,7 +1591,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1613,7 +1619,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1635,7 +1641,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1663,7 +1669,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1685,7 +1691,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1707,7 +1713,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1729,7 +1735,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1751,7 +1757,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1773,7 +1779,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1795,7 +1801,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1817,7 +1823,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1851,7 +1857,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1879,7 +1885,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: StarkGate DAI Bridge"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/L1DAIBridge"
                 }
             ]
         },
@@ -1915,7 +1921,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: Memory Page Fact Registry"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/MemoryPageFactRegistry"
                 }
             ]
         },
@@ -1951,7 +1957,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: Memory Page Fact Registry"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/MemoryPageFactRegistry"
                 }
             ]
         },
@@ -1973,7 +1979,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: Memory Page Fact Registry"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/MemoryPageFactRegistry"
                 }
             ]
         },
@@ -2002,7 +2008,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: Memory Page Fact Registry"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/MemoryPageFactRegistry"
                 }
             ]
         },
@@ -2067,7 +2073,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: Memory Page Fact Registry"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/MemoryPageFactRegistry"
                 }
             ]
         },
@@ -2126,7 +2132,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/StarkNet: Memory Page Fact Registry"
+                    "@id": "CaladanDAO/awesome-web3/ethereum/starknet/MemoryPageFactRegistry"
                 }
             ]
         },

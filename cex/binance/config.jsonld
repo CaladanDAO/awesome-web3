@@ -10,33 +10,22 @@
     "caladan:dataset": "cex",
     "caladan:contracts": [
         {
-            "@id": "CaladanDAO/awesome-web3/cex/binance/Binance Wrap...  (BDOT)",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/Binance Wrap...  (BDOT)",
-                    "evm:chainID": 1,
-                    "evm:address": "0x7884f51dc1410387371ce61747cb6264e1daee0b"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/cex/binance/Binance Wrap...  (BBCH)",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/Binance Wrap...  (BBCH)",
-                    "evm:chainID": 1,
-                    "evm:address": "0x85c4edc43724e954e5849caaab61a26a9cb65f1b"
-                }
-            ]
-        },
-        {
             "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken",
             "@type": "caladan:Contract",
+            "caladan:contractName": "BinancePeggyToken",
             "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken",
+                    "evm:chainID": 1,
+                    "evm:address": "0x7884f51dc1410387371ce61747cb6264e1daee0b"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken",
+                    "evm:chainID": 1,
+                    "evm:address": "0x85c4edc43724e954e5849caaab61a26a9cb65f1b"
+                },
                 {
                     "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken",
@@ -48,54 +37,44 @@
                     "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken",
                     "evm:chainID": 1,
                     "evm:address": "0x9be89d2a4cd102d8fecc6bf9da793be995c22541"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken",
+                    "evm:chainID": 1,
+                    "evm:address": "0xc3501eaaf5e29aa0529342f409443120fd545ea7"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken",
+                    "evm:chainID": 1,
+                    "evm:address": "0xff0a024b66739357c4ed231fb3dbc0c8c22749f5"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)",
+            "@id": "CaladanDAO/awesome-web3/cex/binance/BNB",
             "@type": "caladan:Contract",
+            "caladan:contractName": "BNB",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB",
                     "evm:chainID": 1,
                     "evm:address": "0xb8c77482e45f1f44de1745f52c74426c631bdd52"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/cex/binance/Binance Beac...  (BETH)",
+            "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken",
             "@type": "caladan:Contract",
+            "caladan:contractName": "BGBPToken",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/Binance Beac...  (BETH)",
-                    "evm:chainID": 1,
-                    "evm:address": "0xc3501eaaf5e29aa0529342f409443120fd545ea7"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/cex/binance/BGBP  (BGBP)",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBP  (BGBP)",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken",
                     "evm:chainID": 1,
                     "evm:address": "0xc9a2c4868f0f96faaa739b59934dc9cb304112ec"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/cex/binance/Binance Wrap...  (BWRX)",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/Binance Wrap...  (BWRX)",
-                    "evm:chainID": 1,
-                    "evm:address": "0xff0a024b66739357c4ed231fb3dbc0c8c22749f5"
                 }
             ]
         }
@@ -118,6 +97,22 @@
             ],
             "caladan:outputs": [],
             "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
                 {
                     "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
@@ -157,6 +152,22 @@
                 {
                     "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
                 }
             ]
         },
@@ -177,6 +188,22 @@
                 }
             ],
             "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
                 {
                     "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
@@ -211,6 +238,22 @@
                 {
                     "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
                 }
             ]
         },
@@ -238,6 +281,22 @@
                 {
                     "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
                 }
             ]
         },
@@ -256,6 +315,22 @@
                 }
             ],
             "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
                 {
                     "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
@@ -294,6 +369,22 @@
                 {
                     "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
                 }
             ]
         },
@@ -312,6 +403,22 @@
                 }
             ],
             "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
+                },
                 {
                     "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/cex/binance/BinancePeggyToken"
@@ -340,7 +447,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
                 }
             ]
         },
@@ -373,7 +484,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
                 }
             ]
         },
@@ -395,7 +510,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
                 }
             ]
         },
@@ -433,7 +552,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
                 }
             ]
         },
@@ -455,7 +578,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
                 }
             ]
         },
@@ -477,7 +604,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
                 }
             ]
         },
@@ -505,7 +632,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
                 }
             ]
         },
@@ -533,7 +660,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
                 }
             ]
         },
@@ -561,7 +688,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
                 }
             ]
         },
@@ -583,7 +714,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
                 }
             ]
         },
@@ -605,7 +740,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
                 }
             ]
         },
@@ -632,7 +771,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
                 }
             ]
         },
@@ -660,7 +803,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
                 }
             ]
         },
@@ -688,7 +831,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
                 }
             ]
         },
@@ -721,7 +864,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
                 }
             ]
         },
@@ -756,7 +903,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
                 }
             ]
         },
@@ -789,7 +936,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
                 }
             ]
         },
@@ -816,7 +967,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
                 }
             ]
         },
@@ -843,7 +994,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
                 }
             ]
         },
@@ -870,7 +1021,818 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB  (BNB)"
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BNB"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x0753c30c",
+            "caladan:signature": "deprecate(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "deprecate",
+            "caladan:inputs": [
+                {
+                    "name": "_upgradedAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x0e136b19",
+            "caladan:signature": "deprecated()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "deprecated",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x0ecb93c0",
+            "caladan:signature": "addBlackList(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addBlackList",
+            "caladan:inputs": [
+                {
+                    "name": "_evilUser",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x26976e3f",
+            "caladan:signature": "upgradedAddress()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "upgradedAddress",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x39509351",
+            "caladan:signature": "increaseAllowance(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "increaseAllowance",
+            "caladan:inputs": [
+                {
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_addedValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x3f4ba83a",
+            "caladan:signature": "unpause()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "unpause",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x46fbf68e",
+            "caladan:signature": "isPauser(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isPauser",
+            "caladan:inputs": [
+                {
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x59bf1abe",
+            "caladan:signature": "getBlackListStatus(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "getBlackListStatus",
+            "caladan:inputs": [
+                {
+                    "name": "_maker",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x5c975abb",
+            "caladan:signature": "paused()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "paused",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x6ef8d66d",
+            "caladan:signature": "renouncePauser()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "renouncePauser",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x715018a6",
+            "caladan:signature": "renounceOwnership()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "renounceOwnership",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x82dc1ec4",
+            "caladan:signature": "addPauser(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "addPauser",
+            "caladan:inputs": [
+                {
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x8456cb59",
+            "caladan:signature": "pause()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "pause",
+            "caladan:inputs": [],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x8f32d59b",
+            "caladan:signature": "isOwner()",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isOwner",
+            "caladan:inputs": [],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xa457c2d7",
+            "caladan:signature": "decreaseAllowance(address,uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "decreaseAllowance",
+            "caladan:inputs": [
+                {
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_subtractedValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xcc872b66",
+            "caladan:signature": "issue(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "issue",
+            "caladan:inputs": [
+                {
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xdb006a75",
+            "caladan:signature": "redeem(uint256)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "redeem",
+            "caladan:inputs": [
+                {
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xe47d6060",
+            "caladan:signature": "isBlackListed(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "view",
+            "caladan:name": "isBlackListed",
+            "caladan:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe4997dc5",
+            "caladan:signature": "removeBlackList(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "removeBlackList",
+            "caladan:inputs": [
+                {
+                    "name": "_clearedUser",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xf2fde38b",
+            "caladan:signature": "transferOwnership(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "transferOwnership",
+            "caladan:inputs": [
+                {
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xf3bdc228",
+            "caladan:signature": "destroyBlackFunds(address)",
+            "@type": "caladan:Function",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "destroyBlackFunds",
+            "caladan:inputs": [
+                {
+                    "name": "_blackListedUser",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:outputs": [],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0x5433053110e40db050d3b3f19060f0a4462ed41b97a9b74b7e321c3c51332e11",
+            "caladan:signature": "0(uint256,string,string,uint8)",
+            "@type": "caladan:Event",
+            "evm:stateMutability": "nonpayable",
+            "caladan:name": "0",
+            "caladan:inputs": [
+                {
+                    "name": "_initialSupply",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "_symbol",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "_decimals",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xcb8241adb0c3fdb35b70c24ce35c5eb0c17af7431c99f827d44a445ca624176a",
+            "caladan:signature": "Issue(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Issue",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x702d5967f45f6513a38ffc42d6ba9bf230bd40e8f53b16363c7eb4fd2deb9a44",
+            "caladan:signature": "Redeem(uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Redeem",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xcc358699805e9a8b7f77b522628c7cb9abd07d9efb86b6fb616af1609036a99e",
+            "caladan:signature": "Deprecate(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Deprecate",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "newAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x61e6e66b0d6339b2980aecc6ccc0039736791f0ccde9ed512e789a7fbdd698c6",
+            "caladan:signature": "DestroyedBlackFunds(address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "DestroyedBlackFunds",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "_blackListedUser",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_balance",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x42e160154868087d6bfdc0ca23d96a1c1cfa32f1b72ba9ba27b69b98a0d819dc",
+            "caladan:signature": "AddedBlackList(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "AddedBlackList",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "_user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd7e9ec6e6ecd65492dce6bf513cd6867560d49544421d0783ddf06e76c24470c",
+            "caladan:signature": "RemovedBlackList(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "RemovedBlackList",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "_user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x62e78cea01bee320cd4e420270b5ea74000d11b0c9f74754ebdbfc544b05a258",
+            "caladan:signature": "Paused(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Paused",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5db9ee0a495bf2e6ff9c91a7834c1ba4fdd244a5e8aa4e537bd38aeae4b073aa",
+            "caladan:signature": "Unpaused(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "Unpaused",
+            "caladan:inputs": [
+                {
+                    "indexed": false,
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "caladan:signature": "Approval(address,address,uint256)",
+            "@type": "caladan:Event",
+            "caladan:name": "Approval",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "caladan:signature": "OwnershipTransferred(address,address)",
+            "@type": "caladan:Event",
+            "caladan:name": "OwnershipTransferred",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6719d08c1888103bea251a4ed56406bd0c3e69723c8a1686e017e7bbe159b6f8",
+            "caladan:signature": "PauserAdded(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "PauserAdded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xcd265ebaf09df2871cc7bd4133404a235ba12eff2041bb89d9c714a2621c7c7e",
+            "caladan:signature": "PauserRemoved(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "PauserRemoved",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/cex/binance/BGBPToken"
                 }
             ]
         }

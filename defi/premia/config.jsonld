@@ -10,57 +10,16 @@
     "caladan:dataset": "defi",
     "caladan:contracts": [
         {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: IVOL Oracle Implementation",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: IVOL Oracle Implementation",
-                    "evm:chainID": 1,
-                    "evm:address": "0x089e3422f23a57fd07ae68a4ffb7268b3bd78fa2"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation",
-                    "evm:chainID": 1,
-                    "evm:address": "0x14ac2da11c2cf07ea4c64c83be108b8f11e48f20"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 4",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 4",
-                    "evm:chainID": 1,
-                    "evm:address": "0x1ede971f31f7630bae9f14d349273621a5145381"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 1",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 1",
-                    "evm:chainID": 1,
-                    "evm:address": "0x3a00bc08f4ee12568231db85d077864275a495b3"
-                }
-            ]
-        },
-        {
             "@id": "CaladanDAO/awesome-web3/defi/premia/VolatilitySurfaceOracle",
             "@type": "caladan:Contract",
+            "caladan:contractName": "VolatilitySurfaceOracle",
             "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/VolatilitySurfaceOracle",
+                    "evm:chainID": 1,
+                    "evm:address": "0x089e3422f23a57fd07ae68a4ffb7268b3bd78fa2"
+                },
                 {
                     "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/defi/premia/VolatilitySurfaceOracle",
@@ -70,126 +29,192 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market",
+            "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView",
             "@type": "caladan:Contract",
+            "caladan:contractName": "PoolView",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView",
+                    "evm:chainID": 1,
+                    "evm:address": "0x14ac2da11c2cf07ea4c64c83be108b8f11e48f20"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting",
+            "@type": "caladan:Contract",
+            "caladan:contractName": "PremiaVesting",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting",
+                    "evm:chainID": 1,
+                    "evm:address": "0x1ede971f31f7630bae9f14d349273621a5145381"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting",
+                    "evm:chainID": 1,
+                    "evm:address": "0x3a00bc08f4ee12568231db85d077864275a495b3"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting",
+                    "evm:chainID": 1,
+                    "evm:address": "0xd3c8ce2793c60c9e8464fc08ec7691613057c43c"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting",
+                    "evm:chainID": 1,
+                    "evm:address": "0xdf69c895e7490d90b14a278add8aa4ec844a696a"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket",
+            "@type": "caladan:Contract",
+            "caladan:contractName": "PremiaMarket",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket",
                     "evm:chainID": 1,
                     "evm:address": "0x45ebd0fc72e2056adb5c864ea6f151ad943d94af"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool Diamond",
+            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia",
             "@type": "caladan:Contract",
+            "caladan:contractName": "Premia",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool Diamond",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia",
                     "evm:chainID": 1,
                     "evm:address": "0x48d49466cb2efbf05faa5fa5e69f2984edc8d1d7"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Diamond",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
+                },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Diamond",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia",
                     "evm:chainID": 1,
                     "evm:address": "0x4f273f4efa9ecf5dd245a338fad9fe0bab63b350"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option",
+            "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption",
             "@type": "caladan:Contract",
+            "caladan:contractName": "PremiaOption",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption",
                     "evm:chainID": 1,
                     "evm:address": "0x5920cb60b1c62dc69467bf7c6edfcfb3f98548c0"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator",
+            "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator",
             "@type": "caladan:Contract",
+            "caladan:contractName": "FeeCalculator",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator",
                     "evm:chainID": 1,
                     "evm:address": "0x602b50091b0b351ca179e87ad6e006aeceb2a6ad"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)",
+            "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20",
             "@type": "caladan:Contract",
+            "caladan:contractName": "PremiaErc20",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20",
                     "evm:chainID": 1,
                     "evm:address": "0x6399c842dd2be3de30bf99bc7d1bbf6fa3650e70"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Price Provider",
+            "@id": "CaladanDAO/awesome-web3/defi/premia/PriceProvider",
             "@type": "caladan:Contract",
+            "caladan:contractName": "PriceProvider",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Price Provider",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PriceProvider",
                     "evm:chainID": 1,
                     "evm:address": "0x64fe6d2279c09646bd6d265483a414d79b3d00b0"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/null",
+            "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise",
             "@type": "caladan:Contract",
+            "caladan:contractName": "PoolExercise",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise",
                     "evm:chainID": 1,
                     "evm:address": "0x657b70fe0b8d49e5af63b2f874e403a291358165"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund",
+            "@type": "caladan:Contract",
+            "caladan:contractName": "PremiaDevFund",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund",
+                    "evm:chainID": 1,
+                    "evm:address": "0x81d6f46981b4fe4a6fafadda716ee561a17761ae"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund",
+                    "evm:chainID": 1,
+                    "evm:address": "0xe43147daa592c3f88402c6e2b932db9d97bc1c7f"
+                }
+            ]
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite",
+            "@type": "caladan:Contract",
+            "caladan:contractName": "PoolWrite",
+            "caladan:Deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite",
                     "evm:chainID": 1,
                     "evm:address": "0x89b36ce3491f2258793c7408bd46aac725973ba2"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
+                },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite",
                     "evm:chainID": 1,
-                    "evm:address": "0x81d6f46981b4fe4a6fafadda716ee561a17761ae"
+                    "evm:address": "0xfdd2fc2c73032ae1501ef4b19e499f2708f34657"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Process Expired Keeper",
+            "@id": "CaladanDAO/awesome-web3/defi/premia/ProcessExpiredKeeper",
             "@type": "caladan:Contract",
+            "caladan:contractName": "ProcessExpiredKeeper",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Process Expired Keeper",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/ProcessExpiredKeeper",
                     "evm:chainID": 1,
                     "evm:address": "0x9011f2133a705fe72226647b5b246086c6b72140"
                 }
@@ -198,108 +223,58 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining",
             "@type": "caladan:Contract",
+            "caladan:contractName": "PremiaMining",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining",
                     "evm:chainID": 1,
                     "evm:address": "0x9abb27581c2e46a114f8c367355851e0580e9703"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
+                },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining",
                     "evm:chainID": 1,
                     "evm:address": "0xbfdc37499d99046710a9c567016791c71cd25cf6"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 3",
+            "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOptionBatch",
             "@type": "caladan:Contract",
+            "caladan:contractName": "PremiaOptionBatch",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 3",
-                    "evm:chainID": 1,
-                    "evm:address": "0xd3c8ce2793c60c9e8464fc08ec7691613057c43c"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 2",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 2",
-                    "evm:chainID": 1,
-                    "evm:address": "0xdf69c895e7490d90b14a278add8aa4ec844a696a"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund",
-                    "evm:chainID": 1,
-                    "evm:address": "0xe43147daa592c3f88402c6e2b932db9d97bc1c7f"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Option Batch",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Option Batch",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOptionBatch",
                     "evm:chainID": 1,
                     "evm:address": "0xf386d276d648e84cbb7013db97d952fdd0092dbc"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount",
+            "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount",
             "@type": "caladan:Contract",
+            "caladan:contractName": "PremiaFeeDiscount",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount",
                     "evm:chainID": 1,
                     "evm:address": "0xf5aae75d1ad6fdd62cce66137f2674c96feda854"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation",
+            "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO",
             "@type": "caladan:Contract",
+            "caladan:contractName": "PoolIO",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation",
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO",
                     "evm:chainID": 1,
                     "evm:address": "0xf61f5830e14cd418893b216c7bfd356c200f1b40"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite",
-                    "evm:chainID": 1,
-                    "evm:address": "0xfdd2fc2c73032ae1501ef4b19e499f2708f34657"
                 }
             ]
         }
@@ -344,7 +319,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: IVOL Oracle Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/VolatilitySurfaceOracle"
                 }
             ]
         },
@@ -366,7 +341,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: IVOL Oracle Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/VolatilitySurfaceOracle"
                 }
             ]
         },
@@ -395,7 +370,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: IVOL Oracle Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/VolatilitySurfaceOracle"
                 }
             ]
         },
@@ -454,7 +429,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: IVOL Oracle Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/VolatilitySurfaceOracle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -517,7 +492,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: IVOL Oracle Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/VolatilitySurfaceOracle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -580,7 +555,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: IVOL Oracle Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/VolatilitySurfaceOracle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -613,7 +588,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: IVOL Oracle Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/VolatilitySurfaceOracle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -669,7 +644,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: IVOL Oracle Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/VolatilitySurfaceOracle"
                 }
             ]
         },
@@ -710,7 +685,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: IVOL Oracle Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/VolatilitySurfaceOracle"
                 }
             ]
         },
@@ -732,7 +707,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: IVOL Oracle Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/VolatilitySurfaceOracle"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -765,7 +740,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: IVOL Oracle Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/VolatilitySurfaceOracle"
                 }
             ]
         },
@@ -787,7 +762,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: IVOL Oracle Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/VolatilitySurfaceOracle"
                 }
             ]
         },
@@ -827,7 +802,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: IVOL Oracle Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/VolatilitySurfaceOracle"
                 }
             ]
         },
@@ -884,7 +859,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 }
             ]
         },
@@ -913,19 +888,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -961,23 +936,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -1027,19 +1002,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -1075,19 +1050,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -1137,19 +1112,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -1178,19 +1153,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -1247,19 +1222,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -1309,23 +1284,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -1375,23 +1350,23 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -1448,19 +1423,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -1503,19 +1478,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -1537,19 +1512,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -1592,19 +1567,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -1633,7 +1608,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 }
             ]
         },
@@ -1661,7 +1636,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 }
             ]
         },
@@ -1696,7 +1671,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 }
             ]
         },
@@ -1718,7 +1693,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 }
             ]
         },
@@ -1746,7 +1721,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 }
             ]
         },
@@ -1787,7 +1762,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 }
             ]
         },
@@ -1831,7 +1806,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 }
             ]
         },
@@ -1853,7 +1828,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 }
             ]
         },
@@ -1882,7 +1857,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 }
             ]
         },
@@ -1904,7 +1879,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 }
             ]
         },
@@ -1926,7 +1901,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 }
             ]
         },
@@ -1954,7 +1929,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 }
             ]
         },
@@ -1989,7 +1964,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 }
             ]
         },
@@ -2018,7 +1993,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool View Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolView"
                 }
             ]
         },
@@ -2039,39 +2014,39 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 4"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Process Expired Keeper"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/ProcessExpiredKeeper"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -2100,55 +2075,55 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 4"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Price Provider"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PriceProvider"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -2170,19 +2145,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 4"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 }
             ]
         },
@@ -2204,19 +2179,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 4"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 }
             ]
         },
@@ -2238,55 +2213,55 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 4"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Price Provider"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PriceProvider"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -2308,27 +2283,27 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 4"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 }
             ]
         },
@@ -2350,19 +2325,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 4"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 }
             ]
         },
@@ -2377,47 +2352,47 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 4"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Price Provider"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PriceProvider"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -2439,55 +2414,55 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 4"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Price Provider"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PriceProvider"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -2502,19 +2477,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 4"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 1"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 3"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: FounderVesting 2"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaVesting"
                 }
             ]
         },
@@ -2860,7 +2835,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -2917,7 +2892,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -3016,7 +2991,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -3080,7 +3055,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -3102,7 +3077,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -3124,7 +3099,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -3153,7 +3128,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -3234,7 +3209,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -3308,7 +3283,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -3382,7 +3357,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -3397,7 +3372,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -3484,7 +3459,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -3634,7 +3609,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -3755,7 +3730,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -3842,7 +3817,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -3864,11 +3839,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -3890,11 +3865,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -3993,7 +3968,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -4092,7 +4067,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -4121,7 +4096,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -4202,7 +4177,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -4283,7 +4258,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -4305,7 +4280,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -4327,7 +4302,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -4349,7 +4324,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -4430,7 +4405,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -4459,7 +4434,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -4481,11 +4456,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -4507,7 +4482,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -4529,7 +4504,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -4551,7 +4526,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -4573,11 +4548,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -4599,11 +4574,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -4625,11 +4600,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -4651,11 +4626,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -4684,7 +4659,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -4804,7 +4779,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option Market"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMarket"
                 }
             ]
         },
@@ -4857,11 +4832,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 }
             ]
         },
@@ -4876,11 +4851,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 }
             ]
         },
@@ -4931,11 +4906,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 }
             ]
         },
@@ -4964,11 +4939,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 }
             ]
         },
@@ -4990,11 +4965,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 }
             ]
         },
@@ -5023,11 +4998,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 }
             ]
         },
@@ -5061,11 +5036,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 }
             ]
         },
@@ -5087,11 +5062,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 }
             ]
         },
@@ -5113,11 +5088,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 }
             ]
         },
@@ -5139,11 +5114,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 }
             ]
         },
@@ -5172,15 +5147,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Pool Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Diamond"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5231,7 +5206,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5281,7 +5256,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5324,7 +5299,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5367,7 +5342,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5396,7 +5371,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5439,7 +5414,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5468,7 +5443,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5497,7 +5472,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5540,7 +5515,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5575,7 +5550,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5610,7 +5585,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5638,7 +5613,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5672,7 +5647,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5694,7 +5669,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5716,7 +5691,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5750,7 +5725,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5790,7 +5765,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5842,7 +5817,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5900,7 +5875,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -5934,7 +5909,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6076,7 +6051,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6123,7 +6098,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6170,7 +6145,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6271,7 +6246,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6306,7 +6281,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6328,7 +6303,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6363,7 +6338,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6385,7 +6360,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6462,7 +6437,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6509,7 +6484,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6544,7 +6519,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6590,7 +6565,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6636,7 +6611,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6664,7 +6639,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6686,7 +6661,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6708,7 +6683,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6736,7 +6711,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6758,7 +6733,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6780,7 +6755,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6809,7 +6784,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6838,7 +6813,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6860,7 +6835,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6889,7 +6864,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6918,7 +6893,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6940,7 +6915,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6968,7 +6943,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -6996,7 +6971,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -7030,7 +7005,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -7092,7 +7067,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -7160,7 +7135,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -7207,7 +7182,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Option"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOption"
                 }
             ]
         },
@@ -7229,7 +7204,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7251,7 +7226,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7273,7 +7248,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7314,7 +7289,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7367,7 +7342,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7414,7 +7389,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7436,7 +7411,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7458,7 +7433,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7480,7 +7455,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7502,7 +7477,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7524,7 +7499,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7546,7 +7521,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7568,7 +7543,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7590,7 +7565,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7612,7 +7587,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7634,7 +7609,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7656,7 +7631,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7678,7 +7653,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7700,7 +7675,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7722,7 +7697,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7744,7 +7719,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7766,7 +7741,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Calculator"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/FeeCalculator"
                 }
             ]
         },
@@ -7780,7 +7755,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20"
                 }
             ]
         },
@@ -7816,7 +7791,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20"
                 }
             ]
         },
@@ -7852,7 +7827,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20"
                 }
             ]
         },
@@ -7887,7 +7862,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20"
                 }
             ]
         },
@@ -7922,7 +7897,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20"
                 }
             ]
         },
@@ -7951,7 +7926,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20"
                 }
             ]
         },
@@ -7973,7 +7948,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20"
                 }
             ]
         },
@@ -8008,7 +7983,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20"
                 }
             ]
         },
@@ -8037,7 +8012,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20"
                 }
             ]
         },
@@ -8072,7 +8047,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20"
                 }
             ]
         },
@@ -8094,7 +8069,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20"
                 }
             ]
         },
@@ -8123,7 +8098,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20"
                 }
             ]
         },
@@ -8181,7 +8156,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20"
                 }
             ]
         },
@@ -8203,7 +8178,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20"
                 }
             ]
         },
@@ -8225,7 +8200,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20"
                 }
             ]
         },
@@ -8260,7 +8235,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20"
                 }
             ]
         },
@@ -8301,7 +8276,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia  (PREMIA)"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaErc20"
                 }
             ]
         },
@@ -8330,7 +8305,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Price Provider"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PriceProvider"
                 }
             ]
         },
@@ -8359,7 +8334,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Price Provider"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PriceProvider"
                 }
             ]
         },
@@ -8387,7 +8362,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Price Provider"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PriceProvider"
                 }
             ]
         },
@@ -8438,7 +8413,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise"
                 }
             ]
         },
@@ -8472,7 +8447,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise"
                 }
             ]
         },
@@ -8500,7 +8475,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolExercise"
                 }
             ]
         },
@@ -8536,11 +8511,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 }
             ]
         },
@@ -8569,11 +8544,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 }
             ]
         },
@@ -8609,11 +8584,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 }
             ]
         },
@@ -8628,11 +8603,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 }
             ]
         },
@@ -8647,11 +8622,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 }
             ]
         },
@@ -8673,11 +8648,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 }
             ]
         },
@@ -8699,11 +8674,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 }
             ]
         },
@@ -8731,11 +8706,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 }
             ]
         },
@@ -8757,11 +8732,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 }
             ]
         },
@@ -8783,11 +8758,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Mining Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Dev Fund"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaDevFund"
                 }
             ]
         },
@@ -8850,11 +8825,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -8913,7 +8888,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 }
             ]
         },
@@ -8984,7 +8959,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 }
             ]
         },
@@ -9067,7 +9042,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 }
             ]
         },
@@ -9082,7 +9057,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 }
             ]
         },
@@ -9147,7 +9122,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/null"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolWrite"
                 }
             ]
         },
@@ -9182,7 +9157,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Process Expired Keeper"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/ProcessExpiredKeeper"
                 }
             ]
         },
@@ -9204,7 +9179,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Process Expired Keeper"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/ProcessExpiredKeeper"
                 }
             ]
         },
@@ -9235,7 +9210,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining"
                 }
             ]
         },
@@ -9282,7 +9257,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining"
                 }
             ]
         },
@@ -9315,7 +9290,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining"
                 }
             ]
         },
@@ -9347,7 +9322,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining"
                 }
             ]
         },
@@ -9373,7 +9348,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining"
                 }
             ]
         },
@@ -9429,7 +9404,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining"
                 }
             ]
         },
@@ -9485,7 +9460,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining"
                 }
             ]
         },
@@ -9541,7 +9516,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining"
                 }
             ]
         },
@@ -9589,7 +9564,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining"
                 }
             ]
         },
@@ -9627,7 +9602,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining"
                 }
             ]
         },
@@ -9672,7 +9647,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining"
                 }
             ]
         },
@@ -9698,7 +9673,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining"
                 }
             ]
         },
@@ -9786,7 +9761,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining"
                 }
             ]
         },
@@ -9808,7 +9783,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining"
                 }
             ]
         },
@@ -9836,7 +9811,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining"
                 }
             ]
         },
@@ -9858,7 +9833,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Mining Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaMining"
                 }
             ]
         },
@@ -9892,7 +9867,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Option Batch"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOptionBatch"
                 }
             ]
         },
@@ -9932,7 +9907,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Option Batch"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOptionBatch"
                 }
             ]
         },
@@ -9960,7 +9935,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Option Batch"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOptionBatch"
                 }
             ]
         },
@@ -9994,7 +9969,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Option Batch"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOptionBatch"
                 }
             ]
         },
@@ -10055,7 +10030,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Premia Option Batch"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaOptionBatch"
                 }
             ]
         },
@@ -10105,7 +10080,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10148,7 +10123,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10177,7 +10152,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10206,7 +10181,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10235,7 +10210,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10264,7 +10239,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10279,7 +10254,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10301,7 +10276,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10323,7 +10298,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10357,7 +10332,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10385,7 +10360,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10413,7 +10388,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10448,7 +10423,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10470,7 +10445,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10499,7 +10474,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10551,7 +10526,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10573,7 +10548,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10614,7 +10589,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10636,7 +10611,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: Fee Discount"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PremiaFeeDiscount"
                 }
             ]
         },
@@ -10664,7 +10639,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -10686,7 +10661,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -10714,7 +10689,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -10742,7 +10717,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -10789,7 +10764,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -10842,7 +10817,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -10870,7 +10845,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -10922,7 +10897,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -10937,7 +10912,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -10965,7 +10940,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -11024,7 +10999,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },
@@ -11052,7 +11027,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/premia/Premia: PoolIO Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/premia/PoolIO"
                 }
             ]
         },

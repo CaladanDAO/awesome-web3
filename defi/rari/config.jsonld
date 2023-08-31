@@ -10,12 +10,13 @@
     "caladan:dataset": "defi",
     "caladan:contracts": [
         {
-            "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: DAI Rari Pool Token",
+            "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Rari_Pool_Token",
             "@type": "caladan:Contract",
+            "caladan:contractName": "Rari_Capital_DAI_Rari_Pool_Token",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: DAI Rari Pool Token",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Rari_Pool_Token",
                     "evm:chainID": 1,
                     "evm:address": "0x0833cfcb11a5ba89fbaf73a407831c98ad2d7648"
                 }
@@ -24,6 +25,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/rari/Locking",
             "@type": "caladan:Contract",
+            "caladan:contractName": "Locking",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -36,6 +38,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/rari/GnosisSafe",
             "@type": "caladan:Contract",
+            "caladan:contractName": "GnosisSafe",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -58,48 +61,76 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller",
+            "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController",
             "@type": "caladan:Contract",
+            "caladan:contractName": "RariFundController",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController",
                     "evm:chainID": 1,
                     "evm:address": "0x3f4931a8e9d4cdf8f56e7e8a8cfe3bede0e43657"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController",
+                    "evm:chainID": 1,
+                    "evm:address": "0xafd2aade64e6ea690173f6de59fc09f5c9190d74"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model DAI",
+            "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel",
             "@type": "caladan:Contract",
+            "caladan:contractName": "JumpRateModel",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model DAI",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel",
                     "evm:chainID": 1,
                     "evm:address": "0x640dce7c7c6349e254b20eccfa2bb902b354c317"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel",
+                    "evm:chainID": 1,
+                    "evm:address": "0xb579d2761470bba14018959d6dffcc681c09c04b"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel",
+                    "evm:chainID": 1,
+                    "evm:address": "0xc35db333ef7ce4f246de9de11cc1929d6aa11672"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel",
+                    "evm:chainID": 1,
+                    "evm:address": "0xcdc0a449e011249482824effcfa05c883d36cfc7"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation",
+            "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate",
             "@type": "caladan:Contract",
+            "caladan:contractName": "CErc20Delegate",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate",
                     "evm:chainID": 1,
                     "evm:address": "0x67db14e73c2dce786b5bbbfa4d010deab4bbfcf9"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Fuse Pool Lens",
+            "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens",
             "@type": "caladan:Contract",
+            "caladan:contractName": "Rari_Capital_Fuse_Pool_Lens",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Fuse Pool Lens",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens",
                     "evm:chainID": 1,
                     "evm:address": "0x6dc585ad66a10214ef0502492b0cc02f0e836eec"
                 }
@@ -108,6 +139,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/rari/RariTimelockController",
             "@type": "caladan:Contract",
+            "caladan:contractName": "RariTimelockController",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -120,6 +152,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/rari/FusePoolDirectory",
             "@type": "caladan:Contract",
+            "caladan:contractName": "FusePoolDirectory",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -132,6 +165,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/rari/GovernorBravoDelegate",
             "@type": "caladan:Contract",
+            "caladan:contractName": "GovernorBravoDelegate",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -142,12 +176,13 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: DAI Dari Pool Price Consumer",
+            "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Dari_Pool_Price_Consumer",
             "@type": "caladan:Contract",
+            "caladan:contractName": "Rari_Capital_DAI_Dari_Pool_Price_Consumer",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: DAI Dari Pool Price Consumer",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Dari_Pool_Price_Consumer",
                     "evm:chainID": 1,
                     "evm:address": "0x96ce4c781edf07f4e3d210c919ca4f9a7ad82a7f"
                 }
@@ -156,6 +191,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/rari/RariGovernanceTokenDistributor",
             "@type": "caladan:Contract",
+            "caladan:contractName": "RariGovernanceTokenDistributor",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -168,6 +204,7 @@
         {
             "@id": "CaladanDAO/awesome-web3/defi/rari/FuseFeeDistributor",
             "@type": "caladan:Contract",
+            "caladan:contractName": "FuseFeeDistributor",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -178,20 +215,9 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController",
-                    "evm:chainID": 1,
-                    "evm:address": "0xafd2aade64e6ea690173f6de59fc09f5c9190d74"
-                }
-            ]
-        },
-        {
             "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundManager",
             "@type": "caladan:Contract",
+            "caladan:contractName": "RariFundManager",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
@@ -202,84 +228,52 @@
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Stables Majors",
+            "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens_Secondary",
             "@type": "caladan:Contract",
+            "caladan:contractName": "Rari_Capital_Fuse_Pool_Lens_Secondary",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Stables Majors",
-                    "evm:chainID": 1,
-                    "evm:address": "0xb579d2761470bba14018959d6dffcc681c09c04b"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model UNI",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model UNI",
-                    "evm:chainID": 1,
-                    "evm:address": "0xc35db333ef7ce4f246de9de11cc1929d6aa11672"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Fuse Pool Lens Secondary",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Fuse Pool Lens Secondary",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens_Secondary",
                     "evm:chainID": 1,
                     "evm:address": "0xc76190e04012f26a364228cfc41690429c44165d"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Gov Seeds",
+            "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate",
             "@type": "caladan:Contract",
+            "caladan:contractName": "CEtherDelegate",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Gov Seeds",
-                    "evm:chainID": 1,
-                    "evm:address": "0xcdc0a449e011249482824effcfa05c883d36cfc7"
-                }
-            ]
-        },
-        {
-            "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation",
-            "@type": "caladan:Contract",
-            "caladan:Deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate",
                     "evm:chainID": 1,
                     "evm:address": "0xd77e28a1b9a9cfe1fc2eee70e391c05d25853cbf"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Chainlink Price Oracle",
+            "@id": "CaladanDAO/awesome-web3/defi/rari/ChainlinkPriceOracle",
             "@type": "caladan:Contract",
+            "caladan:contractName": "ChainlinkPriceOracle",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Chainlink Price Oracle",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/ChainlinkPriceOracle",
                     "evm:chainID": 1,
                     "evm:address": "0xe102421a85d9c0e71c0ef1870dac658eb43e1493"
                 }
             ]
         },
         {
-            "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation",
+            "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller",
             "@type": "caladan:Contract",
+            "caladan:contractName": "Comptroller",
             "caladan:Deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller",
                     "evm:chainID": 1,
                     "evm:address": "0xe16db319d9da7ce40b666dd2e365a4b8b3c18217"
                 }
@@ -302,7 +296,7 @@
                 },
                 {
                     "internalType": "address",
-                    "name": "admin_",
+                    "name": "_admin",
                     "type": "address",
                     "@type": "address"
                 },
@@ -316,7 +310,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Rari_Pool_Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/defi/rari/Locking"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -324,7 +326,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: DAI Dari Pool Price Consumer"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Dari_Pool_Price_Consumer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -344,7 +346,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Fuse Pool Lens Secondary"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens_Secondary"
                 }
             ]
         },
@@ -373,7 +375,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Rari_Pool_Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/defi/rari/Locking"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -381,7 +391,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: DAI Dari Pool Price Consumer"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Dari_Pool_Price_Consumer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -401,33 +411,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Fuse Pool Lens Secondary"
-                }
-            ]
-        },
-        {
-            "anonymous": false,
-            "@id": "0x1cf3b03a6cf19fa2baba4df148e9dcabedea7f8a5c07840e207e5c089be95d3e",
-            "caladan:signature": "BeaconUpgraded(address)",
-            "@type": "caladan:Event",
-            "caladan:name": "BeaconUpgraded",
-            "caladan:inputs": [
-                {
-                    "indexed": true,
-                    "internalType": "address",
-                    "name": "beacon",
-                    "type": "address",
-                    "@type": "address"
-                }
-            ],
-            "caladan:deployments": [
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Locking"
-                },
-                {
-                    "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Fuse Pool Lens Secondary"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens_Secondary"
                 }
             ]
         },
@@ -449,7 +433,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Rari_Pool_Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/defi/rari/Locking"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -457,7 +449,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: DAI Dari Pool Price Consumer"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Dari_Pool_Price_Consumer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -477,7 +469,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Fuse Pool Lens Secondary"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens_Secondary"
                 }
             ]
         },
@@ -491,7 +483,7 @@
             "caladan:outputs": [
                 {
                     "internalType": "address",
-                    "name": "admin_",
+                    "name": "",
                     "type": "address",
                     "@type": "address"
                 }
@@ -499,7 +491,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Rari_Pool_Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/defi/rari/Locking"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -511,7 +511,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: DAI Dari Pool Price Consumer"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Dari_Pool_Price_Consumer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -531,11 +531,11 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Fuse Pool Lens Secondary"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens_Secondary"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -557,7 +557,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Rari_Pool_Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/defi/rari/Locking"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -565,7 +573,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: DAI Dari Pool Price Consumer"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Dari_Pool_Price_Consumer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -585,7 +593,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Fuse Pool Lens Secondary"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens_Secondary"
                 }
             ]
         },
@@ -599,7 +607,7 @@
             "caladan:outputs": [
                 {
                     "internalType": "address",
-                    "name": "implementation_",
+                    "name": "",
                     "type": "address",
                     "@type": "address"
                 }
@@ -607,11 +615,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Rari_Pool_Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/defi/rari/Locking"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -623,7 +639,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: DAI Dari Pool Price Consumer"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Dari_Pool_Price_Consumer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -643,11 +659,11 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Fuse Pool Lens Secondary"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens_Secondary"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -669,7 +685,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Rari_Pool_Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/defi/rari/Locking"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -677,7 +701,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: DAI Dari Pool Price Consumer"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Dari_Pool_Price_Consumer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -697,7 +721,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Fuse Pool Lens Secondary"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens_Secondary"
                 }
             ]
         },
@@ -725,7 +749,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Rari_Pool_Token"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
                     "@id": "CaladanDAO/awesome-web3/defi/rari/Locking"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -733,7 +765,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: DAI Dari Pool Price Consumer"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_DAI_Dari_Pool_Price_Consumer"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -753,7 +785,37 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Fuse Pool Lens Secondary"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens_Secondary"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x1cf3b03a6cf19fa2baba4df148e9dcabedea7f8a5c07840e207e5c089be95d3e",
+            "caladan:signature": "BeaconUpgraded(address)",
+            "@type": "caladan:Event",
+            "caladan:name": "BeaconUpgraded",
+            "caladan:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "beacon",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "caladan:deployments": [
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Locking"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens"
+                },
+                {
+                    "@type": "caladan:ContractDeployment",
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari_Capital_Fuse_Pool_Lens_Secondary"
                 }
             ]
         },
@@ -771,15 +833,15 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -2471,7 +2533,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2485,7 +2547,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2499,7 +2561,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2521,7 +2583,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2543,7 +2605,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2572,7 +2634,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2608,7 +2670,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2632,7 +2694,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2663,7 +2725,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2687,7 +2749,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2717,7 +2779,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2747,7 +2809,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2771,7 +2833,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2801,7 +2863,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2818,7 +2880,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2835,7 +2897,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2859,7 +2921,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2890,7 +2952,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2926,7 +2988,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2957,7 +3019,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -2981,7 +3043,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -3005,7 +3067,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -3119,7 +3181,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -3143,7 +3205,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -3160,7 +3222,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -3184,7 +3246,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -3208,7 +3270,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -3232,7 +3294,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -3256,7 +3318,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -3280,7 +3342,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -3297,7 +3359,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -3321,7 +3383,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -3345,7 +3407,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -3369,7 +3431,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -3399,7 +3461,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -3435,7 +3497,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -3459,7 +3521,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Ether Rari Pool Controller"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/RariFundController"
                 }
             ]
         },
@@ -3499,19 +3561,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model DAI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Stables Majors"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model UNI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Gov Seeds"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 }
             ]
         },
@@ -3554,19 +3616,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model DAI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Stables Majors"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model UNI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Gov Seeds"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 }
             ]
         },
@@ -3590,19 +3652,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model DAI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Stables Majors"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model UNI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Gov Seeds"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 }
             ]
         },
@@ -3626,19 +3688,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model DAI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Stables Majors"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model UNI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Gov Seeds"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 }
             ]
         },
@@ -3681,19 +3743,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model DAI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Stables Majors"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model UNI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Gov Seeds"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 }
             ]
         },
@@ -3742,19 +3804,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model DAI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Stables Majors"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model UNI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Gov Seeds"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 }
             ]
         },
@@ -3778,19 +3840,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model DAI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Stables Majors"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model UNI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Gov Seeds"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 }
             ]
         },
@@ -3814,19 +3876,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model DAI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Stables Majors"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model UNI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Gov Seeds"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 }
             ]
         },
@@ -3850,19 +3912,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model DAI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Stables Majors"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model UNI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Gov Seeds"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 }
             ]
         },
@@ -3886,19 +3948,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model DAI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Stables Majors"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model UNI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Gov Seeds"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 }
             ]
         },
@@ -3941,19 +4003,19 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model DAI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Stables Majors"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model UNI"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Jump Rate Model Gov Seeds"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/JumpRateModel"
                 }
             ]
         },
@@ -3996,11 +4058,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4036,11 +4098,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4083,11 +4145,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4123,15 +4185,15 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -4181,11 +4243,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4221,11 +4283,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4254,11 +4316,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4287,11 +4349,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4320,11 +4382,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4353,7 +4415,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
@@ -4361,7 +4423,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4390,11 +4452,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4423,11 +4485,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4463,11 +4525,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4517,11 +4579,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4557,11 +4619,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4597,11 +4659,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4637,11 +4699,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4665,11 +4727,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4693,7 +4755,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 }
             ]
         },
@@ -4710,11 +4772,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4745,11 +4807,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4780,11 +4842,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4820,11 +4882,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4855,11 +4917,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4889,11 +4951,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4924,11 +4986,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4959,11 +5021,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -4994,11 +5056,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5022,11 +5084,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5050,11 +5112,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5078,11 +5140,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5119,11 +5181,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5160,11 +5222,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5195,11 +5257,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5230,11 +5292,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5265,11 +5327,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5300,11 +5362,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5335,11 +5397,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5363,11 +5425,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5391,11 +5453,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5419,11 +5481,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5447,11 +5509,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5475,11 +5537,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5503,11 +5565,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5531,11 +5593,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5584,11 +5646,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5612,11 +5674,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5682,11 +5744,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5746,7 +5808,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 }
             ]
         },
@@ -5770,11 +5832,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5798,11 +5860,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5826,11 +5888,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5873,7 +5935,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 }
             ]
         },
@@ -5904,7 +5966,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 }
             ]
         },
@@ -5928,11 +5990,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5956,11 +6018,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -5991,11 +6053,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -6026,11 +6088,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -6061,7 +6123,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 }
             ]
         },
@@ -6098,7 +6160,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 }
             ]
         },
@@ -6122,11 +6184,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -6169,11 +6231,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -6197,11 +6259,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -6225,11 +6287,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -6253,11 +6315,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -6281,11 +6343,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -6309,11 +6371,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -6337,11 +6399,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -6365,11 +6427,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -6393,11 +6455,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -6434,11 +6496,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -6481,11 +6543,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -6509,11 +6571,11 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cERC20 Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CErc20Delegate"
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -8251,7 +8313,7 @@
                 },
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -8305,7 +8367,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -8335,7 +8397,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -8352,7 +8414,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -8369,7 +8431,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -8393,7 +8455,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: cEther Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/CEtherDelegate"
                 }
             ]
         },
@@ -8414,7 +8476,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Chainlink Price Oracle"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/ChainlinkPriceOracle"
                 }
             ]
         },
@@ -8436,7 +8498,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Chainlink Price Oracle"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/ChainlinkPriceOracle"
                 }
             ]
         },
@@ -8458,7 +8520,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Chainlink Price Oracle"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/ChainlinkPriceOracle"
                 }
             ]
         },
@@ -8487,7 +8549,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Chainlink Price Oracle"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/ChainlinkPriceOracle"
                 }
             ]
         },
@@ -8516,7 +8578,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Chainlink Price Oracle"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/ChainlinkPriceOracle"
                 }
             ]
         },
@@ -8545,7 +8607,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Chainlink Price Oracle"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/ChainlinkPriceOracle"
                 }
             ]
         },
@@ -8574,7 +8636,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Chainlink Price Oracle"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/ChainlinkPriceOracle"
                 }
             ]
         },
@@ -8596,7 +8658,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Chainlink Price Oracle"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/ChainlinkPriceOracle"
                 }
             ]
         },
@@ -8625,7 +8687,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Chainlink Price Oracle"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/ChainlinkPriceOracle"
                 }
             ]
         },
@@ -8654,7 +8716,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Chainlink Price Oracle"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/ChainlinkPriceOracle"
                 }
             ]
         },
@@ -8683,7 +8745,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -8719,7 +8781,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -8741,7 +8803,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -8763,7 +8825,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -8792,7 +8854,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -8821,7 +8883,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -8843,7 +8905,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -8865,7 +8927,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -8894,7 +8956,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -8923,7 +8985,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -8952,7 +9014,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -8988,7 +9050,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9017,7 +9079,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9046,7 +9108,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9075,7 +9137,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9104,7 +9166,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9126,7 +9188,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9157,7 +9219,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9174,7 +9236,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9198,7 +9260,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9215,7 +9277,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9232,7 +9294,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9256,7 +9318,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9299,7 +9361,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9323,7 +9385,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9347,7 +9409,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9384,7 +9446,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9415,7 +9477,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9452,7 +9514,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9483,7 +9545,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9513,7 +9575,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9543,7 +9605,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9580,7 +9642,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9611,7 +9673,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9642,7 +9704,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9673,7 +9735,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9704,7 +9766,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9735,7 +9797,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9772,7 +9834,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9803,7 +9865,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9834,7 +9896,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9871,7 +9933,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9895,7 +9957,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9926,7 +9988,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9957,7 +10019,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -9981,7 +10043,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10024,7 +10086,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10048,7 +10110,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10079,7 +10141,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10110,7 +10172,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10146,7 +10208,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10183,7 +10245,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10214,7 +10276,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10251,7 +10313,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10275,7 +10337,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10299,7 +10361,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10323,7 +10385,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10354,7 +10416,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10385,7 +10447,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10409,7 +10471,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10452,7 +10514,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10476,7 +10538,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10500,7 +10562,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10531,7 +10593,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10592,7 +10654,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10616,7 +10678,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10640,7 +10702,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10664,7 +10726,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10695,7 +10757,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10750,7 +10812,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10804,7 +10866,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10853,7 +10915,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10877,7 +10939,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10914,7 +10976,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10957,7 +11019,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -10988,7 +11050,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11030,7 +11092,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11079,7 +11141,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11103,7 +11165,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11127,7 +11189,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11151,7 +11213,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11194,7 +11256,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11236,7 +11298,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11285,7 +11347,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11333,7 +11395,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11364,7 +11426,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11419,7 +11481,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11443,7 +11505,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11491,7 +11553,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11522,7 +11584,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11553,7 +11615,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11602,7 +11664,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11626,7 +11688,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11668,7 +11730,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11699,7 +11761,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },
@@ -11730,7 +11792,7 @@
             "caladan:deployments": [
                 {
                     "@type": "caladan:ContractDeployment",
-                    "@id": "CaladanDAO/awesome-web3/defi/rari/Rari Capital: Comptroller Implementation"
+                    "@id": "CaladanDAO/awesome-web3/defi/rari/Comptroller"
                 }
             ]
         },

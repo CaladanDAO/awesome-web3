@@ -1,98 +1,1738 @@
 {
-  "@context": {
-    "@vocab": "http://caladandao.org/vocab",
-    "caladan": "http://caladandao.org/caladan/"
-  },
-  "@type": "caladan:Index",
-  "caladan:recipes": [
-    {
-      "@type": "caladan:Dataset",
-      "caladan:project": "awesome-web3",
-      "caladan:dataset": "dex",
-      "caladan:table": "trades",
-      "caladan:recipe": "/defi/dex/trades.jsonc"
-    }
-  ],
-  "caladan:projects": [
-    {
-      "@id": "CaladanDAO/awesome-web3/bridges/cctp",
-      "@type": "caladan:Project",
-      "caladan:nftAddress": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
-      "caladan:dataset": "bridges",
-      "caladan:name": "cctp",
-      "caladan:coretime": "bridges/cctp/config.jsonc",
-      "caladan:url": "bridges/cctp/config.jsonld"
+    "@context": {
+        "@vocab": "http://caladandao.org/vocab",
+        "caladan": "http://caladandao.org/caladan/"
     },
-    {
-      "@id": "CaladanDAO/awesome-web3/ethereum/base",
-      "@type": "caladan:Project",
-      "caladan:nftAddress": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
-      "caladan:dataset": "ethereum",
-      "caladan:name": "base",
-      "caladan:coretime": "ethereum/base/config.jsonc",
-      "caladan:url": "ethereum/base/config.jsonld"
-    },
-    {
-      "@id": "CaladanDAO/awesome-web3/ethereum/optimism",
-      "@type": "caladan:Project",
-      "caladan:dataset": "ethereum",
-      "caladan:coretime": "ethereum/optimism/config.jsonc",
-      "caladan:url": "ethereum/optimism/config.jsonld"
-    },
-    {
-      "@id": "CaladanDAO/awesome-web3/ethereum/pgn",
-      "@type": "caladan:Project",
-      "caladan:nftAddress": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
-      "caladan:dataset": "ethereum",
-      "caladan:name": "pgn",
-      "caladan:coretime": "ethereum/pgn/config.jsonc",
-      "caladan:url": "ethereum/pgn/config.jsonld"
-    },
-    {
-      "@id": "CaladanDAO/awesome-web3/gitcoin/allo",
-      "@type": "caladan:Project",
-      "caladan:nftAddress": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
-      "caladan:dataset": "gitcoin",
-      "caladan:name": "allo",
-      "caladan:coretime": "gitcoin/allo/config.jsonc",
-      "caladan:url": "gitcoin/allo/config.jsonld"
-    },
-    {
-      "@id": "CaladanDAO/awesome-web3/dex/uniswap",
-      "@type": "caladan:Project",
-      "caladan:nftAddress": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
-      "caladan:dataset": "defi",
-      "caladan:name": "uniswap",
-      "caladan:coretime": "defi/uniswap/config.jsonc",
-      "caladan:url": "defi/uniswap/config.jsonld"
-    },
-    {
-      "@id": "CaladanDAO/awesome-web3/dex/sushiswap",
-      "@type": "caladan:Project",
-      "caladan:nftAddress": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
-      "caladan:dataset": "defi",
-      "caladan:name": "sushiswap",
-      "caladan:coretime": "defi/sushiswap/config.jsonc",
-      "caladan:url": "defi/sushiswap/config.jsonld"
-    },
-    {
-      "@id": "CaladanDAO/awesome-web3/dex/curve",
-      "caladan:nftAddress": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
-      "@type": "caladan:Project",
-      "caladan:dataset": "defi",
-      "caladan:name": "curve",
-      "caladan:coretime": "defi/curve/config.jsonc",
-      "caladan:url": "defi/curve/config.jsonld"
-    },
-    {
-      "@id": "CaladanDAO/awesome-web3/naming/ens",
-      "caladan:nftAddress": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
-      "@type": "caladan:Project",
-      "caladan:dataset": "naming",
-      "caladan:name": "ens",
-      "caladan:coretime": "naming/ens/config.jsonc",
-      "caladan:url": "naming/ens/config.jsonld"
-    }
-  ]
+    "@type": "caladan:Index",
+    "caladan:recipes": [
+        {
+            "@type": "caladan:Dataset",
+            "caladan:project": "awesome-web3",
+            "caladan:dataset": "dex",
+            "caladan:table": "trades",
+            "caladan:recipe": "/defi/dex/trades.jsonc"
+        }
+    ],
+    "caladan:projects": [
+        {
+            "@id": "CaladanDAO/awesome-web3/bridges/across",
+            "@type": "caladan:Project",
+            "caladan:dataset": "bridges",
+            "caladan:name": "across",
+            "caladan:coretime": "bridges/across/config.jsonc",
+            "caladan:url": "bridges/across/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/bridges/cctp",
+            "@type": "caladan:Project",
+            "caladan:dataset": "bridges",
+            "caladan:name": "cctp",
+            "caladan:coretime": "bridges/cctp/config.jsonc",
+            "caladan:url": "bridges/cctp/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/bridges/celer",
+            "@type": "caladan:Project",
+            "caladan:dataset": "bridges",
+            "caladan:name": "celer",
+            "caladan:coretime": "bridges/celer/config.jsonc",
+            "caladan:url": "bridges/celer/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/bridges/hop",
+            "@type": "caladan:Project",
+            "caladan:dataset": "bridges",
+            "caladan:name": "hop",
+            "caladan:coretime": "bridges/hop/config.jsonc",
+            "caladan:url": "bridges/hop/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/bridges/multichain",
+            "@type": "caladan:Project",
+            "caladan:dataset": "bridges",
+            "caladan:name": "multichain",
+            "caladan:coretime": "bridges/multichain/config.jsonc",
+            "caladan:url": "bridges/multichain/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/bridges/wormhole",
+            "@type": "caladan:Project",
+            "caladan:dataset": "bridges",
+            "caladan:name": "wormhole",
+            "caladan:coretime": "bridges/wormhole/config.jsonc",
+            "caladan:url": "bridges/wormhole/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/cex/binance",
+            "@type": "caladan:Project",
+            "caladan:dataset": "cex",
+            "caladan:name": "binance",
+            "caladan:coretime": "cex/binance/config.jsonc",
+            "caladan:url": "cex/binance/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/cex/bitfinex",
+            "@type": "caladan:Project",
+            "caladan:dataset": "cex",
+            "caladan:name": "bitfinex",
+            "caladan:coretime": "cex/bitfinex/config.jsonc",
+            "caladan:url": "cex/bitfinex/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/cex/bittrex",
+            "@type": "caladan:Project",
+            "caladan:dataset": "cex",
+            "caladan:name": "bittrex",
+            "caladan:coretime": "cex/bittrex/config.jsonc",
+            "caladan:url": "cex/bittrex/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/cex/coinbase",
+            "@type": "caladan:Project",
+            "caladan:dataset": "cex",
+            "caladan:name": "coinbase",
+            "caladan:coretime": "cex/coinbase/config.jsonc",
+            "caladan:url": "cex/coinbase/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/cex/cryptocom",
+            "@type": "caladan:Project",
+            "caladan:dataset": "cex",
+            "caladan:name": "cryptocom",
+            "caladan:coretime": "cex/cryptocom/config.jsonc",
+            "caladan:url": "cex/cryptocom/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/cex/ftx",
+            "@type": "caladan:Project",
+            "caladan:dataset": "cex",
+            "caladan:name": "ftx",
+            "caladan:coretime": "cex/ftx/config.jsonc",
+            "caladan:url": "cex/ftx/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/cex/gate",
+            "@type": "caladan:Project",
+            "caladan:dataset": "cex",
+            "caladan:name": "gate",
+            "caladan:coretime": "cex/gate/config.jsonc",
+            "caladan:url": "cex/gate/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/cex/gemini",
+            "@type": "caladan:Project",
+            "caladan:dataset": "cex",
+            "caladan:name": "gemini",
+            "caladan:coretime": "cex/gemini/config.jsonc",
+            "caladan:url": "cex/gemini/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/cex/huobi",
+            "@type": "caladan:Project",
+            "caladan:dataset": "cex",
+            "caladan:name": "huobi",
+            "caladan:coretime": "cex/huobi/config.jsonc",
+            "caladan:url": "cex/huobi/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/cex/kraken",
+            "@type": "caladan:Project",
+            "caladan:dataset": "cex",
+            "caladan:name": "kraken",
+            "caladan:coretime": "cex/kraken/config.jsonc",
+            "caladan:url": "cex/kraken/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/cex/poloniex",
+            "@type": "caladan:Project",
+            "caladan:dataset": "cex",
+            "caladan:name": "poloniex",
+            "caladan:coretime": "cex/poloniex/config.jsonc",
+            "caladan:url": "cex/poloniex/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/data/chainlink",
+            "@type": "caladan:Project",
+            "caladan:dataset": "data",
+            "caladan:name": "chainlink",
+            "caladan:coretime": "data/chainlink/config.jsonc",
+            "caladan:url": "data/chainlink/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/data/graph",
+            "@type": "caladan:Project",
+            "caladan:dataset": "data",
+            "caladan:name": "graph",
+            "caladan:coretime": "data/graph/config.jsonc",
+            "caladan:url": "data/graph/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/data/keep",
+            "@type": "caladan:Project",
+            "caladan:dataset": "data",
+            "caladan:name": "keep",
+            "caladan:coretime": "data/keep/config.jsonc",
+            "caladan:url": "data/keep/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/0x",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "0x",
+            "caladan:coretime": "defi/0x/config.jsonc",
+            "caladan:url": "defi/0x/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/1inch",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "1inch",
+            "caladan:coretime": "defi/1inch/config.jsonc",
+            "caladan:url": "defi/1inch/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/aave",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "aave",
+            "caladan:coretime": "defi/aave/config.jsonc",
+            "caladan:url": "defi/aave/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/aavegotchi",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "aavegotchi",
+            "caladan:coretime": "defi/aavegotchi/config.jsonc",
+            "caladan:url": "defi/aavegotchi/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/abracadabra",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "abracadabra",
+            "caladan:coretime": "defi/abracadabra/config.jsonc",
+            "caladan:url": "defi/abracadabra/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/agave",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "agave",
+            "caladan:coretime": "defi/agave/config.jsonc",
+            "caladan:url": "defi/agave/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/aladdindao",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "aladdindao",
+            "caladan:coretime": "defi/aladdindao/config.jsonc",
+            "caladan:url": "defi/aladdindao/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/alchemix",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "alchemix",
+            "caladan:coretime": "defi/alchemix/config.jsonc",
+            "caladan:url": "defi/alchemix/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/ampleforth",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "ampleforth",
+            "caladan:coretime": "defi/ampleforth/config.jsonc",
+            "caladan:url": "defi/ampleforth/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/angle",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "angle",
+            "caladan:coretime": "defi/angle/config.jsonc",
+            "caladan:url": "defi/angle/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/apecoin",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "apecoin",
+            "caladan:coretime": "defi/apecoin/config.jsonc",
+            "caladan:url": "defi/apecoin/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/api3",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "api3",
+            "caladan:coretime": "defi/api3/config.jsonc",
+            "caladan:url": "defi/api3/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/aragon",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "aragon",
+            "caladan:coretime": "defi/aragon/config.jsonc",
+            "caladan:url": "defi/aragon/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/armor",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "armor",
+            "caladan:coretime": "defi/armor/config.jsonc",
+            "caladan:url": "defi/armor/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/arthswap",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "arthswap",
+            "caladan:coretime": "defi/arthswap/config.jsonc",
+            "caladan:url": "defi/arthswap/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/aura",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "aura",
+            "caladan:coretime": "defi/aura/config.jsonc",
+            "caladan:url": "defi/aura/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/authereum",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "authereum",
+            "caladan:coretime": "defi/authereum/config.jsonc",
+            "caladan:url": "defi/authereum/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/badger",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "badger",
+            "caladan:coretime": "defi/badger/config.jsonc",
+            "caladan:url": "defi/badger/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/balancer",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "balancer",
+            "caladan:coretime": "defi/balancer/config.jsonc",
+            "caladan:url": "defi/balancer/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/bancor",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "bancor",
+            "caladan:coretime": "defi/bancor/config.jsonc",
+            "caladan:url": "defi/bancor/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/bat",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "bat",
+            "caladan:coretime": "defi/bat/config.jsonc",
+            "caladan:url": "defi/bat/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/beamswap",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "beamswap",
+            "caladan:coretime": "defi/beamswap/config.jsonc",
+            "caladan:url": "defi/beamswap/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/bend",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "bend",
+            "caladan:coretime": "defi/bend/config.jsonc",
+            "caladan:url": "defi/bend/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/bibliotheca",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "bibliotheca",
+            "caladan:coretime": "defi/bibliotheca/config.jsonc",
+            "caladan:url": "defi/bibliotheca/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/bitdao",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "bitdao",
+            "caladan:coretime": "defi/bitdao/config.jsonc",
+            "caladan:url": "defi/bitdao/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/botto",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "botto",
+            "caladan:coretime": "defi/botto/config.jsonc",
+            "caladan:url": "defi/botto/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/bridge",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "bridge",
+            "caladan:coretime": "defi/bridge/config.jsonc",
+            "caladan:url": "defi/bridge/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/cabin",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "cabin",
+            "caladan:coretime": "defi/cabin/config.jsonc",
+            "caladan:url": "defi/cabin/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/celsius",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "celsius",
+            "caladan:coretime": "defi/celsius/config.jsonc",
+            "caladan:url": "defi/celsius/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/city",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "city",
+            "caladan:coretime": "defi/city/config.jsonc",
+            "caladan:url": "defi/city/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/code4rena",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "code4rena",
+            "caladan:coretime": "defi/code4rena/config.jsonc",
+            "caladan:url": "defi/code4rena/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/compound",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "compound",
+            "caladan:coretime": "defi/compound/config.jsonc",
+            "caladan:url": "defi/compound/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/conic",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "conic",
+            "caladan:coretime": "defi/conic/config.jsonc",
+            "caladan:url": "defi/conic/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/convex",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "convex",
+            "caladan:coretime": "defi/convex/config.jsonc",
+            "caladan:url": "defi/convex/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/cow",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "cow",
+            "caladan:coretime": "defi/cow/config.jsonc",
+            "caladan:url": "defi/cow/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/cryptex",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "cryptex",
+            "caladan:coretime": "defi/cryptex/config.jsonc",
+            "caladan:url": "defi/cryptex/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/cryptorelief",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "cryptorelief",
+            "caladan:coretime": "defi/cryptorelief/config.jsonc",
+            "caladan:url": "defi/cryptorelief/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/cryptounicorns",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "cryptounicorns",
+            "caladan:coretime": "defi/cryptounicorns/config.jsonc",
+            "caladan:url": "defi/cryptounicorns/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/curve",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "curve",
+            "caladan:coretime": "defi/curve/config.jsonc",
+            "caladan:url": "defi/curve/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/cyphertrust",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "cyphertrust",
+            "caladan:coretime": "defi/cyphertrust/config.jsonc",
+            "caladan:url": "defi/cyphertrust/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/darwinia",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "darwinia",
+            "caladan:coretime": "defi/darwinia/config.jsonc",
+            "caladan:url": "defi/darwinia/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/decentral",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "decentral",
+            "caladan:coretime": "defi/decentral/config.jsonc",
+            "caladan:url": "defi/decentral/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/defigeek",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "defigeek",
+            "caladan:coretime": "defi/defigeek/config.jsonc",
+            "caladan:url": "defi/defigeek/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/deversifi",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "deversifi",
+            "caladan:coretime": "defi/deversifi/config.jsonc",
+            "caladan:url": "defi/deversifi/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/dexe",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "dexe",
+            "caladan:coretime": "defi/dexe/config.jsonc",
+            "caladan:url": "defi/dexe/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/dhedge",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "dhedge",
+            "caladan:coretime": "defi/dhedge/config.jsonc",
+            "caladan:url": "defi/dhedge/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/doodles",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "doodles",
+            "caladan:coretime": "defi/doodles/config.jsonc",
+            "caladan:url": "defi/doodles/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/dtravel",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "dtravel",
+            "caladan:coretime": "defi/dtravel/config.jsonc",
+            "caladan:url": "defi/dtravel/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/dutchx",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "dutchx",
+            "caladan:coretime": "defi/dutchx/config.jsonc",
+            "caladan:url": "defi/dutchx/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/dxdao",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "dxdao",
+            "caladan:coretime": "defi/dxdao/config.jsonc",
+            "caladan:url": "defi/dxdao/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/dydx",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "dydx",
+            "caladan:coretime": "defi/dydx/config.jsonc",
+            "caladan:url": "defi/dydx/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/enzyme",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "enzyme",
+            "caladan:coretime": "defi/enzyme/config.jsonc",
+            "caladan:url": "defi/enzyme/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/ethereumfoundation",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "ethereumfoundation",
+            "caladan:coretime": "defi/ethereumfoundation/config.jsonc",
+            "caladan:url": "defi/ethereumfoundation/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/euler",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "euler",
+            "caladan:coretime": "defi/euler/config.jsonc",
+            "caladan:url": "defi/euler/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/evmos",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "evmos",
+            "caladan:coretime": "defi/evmos/config.jsonc",
+            "caladan:url": "defi/evmos/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/fantom",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "fantom",
+            "caladan:coretime": "defi/fantom/config.jsonc",
+            "caladan:url": "defi/fantom/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/fei",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "fei",
+            "caladan:coretime": "defi/fei/config.jsonc",
+            "caladan:url": "defi/fei/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/fingerprints",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "fingerprints",
+            "caladan:coretime": "defi/fingerprints/config.jsonc",
+            "caladan:url": "defi/fingerprints/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/frax",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "frax",
+            "caladan:coretime": "defi/frax/config.jsonc",
+            "caladan:url": "defi/frax/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/gearbox",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "gearbox",
+            "caladan:coretime": "defi/gearbox/config.jsonc",
+            "caladan:url": "defi/gearbox/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/gitcoin",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "gitcoin",
+            "caladan:coretime": "defi/gitcoin/config.jsonc",
+            "caladan:url": "defi/gitcoin/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/giveth",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "giveth",
+            "caladan:coretime": "defi/giveth/config.jsonc",
+            "caladan:url": "defi/giveth/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/globalcoinresearch",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "globalcoinresearch",
+            "caladan:coretime": "defi/globalcoinresearch/config.jsonc",
+            "caladan:url": "defi/globalcoinresearch/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/gmx",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "gmx",
+            "caladan:coretime": "defi/gmx/config.jsonc",
+            "caladan:url": "defi/gmx/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/goldfinch",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "goldfinch",
+            "caladan:coretime": "defi/goldfinch/config.jsonc",
+            "caladan:url": "defi/goldfinch/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/hair",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "hair",
+            "caladan:coretime": "defi/hair/config.jsonc",
+            "caladan:url": "defi/hair/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/hakka",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "hakka",
+            "caladan:coretime": "defi/hakka/config.jsonc",
+            "caladan:url": "defi/hakka/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/hector",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "hector",
+            "caladan:coretime": "defi/hector/config.jsonc",
+            "caladan:url": "defi/hector/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/hifi",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "hifi",
+            "caladan:coretime": "defi/hifi/config.jsonc",
+            "caladan:url": "defi/hifi/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/hitbtc",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "hitbtc",
+            "caladan:coretime": "defi/hitbtc/config.jsonc",
+            "caladan:url": "defi/hitbtc/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/hopr",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "hopr",
+            "caladan:coretime": "defi/hopr/config.jsonc",
+            "caladan:url": "defi/hopr/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/human",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "human",
+            "caladan:coretime": "defi/human/config.jsonc",
+            "caladan:url": "defi/human/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/idex",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "idex",
+            "caladan:coretime": "defi/idex/config.jsonc",
+            "caladan:url": "defi/idex/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/idle",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "idle",
+            "caladan:coretime": "defi/idle/config.jsonc",
+            "caladan:url": "defi/idle/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/illuvium",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "illuvium",
+            "caladan:coretime": "defi/illuvium/config.jsonc",
+            "caladan:url": "defi/illuvium/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/index",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "index",
+            "caladan:coretime": "defi/index/config.jsonc",
+            "caladan:url": "defi/index/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/instadapp",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "instadapp",
+            "caladan:coretime": "defi/instadapp/config.jsonc",
+            "caladan:url": "defi/instadapp/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/inverse",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "inverse",
+            "caladan:coretime": "defi/inverse/config.jsonc",
+            "caladan:url": "defi/inverse/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/jpegd",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "jpegd",
+            "caladan:coretime": "defi/jpegd/config.jsonc",
+            "caladan:url": "defi/jpegd/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/juicebox",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "juicebox",
+            "caladan:coretime": "defi/juicebox/config.jsonc",
+            "caladan:url": "defi/juicebox/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/kleros",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "kleros",
+            "caladan:coretime": "defi/kleros/config.jsonc",
+            "caladan:url": "defi/kleros/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/klima",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "klima",
+            "caladan:coretime": "defi/klima/config.jsonc",
+            "caladan:url": "defi/klima/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/kucoin",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "kucoin",
+            "caladan:coretime": "defi/kucoin/config.jsonc",
+            "caladan:url": "defi/kucoin/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/kyber",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "kyber",
+            "caladan:coretime": "defi/kyber/config.jsonc",
+            "caladan:url": "defi/kyber/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/kyberswap",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "kyberswap",
+            "caladan:coretime": "defi/kyberswap/config.jsonc",
+            "caladan:url": "defi/kyberswap/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/layer2dao",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "layer2dao",
+            "caladan:coretime": "defi/layer2dao/config.jsonc",
+            "caladan:url": "defi/layer2dao/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/liquity",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "liquity",
+            "caladan:coretime": "defi/liquity/config.jsonc",
+            "caladan:url": "defi/liquity/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/lucidao",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "lucidao",
+            "caladan:coretime": "defi/lucidao/config.jsonc",
+            "caladan:url": "defi/lucidao/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/maker",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "maker",
+            "caladan:coretime": "defi/maker/config.jsonc",
+            "caladan:url": "defi/maker/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/mantra",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "mantra",
+            "caladan:coretime": "defi/mantra/config.jsonc",
+            "caladan:url": "defi/mantra/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/meebits",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "meebits",
+            "caladan:coretime": "defi/meebits/config.jsonc",
+            "caladan:url": "defi/meebits/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/meeds",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "meeds",
+            "caladan:coretime": "defi/meeds/config.jsonc",
+            "caladan:url": "defi/meeds/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/merit",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "merit",
+            "caladan:coretime": "defi/merit/config.jsonc",
+            "caladan:url": "defi/merit/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/metacartel",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "metacartel",
+            "caladan:coretime": "defi/metacartel/config.jsonc",
+            "caladan:url": "defi/metacartel/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/metamask",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "metamask",
+            "caladan:coretime": "defi/metamask/config.jsonc",
+            "caladan:url": "defi/metamask/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/metronome",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "metronome",
+            "caladan:coretime": "defi/metronome/config.jsonc",
+            "caladan:url": "defi/metronome/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/mstable",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "mstable",
+            "caladan:coretime": "defi/mstable/config.jsonc",
+            "caladan:url": "defi/mstable/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/mycelium",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "mycelium",
+            "caladan:coretime": "defi/mycelium/config.jsonc",
+            "caladan:url": "defi/mycelium/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/nahmii",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "nahmii",
+            "caladan:coretime": "defi/nahmii/config.jsonc",
+            "caladan:url": "defi/nahmii/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/nation3",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "nation3",
+            "caladan:coretime": "defi/nation3/config.jsonc",
+            "caladan:url": "defi/nation3/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/nest",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "nest",
+            "caladan:coretime": "defi/nest/config.jsonc",
+            "caladan:url": "defi/nest/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/neworder",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "neworder",
+            "caladan:coretime": "defi/neworder/config.jsonc",
+            "caladan:url": "defi/neworder/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/nexusmutual",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "nexusmutual",
+            "caladan:coretime": "defi/nexusmutual/config.jsonc",
+            "caladan:url": "defi/nexusmutual/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/nifty",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "nifty",
+            "caladan:coretime": "defi/nifty/config.jsonc",
+            "caladan:url": "defi/nifty/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/notional",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "notional",
+            "caladan:coretime": "defi/notional/config.jsonc",
+            "caladan:url": "defi/notional/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/olympus",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "olympus",
+            "caladan:coretime": "defi/olympus/config.jsonc",
+            "caladan:url": "defi/olympus/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/olympusdao",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "olympusdao",
+            "caladan:coretime": "defi/olympusdao/config.jsonc",
+            "caladan:url": "defi/olympusdao/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/onchainmonkey",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "onchainmonkey",
+            "caladan:coretime": "defi/onchainmonkey/config.jsonc",
+            "caladan:url": "defi/onchainmonkey/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/ooki",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "ooki",
+            "caladan:coretime": "defi/ooki/config.jsonc",
+            "caladan:url": "defi/ooki/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/orchid",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "orchid",
+            "caladan:coretime": "defi/orchid/config.jsonc",
+            "caladan:url": "defi/orchid/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/origin",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "origin",
+            "caladan:coretime": "defi/origin/config.jsonc",
+            "caladan:url": "defi/origin/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/paladin",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "paladin",
+            "caladan:coretime": "defi/paladin/config.jsonc",
+            "caladan:url": "defi/paladin/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/pancake",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "pancake",
+            "caladan:coretime": "defi/pancake/config.jsonc",
+            "caladan:url": "defi/pancake/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/pangolin",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "pangolin",
+            "caladan:coretime": "defi/pangolin/config.jsonc",
+            "caladan:url": "defi/pangolin/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/paragons",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "paragons",
+            "caladan:coretime": "defi/paragons/config.jsonc",
+            "caladan:url": "defi/paragons/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/paraswap",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "paraswap",
+            "caladan:coretime": "defi/paraswap/config.jsonc",
+            "caladan:url": "defi/paraswap/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/party",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "party",
+            "caladan:coretime": "defi/party/config.jsonc",
+            "caladan:url": "defi/party/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/pleasr",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "pleasr",
+            "caladan:coretime": "defi/pleasr/config.jsonc",
+            "caladan:url": "defi/pleasr/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/polywrap",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "polywrap",
+            "caladan:coretime": "defi/polywrap/config.jsonc",
+            "caladan:url": "defi/polywrap/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/pooltogether",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "pooltogether",
+            "caladan:coretime": "defi/pooltogether/config.jsonc",
+            "caladan:url": "defi/pooltogether/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/popcorn",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "popcorn",
+            "caladan:coretime": "defi/popcorn/config.jsonc",
+            "caladan:url": "defi/popcorn/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/premia",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "premia",
+            "caladan:coretime": "defi/premia/config.jsonc",
+            "caladan:url": "defi/premia/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/prom",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "prom",
+            "caladan:coretime": "defi/prom/config.jsonc",
+            "caladan:url": "defi/prom/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/qi",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "qi",
+            "caladan:coretime": "defi/qi/config.jsonc",
+            "caladan:url": "defi/qi/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/radiant",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "radiant",
+            "caladan:coretime": "defi/radiant/config.jsonc",
+            "caladan:url": "defi/radiant/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/radicle",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "radicle",
+            "caladan:coretime": "defi/radicle/config.jsonc",
+            "caladan:url": "defi/radicle/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/rally",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "rally",
+            "caladan:coretime": "defi/rally/config.jsonc",
+            "caladan:url": "defi/rally/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/rari",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "rari",
+            "caladan:coretime": "defi/rari/config.jsonc",
+            "caladan:url": "defi/rari/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/redacted",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "redacted",
+            "caladan:coretime": "defi/redacted/config.jsonc",
+            "caladan:url": "defi/redacted/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/reflexer",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "reflexer",
+            "caladan:coretime": "defi/reflexer/config.jsonc",
+            "caladan:url": "defi/reflexer/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/researchhub",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "researchhub",
+            "caladan:coretime": "defi/researchhub/config.jsonc",
+            "caladan:url": "defi/researchhub/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/reserve",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "reserve",
+            "caladan:coretime": "defi/reserve/config.jsonc",
+            "caladan:url": "defi/reserve/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/rhino",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "rhino",
+            "caladan:coretime": "defi/rhino/config.jsonc",
+            "caladan:url": "defi/rhino/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/ribbon",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "ribbon",
+            "caladan:coretime": "defi/ribbon/config.jsonc",
+            "caladan:url": "defi/ribbon/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/rook",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "rook",
+            "caladan:coretime": "defi/rook/config.jsonc",
+            "caladan:url": "defi/rook/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/saddle",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "saddle",
+            "caladan:coretime": "defi/saddle/config.jsonc",
+            "caladan:url": "defi/saddle/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/sarcophagus",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "sarcophagus",
+            "caladan:coretime": "defi/sarcophagus/config.jsonc",
+            "caladan:url": "defi/sarcophagus/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/scroll",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "scroll",
+            "caladan:coretime": "defi/scroll/config.jsonc",
+            "caladan:url": "defi/scroll/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/seedclub",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "seedclub",
+            "caladan:coretime": "defi/seedclub/config.jsonc",
+            "caladan:url": "defi/seedclub/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/shapeshift",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "shapeshift",
+            "caladan:coretime": "defi/shapeshift/config.jsonc",
+            "caladan:url": "defi/shapeshift/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/silo",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "silo",
+            "caladan:coretime": "defi/silo/config.jsonc",
+            "caladan:url": "defi/silo/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/sorare",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "sorare",
+            "caladan:coretime": "defi/sorare/config.jsonc",
+            "caladan:url": "defi/sorare/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/sorbet",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "sorbet",
+            "caladan:coretime": "defi/sorbet/config.jsonc",
+            "caladan:url": "defi/sorbet/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/spool",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "spool",
+            "caladan:coretime": "defi/spool/config.jsonc",
+            "caladan:url": "defi/spool/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/squiggle",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "squiggle",
+            "caladan:coretime": "defi/squiggle/config.jsonc",
+            "caladan:url": "defi/squiggle/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/ssv",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "ssv",
+            "caladan:coretime": "defi/ssv/config.jsonc",
+            "caladan:url": "defi/ssv/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/staking",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "staking",
+            "caladan:coretime": "defi/staking/config.jsonc",
+            "caladan:url": "defi/staking/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/stargate",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "stargate",
+            "caladan:coretime": "defi/stargate/config.jsonc",
+            "caladan:url": "defi/stargate/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/stellaswap",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "stellaswap",
+            "caladan:coretime": "defi/stellaswap/config.jsonc",
+            "caladan:url": "defi/stellaswap/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/streamity",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "streamity",
+            "caladan:coretime": "defi/streamity/config.jsonc",
+            "caladan:url": "defi/streamity/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/sudoswap",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "sudoswap",
+            "caladan:coretime": "defi/sudoswap/config.jsonc",
+            "caladan:url": "defi/sudoswap/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/sushiswap",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "sushiswap",
+            "caladan:coretime": "defi/sushiswap/config.jsonc",
+            "caladan:url": "defi/sushiswap/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/swipeswap",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "swipeswap",
+            "caladan:coretime": "defi/swipeswap/config.jsonc",
+            "caladan:url": "defi/swipeswap/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/synapse",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "synapse",
+            "caladan:coretime": "defi/synapse/config.jsonc",
+            "caladan:url": "defi/synapse/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/synthetix",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "synthetix",
+            "caladan:coretime": "defi/synthetix/config.jsonc",
+            "caladan:url": "defi/synthetix/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/tbtc",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "tbtc",
+            "caladan:coretime": "defi/tbtc/config.jsonc",
+            "caladan:url": "defi/tbtc/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/tempus",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "tempus",
+            "caladan:coretime": "defi/tempus/config.jsonc",
+            "caladan:url": "defi/tempus/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/threshold",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "threshold",
+            "caladan:coretime": "defi/threshold/config.jsonc",
+            "caladan:url": "defi/threshold/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/tokenlon",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "tokenlon",
+            "caladan:coretime": "defi/tokenlon/config.jsonc",
+            "caladan:url": "defi/tokenlon/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/tornado",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "tornado",
+            "caladan:coretime": "defi/tornado/config.jsonc",
+            "caladan:url": "defi/tornado/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/treasure",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "treasure",
+            "caladan:coretime": "defi/treasure/config.jsonc",
+            "caladan:url": "defi/treasure/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/tron",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "tron",
+            "caladan:coretime": "defi/tron/config.jsonc",
+            "caladan:url": "defi/tron/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/uma",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "uma",
+            "caladan:coretime": "defi/uma/config.jsonc",
+            "caladan:url": "defi/uma/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/umami",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "umami",
+            "caladan:coretime": "defi/umami/config.jsonc",
+            "caladan:url": "defi/umami/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/uniswap",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "uniswap",
+            "caladan:coretime": "defi/uniswap/config.jsonc",
+            "caladan:url": "defi/uniswap/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/unit",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "unit",
+            "caladan:coretime": "defi/unit/config.jsonc",
+            "caladan:url": "defi/unit/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/vesper",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "vesper",
+            "caladan:coretime": "defi/vesper/config.jsonc",
+            "caladan:url": "defi/vesper/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/vesta",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "vesta",
+            "caladan:coretime": "defi/vesta/config.jsonc",
+            "caladan:url": "defi/vesta/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/vita",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "vita",
+            "caladan:coretime": "defi/vita/config.jsonc",
+            "caladan:url": "defi/vita/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/wonderland",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "wonderland",
+            "caladan:coretime": "defi/wonderland/config.jsonc",
+            "caladan:url": "defi/wonderland/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/yam",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "yam",
+            "caladan:coretime": "defi/yam/config.jsonc",
+            "caladan:url": "defi/yam/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/yearn",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "yearn",
+            "caladan:coretime": "defi/yearn/config.jsonc",
+            "caladan:url": "defi/yearn/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/zapper",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "zapper",
+            "caladan:coretime": "defi/zapper/config.jsonc",
+            "caladan:url": "defi/zapper/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/zethr",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "zethr",
+            "caladan:coretime": "defi/zethr/config.jsonc",
+            "caladan:url": "defi/zethr/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/zkswap",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "zkswap",
+            "caladan:coretime": "defi/zkswap/config.jsonc",
+            "caladan:url": "defi/zkswap/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/defi/zora",
+            "@type": "caladan:Project",
+            "caladan:dataset": "defi",
+            "caladan:name": "zora",
+            "caladan:coretime": "defi/zora/config.jsonc",
+            "caladan:url": "defi/zora/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/ethereum/arbitrum",
+            "@type": "caladan:Project",
+            "caladan:dataset": "ethereum",
+            "caladan:name": "arbitrum",
+            "caladan:coretime": "ethereum/arbitrum/config.jsonc",
+            "caladan:url": "ethereum/arbitrum/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/ethereum/base",
+            "@type": "caladan:Project",
+            "caladan:dataset": "ethereum",
+            "caladan:name": "base",
+            "caladan:coretime": "ethereum/base/config.jsonc",
+            "caladan:url": "ethereum/base/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/ethereum/metis",
+            "@type": "caladan:Project",
+            "caladan:dataset": "ethereum",
+            "caladan:name": "metis",
+            "caladan:coretime": "ethereum/metis/config.jsonc",
+            "caladan:url": "ethereum/metis/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/ethereum/optimism",
+            "@type": "caladan:Project",
+            "caladan:dataset": "ethereum",
+            "caladan:name": "optimism",
+            "caladan:coretime": "ethereum/optimism/config.jsonc",
+            "caladan:url": "ethereum/optimism/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/ethereum/pgn",
+            "@type": "caladan:Project",
+            "caladan:dataset": "ethereum",
+            "caladan:name": "pgn",
+            "caladan:coretime": "ethereum/pgn/config.jsonc",
+            "caladan:url": "ethereum/pgn/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/ethereum/polygon",
+            "@type": "caladan:Project",
+            "caladan:dataset": "ethereum",
+            "caladan:name": "polygon",
+            "caladan:coretime": "ethereum/polygon/config.jsonc",
+            "caladan:url": "ethereum/polygon/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/ethereum/starknet",
+            "@type": "caladan:Project",
+            "caladan:dataset": "ethereum",
+            "caladan:name": "starknet",
+            "caladan:coretime": "ethereum/starknet/config.jsonc",
+            "caladan:url": "ethereum/starknet/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/gitcoin/allo",
+            "@type": "caladan:Project",
+            "caladan:dataset": "gitcoin",
+            "caladan:name": "allo",
+            "caladan:coretime": "gitcoin/allo/config.jsonc",
+            "caladan:url": "gitcoin/allo/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/naming/ens",
+            "@type": "caladan:Project",
+            "caladan:dataset": "naming",
+            "caladan:name": "ens",
+            "caladan:coretime": "naming/ens/config.jsonc",
+            "caladan:url": "naming/ens/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/blur",
+            "@type": "caladan:Project",
+            "caladan:dataset": "nft",
+            "caladan:name": "blur",
+            "caladan:coretime": "nft/blur/config.jsonc",
+            "caladan:url": "nft/blur/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/cryptokitties",
+            "@type": "caladan:Project",
+            "caladan:dataset": "nft",
+            "caladan:name": "cryptokitties",
+            "caladan:coretime": "nft/cryptokitties/config.jsonc",
+            "caladan:url": "nft/cryptokitties/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/decentraland",
+            "@type": "caladan:Project",
+            "caladan:dataset": "nft",
+            "caladan:name": "decentraland",
+            "caladan:coretime": "nft/decentraland/config.jsonc",
+            "caladan:url": "nft/decentraland/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/looksrare",
+            "@type": "caladan:Project",
+            "caladan:dataset": "nft",
+            "caladan:name": "looksrare",
+            "caladan:coretime": "nft/looksrare/config.jsonc",
+            "caladan:url": "nft/looksrare/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/nftx",
+            "@type": "caladan:Project",
+            "caladan:dataset": "nft",
+            "caladan:name": "nftx",
+            "caladan:coretime": "nft/nftx/config.jsonc",
+            "caladan:url": "nft/nftx/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/nouns",
+            "@type": "caladan:Project",
+            "caladan:dataset": "nft",
+            "caladan:name": "nouns",
+            "caladan:coretime": "nft/nouns/config.jsonc",
+            "caladan:url": "nft/nouns/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/opensea",
+            "@type": "caladan:Project",
+            "caladan:dataset": "nft",
+            "caladan:name": "opensea",
+            "caladan:coretime": "nft/opensea/config.jsonc",
+            "caladan:url": "nft/opensea/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/rarible",
+            "@type": "caladan:Project",
+            "caladan:dataset": "nft",
+            "caladan:name": "rarible",
+            "caladan:coretime": "nft/rarible/config.jsonc",
+            "caladan:url": "nft/rarible/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/nft/superrare",
+            "@type": "caladan:Project",
+            "caladan:dataset": "nft",
+            "caladan:name": "superrare",
+            "caladan:coretime": "nft/superrare/config.jsonc",
+            "caladan:url": "nft/superrare/config.jsonld"
+        },
+        {
+            "@id": "CaladanDAO/awesome-web3/staking/lido",
+            "@type": "caladan:Project",
+            "caladan:dataset": "staking",
+            "caladan:name": "lido",
+            "caladan:coretime": "staking/lido/config.jsonc",
+            "caladan:url": "staking/lido/config.jsonld"
+        }
+    ]
 }
-
